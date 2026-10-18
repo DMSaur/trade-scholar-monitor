@@ -51,11 +51,20 @@ def main():
           f"关键词 {len(keywords)} 个")
 
     conn = db.connect()
-    stats = {"new": {}, "llm": 0}
+    stats = {"new": {}, "llm": 0, "errors": []}
+
+    def run_step(step: str, fn, *a):
+        """单个数据源失败不影响其余板块。"""
+        try:
+            return fn(*a)
+        except Exception as e:
+            print(f"    ! {step} 本轮失败: {e}")
+            stats["errors"].append(step)
+            return []
 
     # 1. Top-5 期刊
     print("[1/4] Top-5 期刊（OpenAlex）")
-    for it in top5.fetch(start_date, keywords):
+    for it in run_step("Top-5", top5.fetch, start_date, keywords):
         if db.upsert_item(conn, it):
             stats["new"]["top5"] = stats["new"].get("top5", 0) + 1
     conn.commit()
@@ -63,15 +72,15 @@ def main():
 
     # 2. NBER
     print("[2/4] NBER 工作论文（OpenAlex NBER 源）")
-    for it in nber.fetch(start_date, keywords):
+    for it in run_step("NBER", nber.fetch, start_date, keywords):
         if db.upsert_item(conn, it):
             stats["new"]["nber"] = stats["new"].get("nber", 0) + 1
     conn.commit()
     print(f"    新增 {stats['new'].get('nber', 0)} 条")
 
     # 3. 学者论文
-    print("[3/4] 学者最新论文（OpenAlex 作者页）")
-    for it in scholars.fetch(start_date, active_scholars):
+    print("[3/4] 学者最新论文（Semantic Scholar）")
+    for it in run_step("学者论文", scholars.fetch, start_date, active_scholars):
         if db.upsert_item(conn, it):
             stats["new"]["scholar"] = stats["new"].get("scholar", 0) + 1
     conn.commit()
@@ -80,7 +89,7 @@ def main():
     # 4. 学者推文
     if not args.no_tweets:
         print("[4/4] 学者推文（xreach）")
-        for it in tweets.fetch(active_scholars, days=args.days):
+        for it in run_step("推文", tweets.fetch, active_scholars, args.days):
             if db.upsert_item(conn, it):
                 stats["new"]["tweet"] = stats["new"].get("tweet", 0) + 1
         conn.commit()
@@ -120,7 +129,9 @@ def main():
     db.save_run(conn, stats)
     conn.commit()
     conn.close()
-    print(f"== 完成：新增 {sum(stats['new'].values())} 条，摘要 {stats['llm']} 条 ==")
+    total = sum(stats["new"].values())
+    err = f"，失败板块: {','.join(stats['errors'])}" if stats["errors"] else ""
+    print(f"== 完成：新增 {total} 条，摘要 {stats['llm']} 条{err} ==")
 
 
 if __name__ == "__main__":

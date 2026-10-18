@@ -11,7 +11,8 @@
     → scripts/main.py
        1. Top-5 期刊     OpenAlex 按期刊 ISSN，贸易关键词初筛
        2. NBER 工作论文  OpenAlex NBER 源 (S2809516038)，关键词初筛
-       3. 学者最新论文   OpenAlex 按作者 ID（学者名单见 config/scholars.yaml）
+       3. 学者最新论文   Semantic Scholar 按作者批量接口（1 次请求带全部人，
+                         学者名单见 config/scholars.yaml，每人配 s2_id）
        4. 学者推文       xreach CLI 按学者 handle 抓时间线
        5. DashScope 生成一句中文摘要 + 主题标签；Top-5/NBER 同时做
           贸易相关性二筛（关键词命中的候选由模型确认，非贸易的隐藏）
@@ -35,9 +36,10 @@ scripts/main.py --no-tweets     # 跳过推文（代理没开时用）
 
 ## 配置
 
-- `config/scholars.yaml`：学者名单。每人 `name / affiliation / openalex_id /
-  twitter / homepage`。改完下次运行生效。OpenAlex ID 在 https://openalex.org
-  搜人名即可查到（URL 里 A 开头的编号）。
+- `config/scholars.yaml`：学者名单。每人 `name / affiliation / s2_id /
+  twitter / homepage`。改完下次运行生效。s2_id 在
+  https://semanticscholar.org 搜到本人主页后从 URL 的 authorId 复制。
+- `config/topics.yaml`：贸易关键词（初筛用）和中文标签词表（LLM 打标签用）。
 - `config/topics.yaml`：贸易关键词（初筛用）和中文标签词表（LLM 打标签用）。
 - `.env`（不入库）：`DASHSCOPE_API_KEY` 摘要用；`OPENALEX_API_KEY` 强烈建议配置。
 

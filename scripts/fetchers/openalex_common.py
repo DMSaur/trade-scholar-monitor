@@ -29,7 +29,7 @@ def _load_env():
 _load_env()
 
 
-def get(path: str, params: dict, max_retry: int = 6) -> dict:
+def get(path: str, params: dict, max_retry: int = 10) -> dict:
     params = dict(params)
     params.setdefault("mailto", MAILTO)
     key = os.environ.get("OPENALEX_API_KEY", "").strip()
@@ -46,7 +46,7 @@ def get(path: str, params: dict, max_retry: int = 6) -> dict:
             time.sleep(2)
             continue
         if r.status_code == 429:
-            wait = 5 * (attempt + 1)
+            wait = min(6 * (attempt + 1), 60)
             print(f"    OpenAlex 429（{'代理' if use_proxy else '直连'}），"
                   f"{wait}s 后切换重试")
             use_proxy = not use_proxy
