@@ -124,13 +124,14 @@ h1{font-size:25px;font-weight:700;letter-spacing:.5px}
 .badge.top5{background:var(--top5)}.badge.nber{background:var(--nber)}
 .badge.scholar{background:var(--scholar)}.badge.tweet{background:var(--tweet)}
 .venue{font-size:12px;color:var(--sub)}
-.card h2{font-size:15.5px;font-weight:600;line-height:1.5;margin:2px 0}
+.card h2{font-size:15.5px;font-weight:600;line-height:1.5;margin:2px 0;
+  overflow-wrap:anywhere}
 .card h2 a{color:var(--ink);text-decoration:none}
 .card h2 a:hover{color:var(--accent);text-decoration:underline}
 .authors{font-size:12.5px;color:var(--sub);margin-bottom:6px}
 .summary-zh{
   font-size:13.8px;color:#333;border-left:3px solid var(--accent-soft);
-  padding-left:10px;margin:6px 0;
+  padding-left:10px;margin:6px 0;overflow-wrap:anywhere;
 }
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
 .tag{
@@ -138,7 +139,8 @@ h1{font-size:25px;font-weight:700;letter-spacing:.5px}
   border-radius:4px;padding:1px 8px;cursor:pointer;
 }
 .sub-info{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px;font-size:12px;color:var(--sub)}
-.tweet-text{font-size:14px;white-space:pre-wrap;margin:6px 0;word-break:break-word}
+.tweet-text{font-size:14px;white-space:pre-wrap;margin:6px 0;
+  word-break:break-word;overflow-wrap:anywhere}
 .rt-mark{font-size:11.5px;color:var(--sub);border:1px solid var(--border);border-radius:4px;padding:0 6px}
 .empty{color:var(--sub);text-align:center;padding:60px 0;font-size:14px}
 footer{margin-top:44px;color:var(--sub);font-size:12.5px;border-top:1px solid var(--border);padding-top:14px}
