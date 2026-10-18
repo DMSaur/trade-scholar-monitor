@@ -1,0 +1,13 @@
+# 密钥不入库
+.env
+
+# 本地数据与日志（网页数据在 docs/data 里随库走）
+data/
+logs/
+__pycache__/
+*.pyc
+.DS_Store
+
+# 一次性脚本产物
+scripts/lookup_scholars.py
+scripts/lookup_scholars_s2.py

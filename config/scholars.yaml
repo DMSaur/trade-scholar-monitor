@@ -1,0 +1,49 @@
+# 贸易学者名单
+# - s2_id: Semantic Scholar 作者 ID（学者论文板块用，空则该板块跳过此人）
+# - twitter: X 账号（推文板块用，空则不抓）
+# - homepage: 个人主页，展示在网页学者筛选里（可选）
+# - enabled: false 可临时停用某人
+# 补人流程：在 https://semanticscholar.org 搜到本人主页，URL 里 authorId 即 s2_id
+
+scholars:
+  # ── 已核实论文源 ID 与推文账号 ──
+  - {name: David Autor, affiliation: MIT, s2_id: "", twitter: "", homepage: ""}
+  - {name: David Dorn, affiliation: Geneva, s2_id: "", twitter: "", homepage: ""}
+  - {name: Daron Acemoglu, affiliation: MIT, s2_id: "", twitter: "", homepage: ""}
+  - {name: Marc Melitz, affiliation: Harvard, s2_id: "", twitter: "", homepage: ""}
+  - {name: Robert Feenstra, affiliation: UC Davis, s2_id: "", twitter: "", homepage: ""}
+  - {name: David Hummels, affiliation: Purdue, s2_id: "", twitter: DavidHummels, homepage: ""}
+  - {name: Gordon Hanson, affiliation: Harvard Kennedy School, s2_id: "", twitter: "", homepage: ""}
+  - {name: Pinelopi Goldberg, affiliation: Yale, s2_id: "", twitter: "", homepage: ""}
+  - {name: Nina Pavcnik, affiliation: Dartmouth, s2_id: "", twitter: "", homepage: ""}
+  - {name: Peter Schott, affiliation: Yale SOM, s2_id: "", twitter: "", homepage: ""}
+  - {name: Amit Khandelwal, affiliation: Yale SOM, s2_id: "", twitter: "", homepage: ""}
+  - {name: Kyle Handley, affiliation: UCSD GPS, s2_id: "", twitter: "", homepage: ""}
+  - {name: Mary Amiti, affiliation: NY Fed, s2_id: "", twitter: "", homepage: ""}
+  - {name: Oleg Itskhoki, affiliation: Harvard, s2_id: "", twitter: ItsKhoki, homepage: ""}
+  - {name: Pablo Fajgelbaum, affiliation: UCLA, s2_id: "", twitter: "", homepage: ""}
+  - {name: Lorenzo Caliendo, affiliation: Yale SOM, s2_id: "", twitter: "", homepage: ""}
+  - {name: Fernando Parro, affiliation: Penn State, s2_id: "", twitter: "", homepage: ""}
+  - {name: Pol Antras, affiliation: Harvard, s2_id: "", twitter: "", homepage: ""}
+  - {name: Arnaud Costinot, affiliation: MIT, s2_id: "", twitter: "", homepage: ""}
+  - {name: Dave Donaldson, affiliation: MIT, s2_id: "", twitter: "", homepage: ""}
+  - {name: Jonathan Eaton, affiliation: Penn State, s2_id: "", twitter: "", homepage: ""}
+  - {name: Samuel Kortum, affiliation: Yale, s2_id: "", twitter: "", homepage: ""}
+  - {name: Costas Arkolakis, affiliation: Yale, s2_id: "", twitter: "", homepage: ""}
+  - {name: Treb Allen, affiliation: Dartmouth, s2_id: "", twitter: "", homepage: ""}
+  - {name: Stephen Redding, affiliation: Princeton, s2_id: "", twitter: "", homepage: ""}
+  - {name: Gene Grossman, affiliation: Princeton, s2_id: "", twitter: "", homepage: ""}
+  - {name: Elhanan Helpman, affiliation: Harvard, s2_id: "", twitter: "", homepage: ""}
+  - {name: Dani Rodrik, affiliation: Harvard Kennedy School, s2_id: "", twitter: rodrikdani, homepage: ""}
+  - {name: Paul Krugman, affiliation: CUNY, s2_id: "", twitter: paulkrugman, homepage: ""}
+  - {name: Chad Bown, affiliation: Peterson Institute, s2_id: "", twitter: ChadBown, homepage: ""}
+  - {name: Douglas Irwin, affiliation: Dartmouth, s2_id: "", twitter: DouglasIrwin, homepage: ""}
+  - {name: David Weinstein, affiliation: Columbia, s2_id: "", twitter: "", homepage: ""}
+  - {name: Andrew Bernard, affiliation: Dartmouth Tuck, s2_id: "", twitter: "", homepage: ""}
+  - {name: Esteban Rossi-Hansberg, affiliation: U Chicago, s2_id: "", twitter: "", homepage: ""}
+
+  # ── 中国学者（默认停用，把 enabled 改为 true 并补 s2_id 即启用）──
+  - {name: 刘志阔, affiliation: 上海财经大学, s2_id: "", twitter: "", homepage: "", enabled: false}
+  - {name: 马弘, affiliation: 清华大学, s2_id: "", twitter: "", homepage: "", enabled: false}
+  - {name: 鞠建东, affiliation: 清华大学, s2_id: "", twitter: "", homepage: "", enabled: false}
+  - {name: 余淼杰, affiliation: 辽宁大学, s2_id: "", twitter: "", homepage: "", enabled: false}
