@@ -46,7 +46,8 @@ def main():
     scholar_list, topics_cfg = load_config()
     keywords = topics_cfg["trade_keywords"]
     tag_vocab = topics_cfg["tag_vocab"]
-    paper_scholars = [s for s in scholar_list if s.get("s2_id")]
+    paper_scholars = [s for s in scholar_list
+                      if s.get("s2_id") or s.get("openalex_id")]
     tweet_scholars = [s for s in scholar_list if s.get("twitter")]
     print(f"启用学者 {len(scholar_list)} 人"
           f"（论文源 {len(paper_scholars)} 人、推文 {len(tweet_scholars)} 人已配 ID），"

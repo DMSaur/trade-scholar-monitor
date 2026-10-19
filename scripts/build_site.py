@@ -15,6 +15,8 @@ def collect(conn, scholar_list) -> dict:
     rows = db.items_since(conn, WINDOW_DAYS)
     name_by_scholar = {}
     for s in scholar_list:
+        if s.get("openalex_id"):
+            name_by_scholar[f"oa:{s['openalex_id']}"] = s["name"]
         if s.get("s2_id"):
             name_by_scholar[f"s2:{s['s2_id']}"] = s["name"]
         if s.get("twitter"):
