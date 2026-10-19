@@ -21,6 +21,9 @@ git pull --ff-only origin main >> "$LOG" 2>&1 || echo "git pull 失败，用本�
 echo "---- $(date '+%F %T') 完成，推送 docs/ ----" >> "$LOG"
 
 git add docs/ >/dev/null
+# index.html 与 latest.json 在 .gitignore 里（Vault 侧不提交生成物），
+# 运行时是唯一发布方，用 -f 强制加入
+git add -f docs/index.html docs/data/latest.json >/dev/null 2>&1
 if git diff --cached --quiet; then
   echo "无新改动，跳过推送" >> "$LOG"
 else
