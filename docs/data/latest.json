@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20 00:29",
+ "generated_at": "2026-10-20 00:35",
  "window_days": 30,
  "items": [
   {
@@ -271,6 +271,40 @@
    }
   },
   {
+   "uid": "oa:W7220727620",
+   "source": "scholar",
+   "title": "Human capital accumulation across space",
+   "authors": "Klaus Desmet A, Dávid Krisztián Nagy, Esteban Rossi‐Hansberg",
+   "venue": "Journal of International Economics",
+   "url": "https://doi.org/10.1016/j.jinteco.2026.104341",
+   "date": "2026-10-06",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Esteban Rossi-Hansberg",
+    "work_type": "article",
+    "doi": "10.1016/j.jinteco.2026.104341"
+   }
+  },
+  {
+   "uid": "oa:W7220649577",
+   "source": "scholar",
+   "title": "How Fast Do Tariffs Pass Through into Consumer Prices?",
+   "authors": "Mary Amiti, Sebastian Heise, David Weinstein",
+   "venue": "报告",
+   "url": "https://doi.org/10.59576/lse.20261006",
+   "date": "2026-10-06",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Mary Amiti",
+    "work_type": "report",
+    "doi": "10.59576/lse.20261006"
+   }
+  },
+  {
    "uid": "tweet:2107214347017523271",
    "source": "tweet",
    "title": "Thanks so much to  @RebeccaZandberg for the invitation to join CBC Radio’s Ottawa Morning to chat about HOW TO WIN A TRADE WAR and 🇨🇦 Canada",
@@ -383,6 +417,23 @@
     "views": 1705,
     "created_at": "2026-10-02T17:53:22+00:00",
     "scholar_name": "Chad Bown"
+   }
+  },
+  {
+   "uid": "oa:W7221679395",
+   "source": "scholar",
+   "title": "How Knowledge Crosses Borders: Evidence from Semiconductor Manufacturing",
+   "authors": "Pinelopi Koujianou Goldberg, Réka Juhász, Giulia Lo Forte, Jeff Thurk",
+   "venue": "National Bureau of Economic Research",
+   "url": "https://doi.org/10.3386/w35879",
+   "date": "2026-10-01",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Pinelopi Goldberg",
+    "work_type": "report",
+    "doi": "10.3386/w35879"
    }
   },
   {
@@ -623,6 +674,57 @@
    "tags": [],
    "extra": {
     "scholar_name": "Robert Feenstra"
+   }
+  },
+  {
+   "uid": "oa:W7216593281",
+   "source": "scholar",
+   "title": "How Knowledge Crosses Borders: Evidence from Semiconductor Manufacturing",
+   "authors": "Pinelopi Koujianou Goldberg, Réka Juhász, Giulia Lo Forte, Jeff Thurk",
+   "venue": "CESifo",
+   "url": "https://doi.org/10.65864/4gkhuecfbn",
+   "date": "2026-09-30",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Pinelopi Goldberg",
+    "work_type": "report",
+    "doi": "10.65864/4gkhuecfbn"
+   }
+  },
+  {
+   "uid": "oa:W7215098180",
+   "source": "scholar",
+   "title": "The Treatment of Import and Export Prices in International Comparisons of GDP",
+   "authors": "Robert C. Feenstra, Robert Inklaar, Ninghui Li",
+   "venue": "Review of International Economics",
+   "url": "https://doi.org/10.1111/roie.70091",
+   "date": "2026-09-30",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Robert Feenstra",
+    "work_type": "article",
+    "doi": "10.1111/roie.70091"
+   }
+  },
+  {
+   "uid": "oa:W7214102412",
+   "source": "scholar",
+   "title": "Human Capital Accumulation Across Space",
+   "authors": "Klaus Desmet A, Dávid Krisztián Nagy, Esteban Rossi‐Hansberg",
+   "venue": "Federal Reserve Bank of Dallas, Working Papers",
+   "url": "https://doi.org/10.24149/wp2634",
+   "date": "2026-09-23",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Esteban Rossi-Hansberg",
+    "work_type": "article",
+    "doi": "10.24149/wp2634"
    }
   }
  ]
