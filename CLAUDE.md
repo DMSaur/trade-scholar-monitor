@@ -3,11 +3,23 @@
 每天早上自动抓取四个来源的新内容，生成静态可视化网页并发布到 GitHub Pages。
 本文件给未来的 Claude/人看：架构、日常操作、常见问题。
 
+## 双目录结构（重要）
+
+- **本目录（Vault 内）**：配置与代码的工作副本。学者名单、关键词在这里改，
+  改完 commit + push 即可，运行时会自动拉取。也可以在这里手动跑脚本调试。
+- **`~/.trade-monitor/`**：launchd 实际运行用的克隆。因为 macOS 隐私保护
+  不让 launchd 进程访问 Documents 目录（会报 Operation not permitted），
+  定时任务放 home 目录下跑，结果照常推 GitHub。它的 monitor.db 是去重与
+  摘要的权威状态（随 git 同步）。
+- 页面与数据每次运行后推 GitHub Pages：
+  **https://dmsaur.github.io/trade-scholar-monitor/**
+
 ## 页面与数据流
 
 ```
 每天 9:30 (launchd: com.dimo.trademonitor)
-  → run_daily.sh
+  → ~/.trade-monitor/run_daily.sh
+    → git pull（同步本目录推送的配置）
     → scripts/main.py
        1. Top-5 期刊     OpenAlex 按期刊 ISSN，贸易关键词初筛
        2. NBER 工作论文  OpenAlex NBER 源 (S2809516038)，关键词初筛

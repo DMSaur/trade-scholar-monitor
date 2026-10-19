@@ -300,6 +300,11 @@ function cardHTML(it){
     : '';
   const text = it.source === 'tweet'
     ? `<p class="tweet-text">${esc(it.abstract||'')}</p>` : '';
+  // 推文正文已经完整展示，标题行只在没有正文时显示
+  const showTitle = !(it.source === 'tweet' && it.abstract);
+  const titleHTML = showTitle && it.url
+    ? `<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title||it.summary_zh||'(无标题)')}</a>`
+    : (showTitle ? esc(it.title||'') : '');
   const summary = it.summary_zh && it.summary_zh !== '（非贸易领域）'
     ? `<p class="summary-zh">${esc(it.summary_zh)}</p>` : '';
   const authors = it.authors && it.source !== 'tweet'
@@ -307,12 +312,9 @@ function cardHTML(it){
   const tags = (it.tags||[]).length
     ? `<div class="tags">${it.tags.map(t =>
         `<span class="tag" data-tag="${esc(t)}">${esc(t)}</span>`).join('')}</div>` : '';
-  const titleHTML = it.url
-    ? `<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title||it.summary_zh||'(无标题)')}</a>`
-    : esc(it.title||'');
   return `<article class="card">
     <div class="card-top">${badges}${venueInfo}</div>
-    <h2>${titleHTML}</h2>
+    ${titleHTML ? `<h2>${titleHTML}</h2>` : ''}
     ${authors}${text}${summary}${stats}${tags}
   </article>`;
 }
