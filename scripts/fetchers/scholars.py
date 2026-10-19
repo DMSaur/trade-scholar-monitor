@@ -13,34 +13,50 @@ BATCH_FIELDS = ("papers.title,papers.abstract,papers.venue,papers.year,"
                 "papers.publicationDate,papers.externalIds,papers.authors")
 
 
-def _request_batch(ids: list, max_retry: int = 6) -> list:
-    """S2 批量接口限制单次返回体积，按 25 人一组分批请求。"""
-    out = []
-    for i in range(0, len(ids), 25):
-        chunk = ids[i:i + 25]
-        for attempt in range(max_retry):
-            try:
-                r = requests.post(
-                    f"{BASE}/author/batch",
-                    params={"fields": BATCH_FIELDS},
-                    json={"ids": chunk},
-                    timeout=60,
-                )
-            except requests.RequestException:
-                time.sleep(15 * (attempt + 1))
-                continue
-            if r.status_code in (429, 504):
-                wait = 20 * (attempt + 1)
-                print(f"    S2 429，等 {wait}s 重试")
-                time.sleep(wait)
-                continue
-            r.raise_for_status()
-            out.extend(r.json())
-            break
+def _batch_once(chunk: list, max_retry: int = 6):
+    """请求一组，返回 (成功, 结果列表或None, 错误信息)。结果与入参顺序对齐。"""
+    for attempt in range(max_retry):
+        try:
+            r = requests.post(
+                f"{BASE}/author/batch",
+                params={"fields": BATCH_FIELDS},
+                json={"ids": chunk},
+                timeout=60,
+            )
+        except requests.RequestException:
+            time.sleep(15 * (attempt + 1))
+            continue
+        if r.status_code in (429, 504):
+            wait = 20 * (attempt + 1)
+            print(f"    S2 429，等 {wait}s 重试")
+            time.sleep(wait)
+            continue
+        if r.status_code == 400 and "exceed" in r.text.lower():
+            return False, None, "exceed"
+        if r.ok:
+            return True, r.json(), ""
+        return False, None, f"HTTP {r.status_code}: {r.text[:120]}"
+    return False, None, "重试耗尽"
+
+
+def _request_batch(ids: list) -> list:
+    """按人分组请求，超返回体积上限时对半拆分。返回与入参顺序对齐。"""
+    result: dict = {}
+    queue = [ids]
+    while queue:
+        chunk = queue.pop(0)
+        ok, data, err = _batch_once(chunk)
+        if ok:
+            result.update(dict(zip(chunk, data)))
+            print(f"    S2 批量 {len(chunk)} 人成功")
+        elif err == "exceed" and len(chunk) > 1:
+            half = max(1, len(chunk) // 2)
+            queue[0:0] = [chunk[:half], chunk[half:]]
+            print(f"    S2 返回超限，{len(chunk)} 人拆成两组")
         else:
-            raise RuntimeError(f"S2 批量接口重试耗尽（第 {i//25+1} 组）")
+            raise RuntimeError(f"S2 批量接口失败: {err}")
         time.sleep(1.0)
-    return out
+    return [result.get(i) for i in ids]
 
 
 def fetch(start_date: str, scholars: list[dict]) -> list[dict]:
