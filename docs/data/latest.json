@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20 00:19",
+ "generated_at": "2026-10-20 00:29",
  "window_days": 30,
  "items": [
   {
@@ -253,6 +253,21 @@
     "views": 1158,
     "created_at": "2026-10-06T11:51:15+00:00",
     "scholar_name": "Chad Bown"
+   }
+  },
+  {
+   "uid": "s2:292728405",
+   "source": "scholar",
+   "title": "How Fast Do Tariffs Pass Through into Consumer Prices?",
+   "authors": "M. Amiti, Sebastian Heise, D. Weinstein",
+   "venue": "Liberty Street Economics (Federal Reserve Bank of New York)",
+   "url": "https://doi.org/10.59576/lse.20261006",
+   "date": "2026-10-06",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Mary Amiti"
    }
   },
   {
@@ -593,6 +608,21 @@
    "extra": {
     "nber_id": "W7220369224",
     "keyword_hit": "import"
+   }
+  },
+  {
+   "uid": "s2:292574429",
+   "source": "scholar",
+   "title": "The Treatment of Import and Export Prices in International Comparisons of\n GDP",
+   "authors": "R. Feenstra, R. Inklaar, Ning Li",
+   "venue": "Review of International Economics",
+   "url": "https://doi.org/10.1111/roie.70091",
+   "date": "2026-09-30",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Robert Feenstra"
    }
   }
  ]
