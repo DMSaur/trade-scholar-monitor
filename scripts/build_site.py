@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """生成可视化网页：docs/index.html（内联数据）+ docs/data/latest.json。"""
 import json
+import re
 from datetime import datetime
 
 import db
@@ -9,6 +10,52 @@ WINDOW_DAYS = 30
 
 SOURCE_LABEL = {"top5": "Top-5 期刊", "nber": "NBER", "scholar": "学者论文", "tweet": "推文"}
 JOURNAL_SHORT = {"AER", "QJE", "JPE", "ECMA", "REStud"}
+
+# 这些 venue 视为工作论文/预印本版本，同题去重时让位于期刊版
+_WP_VENUES = ("nber", "ssrn", "cesifo", "arxiv", "preprint", "working paper",
+              "institute", "university", "报告", "预印本", " reprint")
+
+
+def _title_key(title: str) -> str:
+    """标题归一化：去符号空格、小写、取前 40 字符，用于跨版本去重。"""
+    t = re.sub(r"[^a-z0-9\u4e00-\u9fff]", "", (title or "").lower())
+    return t[:40]
+
+
+def _dedupe_papers(items: list) -> list:
+    """论文按归一标题去重：期刊版优先于工作论文版，其次保留日期较新者。"""
+    groups: dict = {}
+    order: list = []
+    for it in items:
+        if it["source"] == "tweet" or not it["title"]:
+            order.append(("solo", it))
+            continue
+        k = _title_key(it["title"])
+        if not k:
+            order.append(("solo", it))
+            continue
+        if k not in groups:
+            groups[k] = []
+            order.append(("group", k))
+        groups[k].append(it)
+    out = []
+    for kind, x in order:
+        if kind == "solo":
+            out.append(x)
+            continue
+        g = groups[x]
+        def rank(it):
+            venue = (it.get("venue") or "").lower()
+            is_wp = any(w in venue for w in _WP_VENUES)
+            return (is_wp, it.get("date") or "", len(it.get("abstract") or ""))
+        g.sort(key=rank, reverse=True)
+        best = g[0]
+        # 被并掉的版本信息并入备注，标注另有工作论文版
+        if len(g) > 1:
+            others = {it["source"] for it in g[1:]}
+            best.setdefault("extra", {})["versions"] = sorted(others)
+        out.append(best)
+    return out
 
 
 def collect(conn, scholar_list) -> dict:
@@ -44,6 +91,7 @@ def collect(conn, scholar_list) -> dict:
             "extra": extra,
         })
     items.sort(key=lambda x: (x["date"], x["uid"]), reverse=True)
+    items = _dedupe_papers(items)
     return {"generated_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
             "window_days": WINDOW_DAYS, "items": items}
 
