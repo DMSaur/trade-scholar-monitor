@@ -11,15 +11,16 @@ import requests
 BASE = "https://api.semanticscholar.org/graph/v1"
 BATCH_FIELDS = ("papers.title,papers.abstract,papers.venue,papers.year,"
                 "papers.publicationDate,papers.externalIds,papers.authors")
+BATCH_FIELDS_LIGHT = BATCH_FIELDS.replace(",papers.abstract", "")
 
 
-def _batch_once(chunk: list, max_retry: int = 6):
+def _batch_once(chunk: list, fields: str, max_retry: int = 6):
     """请求一组，返回 (成功, 结果列表或None, 错误信息)。结果与入参顺序对齐。"""
     for attempt in range(max_retry):
         try:
             r = requests.post(
                 f"{BASE}/author/batch",
-                params={"fields": BATCH_FIELDS},
+                params={"fields": fields},
                 json={"ids": chunk},
                 timeout=60,
             )
@@ -40,19 +41,25 @@ def _batch_once(chunk: list, max_retry: int = 6):
 
 
 def _request_batch(ids: list) -> list:
-    """按人分组请求，超返回体积上限时对半拆分。返回与入参顺序对齐。"""
+    """按人分组请求，超返回体积上限时对半拆分；单人仍超限则去掉摘要字段。
+
+    返回与入参顺序对齐。降级拿到的作者不带论文摘要。
+    """
     result: dict = {}
-    queue = [ids]
+    queue = [(ids, BATCH_FIELDS)]
     while queue:
-        chunk = queue.pop(0)
-        ok, data, err = _batch_once(chunk)
+        chunk, fields = queue.pop(0)
+        ok, data, err = _batch_once(chunk, fields)
         if ok:
             result.update(dict(zip(chunk, data)))
-            print(f"    S2 批量 {len(chunk)} 人成功")
+            print(f"    S2 批量 {len(chunk)} 人成功"
+                  f"{'' if fields == BATCH_FIELDS else '（无摘要降级）'}")
         elif err == "exceed" and len(chunk) > 1:
             half = max(1, len(chunk) // 2)
-            queue[0:0] = [chunk[:half], chunk[half:]]
-            print(f"    S2 返回超限，{len(chunk)} 人拆成两组")
+            queue[0:0] = [(chunk[:half], fields), (chunk[half:], fields)]
+        elif err == "exceed" and fields != BATCH_FIELDS_LIGHT:
+            queue[0:0] = [(chunk, BATCH_FIELDS_LIGHT)]
+            print(f"    S2 返回超限，改用无摘要字段重试")
         else:
             raise RuntimeError(f"S2 批量接口失败: {err}")
         time.sleep(1.0)
