@@ -13,3 +13,7 @@ scripts/lookup_scholars_s2.py
 scripts/resolve_s2_main.py
 scripts/fill_scholars.py
 scripts/bootstrap.sh
+
+# 网页生成物只在运行时提交
+docs/index.html
+docs/data/latest.json
