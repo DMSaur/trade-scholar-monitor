@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>贸易学者动向 · 每日监控</title>
+<style>
+:root{
+  --bg:#f6f5f1; --card:#ffffff; --border:#e5e2d8; --ink:#1c1b17;
+  --sub:#6b675c; --accent:#0e5f5b; --accent-soft:#e3efee;
+  --top5:#8a2b23; --nber:#1e3a5f; --scholar:#0e5f5b; --tweet:#4a4a48;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB",
+    "Microsoft YaHei","Segoe UI",sans-serif;
+  background:var(--bg); color:var(--ink); line-height:1.65; font-size:15px;
+}
+.wrap{max-width:860px;margin:0 auto;padding:0 18px 60px}
+header{padding:34px 0 8px}
+h1{font-size:25px;font-weight:700;letter-spacing:.5px}
+.subtitle{color:var(--sub);font-size:13.5px;margin-top:4px}
+.meta-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{
+  display:inline-flex;align-items:center;gap:6px;font-size:12.5px;
+  background:var(--card);border:1px solid var(--border);border-radius:20px;
+  padding:3px 12px;color:var(--sub);
+}
+.chip b{color:var(--ink);font-size:13.5px}
+.dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+.dot.top5{background:var(--top5)}.dot.nber{background:var(--nber)}
+.dot.scholar{background:var(--scholar)}.dot.tweet{background:var(--tweet)}
+.toolbar{
+  position:sticky;top:0;z-index:10;background:var(--bg);
+  padding:14px 0 10px;border-bottom:1px solid var(--border);
+  display:flex;flex-wrap:wrap;gap:10px;align-items:center;
+}
+.tabs{display:flex;flex-wrap:wrap;gap:6px}
+.tab{
+  border:1px solid var(--border);background:var(--card);color:var(--sub);
+  border-radius:8px;padding:5px 12px;font-size:13.5px;cursor:pointer;
+}
+.tab[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.tab .n{font-size:11.5px;opacity:.75;margin-left:3px}
+.seg{display:flex;border:1px solid var(--border);border-radius:8px;overflow:hidden}
+.seg button{
+  border:0;background:var(--card);color:var(--sub);padding:5px 12px;
+  font-size:13px;cursor:pointer;
+}
+.seg button[aria-pressed="true"]{background:var(--accent-soft);color:var(--accent);font-weight:600}
+#search{
+  flex:1;min-width:160px;border:1px solid var(--border);border-radius:8px;
+  padding:6px 12px;font-size:13.5px;background:var(--card);color:var(--ink);
+  outline:none;
+}
+#search:focus{border-color:var(--accent)}
+#scholarFilter{
+  border:1px solid var(--border);border-radius:8px;padding:6px 8px;
+  font-size:13px;background:var(--card);color:var(--ink);max-width:170px;
+}
+.datehead{
+  margin:26px 0 10px;font-size:13px;font-weight:700;color:var(--sub);
+  letter-spacing:1px;
+}
+.card{
+  background:var(--card);border:1px solid var(--border);border-radius:12px;
+  padding:14px 16px;margin-bottom:10px;
+}
+.card:hover{border-color:#cfcaba}
+.card-top{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:6px}
+.badge{
+  font-size:11px;font-weight:700;color:#fff;border-radius:5px;
+  padding:1.5px 7px;letter-spacing:.3px;
+}
+.badge.top5{background:var(--top5)}.badge.nber{background:var(--nber)}
+.badge.scholar{background:var(--scholar)}.badge.tweet{background:var(--tweet)}
+.venue{font-size:12px;color:var(--sub)}
+.card h2{font-size:15.5px;font-weight:600;line-height:1.5;margin:2px 0;
+  overflow-wrap:anywhere}
+.card h2 a{color:var(--ink);text-decoration:none}
+.card h2 a:hover{color:var(--accent);text-decoration:underline}
+.authors{font-size:12.5px;color:var(--sub);margin-bottom:6px}
+.summary-zh{
+  font-size:13.8px;color:#333;border-left:3px solid var(--accent-soft);
+  padding-left:10px;margin:6px 0;overflow-wrap:anywhere;
+}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.tag{
+  font-size:11.5px;color:var(--accent);background:var(--accent-soft);
+  border-radius:4px;padding:1px 8px;cursor:pointer;
+}
+.sub-info{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px;font-size:12px;color:var(--sub)}
+.tweet-text{font-size:14px;white-space:pre-wrap;margin:6px 0;
+  word-break:break-word;overflow-wrap:anywhere}
+.rt-mark{font-size:11.5px;color:var(--sub);border:1px solid var(--border);border-radius:4px;padding:0 6px}
+.empty{color:var(--sub);text-align:center;padding:60px 0;font-size:14px}
+footer{margin-top:44px;color:var(--sub);font-size:12.5px;border-top:1px solid var(--border);padding-top:14px}
+footer a{color:var(--sub)}
+@media (max-width:640px){
+  h1{font-size:21px}
+  .toolbar{position:static}
+  #scholarFilter{max-width:none;flex:1}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>贸易学者动向</h1>
+  <p class="subtitle">Top-5 期刊贸易论文 · NBER 工作论文 · 贸易学者最新研究 · 学者推文，每日更新</p>
+  <div class="meta-row" id="metaRow"></div>
+</header>
+<div class="toolbar">
+  <div class="tabs" id="tabs" role="tablist" aria-label="板块筛选"></div>
+  <div class="seg" id="rangeSeg" aria-label="时间范围">
+    <button data-range="7" aria-pressed="false">近 7 天</button>
+    <button data-range="30" aria-pressed="true">近 30 天</button>
+  </div>
+  <input id="search" type="search" placeholder="搜索标题、作者、摘要…" aria-label="搜索">
+  <select id="scholarFilter" aria-label="按学者筛选"><option value="">全部学者</option></select>
+</div>
+<main id="list"></main>
+<footer>
+  <p id="footMeta"></p>
+  <p>数据来源：<a href="https://openalex.org" target="_blank" rel="noopener">OpenAlex</a> ·
+     <a href="https://www.nber.org" target="_blank" rel="noopener">NBER</a> ·
+     <a href="https://x.com" target="_blank" rel="noopener">X（Twitter）</a></p>
+</footer>
+</div>
+<script id="page-data" type="application/json">{"generated_at": "2026-10-19 12:54", "window_days": 30, "items": [{"uid": "oa:W7215055798", "source": "top5", "title": "Knowledge Spillovers, Competition, and Individual Careers", "authors": "Thomas Cornelißen, Christian Dustmann, Uta Schönberg", "venue": "American Economic Review", "url": "https://doi.org/10.1257/aer.20230714", "date": "2026-10-01", "abstract": "", "summary_zh": "", "tags": [], "extra": {"journal_short": "AER", "keyword_hit": "countervailing", "doi": "10.1257/aer.20230714"}}, {"uid": "nber:W7221678887", "source": "nber", "title": "Inverted Gravity", "authors": "James Anderson, Mario Larch, Yoto Yotov", "venue": "NBER Working Paper", "url": "https://doi.org/10.3386/w35897", "date": "2026-10-01", "abstract": "", "summary_zh": "", "tags": [], "extra": {"nber_id": "W7221678887", "keyword_hit": "import"}}, {"uid": "nber:W7221665847", "source": "nber", "title": "When Does Randomized Oversight Align AI Agents That Can Conceal?", "authors": "Joshua Gans, Richard Holden", "venue": "NBER Working Paper", "url": "https://doi.org/10.3386/w35878", "date": "2026-10-01", "abstract": "", "summary_zh": "", "tags": [], "extra": {"nber_id": "W7221665847", "keyword_hit": "sanctions"}}, {"uid": "nber:W7221614501", "source": "nber", "title": "What Can (and Cannot) Be Learned about Systemic Racial Discrimination from Randomized Controlled Trials?", "authors": "Dania Francis, Rob Gillezeau, Damon Jones, Angelino Viceisza", "venue": "NBER Working Paper", "url": "https://doi.org/10.3386/w35882", "date": "2026-10-01", "abstract": "", "summary_zh": "", "tags": [], "extra": {"nber_id": "W7221614501", "keyword_hit": "import"}}, {"uid": "nber:W7220456947", "source": "nber", "title": "Optimal Line-Drawing for Legal Rules", "authors": "Jacob S. Goldin, David A. Weisbach", "venue": "NBER Working Paper", "url": "https://doi.org/10.3386/w35868", "date": "2026-10-01", "abstract": "", "summary_zh": "", "tags": [], "extra": {"nber_id": "W7220456947", "keyword_hit": "import"}}, {"uid": "nber:W7220442719", "source": "nber", "title": "Communicating Performance: Textual and Financial Disclosures in Private Equity", "authors": "Josh Lerner, Fiona A. Paine, Antoinette Schoar B", "venue": "NBER Working Paper", "url": "https://doi.org/10.3386/w35860", "date": "2026-10-01", "abstract": "", "summary_zh": "", "tags": [], "extra": {"nber_id": "W7220442719", "keyword_hit": "import"}}, {"uid": "nber:W7220441196", "source": "nber", "title": "Labor Supply and Wages over the Life Cycle: Human Capital and Disability Benefits", "authors": "Richard W. Blundell, Mónica Costa Dias, Graham Mazeine, Costas Meghir, Tom Waters", "venue": "NBER Working Paper", "url": "https://doi.org/10.3386/w35861", "date": "2026-10-01", "abstract": "", "summary_zh": "", "tags": [], "extra": {"nber_id": "W7220441196", "keyword_hit": "import"}}, {"uid": "nber:W7220419980", "source": "nber", "title": "The Effects of Long-Term Exposure to Pollution on Health", "authors": "Joshua Graff Zivin, Johnny Huynh, Timothy Frank Justicz, Adriana Lleras‐Muney, Matthew Neidell", "venue": "NBER Working Paper", "url": "https://doi.org/10.3386/w35871", "date": "2026-10-01", "abstract": "", "summary_zh": "", "tags": [], "extra": {"nber_id": "W7220419980", "keyword_hit": "import"}}, {"uid": "nber:W7220418505", "source": "nber", "title": "Welfare Analysis with Complementarities: When Direct and Total Responses Are Sufficient", "authors": "David Argente", "venue": "NBER Working Paper", "url": "https://doi.org/10.3386/w35843", "date": "2026-10-01", "abstract": "", "summary_zh": "", "tags": [], "extra": {"nber_id": "W7220418505", "keyword_hit": "import"}}, {"uid": "nber:W7220416660", "source": "nber", "title": "The Regulatory Burden of Licensure Sales Laws: New Evidence on Race and the U.S. Tobacco Market", "authors": "Dhaval Dave, Jooyoung Kim, Joseph J. Sabia", "venue": "NBER Working Paper", "url": "https://doi.org/10.3386/w35848", "date": "2026-10-01", "abstract": "", "summary_zh": "", "tags": [], "extra": {"nber_id": "W7220416660", "keyword_hit": "import"}}, {"uid": "nber:W7220415274", "source": "nber", "title": "A Framework for Integrating Climate Goals into Trade Agreements", "authors": "Farid Farrokhi, Ahmad Lashkaripour, Homa Taheri", "venue": "NBER Working Paper", "url": "https://doi.org/10.3386/w35834", "date": "2026-10-01", "abstract": "", "summary_zh": "", "tags": [], "extra": {"nber_id": "W7220415274", "keyword_hit": "trade agreement"}}, {"uid": "nber:W7220414556", "source": "nber", "title": "From Importer to Exporter: Oil Shocks and the U.S. Economy", "authors": "Diego R. Känzig, James H. Stock, Luca Zanotti", "venue": "NBER Working Paper", "url": "https://doi.org/10.3386/w35864", "date": "2026-10-01", "abstract": "", "summary_zh": "", "tags": [], "extra": {"nber_id": "W7220414556", "keyword_hit": "export"}}, {"uid": "nber:W7220402105", "source": "nber", "title": "How Heavily Are PhD Students Offloading Their Scientific Writing to AI? Evidence from US STEM PhD Dissertations", "authors": "Daniel Gross, Dror Shvadron, Hansen Zhang", "venue": "NBER Working Paper", "url": "https://doi.org/10.3386/w35859", "date": "2026-10-01", "abstract": "", "summary_zh": "", "tags": [], "extra": {"nber_id": "W7220402105", "keyword_hit": "import"}}, {"uid": "nber:W7220369224", "source": "nber", "title": "Inference for Regression with Clustered or Spatially Correlated Data II: Spatial Correlation", "authors": "A. Colin Cameron, Douglas Miller", "venue": "NBER Working Paper", "url": "https://doi.org/10.3386/w35801", "date": "2026-10-01", "abstract": "", "summary_zh": "", "tags": [], "extra": {"nber_id": "W7220369224", "keyword_hit": "import"}}]}</script>
+<script>
+const DATA = JSON.parse(document.getElementById('page-data').textContent);
+const SOURCES = [
+  {key:'all',    label:'全部'},
+  {key:'top5',   label:'Top-5 期刊'},
+  {key:'nber',   label:'NBER'},
+  {key:'scholar',label:'学者论文'},
+  {key:'tweet',  label:'推文'},
+];
+const state = {tab:'all', range:30, q:'', scholar:''};
+
+const WEEK = ['日','一','二','三','四','五','六'];
+function fmtDate(d){
+  if(!d) return '日期未知';
+  const dt = new Date(d + 'T00:00:00');
+  if(isNaN(dt)) return d;
+  return `${dt.getMonth()+1}月${dt.getDate()}日 星期${WEEK[dt.getDay()]}`;
+}
+function daysAgo(dateStr){
+  const dt = new Date(dateStr + 'T00:00:00');
+  return Math.floor((Date.now() - dt.getTime()) / 86400000);
+}
+
+/* 顶部统计与学者下拉 */
+(function init(){
+  const meta = document.getElementById('metaRow');
+  const counts = {top5:0, nber:0, scholar:0, tweet:0};
+  DATA.items.forEach(it => counts[it.source]++);
+  meta.innerHTML = `
+    <span class="chip">数据截至 <b>${DATA.generated_at}</b></span>
+    <span class="chip"><span class="dot top5"></span>Top-5 <b>${counts.top5}</b></span>
+    <span class="chip"><span class="dot nber"></span>NBER <b>${counts.nber}</b></span>
+    <span class="chip"><span class="dot scholar"></span>学者论文 <b>${counts.scholar}</b></span>
+    <span class="chip"><span class="dot tweet"></span>推文 <b>${counts.tweet}</b></span>`;
+  document.getElementById('footMeta').textContent =
+    `展示最近 ${DATA.window_days} 天条目，共 ${DATA.items.length} 条。`;
+
+  const names = new Map();
+  DATA.items.forEach(it => {
+    const n = it.extra && it.extra.scholar_name;
+    if(n) names.set(n, (names.get(n)||0)+1);
+  });
+  const sel = document.getElementById('scholarFilter');
+  [...names.keys()].sort((a,b)=>a.localeCompare(b,'zh')).forEach(n => {
+    const opt = document.createElement('option');
+    opt.value = n; opt.textContent = `${n} (${names.get(n)})`;
+    sel.appendChild(opt);
+  });
+})();
+
+/* 板块 tab */
+(function initTabs(){
+  const tabs = document.getElementById('tabs');
+  const counts = {all:DATA.items.length, top5:0, nber:0, scholar:0, tweet:0};
+  DATA.items.forEach(it => counts[it.source]++);
+  tabs.innerHTML = SOURCES.map(s => `
+    <button class="tab" role="tab" data-tab="${s.key}"
+      aria-pressed="${s.key===state.tab}">
+      ${s.label}<span class="n">${counts[s.key]}</span></button>`).join('');
+  tabs.addEventListener('click', e => {
+    const btn = e.target.closest('.tab');
+    if(!btn) return;
+    state.tab = btn.dataset.tab;
+    tabs.querySelectorAll('.tab').forEach(b =>
+      b.setAttribute('aria-pressed', b===btn ? 'true' : 'false'));
+    render();
+  });
+})();
+
+document.getElementById('rangeSeg').addEventListener('click', e => {
+  const btn = e.target.closest('button');
+  if(!btn) return;
+  state.range = +btn.dataset.range;
+  document.querySelectorAll('#rangeSeg button').forEach(b =>
+    b.setAttribute('aria-pressed', b===btn ? 'true' : 'false'));
+  render();
+});
+document.getElementById('search').addEventListener('input', e => {
+  state.q = e.target.value.trim().toLowerCase(); render();
+});
+document.getElementById('scholarFilter').addEventListener('change', e => {
+  state.scholar = e.target.value; render();
+});
+
+function matchItem(it){
+  if(state.tab !== 'all' && it.source !== state.tab) return false;
+  const d = daysAgo(it.date);
+  if(d > state.range || d < 0) return false;
+  if(state.scholar && (!it.extra || it.extra.scholar_name !== state.scholar)) return false;
+  if(state.q){
+    const hay = [it.title, it.authors, it.venue, it.summary_zh,
+                 it.abstract || '', (it.tags||[]).join(' ')].join(' ').toLowerCase();
+    if(!hay.includes(state.q)) return false;
+  }
+  return true;
+}
+
+function cardHTML(it){
+  const e = it.extra || {};
+  let badges = '';
+  let venueInfo = '';
+  if(it.source === 'top5'){
+    const js = e.journal_short || '';
+    badges = `<span class="badge top5">${js}</span>`;
+    venueInfo = `<span class="venue">${it.venue||''}</span>`;
+  }else if(it.source === 'nber'){
+    badges = `<span class="badge nber">NBER</span>`;
+    venueInfo = `<span class="venue">NBER Working Paper ${e.nber_id||''}</span>`;
+  }else if(it.source === 'scholar'){
+    const who = e.scholar_name || '';
+    badges = `<span class="badge scholar">学者论文</span>` +
+      (who ? `<span class="venue">${who}</span>` : '');
+    venueInfo = `<span class="venue">${it.venue||e.work_type||''}</span>`;
+  }else{
+    const rt = e.is_retweet ? ' <span class="rt-mark">转发</span>' : '';
+    badges = `<span class="badge tweet">@${e.handle||''}</span>${rt}`;
+    venueInfo = `<span class="venue">${e.name||''}</span>`;
+  }
+  const stats = it.source === 'tweet'
+    ? `<div class="sub-info"><span>赞 ${e.likes||0}</span><span>转 ${e.retweets||0}</span><span>浏览 ${e.views||0}</span></div>`
+    : '';
+  const text = it.source === 'tweet'
+    ? `<p class="tweet-text">${esc(it.abstract||'')}</p>` : '';
+  const summary = it.summary_zh && it.summary_zh !== '（非贸易领域）'
+    ? `<p class="summary-zh">${esc(it.summary_zh)}</p>` : '';
+  const authors = it.authors && it.source !== 'tweet'
+    ? `<p class="authors">${esc(it.authors)}</p>` : '';
+  const tags = (it.tags||[]).length
+    ? `<div class="tags">${it.tags.map(t =>
+        `<span class="tag" data-tag="${esc(t)}">${esc(t)}</span>`).join('')}</div>` : '';
+  const titleHTML = it.url
+    ? `<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title||it.summary_zh||'(无标题)')}</a>`
+    : esc(it.title||'');
+  return `<article class="card">
+    <div class="card-top">${badges}${venueInfo}</div>
+    <h2>${titleHTML}</h2>
+    ${authors}${text}${summary}${stats}${tags}
+  </article>`;
+}
+
+function esc(s){
+  return String(s==null?'':s)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;');
+}
+
+function render(){
+  const list = document.getElementById('list');
+  const items = DATA.items.filter(matchItem);
+  if(!items.length){
+    list.innerHTML = '<p class="empty">该筛选条件下暂无条目。</p>';
+    return;
+  }
+  let html = '', lastDate = '';
+  items.forEach(it => {
+    if(it.date !== lastDate){
+      lastDate = it.date;
+      html += `<div class="datehead">${fmtDate(it.date)}</div>`;
+    }
+    html += cardHTML(it);
+  });
+  list.innerHTML = html;
+}
+
+document.getElementById('list').addEventListener('click', e => {
+  const tag = e.target.closest('.tag');
+  if(!tag) return;
+  const input = document.getElementById('search');
+  input.value = tag.dataset.tag;
+  state.q = tag.dataset.tag.toLowerCase();
+  render();
+});
+
+render();
+</script>
+</body>
+</html>
