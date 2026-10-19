@@ -23,12 +23,12 @@
     → scripts/main.py
        1. Top-5 期刊     OpenAlex 按期刊 ISSN，贸易关键词初筛
        2. NBER 工作论文  OpenAlex NBER 源 (S2809516038)，关键词初筛
-       3. 学者最新论文   Semantic Scholar 按作者批量接口（1 次请求带全部人，
-                         学者名单见 config/scholars.yaml，每人配 s2_id）
+       3. 学者最新论文   OpenAlex 按作者 ID（每人一天一次请求，日期可靠）；
+                         失败时自动降级 Semantic Scholar 批量接口
        4. 学者推文       xreach CLI 按学者 handle 抓时间线
        5. DashScope 生成一句中文摘要 + 主题标签；Top-5/NBER 同时做
           贸易相关性二筛（关键词命中的候选由模型确认，非贸易的隐藏）
-    → docs/index.html（内联数据）+ docs/data/latest.json
+    → docs/index.html（内联数据；论文按归一标题去重，期刊版优先）
     → git commit + push → GitHub Pages 自动发布
 ```
 
