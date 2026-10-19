@@ -68,9 +68,13 @@ scripts/main.py --no-tweets     # 跳过推文（代理没开时用）
 - **OpenAlex 免费额度按 IP 共享（约每天几十次）**，白天容易 429。代码已做
   直连/本地代理双路自动切换 + 退避重试；配置 `OPENALEX_API_KEY` 后独享
   每天 1000 次，问题根治。key 在 https://openalex.org/settings/api-key
-  （用复旦邮箱登录）。
-- **NBER 官网 RSS 已失效**（2026-10 改版），NBER 源改走 OpenAlex，见上。
-- **学者消歧**：OpenAlex 的作者归属偶有错乱（同名学者），发现张冠李戴时
-  在 scholars.yaml 里核对该人的 openalex_id。
+  （用复旦邮箱登录，已有账号）。
+- **中文摘要暂未生效**：DashScope key 欠费（Arrearage）。充值或换 key 填进
+  `.env` 后自动生效；代码有熔断，key 不可用时不会拖慢抓取。
+- **S2 学者同名分裂档案**：s2_id 一律取 hIndex 最高的主档案
+  （scripts/resolve_s2_main.py 的解析结果）。若某学者论文明显偏少，
+  重新跑一次该脚本即可。
 - **xreach 偶发超时**：脚本单次失败只跳过该学者，下轮自动补上（推文按
   时间窗去重，不会重复入库）。
+- **launchd 与 Documents 权限**：定时任务必须在 `~/.trade-monitor` 跑，
+  直接指向 Vault 目录会报 Operation not permitted。
