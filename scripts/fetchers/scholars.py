@@ -13,26 +13,34 @@ BATCH_FIELDS = ("papers.title,papers.abstract,papers.venue,papers.year,"
                 "papers.publicationDate,papers.externalIds,papers.authors")
 
 
-def _request_batch(ids: list, max_retry: int = 6) -> dict:
-    for attempt in range(max_retry):
-        try:
-            r = requests.post(
-                f"{BASE}/author/batch",
-                params={"fields": BATCH_FIELDS},
-                json={"ids": ids},
-                timeout=60,
-            )
-        except requests.RequestException:
-            time.sleep(15 * (attempt + 1))
-            continue
-        if r.status_code in (429, 504):
-            wait = 20 * (attempt + 1)
-            print(f"    S2 429，等 {wait}s 重试")
-            time.sleep(wait)
-            continue
-        r.raise_for_status()
-        return r.json()
-    raise RuntimeError("S2 批量接口重试耗尽")
+def _request_batch(ids: list, max_retry: int = 6) -> list:
+    """S2 批量接口限制单次返回体积，按 25 人一组分批请求。"""
+    out = []
+    for i in range(0, len(ids), 25):
+        chunk = ids[i:i + 25]
+        for attempt in range(max_retry):
+            try:
+                r = requests.post(
+                    f"{BASE}/author/batch",
+                    params={"fields": BATCH_FIELDS},
+                    json={"ids": chunk},
+                    timeout=60,
+                )
+            except requests.RequestException:
+                time.sleep(15 * (attempt + 1))
+                continue
+            if r.status_code in (429, 504):
+                wait = 20 * (attempt + 1)
+                print(f"    S2 429，等 {wait}s 重试")
+                time.sleep(wait)
+                continue
+            r.raise_for_status()
+            out.extend(r.json())
+            break
+        else:
+            raise RuntimeError(f"S2 批量接口重试耗尽（第 {i//25+1} 组）")
+        time.sleep(1.0)
+    return out
 
 
 def fetch(start_date: str, scholars: list[dict]) -> list[dict]:
