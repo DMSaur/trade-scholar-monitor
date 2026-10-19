@@ -1,8 +1,7 @@
 # 密钥不入库
 .env
 
-# 本地数据与日志（网页数据在 docs/data 里随库走）
-data/
+# 日志不入库（monitor.db 入库：运行时克隆靠它保持去重与摘要状态）
 logs/
 __pycache__/
 *.pyc
@@ -11,3 +10,6 @@ __pycache__/
 # 一次性脚本产物
 scripts/lookup_scholars.py
 scripts/lookup_scholars_s2.py
+scripts/resolve_s2_main.py
+scripts/fill_scholars.py
+scripts/bootstrap.sh

@@ -46,8 +46,10 @@ def main():
     scholar_list, topics_cfg = load_config()
     keywords = topics_cfg["trade_keywords"]
     tag_vocab = topics_cfg["tag_vocab"]
-    active_scholars = [s for s in scholar_list if s.get("s2_id")]
-    print(f"启用学者 {len(scholar_list)} 人（{len(active_scholars)} 人已配论文源 ID），"
+    paper_scholars = [s for s in scholar_list if s.get("s2_id")]
+    tweet_scholars = [s for s in scholar_list if s.get("twitter")]
+    print(f"启用学者 {len(scholar_list)} 人"
+          f"（论文源 {len(paper_scholars)} 人、推文 {len(tweet_scholars)} 人已配 ID），"
           f"关键词 {len(keywords)} 个")
 
     conn = db.connect()
@@ -80,7 +82,7 @@ def main():
 
     # 3. 学者论文
     print("[3/4] 学者最新论文（Semantic Scholar）")
-    for it in run_step("学者论文", scholars.fetch, start_date, active_scholars):
+    for it in run_step("学者论文", scholars.fetch, start_date, paper_scholars):
         if db.upsert_item(conn, it):
             stats["new"]["scholar"] = stats["new"].get("scholar", 0) + 1
     conn.commit()
@@ -89,7 +91,7 @@ def main():
     # 4. 学者推文
     if not args.no_tweets:
         print("[4/4] 学者推文（xreach）")
-        for it in run_step("推文", tweets.fetch, active_scholars, args.days):
+        for it in run_step("推文", tweets.fetch, tweet_scholars, args.days):
             if db.upsert_item(conn, it):
                 stats["new"]["tweet"] = stats["new"].get("tweet", 0) + 1
         conn.commit()

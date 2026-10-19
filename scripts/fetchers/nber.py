@@ -46,15 +46,19 @@ def fetch(start_date: str, keywords: list) -> list[dict]:
         landing = ((w.get("primary_location") or {})
                    .get("landing_page_url") or "")
         m = NBER_ID.search(landing)
-        wid = m.group(1).lower() if m else w["id"].rsplit("/", 1)[-1]
+        wid = m.group(1).lower() if m else ""
+        url = (f"https://www.nber.org/papers/{wid}" if wid
+               else (w.get("doi") or w["id"]))
+        if not wid:
+            # 位置页没给 NBER 编号时用 OpenAlex 内部编号做去重键
+            wid = w["id"].rsplit("/", 1)[-1]
         items.append({
             "uid": f"nber:{wid}",
             "source": "nber",
             "title": title,
             "authors": ", ".join(auths),
             "venue": "NBER Working Paper",
-            "url": (f"https://www.nber.org/papers/{wid}"
-                    if m else w.get("doi") or w["id"]),
+            "url": url,
             "date": w.get("publication_date"),
             "abstract": abstract[:4000],
             "extra": {"nber_id": wid.upper(), "keyword_hit": hit},

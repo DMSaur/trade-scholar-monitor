@@ -1,49 +1,195 @@
-# 贸易学者名单
-# - s2_id: Semantic Scholar 作者 ID（学者论文板块用，空则该板块跳过此人）
-# - twitter: X 账号（推文板块用，空则不抓）
-# - homepage: 个人主页，展示在网页学者筛选里（可选）
-# - enabled: false 可临时停用某人
-# 补人流程：在 https://semanticscholar.org 搜到本人主页，URL 里 authorId 即 s2_id
-
 scholars:
-  # ── 已核实论文源 ID 与推文账号 ──
-  - {name: David Autor, affiliation: MIT, s2_id: "", twitter: "", homepage: ""}
-  - {name: David Dorn, affiliation: Geneva, s2_id: "", twitter: "", homepage: ""}
-  - {name: Daron Acemoglu, affiliation: MIT, s2_id: "", twitter: "", homepage: ""}
-  - {name: Marc Melitz, affiliation: Harvard, s2_id: "", twitter: "", homepage: ""}
-  - {name: Robert Feenstra, affiliation: UC Davis, s2_id: "", twitter: "", homepage: ""}
-  - {name: David Hummels, affiliation: Purdue, s2_id: "", twitter: DavidHummels, homepage: ""}
-  - {name: Gordon Hanson, affiliation: Harvard Kennedy School, s2_id: "", twitter: "", homepage: ""}
-  - {name: Pinelopi Goldberg, affiliation: Yale, s2_id: "", twitter: "", homepage: ""}
-  - {name: Nina Pavcnik, affiliation: Dartmouth, s2_id: "", twitter: "", homepage: ""}
-  - {name: Peter Schott, affiliation: Yale SOM, s2_id: "", twitter: "", homepage: ""}
-  - {name: Amit Khandelwal, affiliation: Yale SOM, s2_id: "", twitter: "", homepage: ""}
-  - {name: Kyle Handley, affiliation: UCSD GPS, s2_id: "", twitter: "", homepage: ""}
-  - {name: Mary Amiti, affiliation: NY Fed, s2_id: "", twitter: "", homepage: ""}
-  - {name: Oleg Itskhoki, affiliation: Harvard, s2_id: "", twitter: ItsKhoki, homepage: ""}
-  - {name: Pablo Fajgelbaum, affiliation: UCLA, s2_id: "", twitter: "", homepage: ""}
-  - {name: Lorenzo Caliendo, affiliation: Yale SOM, s2_id: "", twitter: "", homepage: ""}
-  - {name: Fernando Parro, affiliation: Penn State, s2_id: "", twitter: "", homepage: ""}
-  - {name: Pol Antras, affiliation: Harvard, s2_id: "", twitter: "", homepage: ""}
-  - {name: Arnaud Costinot, affiliation: MIT, s2_id: "", twitter: "", homepage: ""}
-  - {name: Dave Donaldson, affiliation: MIT, s2_id: "", twitter: "", homepage: ""}
-  - {name: Jonathan Eaton, affiliation: Penn State, s2_id: "", twitter: "", homepage: ""}
-  - {name: Samuel Kortum, affiliation: Yale, s2_id: "", twitter: "", homepage: ""}
-  - {name: Costas Arkolakis, affiliation: Yale, s2_id: "", twitter: "", homepage: ""}
-  - {name: Treb Allen, affiliation: Dartmouth, s2_id: "", twitter: "", homepage: ""}
-  - {name: Stephen Redding, affiliation: Princeton, s2_id: "", twitter: "", homepage: ""}
-  - {name: Gene Grossman, affiliation: Princeton, s2_id: "", twitter: "", homepage: ""}
-  - {name: Elhanan Helpman, affiliation: Harvard, s2_id: "", twitter: "", homepage: ""}
-  - {name: Dani Rodrik, affiliation: Harvard Kennedy School, s2_id: "", twitter: rodrikdani, homepage: ""}
-  - {name: Paul Krugman, affiliation: CUNY, s2_id: "", twitter: paulkrugman, homepage: ""}
-  - {name: Chad Bown, affiliation: Peterson Institute, s2_id: "", twitter: ChadBown, homepage: ""}
-  - {name: Douglas Irwin, affiliation: Dartmouth, s2_id: "", twitter: DouglasIrwin, homepage: ""}
-  - {name: David Weinstein, affiliation: Columbia, s2_id: "", twitter: "", homepage: ""}
-  - {name: Andrew Bernard, affiliation: Dartmouth Tuck, s2_id: "", twitter: "", homepage: ""}
-  - {name: Esteban Rossi-Hansberg, affiliation: U Chicago, s2_id: "", twitter: "", homepage: ""}
-
-  # ── 中国学者（默认停用，把 enabled 改为 true 并补 s2_id 即启用）──
-  - {name: 刘志阔, affiliation: 上海财经大学, s2_id: "", twitter: "", homepage: "", enabled: false}
-  - {name: 马弘, affiliation: 清华大学, s2_id: "", twitter: "", homepage: "", enabled: false}
-  - {name: 鞠建东, affiliation: 清华大学, s2_id: "", twitter: "", homepage: "", enabled: false}
-  - {name: 余淼杰, affiliation: 辽宁大学, s2_id: "", twitter: "", homepage: "", enabled: false}
+- name: David Autor
+  affiliation: MIT
+  s2_id: '6703140'
+  twitter: ''
+  homepage: ''
+- name: David Dorn
+  affiliation: Geneva
+  s2_id: '2880987'
+  twitter: ''
+  homepage: ''
+- name: Daron Acemoglu
+  affiliation: MIT
+  s2_id: '119530058'
+  twitter: ''
+  homepage: ''
+- name: Marc Melitz
+  affiliation: Harvard
+  s2_id: '2412409641'
+  twitter: ''
+  homepage: ''
+- name: Robert Feenstra
+  affiliation: UC Davis
+  s2_id: '2361439078'
+  twitter: ''
+  homepage: ''
+- name: David Hummels
+  affiliation: Purdue
+  s2_id: '144307189'
+  twitter: DavidHummels
+  homepage: ''
+- name: Gordon Hanson
+  affiliation: Harvard Kennedy School
+  s2_id: '2411287708'
+  twitter: ''
+  homepage: ''
+- name: Pinelopi Goldberg
+  affiliation: Yale
+  s2_id: '2284015290'
+  twitter: ''
+  homepage: ''
+- name: Nina Pavcnik
+  affiliation: Dartmouth
+  s2_id: '117831889'
+  twitter: ''
+  homepage: ''
+- name: Peter Schott
+  affiliation: Yale SOM
+  s2_id: '2237270128'
+  twitter: ''
+  homepage: ''
+- name: Amit Khandelwal
+  affiliation: Yale SOM
+  s2_id: '36681513'
+  twitter: ''
+  homepage: ''
+- name: Kyle Handley
+  affiliation: UCSD GPS
+  s2_id: '118582669'
+  twitter: ''
+  homepage: ''
+- name: Mary Amiti
+  affiliation: NY Fed
+  s2_id: '67167577'
+  twitter: ''
+  homepage: ''
+- name: Oleg Itskhoki
+  affiliation: Harvard
+  s2_id: '2413148418'
+  twitter: ItsKhoki
+  homepage: ''
+- name: Pablo Fajgelbaum
+  affiliation: UCLA
+  s2_id: '93561997'
+  twitter: ''
+  homepage: ''
+- name: Lorenzo Caliendo
+  affiliation: Yale SOM
+  s2_id: '2411522123'
+  twitter: ''
+  homepage: ''
+- name: Fernando Parro
+  affiliation: Penn State
+  s2_id: '2270933437'
+  twitter: ''
+  homepage: ''
+- name: Pol Antras
+  affiliation: Harvard
+  s2_id: '104157794'
+  twitter: ''
+  homepage: ''
+- name: Arnaud Costinot
+  affiliation: MIT
+  s2_id: '66125727'
+  twitter: ''
+  homepage: ''
+- name: Dave Donaldson
+  affiliation: MIT
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+- name: Jonathan Eaton
+  affiliation: Penn State
+  s2_id: '2289918'
+  twitter: ''
+  homepage: ''
+- name: Samuel Kortum
+  affiliation: Yale
+  s2_id: '39855208'
+  twitter: ''
+  homepage: ''
+- name: Costas Arkolakis
+  affiliation: Yale
+  s2_id: '71841281'
+  twitter: ''
+  homepage: ''
+- name: Treb Allen
+  affiliation: Dartmouth
+  s2_id: '2263419924'
+  twitter: ''
+  homepage: ''
+- name: Stephen Redding
+  affiliation: Princeton
+  s2_id: '2411440256'
+  twitter: ''
+  homepage: ''
+- name: Gene Grossman
+  affiliation: Princeton
+  s2_id: '2259036047'
+  twitter: ''
+  homepage: ''
+- name: Elhanan Helpman
+  affiliation: Harvard
+  s2_id: '2082874002'
+  twitter: ''
+  homepage: ''
+- name: Dani Rodrik
+  affiliation: Harvard Kennedy School
+  s2_id: '2247910637'
+  twitter: rodrikdani
+  homepage: ''
+- name: Paul Krugman
+  affiliation: CUNY
+  s2_id: '2068950243'
+  twitter: paulkrugman
+  homepage: ''
+- name: Chad Bown
+  affiliation: Peterson Institute
+  s2_id: '46221253'
+  twitter: ChadBown
+  homepage: ''
+- name: Douglas Irwin
+  affiliation: Dartmouth
+  s2_id: '2293844316'
+  twitter: DouglasIrwin
+  homepage: ''
+- name: David Weinstein
+  affiliation: Columbia
+  s2_id: '2300103619'
+  twitter: ''
+  homepage: ''
+- name: Andrew Bernard
+  affiliation: Dartmouth Tuck
+  s2_id: '2247847567'
+  twitter: ''
+  homepage: ''
+- name: Esteban Rossi-Hansberg
+  affiliation: U Chicago
+  s2_id: '1398698229'
+  twitter: ''
+  homepage: ''
+- name: 刘志阔
+  affiliation: 上海财经大学
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: false
+- name: 马弘
+  affiliation: 清华大学
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: false
+- name: 鞠建东
+  affiliation: 清华大学
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: false
+- name: 余淼杰
+  affiliation: 辽宁大学
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: false

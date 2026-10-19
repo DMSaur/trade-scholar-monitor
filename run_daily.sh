@@ -12,6 +12,8 @@ mkdir -p logs
 LOG="logs/$(date +%Y-%m-%d).log"
 
 echo "---- $(date '+%F %T') 开始 ----" >> "$LOG"
+# 拉取仓库最新配置（学者名单在 Vault 侧编辑后推送，这里同步）
+git pull --ff-only origin main >> "$LOG" 2>&1 || echo "git pull 失败，用本地版本继续" >> "$LOG"
 "$PYENV_PY" scripts/main.py "$@" >> "$LOG" 2>&1 || {
   echo "main.py 失败，详见 $LOG" >&2
   exit 1

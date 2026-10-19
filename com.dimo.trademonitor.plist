@@ -7,13 +7,12 @@
 
     <key>ProgramArguments</key>
     <array>
-        <string>/bin/zsh</string>
-        <string>-c</string>
-        <string>/Users/dimo/Documents/Obsidian\ Vault/03-Research/前沿文献监控/run_daily.sh</string>
+        <string>/bin/bash</string>
+        <string>/Users/dimo/.trade-monitor/run_daily.sh</string>
     </array>
 
     <key>WorkingDirectory</key>
-    <string>/Users/dimo/Documents/Obsidian Vault/03-Research/前沿文献监控</string>
+    <string>/Users/dimo/.trade-monitor</string>
 
     <key>StartCalendarInterval</key>
     <dict>
@@ -24,9 +23,9 @@
     </dict>
 
     <key>StandardOutPath</key>
-    <string>/Users/dimo/Documents/Obsidian Vault/03-Research/前沿文献监控/logs/launchd.out</string>
+    <string>/Users/dimo/.trade-monitor/logs/launchd.out</string>
     <key>StandardErrorPath</key>
-    <string>/Users/dimo/Documents/Obsidian Vault/03-Research/前沿文献监控/logs/launchd.err</string>
+    <string>/Users/dimo/.trade-monitor/logs/launchd.err</string>
 
     <key>EnvironmentVariables</key>
     <dict>
