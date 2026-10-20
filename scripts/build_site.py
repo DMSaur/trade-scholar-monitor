@@ -6,7 +6,7 @@ from datetime import datetime
 
 import db
 
-WINDOW_DAYS = 30
+WINDOW_DAYS = 180
 
 SOURCE_LABEL = {"top5": "Top-5 期刊", "nber": "NBER", "scholar": "学者论文", "tweet": "推文"}
 JOURNAL_SHORT = {"AER", "QJE", "JPE", "ECMA", "REStud"}
@@ -214,6 +214,7 @@ footer a{color:var(--sub)}
   <div class="seg" id="rangeSeg" aria-label="时间范围">
     <button data-range="7" aria-pressed="false">近 7 天</button>
     <button data-range="30" aria-pressed="true">近 30 天</button>
+    <button data-range="180" aria-pressed="false">半年</button>
   </div>
   <input id="search" type="search" placeholder="搜索标题、作者、摘要…" aria-label="搜索">
   <select id="scholarFilter" aria-label="按学者筛选"><option value="">全部学者</option></select>
@@ -250,19 +251,15 @@ function daysAgo(dateStr){
   return Math.floor((Date.now() - dt.getTime()) / 86400000);
 }
 
-/* 顶部统计与学者下拉 */
+/* 顶部统计与学者下拉（计数随筛选联动，在 render 里更新） */
 (function init(){
   const meta = document.getElementById('metaRow');
-  const counts = {top5:0, nber:0, scholar:0, tweet:0};
-  DATA.items.forEach(it => counts[it.source]++);
   meta.innerHTML = `
     <span class="chip">数据截至 <b>${DATA.generated_at}</b></span>
-    <span class="chip"><span class="dot top5"></span>Top-5 <b>${counts.top5}</b></span>
-    <span class="chip"><span class="dot nber"></span>NBER <b>${counts.nber}</b></span>
-    <span class="chip"><span class="dot scholar"></span>学者论文 <b>${counts.scholar}</b></span>
-    <span class="chip"><span class="dot tweet"></span>推文 <b>${counts.tweet}</b></span>`;
-  document.getElementById('footMeta').textContent =
-    `展示最近 ${DATA.window_days} 天条目，共 ${DATA.items.length} 条。`;
+    <span class="chip"><span class="dot top5"></span>Top-5 <b id="c-top5">0</b></span>
+    <span class="chip"><span class="dot nber"></span>NBER <b id="c-nber">0</b></span>
+    <span class="chip"><span class="dot scholar"></span>学者论文 <b id="c-scholar">0</b></span>
+    <span class="chip"><span class="dot tweet"></span>推文 <b id="c-tweet">0</b></span>`;
 
   const names = new Map();
   DATA.items.forEach(it => {
@@ -277,15 +274,13 @@ function daysAgo(dateStr){
   });
 })();
 
-/* 板块 tab */
+/* 板块 tab（计数随筛选联动） */
 (function initTabs(){
   const tabs = document.getElementById('tabs');
-  const counts = {all:DATA.items.length, top5:0, nber:0, scholar:0, tweet:0};
-  DATA.items.forEach(it => counts[it.source]++);
   tabs.innerHTML = SOURCES.map(s => `
     <button class="tab" role="tab" data-tab="${s.key}"
       aria-pressed="${s.key===state.tab}">
-      ${s.label}<span class="n">${counts[s.key]}</span></button>`).join('');
+      ${s.label}<span class="n"></span></button>`).join('');
   tabs.addEventListener('click', e => {
     const btn = e.target.closest('.tab');
     if(!btn) return;
@@ -311,14 +306,17 @@ document.getElementById('scholarFilter').addEventListener('change', e => {
   state.scholar = e.target.value; render();
 });
 
-function matchItem(it){
-  if(state.tab !== 'all' && it.source !== state.tab) return false;
+function matchBase(it){
+  /* 时间范围 + 搜索 + 学者筛选（不含板块） */
   const d = daysAgo(it.date);
-  if(d > state.range || d < 0) return false;
+  if(isNaN(d) || d > state.range || d < 0) return false;
   if(state.scholar && (!it.extra || it.extra.scholar_name !== state.scholar)) return false;
   if(state.q){
+    const e = it.extra || {};
     const hay = [it.title, it.authors, it.venue, it.summary_zh,
-                 it.abstract || '', (it.tags||[]).join(' ')].join(' ').toLowerCase();
+                 it.abstract || '', (it.tags||[]).join(' '),
+                 e.scholar_name || '', e.handle || '', e.nber_id || '',
+                 e.journal_short || ''].join(' ').toLowerCase();
     if(!hay.includes(state.q)) return false;
   }
   return true;
@@ -375,18 +373,50 @@ function esc(s){
     .replace(/"/g,'&quot;');
 }
 
+function rangeLabel(r){
+  return r === 180 ? '近半年' : (r === 7 ? '近 7 天' : '近 30 天');
+}
+
+function groupLabel(dateStr){
+  /* 半年视图按月分组，其余按日分组 */
+  if(!dateStr) return '日期未知';
+  if(state.range > 60){
+    const dt = new Date(dateStr + 'T00:00:00');
+    return `${dt.getFullYear()}年${dt.getMonth()+1}月`;
+  }
+  return fmtDate(dateStr);
+}
+
 function render(){
   const list = document.getElementById('list');
-  const items = DATA.items.filter(matchItem);
+  const base = DATA.items.filter(matchBase);
+
+  /* 板块 tab 计数与顶部统计随筛选联动 */
+  const perSource = {top5:0, nber:0, scholar:0, tweet:0};
+  base.forEach(it => perSource[it.source]++);
+  document.querySelectorAll('#tabs .tab').forEach(btn => {
+    const k = btn.dataset.tab;
+    const n = k === 'all' ? base.length : perSource[k];
+    btn.querySelector('.n').textContent = n;
+  });
+  ['top5','nber','scholar','tweet'].forEach(k => {
+    document.getElementById('c-'+k).textContent = perSource[k];
+  });
+  document.getElementById('footMeta').textContent =
+    `当前筛选 ${rangeLabel(state.range)}，共 ${base.length} 条；数据共覆盖近半年。`;
+
+  const items = state.tab === 'all' ? base
+    : base.filter(it => it.source === state.tab);
   if(!items.length){
     list.innerHTML = '<p class="empty">该筛选条件下暂无条目。</p>';
     return;
   }
-  let html = '', lastDate = '';
+  let html = '', lastGroup = '';
   items.forEach(it => {
-    if(it.date !== lastDate){
-      lastDate = it.date;
-      html += `<div class="datehead">${fmtDate(it.date)}</div>`;
+    const g = groupLabel(it.date);
+    if(g !== lastGroup){
+      lastGroup = g;
+      html += `<div class="datehead">${g}</div>`;
     }
     html += cardHTML(it);
   });
