@@ -227,3 +227,21 @@ scholars:
   twitter: ''
   homepage: ''
   enabled: false
+- name: Michael Pettis
+  affiliation: Carnegie Endowment
+  s2_id: ''
+  twitter: michaelxpettis
+  homepage: ''
+  enabled: true
+- name: Soumaya Keynes
+  affiliation: Financial Times
+  s2_id: ''
+  twitter: SoumayaKeynes
+  homepage: ''
+  enabled: true
+- name: Michael Clemens
+  affiliation: Johns Hopkins / PIIE
+  s2_id: ''
+  twitter: m_clem
+  homepage: ''
+  enabled: true

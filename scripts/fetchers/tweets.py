@@ -28,7 +28,7 @@ def _parse_time(s: str) -> datetime | None:
     return None
 
 
-def fetch_handle(handle: str, days: int, count: int = 40) -> list[dict]:
+def fetch_handle(handle: str, days: int, count: int = 100) -> list[dict]:
     """抓单个学者的时间线，返回窗口内的推文。"""
     cmd = ["xreach", "tweets", handle, "-n", str(count), "--format", "json",
            "--timeout", "30000"]
