@@ -86,5 +86,12 @@ scholars_list = [
     {"name": "Chad Bown", "s2_id": "", "twitter": "ChadBown"},
     {"name": "Dani Rodrik", "s2_id": "", "twitter": "rodrikdani"},
 ]
+# 写到临时目录，避免污染真实 docs/（build_site 通过 db.ROOT 定位输出目录）
+import build_site as bs
+from pathlib import Path as _P
+import shutil as _sh
+bs.db.ROOT = _P(tempfile.mkdtemp())
+(bs.db.ROOT / "docs").mkdir(parents=True, exist_ok=True)
 build(conn, scholars_list)
-print("mock 页面已生成 ->", ROOT / "docs" / "index.html")
+_sh.copy(bs.db.ROOT / "docs" / "index.html", "/tmp/mock_index.html")
+print("mock 页面已生成 -> /tmp/mock_index.html")
