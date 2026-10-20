@@ -44,12 +44,16 @@ def fetch(start_date: str, keywords: list) -> list[dict]:
                  for a in w.get("authorships", [])][:6]
         landing = ((w.get("primary_location") or {})
                    .get("landing_page_url") or "")
-        m = NBER_ID.search(landing)
+        doi = w.get("doi") or ""
+        # NBER 的 DOI 固定为 10.3386/w编号，比落地页更可靠
+        m = (re.search(r"10\.3386/(w\d+[a-z]?)", doi, re.I)
+             or NBER_ID.search(landing))
         wid = m.group(1).lower() if m else ""
         url = (f"https://www.nber.org/papers/{wid}" if wid
-               else (w.get("doi") or w["id"]))
+               else (doi or w["id"]))
+        nber_label = wid.upper() if wid else ""
         if not wid:
-            # 位置页没给 NBER 编号时用 OpenAlex 内部编号做去重键
+            # 没有 NBER 编号时用 OpenAlex 内部编号做去重键
             wid = w["id"].rsplit("/", 1)[-1]
         items.append({
             "uid": f"nber:{wid}",
@@ -60,7 +64,7 @@ def fetch(start_date: str, keywords: list) -> list[dict]:
             "url": url,
             "date": w.get("publication_date"),
             "abstract": abstract[:4000],
-            "extra": {"nber_id": wid.upper(), "keyword_hit": hit},
+            "extra": {"nber_id": nber_label, "keyword_hit": hit},
             "relevant": True,
         })
     return items
