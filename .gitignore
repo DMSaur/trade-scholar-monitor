@@ -17,3 +17,6 @@ scripts/bootstrap.sh
 # 网页生成物只在运行时提交
 docs/index.html
 docs/data/latest.json
+
+# 运行时本地状态，不入库（运行时克隆是唯一权威副本）
+data/
