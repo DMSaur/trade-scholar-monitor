@@ -26,7 +26,7 @@
        3. 学者最新论文   OpenAlex 按作者 ID（每人一天一次请求，日期可靠）；
                          失败时自动降级 Semantic Scholar 批量接口
        4. 学者推文       xreach CLI 按学者 handle 抓时间线
-       5. DashScope 生成一句中文摘要 + 主题标签；Top-5/NBER 同时做
+       5. DeepSeek 生成中文标题翻译、一句摘要和主题标签；Top-5/NBER 同时做
           贸易相关性二筛（关键词命中的候选由模型确认，非贸易的隐藏）
     → docs/index.html（内联数据；论文按归一标题去重，期刊版优先）
     → git commit + push → GitHub Pages 自动发布
@@ -69,8 +69,9 @@ scripts/main.py --no-tweets     # 跳过推文（代理没开时用）
   直连/本地代理双路自动切换 + 退避重试；配置 `OPENALEX_API_KEY` 后独享
   每天 1000 次，问题根治。key 在 https://openalex.org/settings/api-key
   （用复旦邮箱登录，已有账号）。
-- **中文摘要暂未生效**：DashScope key 欠费（Arrearage）。充值或换 key 填进
-  `.env` 后自动生效；代码有熔断，key 不可用时不会拖慢抓取。
+- **中文摘要**：DeepSeek（Anthropic 兼容接口），凭据在 `.env` 的
+  `ANTHROPIC_BASE_URL / ANTHROPIC_AUTH_TOKEN / ANTHROPIC_MODEL` 三项。
+  换其他兼容服务商时改这三行即可。代码有熔断，接口不可用时不会拖慢抓取。
 - **S2 学者同名分裂档案**：s2_id 一律取 hIndex 最高的主档案
   （scripts/resolve_s2_main.py 的解析结果）。若某学者论文明显偏少，
   重新跑一次该脚本即可。
