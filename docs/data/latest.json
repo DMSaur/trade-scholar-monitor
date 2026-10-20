@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21 00:44",
+ "generated_at": "2026-10-21 00:49",
  "window_days": 180,
  "items": [
   {
@@ -671,9 +671,12 @@
    "url": "https://x.com/ChadBown/status/2110442427215474877",
    "date": "2026-10-14",
    "abstract": "AHOY!!!!  It was such a huge privilege to moderate Trade Policy Day 2026 at the European Commission. Congratulations to DG TRADE for their transparency and willingness to host such important (and not easy!) conversations about Economic Security in front of 500+ European trade nerds all now confronting today’s choppy seas.\n\nhttps://t.co/XBNBnR5RWy",
-   "summary_zh": "",
+   "summary_zh": "主持欧盟委员会2026贸易政策日，肯定DG TRADE透明主办500余人经济安全讨论。",
    "title_zh": "",
-   "tags": [],
+   "tags": [
+    "贸易政策",
+    "其他"
+   ],
    "extra": {
     "handle": "ChadBown",
     "name": "Chad P. Bown",
@@ -2115,23 +2118,6 @@
    }
   },
   {
-   "uid": "nber:W7171536642",
-   "source": "nber",
-   "title": "A Theory of International Official Lending",
-   "authors": "Qing Liu, Zanhui Liu, Vivian Yue",
-   "venue": "NBER Working Paper",
-   "url": "https://doi.org/10.3386/w35667",
-   "date": "2026-08-01",
-   "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
-   "extra": {
-    "nber_id": "W7171536642",
-    "keyword_hit": "import"
-   }
-  },
-  {
    "uid": "oa:W7171931391",
    "source": "top5",
    "title": "From Heterogeneous Firms to Heterogeneous Trade Elasticities: The Aggregate Implications of Firm Export Decisions",
@@ -2535,23 +2521,6 @@
    }
   },
   {
-   "uid": "nber:W7168184687",
-   "source": "nber",
-   "title": "Choice Between Public and Private Healthcare Systems: Evidence from Veterans",
-   "authors": "Marika Cabral, David C. Chan, Seth Neller",
-   "venue": "NBER Working Paper",
-   "url": "https://doi.org/10.3386/w35440",
-   "date": "2026-07-01",
-   "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
-   "extra": {
-    "nber_id": "W7168184687",
-    "keyword_hit": "import"
-   }
-  },
-  {
    "uid": "nber:W7168134432",
    "source": "nber",
    "title": "What Do Asset Prices in April 2025 Say About Demand for the Dollar?",
@@ -2664,9 +2633,12 @@
    "url": "https://doi.org/10.3386/w35392",
    "date": "2026-06-01",
    "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
+   "summary_zh": "构建历史普查-专利数据和空间增长模型，发现1880—1920年移民潮通过集聚创新中心显著提升美国人均收入。",
+   "title_zh": "移民、创新与增长的地理",
+   "tags": [
+    "劳动力市场",
+    "其他"
+   ],
    "extra": {
     "nber_id": "W7166526698",
     "keyword_hit": "comparative advantage",
@@ -2959,42 +2931,6 @@
    }
   },
   {
-   "uid": "oa:W7160824062",
-   "source": "top5",
-   "title": "Counterfactual Analysis for Structural Dynamic Discrete Choice Models",
-   "authors": "Myrto Kalouptsidi, Yuichi Kitamura, Lucas Lima, Eduardo Souza-Rodrigues",
-   "venue": "The Review of Economic Studies",
-   "url": "https://doi.org/10.1093/restud/rdag039",
-   "date": "2026-05-08",
-   "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
-   "extra": {
-    "journal_short": "REStud",
-    "keyword_hit": "export",
-    "doi": "10.1093/restud/rdag039"
-   }
-  },
-  {
-   "uid": "oa:W7164754110",
-   "source": "scholar",
-   "title": "James A. Brander: A tribute",
-   "authors": "Douglas A. Irwin",
-   "venue": "Canadian Journal of Economics/Revue canadienne d économique",
-   "url": "https://doi.org/10.1111/caje.70064",
-   "date": "2026-05-01",
-   "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
-   "extra": {
-    "scholar_name": "Douglas Irwin",
-    "work_type": "article",
-    "doi": "10.1111/caje.70064"
-   }
-  },
-  {
    "uid": "oa:W7161175759",
    "source": "scholar",
    "title": "Multilateral Export Control Regimes and Aggregate Exports",
@@ -3066,9 +3002,11 @@
    "url": "https://doi.org/10.3386/w35285",
    "date": "2026-05-01",
    "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
+   "summary_zh": "检验进口竞争能否解释美国制造业生产率增长消失；摘要仅含致谢，未提供方法与核心发现。",
+   "title_zh": "进口入侵能否解释美国制造业生产率增长的神秘消失？",
+   "tags": [
+    "其他"
+   ],
    "extra": {
     "nber_id": "W7162989617",
     "keyword_hit": "import"
@@ -3104,9 +3042,12 @@
    "url": "https://doi.org/10.3386/w35209",
    "date": "2026-05-01",
    "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
+   "summary_zh": "研究全球供应链中断下的货币政策传导，构建物流瓶颈模型并用门槛VAR与局部投影，发现紧缩更抑价且产出代价更小。",
+   "title_zh": "全球供应链中断期间货币政策的状态依赖性",
+   "tags": [
+    "供应链",
+    "方法论"
+   ],
    "extra": {
     "nber_id": "W7162333583",
     "keyword_hit": "global supply chain"
@@ -3138,9 +3079,12 @@
    "url": "https://doi.org/10.3386/w35164",
    "date": "2026-05-01",
    "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
+   "summary_zh": "构建含商品进出口的开放经济模型，发现最优货币与汇率框架取决于经济体商品暴露程度。",
+   "title_zh": "中央银行应如何应对商品价格冲击？商品暴露经济体的最优货币与汇率框架",
+   "tags": [
+    "汇率",
+    "其他"
+   ],
    "extra": {
     "nber_id": "W7162324111",
     "keyword_hit": "export"
@@ -3155,9 +3099,13 @@
    "url": "https://doi.org/10.3386/w35242",
    "date": "2026-05-01",
    "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
+   "summary_zh": "用1960—2024年145个经济体动态增长模型，发现全球碎片化下地缘经济联结增强开放的投资—增长转化与抗冲击能力。",
+   "title_zh": "全球碎片化下的比较优势与开放：过去65年的教训",
+   "tags": [
+    "全球价值链",
+    "供应链",
+    "贸易政策"
+   ],
    "extra": {
     "nber_id": "W7162316490",
     "keyword_hit": "comparative advantage"
@@ -3181,23 +3129,6 @@
    }
   },
   {
-   "uid": "nber:W7162299807",
-   "source": "nber",
-   "title": "Complex Modern Portfolio Theory",
-   "authors": "Oliver Hellum, Theis Jensen, Bryan Kelly, Semyon Malamud",
-   "venue": "NBER Working Paper",
-   "url": "https://doi.org/10.3386/w35246",
-   "date": "2026-05-01",
-   "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
-   "extra": {
-    "nber_id": "W7162299807",
-    "keyword_hit": "import"
-   }
-  },
-  {
    "uid": "nber:W7161601514",
    "source": "nber",
    "title": "Global Policy Spillovers: How Environmental Policies Propagate through Product Attributes",
@@ -3215,57 +3146,6 @@
    }
   },
   {
-   "uid": "nber:W7161585387",
-   "source": "nber",
-   "title": "Intertemporal Arbitrage and Optimal Operation of Pumped Hydro Energy Storage",
-   "authors": "Isabel Figuerola–Ferretti, Eduardo Schwartz",
-   "venue": "NBER Working Paper",
-   "url": "https://doi.org/10.3386/w35201",
-   "date": "2026-05-01",
-   "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
-   "extra": {
-    "nber_id": "W7161585387",
-    "keyword_hit": "import"
-   }
-  },
-  {
-   "uid": "nber:W7161566507",
-   "source": "nber",
-   "title": "Fiscal Policy and Transition Risk",
-   "authors": "Stefano Carattini, Garth Heutel, Givi Melkadze, Inès Mourelon",
-   "venue": "NBER Working Paper",
-   "url": "https://doi.org/10.3386/w35202",
-   "date": "2026-05-01",
-   "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
-   "extra": {
-    "nber_id": "W7161566507",
-    "keyword_hit": "import"
-   }
-  },
-  {
-   "uid": "nber:W7161547571",
-   "source": "nber",
-   "title": "Trust, Financial Literacy, and Financial Behaviors: Shaping Retirement Security",
-   "authors": "Maya Haran Rosen, Annamaria Lusardi, Olivia S. Mitchell",
-   "venue": "NBER Working Paper",
-   "url": "https://doi.org/10.3386/w35220",
-   "date": "2026-05-01",
-   "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
-   "extra": {
-    "nber_id": "W7161547571",
-    "keyword_hit": "import"
-   }
-  },
-  {
    "uid": "nber:W7160827704",
    "source": "nber",
    "title": "On the Negative Consequences of Low-Wage Offshoring for Innovation",
@@ -3274,29 +3154,16 @@
    "url": "https://doi.org/10.3386/w35167",
    "date": "2026-05-01",
    "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
+   "summary_zh": "基于加拿大企业数据与移份额工具变量，发现对华中间品离岸外包使研发支出下降15%。",
+   "title_zh": "低工资离岸外包对创新的负面后果",
+   "tags": [
+    "全球价值链",
+    "供应链",
+    "企业异质性"
+   ],
    "extra": {
     "nber_id": "W7160827704",
     "keyword_hit": "offshoring"
-   }
-  },
-  {
-   "uid": "nber:W4408099860",
-   "source": "nber",
-   "title": "Defining Innovatisation: The Case of NewSpace and the Changing Space Sector",
-   "authors": "Benoit Cornet, Dominique Foray, Marc-André Chavy-Macdonald",
-   "venue": "NBER Working Paper",
-   "url": "https://doi.org/10.3386/w35254",
-   "date": "2026-05-01",
-   "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
-   "extra": {
-    "nber_id": "W4408099860",
-    "keyword_hit": "import"
    }
   }
  ]
