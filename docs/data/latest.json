@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21 00:25",
+ "generated_at": "2026-10-21 00:44",
  "window_days": 180,
  "items": [
   {
@@ -115,9 +115,12 @@
    "url": "https://x.com/michaelxpettis/status/2112383326203847159",
    "date": "2026-10-20",
    "abstract": "Xinhua: \"Manufacturing accounted for 25.7 percent of GDP in the first three quarters, up 0.6 percentage points from a year earlier. Meanwhile, German automobile giant Volkswagen, is shifting its strategy from \"in China, for China\" to \"in China, beyond China,\" with cars produced in China already exported to the Middle East and Central Asia.\"\nhttps://t.co/V3JFNiZ1S2",
-   "summary_zh": "",
+   "summary_zh": "中国制造业占GDP25.7%、同比升0.6个百分点；大众转向“在中国，为全球”，中国产车出口中东和中亚。",
    "title_zh": "",
-   "tags": [],
+   "tags": [
+    "全球价值链",
+    "供应链"
+   ],
    "extra": {
     "handle": "michaelxpettis",
     "name": "Michael Pettis",
@@ -509,9 +512,12 @@
    "url": "https://x.com/ChadBown/status/2111199694324179439",
    "date": "2026-10-16",
    "abstract": "RT @fbermingham: Confirmed: von der Leyen tells press conference following the European Council the EU will develop a new weapon to \"immedi…",
-   "summary_zh": "",
+   "summary_zh": "转推确认：冯德莱恩称欧盟将在欧洲理事会后开发一种新武器，原文截断。",
    "title_zh": "",
-   "tags": [],
+   "tags": [
+    "贸易政策",
+    "制裁"
+   ],
    "extra": {
     "handle": "ChadBown",
     "name": "Chad P. Bown",
@@ -954,9 +960,12 @@
    "url": "https://doi.org/10.24149/wp2634",
    "date": "2026-09-23",
    "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
+   "summary_zh": "无摘要；从标题看，研究人力资本在不同空间中的积累机制与分布。",
+   "title_zh": "跨空间的人力资本积累",
+   "tags": [
+    "其他",
+    "劳动力市场"
+   ],
    "extra": {
     "scholar_name": "Esteban Rossi-Hansberg",
     "work_type": "article",
@@ -1551,24 +1560,6 @@
    }
   },
   {
-   "uid": "oa:W7207648689",
-   "source": "scholar",
-   "title": "Supply Shocks in a Heterogeneous-Firm New Keynesian Model: The Entry Multiplier",
-   "authors": "Florin Ovidiu Bilbiie, Marc Melitz",
-   "venue": "预印本",
-   "url": "https://doi.org/10.21034/iwp.132",
-   "date": "2026-09-03",
-   "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
-   "extra": {
-    "scholar_name": "Marc Melitz",
-    "work_type": "preprint",
-    "doi": "10.21034/iwp.132"
-   }
-  },
-  {
    "uid": "tweet:2094604473947615654",
    "source": "tweet",
    "title": "Goodbye to one of the greats, my advisor Jeff Williamson (1935–2026) Jeff your unstoppable intellect &amp; excitement were contagious. I owe",
@@ -1616,25 +1607,89 @@
    }
   },
   {
-   "uid": "oa:W7213904344",
-   "source": "scholar",
+   "uid": "nber:W7213904344",
+   "source": "nber",
    "title": "The Remains of the Trade: The U.S.–China Trade War and its Aftermath",
    "authors": "Pol Antràs, Adrian Kulesza, Andrea Presbitero",
-   "venue": "National Bureau of Economic Research",
+   "venue": "NBER Working Paper",
    "url": "https://doi.org/10.3386/w35785",
    "date": "2026-09-01",
    "abstract": "",
-   "summary_zh": "研究美中贸易战及其余波，梳理贸易政策冲击与后续调整（摘要未提供方法及发现）。",
-   "title_zh": "贸易的残骸：美中贸易战及其余波",
+   "summary_zh": "围绕中美贸易战及其后续影响展开分析，梳理贸易政策变化与经济后果。",
+   "title_zh": "贸易的余波：中美贸易战及其后果",
    "tags": [
     "贸易战",
+    "贸易政策",
+    "关税"
+   ],
+   "extra": {
+    "nber_id": "W7213904344",
+    "keyword_hit": "trade war",
+    "versions": [
+     "scholar"
+    ]
+   }
+  },
+  {
+   "uid": "nber:W7214620631",
+   "source": "nber",
+   "title": "Shipping to America",
+   "authors": "Xiwen Bai, Jesús Fernández‐Villaverde, Yiliang Li, Ricardo Marto, Francesco Zanetti",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35808",
+   "date": "2026-09-01",
+   "abstract": "",
+   "summary_zh": "利用卫星船舶数据构建美线运力指标并嵌入一般均衡模型，发现航运中断福利成本显著，关税可缓解拥堵并改变福利。",
+   "title_zh": "运往美国",
+   "tags": [
+    "供应链",
     "关税",
     "贸易政策"
    ],
    "extra": {
-    "scholar_name": "Pol Antras",
-    "work_type": "report",
-    "doi": "10.3386/w35785"
+    "nber_id": "W7214620631",
+    "keyword_hit": "tariff"
+   }
+  },
+  {
+   "uid": "nber:W7214602775",
+   "source": "nber",
+   "title": "Importers, Market Power and Optimal Tariffs",
+   "authors": "Jonathan Becker, Corina Boar, Virgiliu Midrigan",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35829",
+   "date": "2026-09-01",
+   "abstract": "",
+   "summary_zh": "构建进口商具有市场势力的模型研究最优关税，校准发现最优关税为负并随国家规模下降。",
+   "title_zh": "进口商、市场势力与最优关税",
+   "tags": [
+    "关税",
+    "贸易政策",
+    "企业异质性"
+   ],
+   "extra": {
+    "nber_id": "W7214602775",
+    "keyword_hit": "tariff"
+   }
+  },
+  {
+   "uid": "nber:W7214598548",
+   "source": "nber",
+   "title": "Transportation Bottlenecks and Aggregate Shocks",
+   "authors": "Giulia Brancaccio, Myrto Kalouptsidi, Theodore Papageorgiou, Yixin Zhou",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35812",
+   "date": "2026-09-01",
+   "abstract": "",
+   "summary_zh": "用海运排队网络模型分析运输瓶颈对价格与国际贸易的影响，发现港口瓶颈在大供应链中断中推高商品价格。",
+   "title_zh": "运输瓶颈与总体冲击",
+   "tags": [
+    "供应链",
+    "方法论"
+   ],
+   "extra": {
+    "nber_id": "W7214598548",
+    "keyword_hit": "international trade"
    }
   },
   {
@@ -1646,9 +1701,12 @@
    "url": "https://doi.org/10.1093/epolic/eiag013",
    "date": "2026-08-31",
    "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
+   "summary_zh": "研究制裁下金融抑制在货币市场的运用，比较外汇干预与常规政策，发现其虽损福利但可用于财政再分配，金融孤立会增强其效果。",
+   "title_zh": "制裁下的金融抑制与货币市场",
+   "tags": [
+    "制裁",
+    "汇率"
+   ],
    "extra": {
     "scholar_name": "Oleg Itskhoki",
     "work_type": "article",
@@ -1873,24 +1931,26 @@
    }
   },
   {
-   "uid": "oa:W7203596055",
-   "source": "scholar",
+   "uid": "nber:W7203596055",
+   "source": "nber",
    "title": "Dynamic Effects of Trade",
    "authors": "Benny Kleinman, Ernest Liu, Stephen J. Redding",
-   "venue": "National Bureau of Economic Research",
+   "venue": "NBER Working Paper",
    "url": "https://doi.org/10.3386/w35595",
    "date": "2026-08-01",
    "abstract": "",
-   "summary_zh": "梳理贸易动态效应，分析资本积累、技术创新与市场失灵如何改变贸易自由化的短期和长期福利。",
+   "summary_zh": "研究贸易自由化的动态福利效应，分析资本积累、技术采用与转型动态如何放大或改变静态贸易收益。",
    "title_zh": "贸易的动态效应",
    "tags": [
     "贸易政策",
-    "产业政策"
+    "其他"
    ],
    "extra": {
-    "scholar_name": "Stephen Redding",
-    "work_type": "report",
-    "doi": "10.3386/w35595"
+    "nber_id": "W7203596055",
+    "keyword_hit": "international trade",
+    "versions": [
+     "scholar"
+    ]
    }
   },
   {
@@ -1915,27 +1975,160 @@
    }
   },
   {
-   "uid": "oa:W7172279813",
-   "source": "scholar",
+   "uid": "nber:W7168151625",
+   "source": "nber",
    "title": "Should We Tax Trade? A Pigouvian Perspective",
    "authors": "Arnaud Costinot, Iván Werning",
-   "venue": "The Journal of Economic Perspectives",
-   "url": "https://doi.org/10.1257/jep.20251491",
-   "date": "2026-08-01",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35461",
+   "date": "2026-07-01",
    "abstract": "",
-   "summary_zh": "构建最优贸易政策的庇古视角，统一关税、碳与地缘政治等征税理由，并辨明贸易干预与国内工具的适用条件。",
-   "title_zh": "是否应对贸易征税？一个庇古视角",
+   "summary_zh": "构建庇古视角统一分析最优贸易政策，厘清征税贸易的理由及何时应改用国内工具。",
+   "title_zh": "是否应对贸易征税？庇古视角",
    "tags": [
     "关税",
     "贸易政策"
    ],
    "extra": {
-    "scholar_name": "Arnaud Costinot",
-    "work_type": "article",
-    "doi": "10.1257/jep.20251491",
+    "nber_id": "W7168151625",
+    "keyword_hit": "trade policy",
     "versions": [
      "scholar"
     ]
+   }
+  },
+  {
+   "uid": "nber:W7204832989",
+   "source": "nber",
+   "title": "Fool's Gold? How the USD lost its Shine",
+   "authors": "Kai Arvai, Nuno Coimbra, Marco Pinchetti",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35669",
+   "date": "2026-08-01",
+   "abstract": "",
+   "summary_zh": "构建内生组合选择模型并结合经验证据，发现制裁风险上升削弱美元便利收益，推动官方储备转向黄金。",
+   "title_zh": "愚人金？美元如何失去光芒",
+   "tags": [
+    "制裁"
+   ],
+   "extra": {
+    "nber_id": "W7204832989",
+    "keyword_hit": "sanctions"
+   }
+  },
+  {
+   "uid": "nber:W7204826774",
+   "source": "nber",
+   "title": "Tariff-Dispersion Shocks: The Mean is the Variance",
+   "authors": "Stephanie Schmitt‐Grohé, Martı́n Uribe",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35661",
+   "date": "2026-08-01",
+   "abstract": "",
+   "summary_zh": "研究美国进口关税均值与离散度的共同波动及宏观影响，发现二者由共同冲击驱动，显著影响进口与贸易余额，对产出影响小。",
+   "title_zh": "关税离散度冲击：均值即方差",
+   "tags": [
+    "关税",
+    "贸易政策"
+   ],
+   "extra": {
+    "nber_id": "W7204826774",
+    "keyword_hit": "tariff"
+   }
+  },
+  {
+   "uid": "nber:W7204148991",
+   "source": "nber",
+   "title": "The Data Revolution, and Its Uses, in International Trade",
+   "authors": "David Atkin, Benjamin Faber",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35657",
+   "date": "2026-08-01",
+   "abstract": "",
+   "summary_zh": "分析大量贸易论文，梳理数据革命下研究转向量化建模，评估不同研究模式优劣并提出发展方向。",
+   "title_zh": "国际贸易中的数据革命及其应用",
+   "tags": [
+    "方法论"
+   ],
+   "extra": {
+    "nber_id": "W7204148991",
+    "keyword_hit": "international trade"
+   }
+  },
+  {
+   "uid": "nber:W7204134399",
+   "source": "nber",
+   "title": "Critical Minerals, Geopolitics, and the Green Transition",
+   "authors": "Tomás Domínguez-Iino, Jonathan Elliott, Allan J. Hsiao",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35654",
+   "date": "2026-08-01",
+   "abstract": "",
+   "summary_zh": "研究关键矿产全球贸易与政策干预的地缘政治影响，量化供应链脆弱性、政策溢出与卡特尔潜力。",
+   "title_zh": "关键矿产、地缘政治与绿色转型",
+   "tags": [
+    "供应链",
+    "贸易政策",
+    "全球价值链"
+   ],
+   "extra": {
+    "nber_id": "W7204134399",
+    "keyword_hit": "supply chain"
+   }
+  },
+  {
+   "uid": "nber:W7203642760",
+   "source": "nber",
+   "title": "Exchange Rates, Structural Change, and Productivity Growth",
+   "authors": "Paul R. Bergin, Woo Jin Choi, Ju Hyun Pyun",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35609",
+   "date": "2026-08-01",
+   "abstract": "",
+   "summary_zh": "结合实证与两国动态模型，发现储备积累和汇率低估通过重塑全球供应链提升本国制造业生产率，并影响贸易伙伴去工业化。",
+   "title_zh": "汇率、结构变迁与生产率增长",
+   "tags": [
+    "汇率",
+    "全球价值链",
+    "供应链"
+   ],
+   "extra": {
+    "nber_id": "W7203642760",
+    "keyword_hit": "global supply chain"
+   }
+  },
+  {
+   "uid": "nber:W7201883733",
+   "source": "nber",
+   "title": "Tariffs, Investment, and the Missing Trade Collapse",
+   "authors": "Francesco Ferrante, Andrea Prestipino, Andrea Raffo, Michael Waugh",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35630",
+   "date": "2026-08-01",
+   "abstract": "",
+   "summary_zh": "",
+   "title_zh": "",
+   "tags": [],
+   "extra": {
+    "nber_id": "W7201883733",
+    "keyword_hit": "tariff"
+   }
+  },
+  {
+   "uid": "nber:W7171536642",
+   "source": "nber",
+   "title": "A Theory of International Official Lending",
+   "authors": "Qing Liu, Zanhui Liu, Vivian Yue",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35667",
+   "date": "2026-08-01",
+   "abstract": "",
+   "summary_zh": "",
+   "title_zh": "",
+   "tags": [],
+   "extra": {
+    "nber_id": "W7171536642",
+    "keyword_hit": "import"
    }
   },
   {
@@ -2238,24 +2431,202 @@
    }
   },
   {
-   "uid": "oa:W7167460166",
-   "source": "scholar",
+   "uid": "nber:W7167460166",
+   "source": "nber",
    "title": "International Trade in an Uncertain World",
    "authors": "Benny Kleinman, Ernest Liu, Stephen J. Redding, David Xu",
-   "venue": "National Bureau of Economic Research",
+   "venue": "NBER Working Paper",
    "url": "https://doi.org/10.3386/w35416",
    "date": "2026-07-01",
    "abstract": "",
-   "summary_zh": "构建一般均衡不确定性下的贸易模型，考察双边韧性投资与贸易伙伴选择，发现风险轮廓影响贸易流与福利。",
+   "summary_zh": "构建不确定性下双边韧性投资的量化贸易模型，发现风险影响贸易流与福利，贸易开放可增或降收入波动。",
    "title_zh": "不确定世界中的国际贸易",
    "tags": [
-    "供应链",
-    "方法论"
+    "方法论",
+    "其他"
    ],
    "extra": {
-    "scholar_name": "Stephen Redding",
-    "work_type": "report",
-    "doi": "10.3386/w35416"
+    "nber_id": "W7167460166",
+    "keyword_hit": "international trade",
+    "versions": [
+     "scholar"
+    ]
+   }
+  },
+  {
+   "uid": "nber:W7172308510",
+   "source": "nber",
+   "title": "Long-Run Effects of H-1B Immigration on the U.S. Economy",
+   "authors": "Ran Abramitzky, Leah Platt Boustan, Ahmet Gulek, Jens Hainmueller",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35560",
+   "date": "2026-07-01",
+   "abstract": "",
+   "summary_zh": "利用H-1B配额扩张识别，发现H-1B暴露提高本土及既有移民收入，并沿供应链向下游传导。",
+   "title_zh": "H-1B移民对美国经济的长期影响",
+   "tags": [
+    "供应链",
+    "劳动力市场"
+   ],
+   "extra": {
+    "nber_id": "W7172308510",
+    "keyword_hit": "supply chain"
+   }
+  },
+  {
+   "uid": "nber:W7171382388",
+   "source": "nber",
+   "title": "The Environmental Costs of Sanctions: Flaring and Venting in Venezuela",
+   "authors": "Michele Fioretti, Kavanaugh FitzPatrick, Alessandro Iaria",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35512",
+   "date": "2026-07-01",
+   "abstract": "",
+   "summary_zh": "结合油田产量与卫星排放数据研究美国对委内瑞拉制裁，发现产量降约三分之二而每桶放空燃烧升约2.5倍。",
+   "title_zh": "制裁的环境成本：委内瑞拉的火炬燃烧与放空",
+   "tags": [
+    "制裁",
+    "其他"
+   ],
+   "extra": {
+    "nber_id": "W7171382388",
+    "keyword_hit": "sanctions"
+   }
+  },
+  {
+   "uid": "nber:W7169775321",
+   "source": "nber",
+   "title": "Supply Chain Risk, Trade and Economic Fragility",
+   "authors": "Juanma Castro-Vincenzi, Adry Gracio, Gaurav Khanna, Nitya Pandalai-Nayar",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35496",
+   "date": "2026-07-01",
+   "abstract": "",
+   "summary_zh": "构建多国多阶段模型研究供应链风险对生产、贸易与福利的影响，发现风险削弱比较优势并重配生产。",
+   "title_zh": "供应链风险、贸易与经济脆弱性",
+   "tags": [
+    "全球价值链",
+    "供应链"
+   ],
+   "extra": {
+    "nber_id": "W7169775321",
+    "keyword_hit": "supply chain"
+   }
+  },
+  {
+   "uid": "nber:W7168188486",
+   "source": "nber",
+   "title": "The Uneven Impact of Industrial Zones on Formal Job Creation in Vietnam",
+   "authors": "Brian McCaig, Margaret McMillan, Marina Mavungu Ngoma, Anh Pham",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35446",
+   "date": "2026-07-01",
+   "abstract": "",
+   "summary_zh": "匹配越南工业区设立时空与企业数据，发现新工业区七年内平均增2000正规岗位，但效应高度偏斜且集中于贸易枢纽。",
+   "title_zh": "越南工业区对正规就业创造的不均衡影响",
+   "tags": [
+    "产业政策",
+    "劳动力市场",
+    "其他"
+   ],
+   "extra": {
+    "nber_id": "W7168188486",
+    "keyword_hit": "export"
+   }
+  },
+  {
+   "uid": "nber:W7168184687",
+   "source": "nber",
+   "title": "Choice Between Public and Private Healthcare Systems: Evidence from Veterans",
+   "authors": "Marika Cabral, David C. Chan, Seth Neller",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35440",
+   "date": "2026-07-01",
+   "abstract": "",
+   "summary_zh": "",
+   "title_zh": "",
+   "tags": [],
+   "extra": {
+    "nber_id": "W7168184687",
+    "keyword_hit": "import"
+   }
+  },
+  {
+   "uid": "nber:W7168134432",
+   "source": "nber",
+   "title": "What Do Asset Prices in April 2025 Say About Demand for the Dollar?",
+   "authors": "Rohan Kekre, Moritz Lenel",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35466",
+   "date": "2026-07-01",
+   "abstract": "",
+   "summary_zh": "本文用组合平衡模型解读2025年4月美国关税公告后的汇率与收益率反应，发现美元债券需求下降解释了美元贬值与收益率上升。",
+   "title_zh": "2025年4月资产价格对美元需求意味着什么？",
+   "tags": [
+    "关税",
+    "汇率"
+   ],
+   "extra": {
+    "nber_id": "W7168134432",
+    "keyword_hit": "tariff"
+   }
+  },
+  {
+   "uid": "nber:W7168127881",
+   "source": "nber",
+   "title": "Financial Sanctions and the Global Payments Network",
+   "authors": "Gregor Matvos, Brent Neiman",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35453",
+   "date": "2026-07-01",
+   "abstract": "",
+   "summary_zh": "研究金融制裁如何通过代理行关系影响全球支付网络接入，发现制裁削弱目标银行连接并促使部分银行转向人民币。",
+   "title_zh": "金融制裁与全球支付网络",
+   "tags": [
+    "制裁",
+    "其他"
+   ],
+   "extra": {
+    "nber_id": "W7168127881",
+    "keyword_hit": "sanctions"
+   }
+  },
+  {
+   "uid": "nber:W7167514955",
+   "source": "nber",
+   "title": "Importing Aggregate Demand",
+   "authors": "Chen Lian, D. A. Mukhin, Christian K. Wolf",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35402",
+   "date": "2026-07-01",
+   "abstract": "",
+   "summary_zh": "",
+   "title_zh": "",
+   "tags": [],
+   "extra": {
+    "nber_id": "W7167514955",
+    "keyword_hit": "import"
+   }
+  },
+  {
+   "uid": "nber:W7167489275",
+   "source": "nber",
+   "title": "The Pass-through of Tariffs and Exchange Rates",
+   "authors": "Stéphane Auray A, Michael B. Devereux, Aurélien Eyquem",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35398",
+   "date": "2026-07-01",
+   "abstract": "",
+   "summary_zh": "本文分析贸易品计价货币如何影响关税的短期效应，发现PCP下关税紧缩且恶化贸易余额，LCP下扩张且改善，福利效应相反。",
+   "title_zh": "关税与汇率的传递效应",
+   "tags": [
+    "关税",
+    "汇率",
+    "贸易政策"
+   ],
+   "extra": {
+    "nber_id": "W7167489275",
+    "keyword_hit": "tariff"
    }
   },
   {
@@ -2279,29 +2650,29 @@
     "work_type": "report",
     "doi": "10.65864/gtlvqdh2cd",
     "versions": [
+     "nber",
      "scholar"
     ]
    }
   },
   {
-   "uid": "oa:W7166526698",
-   "source": "scholar",
+   "uid": "nber:W7166526698",
+   "source": "nber",
    "title": "Immigration, Innovation, and the Geography of Growth",
    "authors": "Costas Arkolakis, Sun Kyoung Lee, Michael Peters",
-   "venue": "National Bureau of Economic Research",
+   "venue": "NBER Working Paper",
    "url": "https://doi.org/10.3386/w35392",
    "date": "2026-06-01",
    "abstract": "",
-   "summary_zh": "研究1880—1920年美国移民潮如何通过城市创新中心促进创新与增长，并用空间增长模型量化收入效应。",
-   "title_zh": "移民、创新与增长的地理分布",
-   "tags": [
-    "劳动力市场",
-    "其他"
-   ],
+   "summary_zh": "",
+   "title_zh": "",
+   "tags": [],
    "extra": {
-    "scholar_name": "Costas Arkolakis",
-    "work_type": "report",
-    "doi": "10.3386/w35392"
+    "nber_id": "W7166526698",
+    "keyword_hit": "comparative advantage",
+    "versions": [
+     "scholar"
+    ]
    }
   },
   {
@@ -2327,6 +2698,89 @@
    }
   },
   {
+   "uid": "nber:W7166576958",
+   "source": "nber",
+   "title": "Labor Market Responses to Tariffs: Frictions, Dynamics, and Policy Responses",
+   "authors": "Rafael Dix-Carneiro, Brian K. Kovak",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35377",
+   "date": "2026-06-01",
+   "abstract": "",
+   "summary_zh": "综述贸易与关税冲击对劳动力市场的影响，强调调整摩擦与动态，并讨论缓释成本政策。",
+   "title_zh": "劳动力市场对关税的反应：摩擦、动态与政策应对",
+   "tags": [
+    "关税",
+    "劳动力市场",
+    "贸易政策"
+   ],
+   "extra": {
+    "nber_id": "W7166576958",
+    "keyword_hit": "tariff"
+   }
+  },
+  {
+   "uid": "nber:W7166559557",
+   "source": "nber",
+   "title": "Openness, Integration, and the International Monetary Order",
+   "authors": "Tarek A. Hassan, Thomas M. Mertens, Jingye Wang, Tony Zhang",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35386",
+   "date": "2026-06-01",
+   "abstract": "",
+   "summary_zh": "用一般均衡模型分析关税与资本管制如何重塑全球货币层级，深度贸易一体化决定锚货币地位。",
+   "title_zh": "开放、一体化与国际货币秩序",
+   "tags": [
+    "关税",
+    "贸易政策",
+    "汇率"
+   ],
+   "extra": {
+    "nber_id": "W7166559557",
+    "keyword_hit": "tariff"
+   }
+  },
+  {
+   "uid": "nber:W7163893342",
+   "source": "nber",
+   "title": "Falling Dominoes? The Impact of the US Exit from Free Trade on the Sustainability of Trade Cooperation",
+   "authors": "Barthélémy Bonadio, Andrei A. Levchenko, Nitya Pandalai-Nayar",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35303",
+   "date": "2026-06-01",
+   "abstract": "",
+   "summary_zh": "通过多国模型评估美国退出自由贸易对他国最优关税与贸易合作可持续性的影响，发现影响很小。",
+   "title_zh": "多米诺骨牌倒下？美国退出自由贸易对贸易合作可持续性的影响",
+   "tags": [
+    "关税",
+    "贸易政策",
+    "贸易协定"
+   ],
+   "extra": {
+    "nber_id": "W7163893342",
+    "keyword_hit": "international trade"
+   }
+  },
+  {
+   "uid": "nber:W7163871369",
+   "source": "nber",
+   "title": "Are carbon tariffs climate policy?",
+   "authors": "Gregory Casey, Kyle Meng, Ivan Rudik",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35307",
+   "date": "2026-06-01",
+   "abstract": "",
+   "summary_zh": "构建量化贸易模型比较美国碳关税与国内碳税组合政策，发现仅碳关税会推高美国排放且全球减排有限。",
+   "title_zh": "碳关税是气候政策吗？",
+   "tags": [
+    "关税",
+    "贸易政策"
+   ],
+   "extra": {
+    "nber_id": "W7163871369",
+    "keyword_hit": "tariff"
+   }
+  },
+  {
    "uid": "oa:W7162788892",
    "source": "scholar",
    "title": "Trade Diversion and Third-Country Adjustment in the U.S.–China Trade War",
@@ -2346,24 +2800,6 @@
     "scholar_name": "Stephen Redding",
     "work_type": "article",
     "doi": "10.25740/bj264qz0014"
-   }
-  },
-  {
-   "uid": "oa:W4312883125",
-   "source": "top5",
-   "title": "Spatial Spillovers of Conflict in Somalia",
-   "authors": "Marco Alfano, Thomas Cornelißen",
-   "venue": "American Economic Review",
-   "url": "https://doi.org/10.1257/aer.20231699",
-   "date": "2026-05-28",
-   "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
-   "extra": {
-    "journal_short": "AER",
-    "keyword_hit": "import",
-    "doi": "10.1257/aer.20231699"
    }
   },
   {
@@ -2442,6 +2878,45 @@
    }
   },
   {
+   "uid": "oa:W3144067810",
+   "source": "top5",
+   "title": "Technology Transfer and Early Industrial Development: Evidence from the Sino-Soviet Alliance",
+   "authors": "Michela Giorcelli, Bo Li",
+   "venue": "The Review of Economic Studies",
+   "url": "https://doi.org/10.1093/restud/rdag047",
+   "date": "2026-05-20",
+   "abstract": "",
+   "summary_zh": "",
+   "title_zh": "",
+   "tags": [],
+   "extra": {
+    "journal_short": "REStud",
+    "keyword_hit": "international trade",
+    "doi": "10.1093/restud/rdag047"
+   }
+  },
+  {
+   "uid": "oa:W7161175545",
+   "source": "top5",
+   "title": "Input Sourcing under Climate Risk: Evidence from U.S. Manufacturing Firms",
+   "authors": "Joaquin Blaum, Federico Esposito, Sebastian Heise",
+   "venue": "The Review of Economic Studies",
+   "url": "https://doi.org/10.1093/restud/rdag031",
+   "date": "2026-05-13",
+   "abstract": "",
+   "summary_zh": "基于美国制造业进口交易与海运时间波动，发现意外延误损害企业绩效，企业通过多路线多供应商分散风险，并量化供应链风险成本。",
+   "title_zh": "气候风险下的投入品采购：来自美国制造业企业的证据",
+   "tags": [
+    "供应链",
+    "企业异质性"
+   ],
+   "extra": {
+    "journal_short": "REStud",
+    "keyword_hit": "import",
+    "doi": "10.1093/restud/rdag031"
+   }
+  },
+  {
    "uid": "oa:W7161807627",
    "source": "scholar",
    "title": "The effects of trade policy uncertainty",
@@ -2450,9 +2925,12 @@
    "url": "https://doi.org/10.4337/9781035327508.00042",
    "date": "2026-05-12",
    "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
+   "summary_zh": "综述贸易政策不确定性对贸易与企业决策的影响，梳理测度方法及福利含义。",
+   "title_zh": "贸易政策不确定性的影响",
+   "tags": [
+    "贸易政策",
+    "企业异质性"
+   ],
    "extra": {
     "scholar_name": "Kyle Handley",
     "work_type": "reference-entry",
@@ -2478,6 +2956,24 @@
     "scholar_name": "Pol Antras",
     "work_type": "book-chapter",
     "doi": "10.7551/mitpress/15822.003.0036"
+   }
+  },
+  {
+   "uid": "oa:W7160824062",
+   "source": "top5",
+   "title": "Counterfactual Analysis for Structural Dynamic Discrete Choice Models",
+   "authors": "Myrto Kalouptsidi, Yuichi Kitamura, Lucas Lima, Eduardo Souza-Rodrigues",
+   "venue": "The Review of Economic Studies",
+   "url": "https://doi.org/10.1093/restud/rdag039",
+   "date": "2026-05-08",
+   "abstract": "",
+   "summary_zh": "",
+   "title_zh": "",
+   "tags": [],
+   "extra": {
+    "journal_short": "REStud",
+    "keyword_hit": "export",
+    "doi": "10.1093/restud/rdag039"
    }
   },
   {
@@ -2539,6 +3035,268 @@
     "scholar_name": "Oleg Itskhoki",
     "work_type": "article",
     "doi": "10.1016/j.jinteco.2026.104260"
+   }
+  },
+  {
+   "uid": "nber:W7163000338",
+   "source": "nber",
+   "title": "Geopolitical Fragmentation, Sovereign Debt, and Dollar Dominance",
+   "authors": "Felipe Benguria, Eugenio Rojas, Felipe Saffie",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35272",
+   "date": "2026-05-01",
+   "abstract": "",
+   "summary_zh": "构建模型表明，地缘政治碎片化经贸易壁垒与美元结算成本改变收入币种，流动性反馈可触发美元债向人民币债的自强化重组。",
+   "title_zh": "地缘政治碎片化、主权债务与美元主导地位",
+   "tags": [
+    "贸易政策",
+    "汇率"
+   ],
+   "extra": {
+    "nber_id": "W7163000338",
+    "keyword_hit": "export"
+   }
+  },
+  {
+   "uid": "nber:W7162989617",
+   "source": "nber",
+   "title": "Does the Import Invasion Explain the Mysterious Disappearance of Productivity Growth in U.S. Manufacturing?",
+   "authors": "Robert Gordon, Kenneth Ryu",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35285",
+   "date": "2026-05-01",
+   "abstract": "",
+   "summary_zh": "",
+   "title_zh": "",
+   "tags": [],
+   "extra": {
+    "nber_id": "W7162989617",
+    "keyword_hit": "import"
+   }
+  },
+  {
+   "uid": "nber:W7162343337",
+   "source": "nber",
+   "title": "The Price of Protection: Tariff Incidence and Import Collapse under the Infamous Smoot-Hawley Tariff",
+   "authors": "Kris James Mitchener, Mathieu O. Pedemonte",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35249",
+   "date": "2026-05-01",
+   "abstract": "",
+   "summary_zh": "利用新数字化月度进口与关税数据，估计斯姆特-霍利关税的进口下降、关税归宿与福利损失。",
+   "title_zh": "保护的价格：臭名昭著的斯姆特-霍利关税下的关税归宿与进口崩溃",
+   "tags": [
+    "关税",
+    "贸易弹性",
+    "贸易史"
+   ],
+   "extra": {
+    "nber_id": "W7162343337",
+    "keyword_hit": "tariff"
+   }
+  },
+  {
+   "uid": "nber:W7162333583",
+   "source": "nber",
+   "title": "State Dependence of Monetary Policy During Global Supply Chain Disruptions",
+   "authors": "Xiwen Bai, Jesús Fernández‐Villaverde, Yiliang Li, Francesco Zanetti",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35209",
+   "date": "2026-05-01",
+   "abstract": "",
+   "summary_zh": "",
+   "title_zh": "",
+   "tags": [],
+   "extra": {
+    "nber_id": "W7162333583",
+    "keyword_hit": "global supply chain"
+   }
+  },
+  {
+   "uid": "nber:W7162324940",
+   "source": "nber",
+   "title": "Distribution Costs",
+   "authors": "Cian Ruane, Alessandra Peter",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35252",
+   "date": "2026-05-01",
+   "abstract": "",
+   "summary_zh": "",
+   "title_zh": "",
+   "tags": [],
+   "extra": {
+    "nber_id": "W7162324940",
+    "keyword_hit": "import"
+   }
+  },
+  {
+   "uid": "nber:W7162324111",
+   "source": "nber",
+   "title": "How Should Central Banks Respond to Commodity Price Shocks? Optimal Monetary and Exchange Rate Frameworks for Commodity-Exposed Economies",
+   "authors": "Thomas Drechsel, Michael McLeay, Silvana Tenreyro, Enrico D. Turri",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35164",
+   "date": "2026-05-01",
+   "abstract": "",
+   "summary_zh": "",
+   "title_zh": "",
+   "tags": [],
+   "extra": {
+    "nber_id": "W7162324111",
+    "keyword_hit": "export"
+   }
+  },
+  {
+   "uid": "nber:W7162316490",
+   "source": "nber",
+   "title": "Comparative Advantage and Openness under Global Fragmentation: Lessons from the Past 65 Years",
+   "authors": "Joshua Aizenman, Hiro Ito, Jamel Saadaoui",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35242",
+   "date": "2026-05-01",
+   "abstract": "",
+   "summary_zh": "",
+   "title_zh": "",
+   "tags": [],
+   "extra": {
+    "nber_id": "W7162316490",
+    "keyword_hit": "comparative advantage"
+   }
+  },
+  {
+   "uid": "nber:W7162306176",
+   "source": "nber",
+   "title": "How Much Has Shale Gas Saved U.S. Consumers?",
+   "authors": "Dr. Lucas Davis",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35245",
+   "date": "2026-05-01",
+   "abstract": "",
+   "summary_zh": "",
+   "title_zh": "",
+   "tags": [],
+   "extra": {
+    "nber_id": "W7162306176",
+    "keyword_hit": "export"
+   }
+  },
+  {
+   "uid": "nber:W7162299807",
+   "source": "nber",
+   "title": "Complex Modern Portfolio Theory",
+   "authors": "Oliver Hellum, Theis Jensen, Bryan Kelly, Semyon Malamud",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35246",
+   "date": "2026-05-01",
+   "abstract": "",
+   "summary_zh": "",
+   "title_zh": "",
+   "tags": [],
+   "extra": {
+    "nber_id": "W7162299807",
+    "keyword_hit": "import"
+   }
+  },
+  {
+   "uid": "nber:W7161601514",
+   "source": "nber",
+   "title": "Global Policy Spillovers: How Environmental Policies Propagate through Product Attributes",
+   "authors": "Koichiro Ito, James Sallee, Caleb Halvorson-Fried, Andrew Smith",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35197",
+   "date": "2026-05-01",
+   "abstract": "",
+   "summary_zh": "",
+   "title_zh": "",
+   "tags": [],
+   "extra": {
+    "nber_id": "W7161601514",
+    "keyword_hit": "import"
+   }
+  },
+  {
+   "uid": "nber:W7161585387",
+   "source": "nber",
+   "title": "Intertemporal Arbitrage and Optimal Operation of Pumped Hydro Energy Storage",
+   "authors": "Isabel Figuerola–Ferretti, Eduardo Schwartz",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35201",
+   "date": "2026-05-01",
+   "abstract": "",
+   "summary_zh": "",
+   "title_zh": "",
+   "tags": [],
+   "extra": {
+    "nber_id": "W7161585387",
+    "keyword_hit": "import"
+   }
+  },
+  {
+   "uid": "nber:W7161566507",
+   "source": "nber",
+   "title": "Fiscal Policy and Transition Risk",
+   "authors": "Stefano Carattini, Garth Heutel, Givi Melkadze, Inès Mourelon",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35202",
+   "date": "2026-05-01",
+   "abstract": "",
+   "summary_zh": "",
+   "title_zh": "",
+   "tags": [],
+   "extra": {
+    "nber_id": "W7161566507",
+    "keyword_hit": "import"
+   }
+  },
+  {
+   "uid": "nber:W7161547571",
+   "source": "nber",
+   "title": "Trust, Financial Literacy, and Financial Behaviors: Shaping Retirement Security",
+   "authors": "Maya Haran Rosen, Annamaria Lusardi, Olivia S. Mitchell",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35220",
+   "date": "2026-05-01",
+   "abstract": "",
+   "summary_zh": "",
+   "title_zh": "",
+   "tags": [],
+   "extra": {
+    "nber_id": "W7161547571",
+    "keyword_hit": "import"
+   }
+  },
+  {
+   "uid": "nber:W7160827704",
+   "source": "nber",
+   "title": "On the Negative Consequences of Low-Wage Offshoring for Innovation",
+   "authors": "wulong gu, Alla Lileeva, Daniel Trefler",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35167",
+   "date": "2026-05-01",
+   "abstract": "",
+   "summary_zh": "",
+   "title_zh": "",
+   "tags": [],
+   "extra": {
+    "nber_id": "W7160827704",
+    "keyword_hit": "offshoring"
+   }
+  },
+  {
+   "uid": "nber:W4408099860",
+   "source": "nber",
+   "title": "Defining Innovatisation: The Case of NewSpace and the Changing Space Sector",
+   "authors": "Benoit Cornet, Dominique Foray, Marc-André Chavy-Macdonald",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35254",
+   "date": "2026-05-01",
+   "abstract": "",
+   "summary_zh": "",
+   "title_zh": "",
+   "tags": [],
+   "extra": {
+    "nber_id": "W4408099860",
+    "keyword_hit": "import"
    }
   }
  ]
