@@ -82,7 +82,7 @@ def main():
     print(f"    新增 {stats['new'].get('nber', 0)} 条")
 
     # 3. 学者论文
-    print("[3/4] 学者最新论文（Semantic Scholar）")
+    print("[3/4] 学者最新论文（OpenAlex，S2 备用）")
     for it in run_step("学者论文", scholars.fetch, start_date, paper_scholars):
         if db.upsert_item(conn, it):
             stats["new"]["scholar"] = stats["new"].get("scholar", 0) + 1
