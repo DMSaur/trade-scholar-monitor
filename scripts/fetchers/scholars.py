@@ -2,7 +2,7 @@
 """贸易学者最新论文：OpenAlex 按作者查询（日期可靠），失败时降级 S2 批量。"""
 import time
 
-from .openalex_common import get, inverted_abstract
+from .openalex_common import get_pages, inverted_abstract
 
 OA_SELECT = ("id,doi,title,authorships,publication_date,primary_location,"
              "abstract_inverted_index,type")
@@ -11,17 +11,18 @@ OA_SELECT = ("id,doi,title,authorships,publication_date,primary_location,"
 def _fetch_openalex(start_date: str, scholars: list[dict]) -> list[dict]:
     items = []
     for s in scholars:
-        data = get(
+        results = get_pages(
             "/works",
             {
                 "filter": (f"author.id:{s['openalex_id']},"
                            f"from_publication_date:{start_date}"),
                 "select": OA_SELECT,
-                "per_page": 25,
                 "sort": "publication_date:desc",
             },
+            max_pages=3,
+            per_page=50,
         )
-        for w in data.get("results", []):
+        for w in results:
             if w.get("type") == "paratext":
                 continue
             abstract = inverted_abstract(w.get("abstract_inverted_index"))

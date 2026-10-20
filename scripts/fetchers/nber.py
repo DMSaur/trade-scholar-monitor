@@ -7,7 +7,7 @@
 import re
 import time
 
-from .openalex_common import get, inverted_abstract
+from .openalex_common import get_pages, inverted_abstract
 
 NBER_SOURCE = "S2809516038"
 SELECT = ("id,doi,title,authorships,publication_date,primary_location,"
@@ -25,17 +25,16 @@ def _match(text: str, keywords: list) -> str | None:
 
 def fetch(start_date: str, keywords: list) -> list[dict]:
     items = []
-    data = get(
+    results = get_pages(
         "/works",
         {
             "filter": (f"primary_location.source.id:{NBER_SOURCE},"
                        f"from_publication_date:{start_date}"),
             "select": SELECT,
-            "per_page": 100,
             "sort": "publication_date:desc",
         },
     )
-    for w in data.get("results", []):
+    for w in results:
         abstract = inverted_abstract(w.get("abstract_inverted_index"))
         title = w.get("title") or ""
         hit = _match(title, keywords) or _match(abstract, keywords)

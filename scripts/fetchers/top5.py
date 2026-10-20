@@ -3,7 +3,7 @@
 import time
 from datetime import datetime
 
-from .openalex_common import get, inverted_abstract
+from .openalex_common import get_pages, inverted_abstract
 
 # 国际经济学权威表述见 config/topics.yaml，这里只放期刊标识
 JOURNALS = [
@@ -30,17 +30,17 @@ def fetch(start_date: str, keywords: list) -> list[dict]:
     """返回近窗口内命中贸易关键词的候选条目（LLM 之后确认相关性）。"""
     items = []
     for j in JOURNALS:
-        data = get(
+        results = get_pages(
             "/works",
             {
                 "filter": (f"primary_location.source.issn:{j['issn']},"
                            f"from_publication_date:{start_date}"),
                 "select": SELECT,
-                "per_page": 50,
                 "sort": "publication_date:desc",
             },
+            max_pages=4,
         )
-        for w in data.get("results", []):
+        for w in results:
             if w.get("type") == "paratext":
                 continue
             abstract = inverted_abstract(w.get("abstract_inverted_index"))

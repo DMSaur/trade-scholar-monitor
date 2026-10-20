@@ -57,6 +57,25 @@ def get(path: str, params: dict, max_retry: int = 10) -> dict:
     raise RuntimeError(f"OpenAlex 重试耗尽: {path}")
 
 
+def get_pages(path: str, params: dict, max_pages: int = 8,
+              per_page: int = 100) -> list:
+    """分页拉取直到某页不满（窗口内条目取完）或达到页数上限。
+
+    params 里应已含 from_publication_date 过滤，服务端只返回窗口内条目。
+    """
+    results = []
+    for page in range(1, max_pages + 1):
+        p = dict(params)
+        p["per_page"] = per_page
+        p["page"] = page
+        batch = get(path, p).get("results", [])
+        results.extend(batch)
+        if len(batch) < per_page:
+            break
+        time.sleep(0.5)
+    return results
+
+
 def inverted_abstract(inv: dict) -> str:
     """把 OpenAlex 的 abstract_inverted_index 还原为纯文本。"""
     if not inv:
