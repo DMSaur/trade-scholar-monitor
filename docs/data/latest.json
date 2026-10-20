@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-20 09:31",
- "window_days": 30,
+ "generated_at": "2026-10-20 23:29",
+ "window_days": 180,
  "items": [
   {
    "uid": "tweet:2111893995819323471",
@@ -411,6 +411,25 @@
    }
   },
   {
+   "uid": "nber:W7222933627",
+   "source": "nber",
+   "title": "Export Controls and the Economics of National Security",
+   "authors": "Jingting Fan, Kyle Handley, Nuno Limão",
+   "venue": "NBER Working Paper",
+   "url": "https://doi.org/10.3386/w35898",
+   "date": "2026-10-01",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "nber_id": "W7222933627",
+    "keyword_hit": "export",
+    "versions": [
+     "scholar"
+    ]
+   }
+  },
+  {
    "uid": "oa:W7216593281",
    "source": "scholar",
    "title": "How Knowledge Crosses Borders: Evidence from Semiconductor Manufacturing",
@@ -671,6 +690,1118 @@
     "versions": [
      "scholar"
     ]
+   }
+  },
+  {
+   "uid": "oa:W7213976762",
+   "source": "top5",
+   "title": "Bringing Work Home: Flexible Work Arrangements as Gateway Jobs for Women in West Bengal",
+   "authors": "Lisa Ho, Suhani Jalota, Anahita Karandikar",
+   "venue": "The Quarterly Journal of Economics",
+   "url": "https://doi.org/10.1093/qje/qjag045",
+   "date": "2026-09-18",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "journal_short": "QJE",
+    "keyword_hit": "import",
+    "doi": "10.1093/qje/qjag045"
+   }
+  },
+  {
+   "uid": "oa:W7213537429",
+   "source": "top5",
+   "title": "Carbon Prices, Forest Conservation and Reforestation in the Brazilian Amazon",
+   "authors": "Juliano J. Assunção, Lars Peter Hansen, Todd Munson, Jose Alexandre Scheinkman",
+   "venue": "Journal of Political Economy",
+   "url": "https://doi.org/10.1086/744117",
+   "date": "2026-09-18",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "journal_short": "JPE",
+    "keyword_hit": "import",
+    "doi": "10.1086/744117"
+   }
+  },
+  {
+   "uid": "tweet:2099494221883273354",
+   "source": "tweet",
+   "title": "Ominous indeed: an “unexpected” consequence of the brutal five-year-long war in Europe is that the most cruel dictatorship of the 21st centu",
+   "authors": "@itskhoki",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/itskhoki/status/2099494221883273354",
+   "date": "2026-09-14",
+   "abstract": "Ominous indeed: an “unexpected” consequence of the brutal five-year-long war in Europe is that the most cruel dictatorship of the 21st century develops the leading weapon technology  \n\nhttps://t.co/al3EFn5mdF",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "handle": "ItsKhoki",
+    "name": "Oleg Itskhoki",
+    "is_retweet": false,
+    "is_reply": false,
+    "likes": 18,
+    "retweets": 3,
+    "views": 6726,
+    "created_at": "2026-09-14T13:43:23+00:00",
+    "scholar_name": "Oleg Itskhoki"
+   }
+  },
+  {
+   "uid": "oa:W7213330749",
+   "source": "top5",
+   "title": "Measuring Markets for Network Goods",
+   "authors": "Leonardo Bursztyn, Matthew Aaron Gentzkow, Rafael Jiménez-Durán, Aaron Leonard, Filip Milojević, Christopher Roth",
+   "venue": "The Review of Economic Studies",
+   "url": "https://doi.org/10.1093/restud/rdag099",
+   "date": "2026-09-12",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "journal_short": "REStud",
+    "keyword_hit": "import",
+    "doi": "10.1093/restud/rdag099"
+   }
+  },
+  {
+   "uid": "oa:W7212325009",
+   "source": "top5",
+   "title": "Equilibrium in the Market for Public School Teachers: District Wage Strategies and Teacher Comparative Advantage",
+   "authors": "Barbara Biasi, Chao Fu, John Stromme",
+   "venue": "Journal of Political Economy",
+   "url": "https://doi.org/10.1086/744049",
+   "date": "2026-09-11",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "journal_short": "JPE",
+    "keyword_hit": "comparative advantage",
+    "doi": "10.1086/744049"
+   }
+  },
+  {
+   "uid": "oa:W4408814171",
+   "source": "top5",
+   "title": "Fairness Across the World",
+   "authors": "Ingvild Almås, Alexander W. Cappelen, Erik Ø. Sørensen, Bertil Tungodden",
+   "venue": "The Quarterly Journal of Economics",
+   "url": "https://doi.org/10.1093/qje/qjag044",
+   "date": "2026-09-06",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "journal_short": "QJE",
+    "keyword_hit": "import",
+    "doi": "10.1093/qje/qjag044"
+   }
+  },
+  {
+   "uid": "oa:W7207648689",
+   "source": "scholar",
+   "title": "Supply Shocks in a Heterogeneous-Firm New Keynesian Model: The Entry Multiplier",
+   "authors": "Florin Ovidiu Bilbiie, Marc Melitz",
+   "venue": "预印本",
+   "url": "https://doi.org/10.21034/iwp.132",
+   "date": "2026-09-03",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Marc Melitz",
+    "work_type": "preprint",
+    "doi": "10.21034/iwp.132"
+   }
+  },
+  {
+   "uid": "oa:W7214668269",
+   "source": "scholar",
+   "title": "Evaluating the Spatial Consequences of a Climate Tipping Point",
+   "authors": "José-Luis Cruz, Klaus Desmet A, Esteban Rossi‐Hansberg",
+   "venue": "National Bureau of Economic Research",
+   "url": "https://doi.org/10.3386/w35811",
+   "date": "2026-09-01",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Esteban Rossi-Hansberg",
+    "work_type": "report",
+    "doi": "10.3386/w35811"
+   }
+  },
+  {
+   "uid": "oa:W7213904344",
+   "source": "scholar",
+   "title": "The Remains of the Trade: The U.S.–China Trade War and its Aftermath",
+   "authors": "Pol Antràs, Adrian Kulesza, Andrea Presbitero",
+   "venue": "National Bureau of Economic Research",
+   "url": "https://doi.org/10.3386/w35785",
+   "date": "2026-09-01",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Pol Antras",
+    "work_type": "report",
+    "doi": "10.3386/w35785"
+   }
+  },
+  {
+   "uid": "oa:W7211893772",
+   "source": "scholar",
+   "title": "Does AI Assistance Enhance or Erode Expertise? Evidence from a Three-Month Field Experiment in Patent Drafting",
+   "authors": "David Autor, Tanya Rodchenko, Josh Martin, Zanna Iscenko, Scott Strand, David Pearl",
+   "venue": "National Bureau of Economic Research",
+   "url": "https://doi.org/10.3386/w35720",
+   "date": "2026-09-01",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "David Autor",
+    "work_type": "report",
+    "doi": "10.3386/w35720"
+   }
+  },
+  {
+   "uid": "oa:W7210264610",
+   "source": "scholar",
+   "title": "Financial repression and the currency market under sanctions",
+   "authors": "Oleg Itskhoki, D. A. Mukhin",
+   "venue": "London School of Economics and Political Science Theses Online (London School of Economics and Political Science)",
+   "url": "https://doi.org/10.1093/epolic/eiag013",
+   "date": "2026-08-31",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Oleg Itskhoki",
+    "work_type": "article",
+    "doi": "10.1093/epolic/eiag013"
+   }
+  },
+  {
+   "uid": "oa:W7204248239",
+   "source": "scholar",
+   "title": "Replication package for: Why is Trade Not Free? A Revealed Preference Approach",
+   "authors": "Rorigo Adao, John Sturm, Arnaud Costinot, Dave Donaldson",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "url": "https://doi.org/10.5281/zenodo.22117008",
+   "date": "2026-08-26",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Arnaud Costinot",
+    "work_type": "software",
+    "doi": "10.5281/zenodo.22117008"
+   }
+  },
+  {
+   "uid": "oa:W7204246081",
+   "source": "scholar",
+   "title": "How Did Trump's 2025 Trade War Affect the Decoupling of US –China Supply Chains?",
+   "authors": "Chad P. Bown",
+   "venue": "Asian Economic Policy Review",
+   "url": "https://doi.org/10.1111/aepr.70048",
+   "date": "2026-08-26",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Chad Bown",
+    "work_type": "article",
+    "doi": "10.1111/aepr.70048"
+   }
+  },
+  {
+   "uid": "oa:W7204163447",
+   "source": "top5",
+   "title": "Why Veil? Religious Headscarves and the Economic Role of Women",
+   "authors": "Naila Maya Shofia",
+   "venue": "The Review of Economic Studies",
+   "url": "https://doi.org/10.1093/restud/rdag093",
+   "date": "2026-08-24",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "journal_short": "REStud",
+    "keyword_hit": "safeguard",
+    "doi": "10.1093/restud/rdag093"
+   }
+  },
+  {
+   "uid": "oa:W7203924696",
+   "source": "scholar",
+   "title": "Why we must stop talking about artificial general intelligence — and instead build ‘pro-worker’ AI",
+   "authors": "Daron Acemoğlu",
+   "venue": "Nature",
+   "url": "https://doi.org/10.1038/d41586-026-02566-6",
+   "date": "2026-08-21",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Daron Acemoglu",
+    "work_type": "article",
+    "doi": "10.1038/d41586-026-02566-6"
+   }
+  },
+  {
+   "uid": "tweet:2086166451707142238",
+   "source": "tweet",
+   "title": "RT @MFRProgram: Closing out the 2026 MFR Summer Session is Oleg @itskhoki (Harvard) presenting \"Exchange Rates and Financial Markets.\" #MFR…",
+   "authors": "@itskhoki",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/itskhoki/status/2086166451707142238",
+   "date": "2026-08-08",
+   "abstract": "RT @MFRProgram: Closing out the 2026 MFR Summer Session is Oleg @itskhoki (Harvard) presenting \"Exchange Rates and Financial Markets.\" #MFR…",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "handle": "ItsKhoki",
+    "name": "Oleg Itskhoki",
+    "is_retweet": true,
+    "is_reply": false,
+    "likes": 0,
+    "retweets": 5,
+    "views": 53,
+    "created_at": "2026-08-08T19:03:35+00:00",
+    "scholar_name": "Oleg Itskhoki"
+   }
+  },
+  {
+   "uid": "oa:W7204802756",
+   "source": "scholar",
+   "title": "A Deep Case for Shallow Integration",
+   "authors": "John Becko, Arnaud Costinot",
+   "venue": "National Bureau of Economic Research",
+   "url": "https://doi.org/10.3386/w35685",
+   "date": "2026-08-01",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Arnaud Costinot",
+    "work_type": "report",
+    "doi": "10.3386/w35685"
+   }
+  },
+  {
+   "uid": "oa:W7204151404",
+   "source": "scholar",
+   "title": "Where the Grass Seems Greener: Economic Misperceptions and Support for Democracy",
+   "authors": "Daron Acemoğlu, Nicolás Ajzenman, Guillermo Cruces, Martín Fiszbein, Gaston Garcia Zavaleta, Carlos Molina",
+   "venue": "National Bureau of Economic Research",
+   "url": "https://doi.org/10.3386/w35644",
+   "date": "2026-08-01",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Daron Acemoglu",
+    "work_type": "report",
+    "doi": "10.3386/w35644"
+   }
+  },
+  {
+   "uid": "oa:W7203596055",
+   "source": "scholar",
+   "title": "Dynamic Effects of Trade",
+   "authors": "Benny Kleinman, Ernest Liu, Stephen J. Redding",
+   "venue": "National Bureau of Economic Research",
+   "url": "https://doi.org/10.3386/w35595",
+   "date": "2026-08-01",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Stephen Redding",
+    "work_type": "report",
+    "doi": "10.3386/w35595"
+   }
+  },
+  {
+   "uid": "oa:W7201881105",
+   "source": "scholar",
+   "title": "From Social Savings to Spatial Equilibrium: Evaluating Transportation Improvements in Quantitative Spatial Models",
+   "authors": "Treb Allen, Simon Fuchs, Woan Foong Wong",
+   "venue": "Regional Science and Urban Economics",
+   "url": "https://doi.org/10.1016/j.regsciurbeco.2026.104271",
+   "date": "2026-08-01",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Treb Allen",
+    "work_type": "article",
+    "doi": "10.1016/j.regsciurbeco.2026.104271"
+   }
+  },
+  {
+   "uid": "oa:W7172279813",
+   "source": "scholar",
+   "title": "Should We Tax Trade? A Pigouvian Perspective",
+   "authors": "Arnaud Costinot, Iván Werning",
+   "venue": "The Journal of Economic Perspectives",
+   "url": "https://doi.org/10.1257/jep.20251491",
+   "date": "2026-08-01",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Arnaud Costinot",
+    "work_type": "article",
+    "doi": "10.1257/jep.20251491",
+    "versions": [
+     "scholar"
+    ]
+   }
+  },
+  {
+   "uid": "oa:W7171931391",
+   "source": "top5",
+   "title": "From Heterogeneous Firms to Heterogeneous Trade Elasticities: The Aggregate Implications of Firm Export Decisions",
+   "authors": "Rodrigo Adão, Costas Arkolakis, Sharat Ganapati",
+   "venue": "Journal of Political Economy",
+   "url": "https://doi.org/10.1086/743331",
+   "date": "2026-07-31",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "journal_short": "JPE",
+    "keyword_hit": "export",
+    "doi": "10.1086/743331"
+   }
+  },
+  {
+   "uid": "oa:W4385061410",
+   "source": "scholar",
+   "title": "Remote Work and City Structure",
+   "authors": "Ferdinando Monte, Charly Porcher, Esteban Rossi‐Hansberg",
+   "venue": "American Economic Review",
+   "url": "https://doi.org/10.1257/aer.20231414",
+   "date": "2026-07-31",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Esteban Rossi-Hansberg",
+    "work_type": "article",
+    "doi": "10.1257/aer.20231414"
+   }
+  },
+  {
+   "uid": "oa:W7171485853",
+   "source": "top5",
+   "title": "Capital Services in Global Value Chains",
+   "authors": "Xiang Ding",
+   "venue": "The Quarterly Journal of Economics",
+   "url": "https://doi.org/10.1093/qje/qjag041",
+   "date": "2026-07-28",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "journal_short": "QJE",
+    "keyword_hit": "global value chain",
+    "doi": "10.1093/qje/qjag041"
+   }
+  },
+  {
+   "uid": "oa:W7215312279",
+   "source": "scholar",
+   "title": "Chiến lược tăng trưởng mới cho các quốc gia đang phát triển",
+   "authors": "Dani Rodrik, Joseph Eugène Stiglitz",
+   "venue": "Tạp chí Thông tin khoa học lý luận chính trị - Những vấn đề lý luận phục vụ lãnh đạo",
+   "url": "https://openalex.org/W7215312279",
+   "date": "2026-07-25",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Dani Rodrik",
+    "work_type": "article",
+    "doi": ""
+   }
+  },
+  {
+   "uid": "oa:W7171132448",
+   "source": "top5",
+   "title": "Mental Models of the Stock Market",
+   "authors": "Peter Andre, Philipp Schirmer, Johannes Wohlfart",
+   "venue": "The Quarterly Journal of Economics",
+   "url": "https://doi.org/10.1093/qje/qjag039",
+   "date": "2026-07-23",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "journal_short": "QJE",
+    "keyword_hit": "import",
+    "doi": "10.1093/qje/qjag039"
+   }
+  },
+  {
+   "uid": "oa:W7168151185",
+   "source": "scholar",
+   "title": "Trade disruptions and early US industrialization",
+   "authors": "Joseph H. Davis, Douglas A. Irwin",
+   "venue": "The Economic History Review",
+   "url": "https://doi.org/10.1111/ehr.70134",
+   "date": "2026-07-13",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Douglas Irwin",
+    "work_type": "article",
+    "doi": "10.1111/ehr.70134"
+   }
+  },
+  {
+   "uid": "oa:W7167788101",
+   "source": "scholar",
+   "title": "Data and Code for: Remote Work and City Structure",
+   "authors": "Ferdinando Monte, Charly Porcher, Esteban Rossi‐Hansberg",
+   "venue": "ICPSR Data Holdings",
+   "url": "https://doi.org/10.3886/e245014",
+   "date": "2026-07-09",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Esteban Rossi-Hansberg",
+    "work_type": "dataset",
+    "doi": "10.3886/e245014"
+   }
+  },
+  {
+   "uid": "oa:W7167676924",
+   "source": "scholar",
+   "title": "More Tariff Pass‑Through Is in the Pipeline",
+   "authors": "Jaison R. Abel, Mary Amiti, Richard Deitz, Sebastian Heise, Nick Montalbano",
+   "venue": "报告",
+   "url": "https://doi.org/10.59576/lse.20260708",
+   "date": "2026-07-08",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Mary Amiti",
+    "work_type": "report",
+    "doi": "10.59576/lse.20260708"
+   }
+  },
+  {
+   "uid": "oa:W4400166753",
+   "source": "scholar",
+   "title": "Industrial Policy in the Global Semiconductor Sector",
+   "authors": "Pinelopi Koujianou Goldberg, Réka Juhász, Nathaniel Lane, Giulia Lo Forte, Jeff Thurk",
+   "venue": "CESifo",
+   "url": "https://doi.org/10.65864/7t6d1j8rm7",
+   "date": "2026-07-08",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Pinelopi Goldberg",
+    "work_type": "report",
+    "doi": "10.65864/7t6d1j8rm7"
+   }
+  },
+  {
+   "uid": "oa:W3139942384",
+   "source": "scholar",
+   "title": "Heterogeneous Globalization: Offshoring and Reorganization",
+   "authors": "Andrew B. Bernard, Teresa Fort, Valérie Smeets, Frederic Warzynski C",
+   "venue": "CESifo",
+   "url": "https://doi.org/10.65864/unupiqcab1",
+   "date": "2026-07-08",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Andrew Bernard",
+    "work_type": "report",
+    "doi": "10.65864/unupiqcab1"
+   }
+  },
+  {
+   "uid": "oa:W7213570608",
+   "source": "scholar",
+   "title": "Tecnologia, capital e habilidades: repensando a história da IA e das desigualdades",
+   "authors": "Paúl Krugman",
+   "venue": "DSpace (Federal University of Santa Catarina)",
+   "url": "https://openalex.org/W7213570608",
+   "date": "2026-07-01",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Paul Krugman",
+    "work_type": "other",
+    "doi": ""
+   }
+  },
+  {
+   "uid": "oa:W7172320991",
+   "source": "scholar",
+   "title": "The China Backlash: Quantifying the Narrative Discourse on China",
+   "authors": "Mert Geyiktepe, Dani Rodrik",
+   "venue": "National Bureau of Economic Research",
+   "url": "https://doi.org/10.3386/w35539",
+   "date": "2026-07-01",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Dani Rodrik",
+    "work_type": "report",
+    "doi": "10.3386/w35539"
+   }
+  },
+  {
+   "uid": "oa:W7172272046",
+   "source": "scholar",
+   "title": "The Anatomy of Tariff Pass-Through into Consumer Prices",
+   "authors": "Mary Amiti, Sebastian Heise, David E. Weinstein",
+   "venue": "Staff reports",
+   "url": "https://doi.org/10.3386/w35561",
+   "date": "2026-07-01",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Mary Amiti",
+    "work_type": "report",
+    "doi": "10.3386/w35561"
+   }
+  },
+  {
+   "uid": "oa:W7167514449",
+   "source": "scholar",
+   "title": "Baby Busts and Growth Booms: Demographic Change and the Macroeconomy",
+   "authors": "Daron Acemoğlu, David Autor, Keelan Beirne, Andrew Scott",
+   "venue": "National Bureau of Economic Research",
+   "url": "https://doi.org/10.3386/w35401",
+   "date": "2026-07-01",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "David Autor",
+    "work_type": "report",
+    "doi": "10.3386/w35401"
+   }
+  },
+  {
+   "uid": "oa:W7167460166",
+   "source": "scholar",
+   "title": "International Trade in an Uncertain World",
+   "authors": "Benny Kleinman, Ernest Liu, Stephen J. Redding, David Xu",
+   "venue": "National Bureau of Economic Research",
+   "url": "https://doi.org/10.3386/w35416",
+   "date": "2026-07-01",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Stephen Redding",
+    "work_type": "report",
+    "doi": "10.3386/w35416"
+   }
+  },
+  {
+   "uid": "oa:W7166806395",
+   "source": "top5",
+   "title": "Who Pays for Unions?",
+   "authors": "Samuel Dodini, Anna Stansbury, Alexander Willén",
+   "venue": "The Quarterly Journal of Economics",
+   "url": "https://doi.org/10.1093/qje/qjag034",
+   "date": "2026-07-01",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "journal_short": "QJE",
+    "keyword_hit": "import",
+    "doi": "10.1093/qje/qjag034"
+   }
+  },
+  {
+   "uid": "oa:W4289598398",
+   "source": "top5",
+   "title": "The Effect of Omitted Variables on the Sign of Regression Coefficients",
+   "authors": "Matthew A. Masten, Alexandre Poirier",
+   "venue": "American Economic Review",
+   "url": "https://doi.org/10.1257/aer.20230242",
+   "date": "2026-06-30",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "journal_short": "AER",
+    "keyword_hit": "import",
+    "doi": "10.1257/aer.20230242"
+   }
+  },
+  {
+   "uid": "oa:W7167938499",
+   "source": "scholar",
+   "title": "AI’s biggest secret: we can shape it",
+   "authors": "Daron Acemoğlu",
+   "venue": "Economics and Business Review/The Poznań University of Economics Review",
+   "url": "https://doi.org/10.18559/ebr.2026.2.4267",
+   "date": "2026-06-29",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Daron Acemoglu",
+    "work_type": "article",
+    "doi": "10.18559/ebr.2026.2.4267"
+   }
+  },
+  {
+   "uid": "oa:W7165682911",
+   "source": "top5",
+   "title": "Insurer Risk and Public Risk-Sharing: Quantifying the Value of Reinsurance",
+   "authors": "Paul Kim, Anran Li",
+   "venue": "The Review of Economic Studies",
+   "url": "https://doi.org/10.1093/restud/rdag063",
+   "date": "2026-06-20",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "journal_short": "REStud",
+    "keyword_hit": "import",
+    "doi": "10.1093/restud/rdag063"
+   }
+  },
+  {
+   "uid": "oa:W7165035737",
+   "source": "top5",
+   "title": "Customer Acquisition, Business Dynamism, and Aggregate Growth",
+   "authors": "Marek Ignaszak, Petr Sedláček",
+   "venue": "The Review of Economic Studies",
+   "url": "https://doi.org/10.1093/restud/rdag060",
+   "date": "2026-06-16",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "journal_short": "REStud",
+    "keyword_hit": "import",
+    "doi": "10.1093/restud/rdag060"
+   }
+  },
+  {
+   "uid": "oa:W4403173433",
+   "source": "scholar",
+   "title": "Online Business Models, Digital Ads, and User Welfare",
+   "authors": "Daron Acemoğlu, Daniel P. Huttenlocher, Asuman Ozdaglar, James Siderius",
+   "venue": "Journal of Political Economy",
+   "url": "https://doi.org/10.1086/742715",
+   "date": "2026-06-15",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Daron Acemoglu",
+    "work_type": "article",
+    "doi": "10.1086/742715"
+   }
+  },
+  {
+   "uid": "oa:W7167825235",
+   "source": "scholar",
+   "title": "From Trade War to Green Transition: Optimal Electric Vehicle Tariffs with Revenue-Funded Subsidies",
+   "authors": "Panle Jia, Jack Collison, Pinelopi Koujianou Goldberg, Shanjun Li, Yucheng Wang",
+   "venue": "CESifo",
+   "url": "https://doi.org/10.65864/gtlvqdh2cd",
+   "date": "2026-06-05",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Pinelopi Goldberg",
+    "work_type": "report",
+    "doi": "10.65864/gtlvqdh2cd",
+    "versions": [
+     "scholar"
+    ]
+   }
+  },
+  {
+   "uid": "oa:W7163592165",
+   "source": "scholar",
+   "title": "A Multivariate distribution with Pareto tails and Pareto maxima",
+   "authors": "Costas Arkolakis, Andres Rodriguez-Clare, Jiun-Hua Su",
+   "venue": "Economic Theory",
+   "url": "https://doi.org/10.1007/s00199-026-01719-y",
+   "date": "2026-06-04",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Costas Arkolakis",
+    "work_type": "article",
+    "doi": "10.1007/s00199-026-01719-y"
+   }
+  },
+  {
+   "uid": "oa:W7213567132",
+   "source": "scholar",
+   "title": "Os super-ricos são diferentes de você e de mim",
+   "authors": "Paúl Krugman",
+   "venue": "DSpace (Federal University of Santa Catarina)",
+   "url": "https://openalex.org/W7213567132",
+   "date": "2026-06-02",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Paul Krugman",
+    "work_type": "other",
+    "doi": ""
+   }
+  },
+  {
+   "uid": "oa:W4367694264",
+   "source": "top5",
+   "title": "Optimal Tests Following Sequential Experiments",
+   "authors": "Karun Adusumilli",
+   "venue": "Journal of Political Economy",
+   "url": "https://doi.org/10.1086/742418",
+   "date": "2026-06-02",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "journal_short": "JPE",
+    "keyword_hit": "import",
+    "doi": "10.1086/742418"
+   }
+  },
+  {
+   "uid": "oa:W7166526698",
+   "source": "scholar",
+   "title": "Immigration, Innovation, and the Geography of Growth",
+   "authors": "Costas Arkolakis, Sun Kyoung Lee, Michael Peters",
+   "venue": "National Bureau of Economic Research",
+   "url": "https://doi.org/10.3386/w35392",
+   "date": "2026-06-01",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Costas Arkolakis",
+    "work_type": "report",
+    "doi": "10.3386/w35392"
+   }
+  },
+  {
+   "uid": "oa:W7165888465",
+   "source": "scholar",
+   "title": "Negotiating a Win-Win End to the Lose-Lose US-China Trade War over Technology and Critical Minerals",
+   "authors": "Chad P. Bown",
+   "venue": "Journal of World Trade",
+   "url": "https://doi.org/10.54648/trad2026015",
+   "date": "2026-06-01",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Chad Bown",
+    "work_type": "article",
+    "doi": "10.54648/trad2026015"
+   }
+  },
+  {
+   "uid": "oa:W7164808949",
+   "source": "scholar",
+   "title": "Automation and Repression",
+   "authors": "Daron Acemoğlu, A. Arda Gitmez, Mehdi Shadmehr",
+   "venue": "National Bureau of Economic Research",
+   "url": "https://doi.org/10.3386/w35336",
+   "date": "2026-06-01",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Daron Acemoglu",
+    "work_type": "report",
+    "doi": "10.3386/w35336"
+   }
+  },
+  {
+   "uid": "oa:W7162788892",
+   "source": "scholar",
+   "title": "Trade Diversion and Third-Country Adjustment in the U.S.–China Trade War",
+   "authors": "Kyle Feinstein, Stephen J. Redding, Stanford University",
+   "venue": "Stanford Digital Repository",
+   "url": "https://doi.org/10.25740/bj264qz0014",
+   "date": "2026-05-29",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Stephen Redding",
+    "work_type": "article",
+    "doi": "10.25740/bj264qz0014"
+   }
+  },
+  {
+   "uid": "oa:W7162777657",
+   "source": "scholar",
+   "title": "Kasy, Maximilian. The Means of Prediction: How AI Really Works (and Who Benefits)",
+   "authors": "David Autor",
+   "venue": "Journal of Economic Literature",
+   "url": "https://doi.org/10.1257/jel.64.2.698.r8",
+   "date": "2026-05-29",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "David Autor",
+    "work_type": "article",
+    "doi": "10.1257/jel.64.2.698.r8"
+   }
+  },
+  {
+   "uid": "oa:W4312883125",
+   "source": "top5",
+   "title": "Spatial Spillovers of Conflict in Somalia",
+   "authors": "Marco Alfano, Thomas Cornelißen",
+   "venue": "American Economic Review",
+   "url": "https://doi.org/10.1257/aer.20231699",
+   "date": "2026-05-28",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "journal_short": "AER",
+    "keyword_hit": "import",
+    "doi": "10.1257/aer.20231699"
+   }
+  },
+  {
+   "uid": "oa:W7204487390",
+   "source": "scholar",
+   "title": "Replication Data for: From Heterogeneous Firms to Heterogeneous Trade Elasticities: The Aggregate Implications of Firm Export Decisions",
+   "authors": "Costas Arkolakis, Rodrigo Adão, Sharat Ganapati",
+   "venue": "Harvard Dataverse",
+   "url": "https://doi.org/10.7910/dvn/khivhd",
+   "date": "2026-05-27",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Costas Arkolakis",
+    "work_type": "dataset",
+    "doi": "10.7910/dvn/khivhd"
+   }
+  },
+  {
+   "uid": "tweet:2059257003789177142",
+   "source": "tweet",
+   "title": "HOW TO WIN A TRADE WAR is officially published in the US today!!!  Last week was so incredibly amazing but also so busy @SoumayaKeynes and I",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2059257003789177142",
+   "date": "2026-05-26",
+   "abstract": "HOW TO WIN A TRADE WAR\nis officially published in the US today!!!\n\nLast week was so incredibly amazing\nbut also so busy\n@SoumayaKeynes and I\nhad some serious Lady Gaga vibes https://t.co/K82hmyfd5z",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": false,
+    "is_reply": false,
+    "likes": 39,
+    "retweets": 9,
+    "views": 11795,
+    "created_at": "2026-05-26T12:55:03+00:00",
+    "scholar_name": "Chad Bown"
+   }
+  },
+  {
+   "uid": "oa:W7162447027",
+   "source": "scholar",
+   "title": "What Makes New Work Different from More Work?",
+   "authors": "David Autor, Caroline Chin, Anna Salomons, Bryan Seegmiller",
+   "venue": "Annual Review of Economics",
+   "url": "https://doi.org/10.1146/annurev-economics-092325-041649",
+   "date": "2026-05-26",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "David Autor",
+    "work_type": "review",
+    "doi": "10.1146/annurev-economics-092325-041649"
+   }
+  },
+  {
+   "uid": "oa:W7161807627",
+   "source": "scholar",
+   "title": "The effects of trade policy uncertainty",
+   "authors": "Kyle Handley, Nuno Limão",
+   "venue": "Edward Elgar Publishing eBooks",
+   "url": "https://doi.org/10.4337/9781035327508.00042",
+   "date": "2026-05-12",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Kyle Handley",
+    "work_type": "reference-entry",
+    "doi": "10.4337/9781035327508.00042"
+   }
+  },
+  {
+   "uid": "oa:W7160945895",
+   "source": "top5",
+   "title": "Public Services Under Private Management",
+   "authors": "Maíra Coube, Luiz Felipe Fontes, Rudi Rocha",
+   "venue": "The Quarterly Journal of Economics",
+   "url": "https://doi.org/10.1093/qje/qjag028",
+   "date": "2026-05-12",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "journal_short": "QJE",
+    "keyword_hit": "outsourcing",
+    "doi": "10.1093/qje/qjag028"
+   }
+  },
+  {
+   "uid": "oa:W7160912863",
+   "source": "scholar",
+   "title": "Some Thoughts on the Future of Globalization",
+   "authors": "Pol Antràs",
+   "venue": "The MIT Press eBooks",
+   "url": "https://doi.org/10.7551/mitpress/15822.003.0036",
+   "date": "2026-05-12",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Pol Antras",
+    "work_type": "book-chapter",
+    "doi": "10.7551/mitpress/15822.003.0036"
+   }
+  },
+  {
+   "uid": "oa:W7164981191",
+   "source": "scholar",
+   "title": "O Terrorista-em-chefe",
+   "authors": "Paúl Krugman",
+   "venue": "DSpace (Federal University of Santa Catarina)",
+   "url": "https://openalex.org/W7164981191",
+   "date": "2026-05-04",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Paul Krugman",
+    "work_type": "other",
+    "doi": ""
+   }
+  },
+  {
+   "uid": "oa:W7164754110",
+   "source": "scholar",
+   "title": "James A. Brander: A tribute",
+   "authors": "Douglas A. Irwin",
+   "venue": "Canadian Journal of Economics/Revue canadienne d économique",
+   "url": "https://doi.org/10.1111/caje.70064",
+   "date": "2026-05-01",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Douglas Irwin",
+    "work_type": "article",
+    "doi": "10.1111/caje.70064"
+   }
+  },
+  {
+   "uid": "oa:W7161175759",
+   "source": "scholar",
+   "title": "Multilateral Export Control Regimes and Aggregate Exports",
+   "authors": "Jingting Fan, Kyle Handley, Nuno Limão",
+   "venue": "AEA Papers and Proceedings",
+   "url": "https://doi.org/10.1257/pandp.20261070",
+   "date": "2026-05-01",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Kyle Handley",
+    "work_type": "article",
+    "doi": "10.1257/pandp.20261070"
+   }
+  },
+  {
+   "uid": "oa:W7160398547",
+   "source": "scholar",
+   "title": "Trade liberalization, wage rigidity, and labor market dynamics with heterogeneous firms",
+   "authors": "Ekaterina Gurkova, Elhanan Helpman, Oleg Itskhoki",
+   "venue": "Journal of International Economics",
+   "url": "https://doi.org/10.1016/j.jinteco.2026.104260",
+   "date": "2026-05-01",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Oleg Itskhoki",
+    "work_type": "article",
+    "doi": "10.1016/j.jinteco.2026.104260"
+   }
+  },
+  {
+   "uid": "oa:W4414694518",
+   "source": "scholar",
+   "title": "Growth Is Getting Harder to Find, Not Ideas",
+   "authors": "Teresa Fort, Nathan Goldschlag, Jack Liang, Peter K. Schott, Nikolas Jason Zolas",
+   "venue": "CESifo",
+   "url": "https://doi.org/10.3386/w35182",
+   "date": "2026-05-01",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Peter Schott",
+    "work_type": "report",
+    "doi": "10.3386/w35182"
+   }
+  },
+  {
+   "uid": "oa:W3122645729",
+   "source": "top5",
+   "title": "The Gender Pay Gap: Micro Sources and Macro Consequences",
+   "authors": "Iacopo Morchio, Christian Moser",
+   "venue": "American Economic Review",
+   "url": "https://doi.org/10.1257/aer.20231107",
+   "date": "2026-04-30",
+   "abstract": "",
+   "summary_zh": "",
+   "tags": [],
+   "extra": {
+    "journal_short": "AER",
+    "keyword_hit": "import",
+    "doi": "10.1257/aer.20231107"
    }
   }
  ]
