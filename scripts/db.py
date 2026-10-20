@@ -40,6 +40,11 @@ def connect() -> sqlite3.Connection:
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     conn.executescript(SCHEMA)
+    # 旧库补列（已存在时报错忽略）
+    try:
+        conn.execute("ALTER TABLE items ADD COLUMN title_zh TEXT")
+    except sqlite3.OperationalError:
+        pass
     return conn
 
 
@@ -76,10 +81,11 @@ def pending_summary(conn: sqlite3.Connection, limit: int = 40) -> list[sqlite3.R
     ).fetchall()
 
 
-def save_summary(conn: sqlite3.Connection, uid: str, summary_zh: str, tags: list):
+def save_summary(conn: sqlite3.Connection, uid: str, summary_zh: str,
+                 tags: list, title_zh: str = ""):
     conn.execute(
-        "UPDATE items SET summary_zh = ?, tags = ? WHERE uid = ?",
-        (summary_zh, json.dumps(tags, ensure_ascii=False), uid),
+        "UPDATE items SET summary_zh = ?, tags = ?, title_zh = ? WHERE uid = ?",
+        (summary_zh, json.dumps(tags, ensure_ascii=False), title_zh, uid),
     )
 
 

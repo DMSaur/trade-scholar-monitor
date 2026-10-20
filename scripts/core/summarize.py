@@ -1,20 +1,23 @@
 #!/usr/bin/env python3
-"""中文摘要与主题标签：DashScope（通义千问，OpenAI 兼容接口）。
+"""中文摘要与主题标签：DeepSeek（Anthropic 兼容接口）。
 
-每条论文或推文生成一句中文摘要加标签。top5 与 NBER 条目同时让模型确认
-是否属于贸易领域。按条目缓存：已有 summary_zh 的不再调用。
+每条论文生成中文标题翻译、一句摘要和标签；推文生成摘要和标签。
+top5 与 NBER 条目同时让模型确认是否属于贸易领域。
+按条目缓存：已有 summary_zh 的不再调用。凭据见项目 .env。
 """
 import json
 import os
 from pathlib import Path
 
-from openai import OpenAI
+import requests
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 
-MODEL = os.environ.get("MONITOR_LLM_MODEL", "qwen-flash")
+BASE_URL = os.environ.get(
+    "ANTHROPIC_BASE_URL", "https://api.deepseek.com/anthropic").rstrip("/")
+AUTH_TOKEN = os.environ.get("ANTHROPIC_AUTH_TOKEN", "").strip()
+MODEL = os.environ.get("ANTHROPIC_MODEL", "deepseek-v4-flash")
 
-_client = None
 _disabled = False  # 熔断：连续失败达到阈值后本轮停用
 FAIL_LIMIT = 3
 _fail_streak = 0
@@ -28,44 +31,38 @@ def _load_env():
             if line and not line.startswith("#") and "=" in line:
                 k, v = line.split("=", 1)
                 os.environ.setdefault(k.strip(), v.strip())
+    global BASE_URL, AUTH_TOKEN, MODEL
+    BASE_URL = os.environ.get(
+        "ANTHROPIC_BASE_URL", BASE_URL).rstrip("/")
+    AUTH_TOKEN = os.environ.get("ANTHROPIC_AUTH_TOKEN", AUTH_TOKEN).strip()
+    MODEL = os.environ.get("ANTHROPIC_MODEL", MODEL)
 
 
-def client() -> OpenAI | None:
-    global _client
-    if _client is None:
-        _load_env()
-        key = os.environ.get("DASHSCOPE_API_KEY", "").strip()
-        if not key:
-            print("    ! 未配置 DASHSCOPE_API_KEY，跳过摘要生成")
-            return None
-        _client = OpenAI(
-            api_key=key,
-            base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
-        )
-    return _client
+def available() -> bool:
+    _load_env()
+    return bool(AUTH_TOKEN)
 
 
-PAPER_PROMPT = """你是国际经济学研究助理。判断下面的经济学论文是否属于国际贸易领域（广义：贸易、关税、全球价值链、供应链、贸易政策、贸易与劳动力、汇率与贸易、制裁与出口管制、经济地理等）。
-
-标题：{title}
-作者：{authors}
-期刊：{venue}
-摘要：{abstract}
-
-严格输出 JSON（不要 markdown 代码块）：
-{{"relevant": true/false, "summary_zh": "一句话中文摘要，不超过60字，概括问题、方法与核心发现", "tags": ["从下方标签表中选1-3个"]}}
-
-标签表：{tags}"""
-
-TWEET_PROMPT = """你是国际经济学研究助理。为下面一位贸易学者的推文写摘要。
-
-作者：{authors}
-推文原文：{text}
-
-严格输出 JSON（不要 markdown 代码块）：
-{{"summary_zh": "一句话中文摘要，不超过60字，保留关键数据与观点", "tags": ["从下方标签表中选0-3个"]}}
-
-标签表：{tags}"""
+def _chat(prompt: str, max_tokens: int = 800) -> str:
+    r = requests.post(
+        f"{BASE_URL}/v1/messages",
+        headers={
+            "Authorization": f"Bearer {AUTH_TOKEN}",
+            "anthropic-version": "2023-06-01",
+            "Content-Type": "application/json",
+        },
+        json={
+            "model": MODEL,
+            "max_tokens": max_tokens,
+            "temperature": 0.2,
+            "messages": [{"role": "user", "content": prompt}],
+        },
+        timeout=90,
+    )
+    r.raise_for_status()
+    parts = [b.get("text", "") for b in r.json().get("content", [])
+             if b.get("type") == "text"]
+    return "".join(parts)
 
 
 def _parse_json(text: str) -> dict:
@@ -80,13 +77,37 @@ def _parse_json(text: str) -> dict:
     return json.loads(text[start:end + 1])
 
 
+PAPER_PROMPT = """你是国际经济学研究助理。判断下面的经济学论文是否属于国际贸易领域（广义：贸易、关税、全球价值链、供应链、贸易政策、贸易与劳动力、汇率与贸易、制裁与出口管制、经济地理等）。
+
+标题：{title}
+作者：{authors}
+期刊：{venue}
+摘要：{abstract}
+
+严格输出 JSON（不要 markdown 代码块）：
+{{"relevant": true/false, "title_zh": "论文标题的中文翻译，简洁准确", "summary_zh": "一句话中文摘要，不超过60字，概括问题、方法与核心发现", "tags": ["从下方标签表中选1-3个"]}}
+
+标签表：{tags}"""
+
+TWEET_PROMPT = """你是国际经济学研究助理。为下面一位贸易学者的推文写摘要。
+
+作者：{authors}
+推文原文：{text}
+
+严格输出 JSON（不要 markdown 代码块）：
+{{"summary_zh": "一句话中文摘要，不超过60字，保留关键数据与观点", "tags": ["从下方标签表中选0-3个"]}}
+
+标签表：{tags}"""
+
+
 def summarize_item(row, tag_vocab: list) -> dict | None:
-    """返回 {'relevant': bool|None, 'summary_zh': str, 'tags': [str]} 或 None（失败）。"""
+    """返回含 relevant/title_zh/summary_zh/tags 的字典，或 None（失败）。"""
     global _disabled, _fail_streak
     if _disabled:
         return None
-    c = client()
-    if c is None:
+    _load_env()
+    if not AUTH_TOKEN:
+        print("    ! 未配置 ANTHROPIC_AUTH_TOKEN，停用摘要")
         _disabled = True
         return None
     tags = "、".join(tag_vocab)
@@ -102,15 +123,10 @@ def summarize_item(row, tag_vocab: list) -> dict | None:
             tags=tags,
         )
     try:
-        resp = c.chat.completions.create(
-            model=MODEL,
-            messages=[{"role": "user", "content": prompt}],
-            temperature=0.2,
-            response_format={"type": "json_object"},
-        )
-        out = _parse_json(resp.choices[0].message.content or "")
+        out = _parse_json(_chat(prompt))
         valid = set(tag_vocab) | {"其他"}
         out["tags"] = [t for t in out.get("tags", []) if t in valid][:3]
+        out["title_zh"] = (out.get("title_zh") or "").strip()
         _fail_streak = 0
         return out
     except Exception as e:

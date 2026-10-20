@@ -117,7 +117,9 @@ def main():
                     db.save_summary(conn, row["uid"], "（非贸易领域）", [])
                 else:
                     db.save_summary(conn, row["uid"],
-                                    out.get("summary_zh", ""), out.get("tags", []))
+                                    out.get("summary_zh", ""),
+                                    out.get("tags", []),
+                                    out.get("title_zh", ""))
                 processed.add(row["uid"])
                 stats["llm"] += 1
                 time.sleep(0.3)

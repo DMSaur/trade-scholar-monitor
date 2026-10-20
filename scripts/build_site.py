@@ -87,6 +87,7 @@ def collect(conn, scholar_list) -> dict:
             # 论文只带中文摘要控制体积；推文带全文
             "abstract": (r["abstract"] or "") if r["source"] == "tweet" else "",
             "summary_zh": r["summary_zh"] or "",
+            "title_zh": (r["title_zh"] if "title_zh" in r.keys() else "") or "",
             "tags": json.loads(r["tags"] or "[]"),
             "extra": extra,
         })
@@ -179,6 +180,10 @@ h1{font-size:25px;font-weight:700;letter-spacing:.5px}
 .card h2 a{color:var(--ink);text-decoration:none}
 .card h2 a:hover{color:var(--accent);text-decoration:underline}
 .authors{font-size:12.5px;color:var(--sub);margin-bottom:6px}
+.title-en{font-size:12.5px;color:var(--sub);margin:-2px 0 4px;line-height:1.45;
+  overflow-wrap:anywhere}
+.title-en a{color:var(--sub);text-decoration:none}
+.title-en a:hover{color:var(--accent)}
 .summary-zh{
   font-size:13.8px;color:#333;border-left:3px solid var(--accent-soft);
   padding-left:10px;margin:6px 0;overflow-wrap:anywhere;
@@ -348,11 +353,17 @@ function cardHTML(it){
     : '';
   const text = it.source === 'tweet'
     ? `<p class="tweet-text">${esc(it.abstract||'')}</p>` : '';
-  // 推文正文已经完整展示，标题行只在没有正文时显示
+  // 推文正文已经完整展示；论文标题有中文翻译时中文为主、原文为副
   const showTitle = !(it.source === 'tweet' && it.abstract);
-  const titleHTML = showTitle && it.url
-    ? `<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title||it.summary_zh||'(无标题)')}</a>`
-    : (showTitle ? esc(it.title||'') : '');
+  const zh = it.title_zh || '';
+  const mainTitle = showTitle ? (zh || it.title || it.summary_zh || '(无标题)') : '';
+  const titleHTML = !mainTitle ? '' : (it.url
+    ? `<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(mainTitle)}</a>`
+    : esc(mainTitle));
+  const titleEn = (showTitle && zh && it.title && zh !== it.title)
+    ? `<p class="title-en">${it.url
+        ? `<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>`
+        : esc(it.title)}</p>` : '';
   const summary = it.summary_zh && it.summary_zh !== '（非贸易领域）'
     ? `<p class="summary-zh">${esc(it.summary_zh)}</p>` : '';
   const authors = it.authors && it.source !== 'tweet'
@@ -363,6 +374,7 @@ function cardHTML(it){
   return `<article class="card">
     <div class="card-top">${badges}${venueInfo}</div>
     ${titleHTML ? `<h2>${titleHTML}</h2>` : ''}
+    ${titleEn}
     ${authors}${text}${summary}${stats}${tags}
   </article>`;
 }
