@@ -34,7 +34,7 @@
 
 - 线上地址：https://dmsaur.github.io/trade-scholar-monitor/
 - 本地直接打开：`docs/index.html`（数据内联，无需起服务）
-- 去重与历史：`data/monitor.db`（SQLite，按 uid 去重，保留全部历史；网页只展示近 30 天）
+- 去重与历史：`data/monitor.db`（SQLite，按 uid 去重，保留全部历史；网页数据覆盖近半年，页面默认显示近 30 天，可切半年视图）
 - 日志：`logs/YYYY-MM-DD.log`
 
 ## 手动运行
