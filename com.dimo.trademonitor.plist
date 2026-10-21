@@ -22,6 +22,10 @@
         <integer>30</integer>
     </dict>
 
+    <!-- 电脑睡过 9:30 时，登录唤醒后补跑一次 -->
+    <key>RunAtLoad</key>
+    <true/>
+
     <key>StandardOutPath</key>
     <string>/Users/dimo/.trade-monitor/logs/launchd.out</string>
     <key>StandardErrorPath</key>
