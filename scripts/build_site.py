@@ -422,7 +422,9 @@ function cardHTML(it){
     if(links.length){
       linkCards = `<div class="lcards">` + links.map(l => {
         const host = l.domain || '链接';
-        const title = l.title || l.url || l.tco || '外部链接';
+        const title = l.title ||
+          (l.url||'').replace(/^https?:\/\//,'').replace(/^www\./,'') ||
+          '外部链接';
         const href = l.url || l.tco || '#';
         return `<a class="lcard" href="${esc(href)}" target="_blank" rel="noopener">` +
           (l.image ? `<img class="lcard-img" src="${esc(l.image)}" loading="lazy" alt="" onerror="this.remove()">` : '') +
