@@ -2,6 +2,7 @@
 """生成可视化网页：docs/index.html（内联数据）+ docs/data/latest.json。"""
 import json
 import re
+from collections import Counter
 from datetime import datetime
 
 import db
@@ -93,8 +94,25 @@ def collect(conn, scholar_list) -> dict:
         })
     items.sort(key=lambda x: (x["date"], x["uid"]), reverse=True)
     items = _dedupe_papers(items)
+    # 学者名单（启用中的），附带近半年动态数
+    cnt = Counter(it["extra"].get("scholar_name")
+                  for it in items if it.get("extra"))
+    scholars_out = []
+    for s in scholar_list:
+        if not s.get("enabled", True):
+            continue
+        scholars_out.append({
+            "name": s["name"],
+            "affiliation": s.get("affiliation") or "",
+            "twitter": (s.get("twitter") or "").lstrip("@"),
+            "homepage": s.get("homepage") or "",
+            "openalex": s.get("openalex_id") or "",
+            "s2": s.get("s2_id") or "",
+            "items": cnt.get(s["name"], 0),
+        })
     return {"generated_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
-            "window_days": WINDOW_DAYS, "items": items}
+            "window_days": WINDOW_DAYS, "items": items,
+            "scholars": scholars_out}
 
 
 TEMPLATE = r"""<!DOCTYPE html>
@@ -200,6 +218,31 @@ h1{font-size:25px;font-weight:700;letter-spacing:.5px}
 .empty{color:var(--sub);text-align:center;padding:60px 0;font-size:14px}
 footer{margin-top:44px;color:var(--sub);font-size:12.5px;border-top:1px solid var(--border);padding-top:14px}
 footer a{color:var(--sub)}
+.roster-note{font-size:13px;color:var(--sub);margin:14px 0 10px}
+.roster-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(225px,1fr));gap:10px}
+.scard{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 14px}
+.scard-name{font-weight:700;font-size:14.5px;line-height:1.4}
+.scard-aff{color:var(--sub);font-size:12.5px;margin:2px 0 4px}
+.scard-meta{font-size:11.5px;color:var(--sub);margin-bottom:7px}
+.scard-links{display:flex;flex-wrap:wrap;gap:6px}
+.slink{font-size:12px;color:var(--accent);text-decoration:none;border:1px solid var(--border);border-radius:5px;padding:1px 7px}
+.slink:hover{border-color:var(--accent)}
+.suggest{margin-top:26px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px 18px}
+.suggest h3{font-size:15.5px;margin-bottom:4px}
+.sg-hint{font-size:12.5px;color:var(--sub);margin-bottom:10px}
+.sform{display:grid;gap:8px}
+.sform input,.sform textarea{
+  border:1px solid var(--border);border-radius:8px;padding:8px 10px;
+  font:inherit;font-size:13.5px;width:100%;background:var(--bg);color:var(--ink);
+}
+.sform input:focus,.sform textarea:focus{outline:none;border-color:var(--accent)}
+.sg-btns{display:flex;gap:8px}
+.sbtn{
+  border:0;background:var(--accent);color:#fff;border-radius:8px;
+  padding:7px 16px;font:inherit;font-size:13.5px;cursor:pointer;
+}
+.sbtn-ghost{background:var(--card);color:var(--accent);border:1px solid var(--accent)}
+.sg-ok{font-size:12.5px;color:var(--accent)}
 @media (max-width:640px){
   h1{font-size:21px}
   .toolbar{position:static}
@@ -241,7 +284,9 @@ const SOURCES = [
   {key:'nber',   label:'NBER'},
   {key:'scholar',label:'学者论文'},
   {key:'tweet',  label:'推文'},
+  {key:'roster', label:'学者名单'},
 ];
+const RECIPIENT = '21300680261@m.fudan.edu.cn';
 const state = {tab:'all', range:30, q:'', scholar:''};
 
 const WEEK = ['日','一','二','三','四','五','六'];
@@ -399,8 +444,91 @@ function groupLabel(dateStr){
   return fmtDate(dateStr);
 }
 
+function rosterHTML(){
+  const cards = DATA.scholars.map(s => {
+    const links = [];
+    if(s.homepage) links.push(`<a class="slink" href="${esc(s.homepage)}" target="_blank" rel="noopener">主页</a>`);
+    if(s.twitter) links.push(`<a class="slink" href="https://x.com/${esc(s.twitter)}" target="_blank" rel="noopener">@${esc(s.twitter)}</a>`);
+    if(s.openalex) links.push(`<a class="slink" href="https://openalex.org/${esc(s.openalex)}" target="_blank" rel="noopener">OpenAlex</a>`);
+    if(s.s2) links.push(`<a class="slink" href="https://www.semanticscholar.org/author/${esc(s.s2)}" target="_blank" rel="noopener">S2</a>`);
+    return `<div class="scard">
+      <div class="scard-name">${esc(s.name)}</div>
+      <div class="scard-aff">${esc(s.affiliation)}</div>
+      <div class="scard-meta">近半年 ${s.items} 条动态</div>
+      <div class="scard-links">${links.join('')}</div>
+    </div>`;
+  }).join('');
+  return `<p class="roster-note">共收录 ${DATA.scholars.length} 位学者，「动态」为近半年条目数。</p>
+    <div class="roster-grid">${cards}</div>
+    <div class="suggest">
+      <h3>建议新增学者</h3>
+      <p class="sg-hint">填写后点「打开邮件」发维护者邮箱，或「复制内容」粘贴到任意渠道。</p>
+      <div class="sform">
+        <input id="sg-name" placeholder="学者姓名（必填）">
+        <input id="sg-org" placeholder="所在机构">
+        <input id="sg-tw" placeholder="X 账号（如 @ChadBown）">
+        <input id="sg-hp" placeholder="个人主页">
+        <textarea id="sg-why" rows="2" placeholder="推荐理由（可选）"></textarea>
+        <div class="sg-btns">
+          <button class="sbtn" id="sg-send">打开邮件</button>
+          <button class="sbtn sbtn-ghost" id="sg-copy">复制内容</button>
+        </div>
+        <p class="sg-ok" id="sg-ok" hidden>已复制到剪贴板。</p>
+      </div>
+    </div>`;
+}
+
+function suggestText(){
+  const v = id => (document.getElementById(id).value || '').trim();
+  const line = (label, val) => val ? `${label}：${val}\n` : '';
+  return line('学者姓名', v('sg-name')) + line('所在机构', v('sg-org')) +
+    line('X 账号', v('sg-tw')) + line('个人主页', v('sg-hp')) +
+    line('推荐理由', v('sg-why')) + '\n来自「贸易学者动向」页面的建议';
+}
+
+function bindRoster(root){
+  root.addEventListener('click', e => {
+    if(e.target.id === 'sg-send'){
+      const name = (document.getElementById('sg-name').value || '').trim();
+      const subject = `建议新增贸易学者：${name || '（未填姓名）'}`;
+      window.location.href =
+        `mailto:${RECIPIENT}?subject=${encodeURIComponent(subject)}` +
+        `&body=${encodeURIComponent(suggestText())}`;
+    }else if(e.target.id === 'sg-copy'){
+      const done = () => {
+        const ok = document.getElementById('sg-ok');
+        ok.hidden = false;
+        setTimeout(() => { ok.hidden = true; }, 2500);
+      };
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(suggestText()).then(done).catch(() => {});
+      }else{
+        const ta = document.createElement('textarea');
+        ta.value = suggestText();
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        done();
+      }
+    }
+  });
+}
+
+function renderRoster(){
+  const list = document.getElementById('list');
+  list.innerHTML = rosterHTML();
+  bindRoster(list);
+}
+
 function render(){
   const list = document.getElementById('list');
+  if(state.tab === 'roster'){
+    document.getElementById('footMeta').textContent =
+      `学者名单共 ${DATA.scholars.length} 人（不含已停用条目）。`;
+    renderRoster();
+    return;
+  }
   const base = DATA.items.filter(matchBase);
 
   /* 板块 tab 计数与顶部统计随筛选联动 */
@@ -408,7 +536,8 @@ function render(){
   base.forEach(it => perSource[it.source]++);
   document.querySelectorAll('#tabs .tab').forEach(btn => {
     const k = btn.dataset.tab;
-    const n = k === 'all' ? base.length : perSource[k];
+    const n = k === 'all' ? base.length
+      : (k === 'roster' ? DATA.scholars.length : perSource[k]);
     btn.querySelector('.n').textContent = n;
   });
   ['top5','nber','scholar','tweet'].forEach(k => {

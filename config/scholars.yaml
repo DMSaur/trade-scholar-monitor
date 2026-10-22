@@ -3,31 +3,31 @@ scholars:
   affiliation: MIT
   s2_id: '6703140'
   twitter: ''
-  homepage: ''
+  homepage: https://economics.mit.edu/people/faculty/david-h-autor
   openalex_id: A5029839974
 - name: David Dorn
   affiliation: Geneva
   s2_id: '2880987'
   twitter: ''
-  homepage: ''
+  homepage: https://www.econ.uzh.ch/en/people/faculty/dorn.html
   openalex_id: A5060691488
 - name: Daron Acemoglu
   affiliation: MIT
   s2_id: '2660799'
   twitter: ''
-  homepage: ''
+  homepage: https://economics.mit.edu/people/faculty/daron-acemoglu
   openalex_id: A5012301204
 - name: Marc Melitz
   affiliation: Harvard
   s2_id: '114793883'
   twitter: ''
-  homepage: ''
+  homepage: https://scholar.harvard.edu/melitz
   openalex_id: A5126659015
 - name: Robert Feenstra
   affiliation: UC Davis
   s2_id: '30005916'
   twitter: ''
-  homepage: ''
+  homepage: https://economics.ucdavis.edu/people/fzfeens
   openalex_id: A5008272936
 - name: David Hummels
   affiliation: Purdue
@@ -39,19 +39,19 @@ scholars:
   affiliation: Harvard Kennedy School
   s2_id: '39558634'
   twitter: ''
-  homepage: ''
+  homepage: https://www.hks.harvard.edu/faculty/gordon-hanson
   openalex_id: A5031353967
 - name: Pinelopi Goldberg
   affiliation: Yale
   s2_id: '46223052'
   twitter: ''
-  homepage: ''
+  homepage: https://economics.yale.edu/people/pinelopi-goldberg
   openalex_id: A5036094586
 - name: Nina Pavcnik
   affiliation: Dartmouth
   s2_id: '117831889'
   twitter: ''
-  homepage: ''
+  homepage: https://economics.dartmouth.edu/people/nina-pavcnik
   openalex_id: A5001988454
 - name: Peter Schott
   affiliation: Yale SOM
@@ -63,79 +63,79 @@ scholars:
   affiliation: Yale SOM
   s2_id: '36681513'
   twitter: ''
-  homepage: ''
+  homepage: https://economics.yale.edu/people/amit-khandelwal
   openalex_id: A5110770393
 - name: Kyle Handley
   affiliation: UCSD GPS
   s2_id: '118582669'
   twitter: ''
-  homepage: ''
+  homepage: https://gps.ucsd.edu/faculty-directory/kyle-handley.html
   openalex_id: A5066826624
 - name: Mary Amiti
   affiliation: NY Fed
   s2_id: '67167577'
   twitter: ''
-  homepage: ''
+  homepage: https://www.newyorkfed.org/research/economists/amiti
   openalex_id: A5068818330
 - name: Oleg Itskhoki
   affiliation: Harvard
   s2_id: '103048638'
   twitter: ItsKhoki
-  homepage: ''
+  homepage: https://economics.harvard.edu/people/oleg-itskhoki
   openalex_id: A5088518091
 - name: Pablo Fajgelbaum
   affiliation: UCLA
   s2_id: '93561997'
   twitter: ''
-  homepage: ''
+  homepage: https://economics.ucla.edu/faculty/pablo-fajgelbaum
   openalex_id: A5079289076
 - name: Lorenzo Caliendo
   affiliation: Yale SOM
   s2_id: '69021589'
   twitter: ''
-  homepage: ''
+  homepage: https://som.yale.edu/faculty/lorenzo-caliendo
   openalex_id: A5067197927
 - name: Fernando Parro
   affiliation: Penn State
   s2_id: '115086078'
   twitter: ''
-  homepage: ''
+  homepage: https://economics.psu.edu/people/fernando-parro
   openalex_id: A5017248772
 - name: Pol Antras
   affiliation: Harvard
   s2_id: '104157794'
   twitter: ''
-  homepage: ''
+  homepage: https://scholar.harvard.edu/antras
   openalex_id: A5081815445
 - name: Arnaud Costinot
   affiliation: MIT
   s2_id: '66125727'
   twitter: ''
-  homepage: ''
+  homepage: https://economics.mit.edu/people/faculty/arnaud-costinot
   openalex_id: A5013535154
 - name: Dave Donaldson
   affiliation: MIT
   s2_id: '144846219'
   twitter: ''
-  homepage: ''
+  homepage: https://economics.mit.edu/people/faculty/dave-donaldson
   openalex_id: A5018485700
 - name: Jonathan Eaton
   affiliation: Penn State
   s2_id: '2289918'
   twitter: ''
-  homepage: ''
+  homepage: https://economics.psu.edu/people/jonathan-eaton
   openalex_id: A5109975005
 - name: Samuel Kortum
   affiliation: Yale
   s2_id: '39855208'
   twitter: ''
-  homepage: ''
+  homepage: https://economics.yale.edu/people/samuel-kortum
   openalex_id: A5089629708
 - name: Costas Arkolakis
   affiliation: Yale
   s2_id: '71841281'
   twitter: ''
-  homepage: ''
+  homepage: https://economics.yale.edu/people/costas-arkolakis
   openalex_id: A5074612370
 - name: Treb Allen
   affiliation: Dartmouth
@@ -147,25 +147,25 @@ scholars:
   affiliation: Princeton
   s2_id: '39668154'
   twitter: ''
-  homepage: ''
+  homepage: https://economics.princeton.edu/people/stephen-j-redding
   openalex_id: A5014797088
 - name: Gene Grossman
   affiliation: Princeton
   s2_id: '46240304'
   twitter: ''
-  homepage: ''
+  homepage: https://economics.princeton.edu/people/gene-m-grossman
   openalex_id: A5103503282
 - name: Elhanan Helpman
   affiliation: Harvard
   s2_id: '98640692'
   twitter: ''
-  homepage: ''
+  homepage: https://economics.harvard.edu/people/elhanan-helpman
   openalex_id: A5113776429
 - name: Dani Rodrik
   affiliation: Harvard Kennedy School
   s2_id: '152414182'
   twitter: rodrikdani
-  homepage: ''
+  homepage: https://drodrik.scholar.harvard.edu
   openalex_id: A5113832316
 - name: Paul Krugman
   affiliation: CUNY
@@ -183,13 +183,13 @@ scholars:
   affiliation: Dartmouth
   s2_id: '9016800'
   twitter: DouglasIrwin
-  homepage: ''
+  homepage: https://economics.dartmouth.edu/people/douglas-irwin
   openalex_id: A5007430520
 - name: David Weinstein
   affiliation: Columbia
   s2_id: '2597126'
   twitter: ''
-  homepage: ''
+  homepage: https://economics.columbia.edu/people/faculty/david-e-weinstein
   openalex_id: A5112773136
 - name: Andrew Bernard
   affiliation: Dartmouth Tuck
@@ -201,7 +201,7 @@ scholars:
   affiliation: U Chicago
   s2_id: '1398698229'
   twitter: ''
-  homepage: ''
+  homepage: https://economics.uchicago.edu/directory/esteban-rossi-hansberg
   openalex_id: A5088489492
 - name: 刘志阔
   affiliation: 上海财经大学
@@ -231,7 +231,7 @@ scholars:
   affiliation: Carnegie Endowment
   s2_id: ''
   twitter: michaelxpettis
-  homepage: ''
+  homepage: https://carnegieendowment.org/experts/262
   enabled: true
 - name: Soumaya Keynes
   affiliation: Financial Times
