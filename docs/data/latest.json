@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22 14:00",
+ "generated_at": "2026-10-22 14:20",
  "window_days": 180,
  "items": [
   {
@@ -25,6 +25,15 @@
     "retweets": 3,
     "views": 869,
     "created_at": "2026-10-22T04:13:43+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/Iz4obWApln",
+      "url": "https://ift.tt/6gs4SYM",
+      "title": "Security Verification",
+      "domain": "ft.com",
+      "image": ""
+     }
+    ],
     "scholar_name": "Soumaya Keynes"
    }
   },
@@ -52,6 +61,23 @@
     "retweets": 0,
     "views": 262,
     "created_at": "2026-10-21T23:41:58+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/pKJFb04LfG",
+      "url": "https://www.planetadelibros.com/libro-como-ganar-una-guerra-comercial/458964",
+      "title": "Cómo ganar una guerra comercial - Soumaya Keynes y Chad P. Bown | PlanetadeLibros",
+      "domain": "Planetadelibros",
+      "image": "https://www.planetadelibros.com/assets/images/logos/planeta-de-libros-desktop.svg"
+     },
+     {
+      "tco": "https://t.co/DRK5vPz52t",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
     "scholar_name": "Chad Bown"
    }
   },
@@ -79,6 +105,15 @@
     "retweets": 6,
     "views": 5848,
     "created_at": "2026-10-21T08:15:41+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/QGaWNRMTCC",
+      "url": "https://michaelpettis858496.substack.com/p/trade-leverage-between-the-major",
+      "title": "Trade leverage between the major economies involves very different kinds of disruption",
+      "domain": "michaelpettis858496.substack.com",
+      "image": "https://substackcdn.com/image/fetch/$s_!4BzC!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Fmichaelpettis858496.substack.com%2Ftwitter%2Fsubscribe-card.jpg%3Fv%3D1383612748%26version%3D9"
+     }
+    ],
     "scholar_name": "Michael Pettis"
    }
   },
@@ -133,6 +168,15 @@
     "retweets": 8,
     "views": 6753,
     "created_at": "2026-10-21T05:00:09+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/xzW664j4ta",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-20/us-mexico-trade-talks-hit-impasse-as-lutnick-exerts-influence?utm_source=website&amp;utm_medium=share&amp;utm",
+      "title": "Bloomberg - Are you a robot?",
+      "domain": "bloomberg.com",
+      "image": ""
+     }
+    ],
     "scholar_name": "Michael Pettis"
    }
   },
@@ -160,6 +204,15 @@
     "retweets": 0,
     "views": 9980,
     "created_at": "2026-10-21T04:44:21+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/DELZNO51pS",
+      "url": "https://sc.mp/my9nm?utm_source=twitter&amp;utm_campaign=3371541&amp;utm_medium=share_widget",
+      "title": "China’s hybrid car exports to EU surge by more than 200% as import cap looms",
+      "domain": "South China Morning Post",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/og_image_scmp_generic/public/d8/images/canvas/2026/10/20/5e5cb15a-f0c7-409a-8dac-86ca2910efa3_8b6cd7ce.jpg?itok=rNa-uaoP&amp;v=1792499039"
+     }
+    ],
     "scholar_name": "Michael Pettis"
    }
   },
@@ -186,6 +239,15 @@
     "retweets": 9,
     "views": 12255,
     "created_at": "2026-10-21T04:34:40+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/uItzINsI00",
+      "url": "https://www.caixinglobal.com/2026-10-20/chinas-consumers-keep-tight-grip-on-their-wallets-102495297.html",
+      "title": "China’s Consumers Keep Tight Grip on Their Wallets",
+      "domain": "Caixin Global",
+      "image": "https://img.caixin.com/2026-10-20/179249079783365_560_373.jpg"
+     }
+    ],
     "scholar_name": "Michael Pettis"
    }
   },
@@ -212,6 +274,15 @@
     "retweets": 2,
     "views": 6147,
     "created_at": "2026-10-21T04:19:06+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/BMIqCkQriu",
+      "url": "https://english.news.cn/20261020/669c961ac6554dc6a9725703c35602b4/c.html",
+      "title": "Update: China",
+      "domain": "english.news.cn",
+      "image": ""
+     }
+    ],
     "scholar_name": "Michael Pettis"
    }
   },
@@ -264,6 +335,15 @@
     "retweets": 12,
     "views": 7591,
     "created_at": "2026-10-21T03:26:26+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/Mkql3WrpJm",
+      "url": "https://www.foreignaffairs.com/reviews/authoritarian-markets-politics-chinas-banking-explosion",
+      "title": "Authoritarian Markets: The Politics of China’s Banking Explosion",
+      "domain": "Foreign Affairs",
+      "image": "https://cdn-live.foreignaffairs.com/sites/default/files/styles/social_share/public/images/2024/05/03/thumbnail_Books%20Twitter%20Card.jpg?itok=KidKYjS-"
+     }
+    ],
     "scholar_name": "Michael Pettis"
    }
   },
@@ -290,6 +370,15 @@
     "retweets": 0,
     "views": 951,
     "created_at": "2026-10-21T02:08:28+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/UB9PX4GyA4",
+      "url": "https://ift.tt/Z8WpH19",
+      "title": "Security Verification",
+      "domain": "ft.com",
+      "image": ""
+     }
+    ],
     "scholar_name": "Soumaya Keynes"
    }
   },
@@ -316,6 +405,15 @@
     "retweets": 149,
     "views": 33673,
     "created_at": "2026-10-20T08:03:12+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/hswUMFL2ZZ",
+      "url": "https://www.ft.com/content/3868b320-2c24-418e-b702-c86e2620e4a6",
+      "title": "Security Verification",
+      "domain": "ft.com",
+      "image": ""
+     }
+    ],
     "scholar_name": "Michael Pettis"
    }
   },
@@ -342,6 +440,15 @@
     "retweets": 6,
     "views": 9664,
     "created_at": "2026-10-20T03:39:02+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/AZCj7NCTTz",
+      "url": "https://www.caixinglobal.com/2026-10-19/yuan-ranks-third-in-global-payments-under-broader-measure-pboc-chief-says-102495028.html",
+      "title": "Yuan Ranks Third in Global Payments Under Broader Measure, PBOC Chief Says",
+      "domain": "Caixin Global",
+      "image": "https://img.caixin.com/2026-10-20/179246038742218_560_373.jpg"
+     }
+    ],
     "scholar_name": "Michael Pettis"
    }
   },
@@ -368,6 +475,15 @@
     "retweets": 2,
     "views": 6902,
     "created_at": "2026-10-20T03:37:09+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/gZ8Tjko3qe",
+      "url": "https://www.caixinglobal.com/2026-10-20/china-sets-out-financing-support-for-three-innovation-hubs-102495032.html",
+      "title": "China Sets Out Financing Support for Three Innovation Hubs",
+      "domain": "Caixin Global",
+      "image": "https://img.caixin.com/2026-10-19/179241855656969_560_373.jpg"
+     }
+    ],
     "scholar_name": "Michael Pettis"
    }
   },
@@ -394,6 +510,15 @@
     "retweets": 2,
     "views": 7302,
     "created_at": "2026-10-20T03:34:00+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/IlARSTnp2m",
+      "url": "https://www.caixinglobal.com/2026-10-19/chinas-third-quarter-gdp-growth-edges-up-to-45-102494770.html",
+      "title": "China’s Third-Quarter GDP Growth Edges Up to 4.5%",
+      "domain": "Caixin Global",
+      "image": "https://img.caixin.com/2026-10-19/179239610299092_560_373.jpg"
+     }
+    ],
     "scholar_name": "Michael Pettis"
    }
   },
@@ -421,6 +546,15 @@
     "retweets": 7,
     "views": 9415,
     "created_at": "2026-10-20T03:20:05+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/V3JFNiZ1S2",
+      "url": "https://english.news.cn/20261019/8332b0c369f549ca83b6b6a9833a1622/c.html",
+      "title": "Xinhua Headlines: China",
+      "domain": "english.news.cn",
+      "image": ""
+     }
+    ],
     "scholar_name": "Michael Pettis"
    }
   },
@@ -447,6 +581,15 @@
     "retweets": 13,
     "views": 9809,
     "created_at": "2026-10-19T07:37:24+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/btVl1odOqP",
+      "url": "https://www.ft.com/content/cf113314-1077-4ab4-b667-9912656684f1",
+      "title": "Security Verification",
+      "domain": "ft.com",
+      "image": ""
+     }
+    ],
     "scholar_name": "Michael Pettis"
    }
   },
@@ -475,6 +618,15 @@
     "retweets": 56,
     "views": 27147,
     "created_at": "2026-10-19T07:34:02+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/yWXprpdixG",
+      "url": "https://www.nytimes.com/2026/10/18/business/china-economy-gdp.html?smid=tw-share",
+      "title": "nytimes.com",
+      "domain": "nytimes.com",
+      "image": ""
+     }
+    ],
     "scholar_name": "Michael Pettis"
    }
   },
@@ -501,6 +653,15 @@
     "retweets": 34,
     "views": 21673,
     "created_at": "2026-10-19T03:40:34+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/NB7JruTd3w",
+      "url": "https://english.news.cn/20261019/2da9b2afcdaf42d3a3f009c338edd92a/c.html",
+      "title": "China",
+      "domain": "english.news.cn",
+      "image": ""
+     }
+    ],
     "scholar_name": "Michael Pettis"
    }
   },
@@ -527,6 +688,15 @@
     "retweets": 0,
     "views": 858,
     "created_at": "2026-10-18T18:55:40+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/IajalWGUGg",
+      "url": "https://www.nytimes.com/2026/10/17/health/helen-branswell-dead.html",
+      "title": "nytimes.com",
+      "domain": "nytimes.com",
+      "image": ""
+     }
+    ],
     "scholar_name": "Chad Bown"
    }
   },
@@ -580,6 +750,15 @@
     "retweets": 14,
     "views": 16523,
     "created_at": "2026-10-18T04:42:21+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/s9xWo8sWuj",
+      "url": "https://sc.mp/bef4i?utm_source=twitter&amp;utm_campaign=3371217&amp;utm_medium=share_widget",
+      "title": "China warns EU not to ‘fantasise’ on trade approach after ‘kill switch’ threat",
+      "domain": "South China Morning Post",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/og_image_scmp_generic/public/d8/images/canvas/2026/10/17/c494c041-c75f-4d37-8ff4-60a50db17650_7fc63a2d.jpg?itok=geHflXXu&amp;v=1792192586"
+     }
+    ],
     "scholar_name": "Michael Pettis"
    }
   },
@@ -606,6 +785,15 @@
     "retweets": 18,
     "views": 13520,
     "created_at": "2026-10-17T04:54:50+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/1xDWMi07av",
+      "url": "https://www.yicaiglobal.com/news/chinas-annual-rd-investment-exceeds-usd583-billion-for-first-time-in-2025",
+      "title": "China’s Annual R&amp;D Investment Exceeds USD583 Billion for First Time in 2025",
+      "domain": "yicaiglobal.com",
+      "image": "http://imgcn.yicaiglobal.com/src/image/2026/10/133261800977093.jpg"
+     }
+    ],
     "scholar_name": "Michael Pettis"
    }
   },
@@ -633,6 +821,15 @@
     "retweets": 39,
     "views": 29875,
     "created_at": "2026-10-17T04:54:43+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/unxW95gs3K",
+      "url": "https://www.reuters.com/world/china/this-chinese-export-boom-really-has-legs-wings-2026-10-15/",
+      "title": "reuters.com",
+      "domain": "reuters.com",
+      "image": ""
+     }
+    ],
     "scholar_name": "Michael Pettis"
    }
   },
@@ -660,6 +857,15 @@
     "retweets": 1,
     "views": 10797,
     "created_at": "2026-10-17T04:42:52+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/GocPndGcUc",
+      "url": "https://sc.mp/k3im3?utm_source=twitter&amp;utm_campaign=3371178&amp;utm_medium=share_widget",
+      "title": "As tariff threats ease, US in fashion again among Chinese exporters",
+      "domain": "South China Morning Post",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/og_image_scmp_generic/public/d8/images/canvas/2026/10/16/82ff7c16-cdbc-471b-af23-48911f185a3e_d4f03e20.jpg?itok=9Wefzx36&amp;v=1792145931"
+     }
+    ],
     "scholar_name": "Michael Pettis"
    }
   },
@@ -686,6 +892,15 @@
     "retweets": 14,
     "views": 10562,
     "created_at": "2026-10-17T04:33:28+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/hfuJ7d9KCb",
+      "url": "https://www.caixinglobal.com/2026-10-16/analysis-china-seeks-private-capital-to-help-fund-its-infrastructure-push-102494082.html",
+      "title": "Analysis: China Seeks Private Capital to Help Fund Its Infrastructure Push",
+      "domain": "Caixin Global",
+      "image": "https://img.caixin.com/2026-10-16/179214592709674_560_373.jpg"
+     }
+    ],
     "scholar_name": "Michael Pettis"
    }
   },
@@ -712,6 +927,15 @@
     "retweets": 5,
     "views": 8920,
     "created_at": "2026-10-17T04:20:07+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/8Gr1iHKXXC",
+      "url": "https://www.yicaiglobal.com/news/chinas-nearly-record-low-non-bank-deposits-widening-m2-m1-gap-in-september-signals-slowdown-in-deposit-shift-amid-market-volati",
+      "title": "This news could not be found",
+      "domain": "yicaiglobal.com",
+      "image": ""
+     }
+    ],
     "scholar_name": "Michael Pettis"
    }
   },
@@ -739,6 +963,15 @@
     "retweets": 9,
     "views": 11669,
     "created_at": "2026-10-17T04:13:13+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/fzNvj8cVxx",
+      "url": "https://english.news.cn/20261017/055d321f83e24ba7806816befe7e5235/c.html",
+      "title": "China raises 1.3 trillion yuan via ultra-long special treasury bonds issuance in 2026",
+      "domain": "english.news.cn",
+      "image": ""
+     }
+    ],
     "scholar_name": "Michael Pettis"
    }
   },
@@ -765,6 +998,15 @@
     "retweets": 40,
     "views": 24434,
     "created_at": "2026-10-17T03:37:52+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/OcM6OsyrNW",
+      "url": "https://adamtooze.substack.com/p/chartbook-478-money-and-empire-for?r=12ygf&amp;utm_campaign=post-expanded-share&amp;utm_medium=web",
+      "title": "Chartbook 478 Money and Empire - for Perry Mehrling",
+      "domain": "adamtooze.substack.com",
+      "image": "https://substackcdn.com/image/fetch/$s_!_UJO!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7c9935ba-2b2f-4ba2-9a50-285181382fbf_1492x838.png"
+     }
+    ],
     "scholar_name": "Michael Pettis"
    }
   },
@@ -791,6 +1033,15 @@
     "retweets": 12,
     "views": 14264,
     "created_at": "2026-10-17T03:33:00+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/VHeZcCe921",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-16/china-moves-to-prop-up-stock-market-with-selling-curbs-buybacks?taid=6ad1ed7155b4c5000100f10f&amp;utm_campaig",
+      "title": "Bloomberg - Are you a robot?",
+      "domain": "bloomberg.com",
+      "image": ""
+     }
+    ],
     "scholar_name": "Michael Pettis"
    }
   },
@@ -845,6 +1096,16 @@
     "retweets": 0,
     "views": 870,
     "created_at": "2026-10-16T07:57:48+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/KxBspxLGEj",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
     "scholar_name": "Chad Bown"
    }
   },
@@ -871,6 +1132,15 @@
     "retweets": 6,
     "views": 7963,
     "created_at": "2026-10-16T07:42:18+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/xxBkIVXqY5",
+      "url": "https://elcomercio.pe/opinion/colaboradores/por-una-politica-industrial-soberana-por-jorge-guajardo-china-aranceles-tlc-noticia/?outputType=amp",
+      "title": "Por una política industrial soberana",
+      "domain": "El Comercio Perú",
+      "image": "https://elcomercio.pe/resizer/v2/ILDRU2BITZFR7DUB36GES2IFPU.jpg?auth=44cfd4ef9de953e76f3bc4cc2ad4da544bc81966a55debbef054a146143d2dce&amp;width=980&amp;height=528&amp;quality=75&amp;smart=true"
+     }
+    ],
     "scholar_name": "Michael Pettis"
    }
   },
@@ -950,6 +1220,15 @@
     "retweets": 104,
     "views": 44201,
     "created_at": "2026-10-15T04:42:17+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/8HZ99JBh3t",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-14/china-s-backdoor-bond-buying-talk-swirls-on-600-billion-buildup?utm_source=website&amp;utm_medium=share&amp;u",
+      "title": "Bloomberg - Are you a robot?",
+      "domain": "bloomberg.com",
+      "image": ""
+     }
+    ],
     "scholar_name": "Michael Pettis"
    }
   },
@@ -977,6 +1256,15 @@
     "retweets": 0,
     "views": 2292,
     "created_at": "2026-10-14T18:47:39+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/XBNBnR5RWy",
+      "url": "https://policy.trade.ec.europa.eu/events/trade-policy-day-2026-2026-10-14_en",
+      "title": "Trade Policy Day 2026",
+      "domain": "Trade and Economic Security",
+      "image": "https://policy.trade.ec.europa.eu/sites/default/files/styles/ewcms_metatag_image/public/2026-06/TPD-2026%20-%20Socials_01%20-%20Thumbnail%20-%20600x400-80.jpg?h=c03848df&amp;itok=3Jnrk8KS"
+     }
+    ],
     "scholar_name": "Chad Bown"
    }
   },
@@ -1005,6 +1293,15 @@
     "retweets": 0,
     "views": 1109,
     "created_at": "2026-10-13T05:53:30+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/jYqEpMw0f0",
+      "url": "https://www.hec.edu/en/dare/geopolitics-public-affairs/beyond-summits-building-franco-german-policy-community-inside",
+      "title": "Beyond the Summits: Building a Franco-German Policy Community from the Inside",
+      "domain": "Dare, HEC Media Hub",
+      "image": "https://hec-prod-drupalfiles.oos.cloudgouv-eu-west-1.outscale.com/s3fs-public/2026-10/MH_Debats_Beyond%20the%20Summits%20Building%20a%20Franco-German%20Policy%20Community%20from%20the%20Inside%20-%20Debate.jpg"
+     }
+    ],
     "scholar_name": "Chad Bown"
    }
   },
@@ -1031,6 +1328,16 @@
     "retweets": 0,
     "views": 862,
     "created_at": "2026-10-12T20:41:01+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/StJr7BJc7r",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
     "scholar_name": "Chad Bown"
    }
   },
@@ -1058,6 +1365,23 @@
     "retweets": 6,
     "views": 1190,
     "created_at": "2026-10-09T15:10:30+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/Pv2yX7WlGe",
+      "url": "https://www.ft.com/content/2823ef6f-b3d7-494b-b131-414c02d6a59f?syn-25a6b1a6=1",
+      "title": "Security Verification",
+      "domain": "ft.com",
+      "image": ""
+     },
+     {
+      "tco": "https://t.co/l26DcT1m4H",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
     "scholar_name": "Chad Bown"
    }
   },
@@ -1085,6 +1409,15 @@
     "retweets": 0,
     "views": 986,
     "created_at": "2026-10-09T13:43:04+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/V19YlqZxWY",
+      "url": "https://ift.tt/uqD9L7o",
+      "title": "Security Verification",
+      "domain": "ft.com",
+      "image": ""
+     }
+    ],
     "scholar_name": "Soumaya Keynes"
    }
   },
@@ -1111,6 +1444,15 @@
     "retweets": 2,
     "views": 1079,
     "created_at": "2026-10-09T04:58:17+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/LBchZLGgSj",
+      "url": "https://ift.tt/LcPhjnx",
+      "title": "Security Verification",
+      "domain": "ft.com",
+      "image": ""
+     }
+    ],
     "scholar_name": "Soumaya Keynes"
    }
   },
@@ -1191,6 +1533,15 @@
     "retweets": 0,
     "views": 1008,
     "created_at": "2026-10-08T04:48:22+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/a9oZktYDjg",
+      "url": "https://ift.tt/MCpgTaH",
+      "title": "Security Verification",
+      "domain": "ft.com",
+      "image": ""
+     }
+    ],
     "scholar_name": "Soumaya Keynes"
    }
   },
@@ -1217,6 +1568,16 @@
     "retweets": 0,
     "views": 1158,
     "created_at": "2026-10-06T11:51:15+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/2MeMwatzrR",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
     "scholar_name": "Chad Bown"
    }
   },
@@ -1293,6 +1654,23 @@
     "retweets": 0,
     "views": 975,
     "created_at": "2026-10-05T21:00:25+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/Xebi03T1Oa",
+      "url": "https://www.cbc.ca/listen/live-radio/1-100-ottawa-morning/clip/16241181-how-win-trade-war",
+      "title": "",
+      "domain": "cbc.ca",
+      "image": ""
+     },
+     {
+      "tco": "https://t.co/aDy2g8y4c8",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
     "scholar_name": "Chad Bown"
    }
   },
@@ -1320,6 +1698,15 @@
     "retweets": 0,
     "views": 2050,
     "created_at": "2026-10-05T13:38:26+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/MICMgXUrfS",
+      "url": "https://www.sciencespo.fr/psia/events/how-to-win-a-trade-war/",
+      "title": "How to Win a Trade War",
+      "domain": "Paris School of International Affairs",
+      "image": "https://www.sciencespo.fr/psia/static/4b9816e0a7585e8c118c04089e3131f9/271d2/shutterstock_Sunday_Stock_44f439079b.jpg"
+     }
+    ],
     "scholar_name": "Chad Bown"
    }
   },
@@ -1347,6 +1734,15 @@
     "retweets": 2,
     "views": 3624,
     "created_at": "2026-10-03T14:12:45+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/gth89vx5rg",
+      "url": "https://youtu.be/xB7n1RIahj8?si=PdG9BWPt5nS0Tki1",
+      "title": "",
+      "domain": "youtube.com",
+      "image": ""
+     }
+    ],
     "scholar_name": "Chad Bown"
    }
   },
@@ -1373,6 +1769,15 @@
     "retweets": 3,
     "views": 102,
     "created_at": "2026-10-02T20:47:51+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/Kf1RwpLgE6",
+      "url": "https://www.cbc.ca/news/politics/lng-expansion-chinese-steel-9.7366745?__vfz=medium%3Dsharebar",
+      "title": "LNG Canada to use Chinese steel on $33B expansion project in Kitimat, B.C. | CBC News",
+      "domain": "CBC",
+      "image": "https://i.cbc.ca/ais/c2d72329-a333-42f2-ae4f-5dd71dac8842,1790949321185/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C174%2C3333%2C1874%29%3BResize%3D620"
+     }
+    ],
     "scholar_name": "Chad Bown"
    }
   },
@@ -1400,6 +1805,16 @@
     "retweets": 2,
     "views": 1705,
     "created_at": "2026-10-02T17:53:22+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/ItjLBkmQTi",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
     "scholar_name": "Chad Bown"
    }
   },
@@ -1426,6 +1841,15 @@
     "retweets": 3,
     "views": 3746,
     "created_at": "2026-10-02T15:32:00+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/YE9a7i39fP",
+      "url": "https://soumayakeynes.substack.com/p/why-the-ai-labs-want-economists",
+      "title": "Why the AI labs want economists",
+      "domain": "soumayakeynes.substack.com",
+      "image": "https://substackcdn.com/image/fetch/$s_!RIvd!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fea818e28-24f2-4005-8b86-fdbd06847d1a_1508x1126.png"
+     }
+    ],
     "scholar_name": "Soumaya Keynes"
    }
   },
@@ -1453,6 +1877,23 @@
     "retweets": 4,
     "views": 3293,
     "created_at": "2026-10-02T12:23:03+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/SbiRPrZH8Y",
+      "url": "https://pod.fo/e/67c394",
+      "title": "The Economics Show: Why Big Tech wants more economists",
+      "domain": "podfollow",
+      "image": "https://podfollow.com/1746352576/episode/19280714636595b827123aaaaa6681c86882ed7a/social.jpg?v=5&pcv=2&erv=bcfacc2cea9c"
+     },
+     {
+      "tco": "https://t.co/olRTASCRdM",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
     "scholar_name": "Soumaya Keynes"
    }
   },
@@ -1480,6 +1921,15 @@
     "retweets": 4,
     "views": 5051,
     "created_at": "2026-10-02T05:03:59+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/Oz346fhBDf",
+      "url": "https://ift.tt/CDI9FXt",
+      "title": "Security Verification",
+      "domain": "ft.com",
+      "image": ""
+     }
+    ],
     "scholar_name": "Soumaya Keynes"
    }
   },
@@ -1637,6 +2087,15 @@
     "retweets": 2,
     "views": 1375,
     "created_at": "2026-09-25T04:13:25+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/Jdk87sYgdc",
+      "url": "https://ift.tt/8grNKnm",
+      "title": "Security Verification",
+      "domain": "ft.com",
+      "image": ""
+     }
+    ],
     "scholar_name": "Soumaya Keynes"
    }
   },
@@ -1663,6 +2122,23 @@
     "retweets": 1,
     "views": 1238,
     "created_at": "2026-09-24T15:32:03+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/VGOKPMiy0l",
+      "url": "https://www.ft.com/content/9d1192a9-abb7-4a91-9638-4ffa855afbb8?syn-25a6b1a6=1",
+      "title": "Security Verification",
+      "domain": "ft.com",
+      "image": ""
+     },
+     {
+      "tco": "https://t.co/peSsI9c5i7",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
     "scholar_name": "Soumaya Keynes"
    }
   },
@@ -1690,6 +2166,15 @@
     "retweets": 3,
     "views": 1237,
     "created_at": "2026-09-24T04:33:40+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/MFKRwDyjoP",
+      "url": "https://ift.tt/E0sOHU6",
+      "title": "Security Verification",
+      "domain": "ft.com",
+      "image": ""
+     }
+    ],
     "scholar_name": "Soumaya Keynes"
    }
   },
@@ -1744,6 +2229,23 @@
     "retweets": 62,
     "views": 274274,
     "created_at": "2026-09-19T08:02:54+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/B4DrjrpstA",
+      "url": "https://www.ft.com/content/124c1cf0-4885-495c-a907-a5217d589f9d?syn-25a6b1a6=1",
+      "title": "Security Verification",
+      "domain": "ft.com",
+      "image": ""
+     },
+     {
+      "tco": "https://t.co/TlS4rzk0eE",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
     "scholar_name": "Soumaya Keynes"
    }
   },
@@ -1798,6 +2300,15 @@
     "retweets": 0,
     "views": 1267,
     "created_at": "2026-09-18T04:23:28+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/GFgfX7M1aI",
+      "url": "https://ift.tt/yNGWJpK",
+      "title": "Security Verification",
+      "domain": "ft.com",
+      "image": ""
+     }
+    ],
     "scholar_name": "Soumaya Keynes"
    }
   },
@@ -1824,6 +2335,15 @@
     "retweets": 4,
     "views": 1344,
     "created_at": "2026-09-17T04:18:04+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/EYzVpLZm8C",
+      "url": "https://ift.tt/caHTfq3",
+      "title": "Security Verification",
+      "domain": "ft.com",
+      "image": ""
+     }
+    ],
     "scholar_name": "Soumaya Keynes"
    }
   },
@@ -1850,6 +2370,15 @@
     "retweets": 3,
     "views": 6726,
     "created_at": "2026-09-14T13:43:23+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/al3EFn5mdF",
+      "url": "https://youtu.be/ZNtevnJe_8k?is=4Eg6IQf-TlVTTtp9",
+      "title": "",
+      "domain": "youtube.com",
+      "image": ""
+     }
+    ],
     "scholar_name": "Oleg Itskhoki"
    }
   },
@@ -1877,6 +2406,16 @@
     "retweets": 50,
     "views": 88003,
     "created_at": "2026-09-01T01:53:17+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/wa5mQp39hP",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
     "scholar_name": "Michael Clemens"
    }
   },
@@ -2127,6 +2666,16 @@
     "retweets": 5,
     "views": 2275,
     "created_at": "2026-08-24T15:17:43+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/WKQpF6lpn6",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
     "scholar_name": "Michael Clemens"
    }
   },
@@ -3098,6 +3647,16 @@
     "retweets": 9,
     "views": 11795,
     "created_at": "2026-05-26T12:55:03+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/K82hmyfd5z",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
     "scholar_name": "Chad Bown"
    }
   },
@@ -3125,6 +3684,30 @@
     "retweets": 40,
     "views": 45001,
     "created_at": "2026-05-26T10:58:53+00:00",
+    "links": [
+     {
+      "tco": "https://t.co/8XXAKcpxCj",
+      "url": "https://www.simonandschuster.com/books/How-to-Win-a-Trade-War/Soumaya-Keynes/9781668221310",
+      "title": "Just a moment...",
+      "domain": "simonandschuster.com",
+      "image": ""
+     },
+     {
+      "tco": "https://t.co/3fWmNVZd7c",
+      "url": "https://www.panmacmillan.com/authors/soumaya-keynes/how-to-win-a-trade-war/9781035090181",
+      "title": "How to Win a Trade War by Soumaya Keynes",
+      "domain": "panmacmillan.com",
+      "image": "https://ik.imagekit.io/panmac/tr:f-jpg,di-placeholder_portrait_aMjPtD9YZ.jpg,w-350/edition/9781035090181.jpg"
+     },
+     {
+      "tco": "https://t.co/d1GlYUrEdh",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
     "scholar_name": "Soumaya Keynes"
    }
   },
