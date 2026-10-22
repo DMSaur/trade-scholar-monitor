@@ -19,6 +19,11 @@ PROXY = os.environ.get("XREACH_PROXY", "http://127.0.0.1:7897")
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
       "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36")
 TCO = re.compile(r"https?://t\.co/\w+")
+# 反爬虫墙的占位标题没有信息量，宁可只显示域名
+JUNK_TITLE = re.compile(
+    r"security verification|are you a robot|just a moment|access denied|"
+    r"captcha|sign in to|log in to|attention required|bot verification|"
+    r"enable javascript|cookies", re.I)
 
 
 def _proxies():
@@ -61,6 +66,8 @@ def _extract_meta(html: str, final_url: str):
     title = (og("og:title") or og("twitter:title")
              or (m.group(1).strip() if m else ""))
     title = re.sub(r"\s+", " ", title)[:160]
+    if JUNK_TITLE.search(title):
+        title = ""  # 反爬虫墙的占位文本，弃用
     domain = (og("og:site_name")
               or urlparse(final_url).netloc.removeprefix("www."))
     image = og("og:image")[:400]
