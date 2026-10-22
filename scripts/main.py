@@ -38,6 +38,8 @@ def main():
     ap.add_argument("--days", type=int, default=7, help="回看天数")
     ap.add_argument("--no-llm", action="store_true", help="跳过中文摘要")
     ap.add_argument("--no-tweets", action="store_true", help="跳过推文抓取")
+    ap.add_argument("--link-limit", type=int, default=30,
+                    help="本轮最多新解析多少条推文外链")
     args = ap.parse_args()
 
     start_date = (datetime.now() - timedelta(days=args.days)).strftime("%Y-%m-%d")
@@ -97,6 +99,12 @@ def main():
                 stats["new"]["tweet"] = stats["new"].get("tweet", 0) + 1
         conn.commit()
         print(f"    新增 {stats['new'].get('tweet', 0)} 条")
+
+        print("[外链] 解析推文里的 t.co 链接")
+        from fetchers import links
+        n = run_step("外链解析", links.enrich, conn, args.link_limit) or 0
+        stats["links"] = n
+        print(f"    新解析 {n} 条")
 
     # 5. LLM 摘要 + 相关性（分批处理，失败的条目本轮跳过避免卡死）
     if not args.no_llm:

@@ -214,6 +214,18 @@ h1{font-size:25px;font-weight:700;letter-spacing:.5px}
 .sub-info{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px;font-size:12px;color:var(--sub)}
 .tweet-text{font-size:14px;white-space:pre-wrap;margin:6px 0;
   word-break:break-word;overflow-wrap:anywhere}
+.tweet-media{display:flex;gap:8px;margin:8px 0;flex-wrap:wrap}
+.tweet-media img{max-height:220px;max-width:100%;border-radius:8px;
+  border:1px solid var(--border);object-fit:cover}
+.lcards{display:grid;gap:6px;margin:8px 0 2px}
+.lcard{display:flex;gap:10px;align-items:center;border:1px solid var(--border);
+  border-radius:10px;padding:8px 10px;text-decoration:none;background:var(--bg)}
+.lcard:hover{border-color:var(--accent)}
+.lcard-img{width:60px;height:60px;object-fit:cover;border-radius:6px;flex:none}
+.lcard-body{display:flex;flex-direction:column;min-width:0}
+.lcard-host{font-size:11px;color:var(--sub);text-transform:uppercase;letter-spacing:.4px}
+.lcard-title{font-size:13px;color:var(--ink);line-height:1.45;display:-webkit-box;
+  -webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .rt-mark{font-size:11.5px;color:var(--sub);border:1px solid var(--border);border-radius:4px;padding:0 6px}
 .empty{color:var(--sub);text-align:center;padding:60px 0;font-size:14px}
 footer{margin-top:44px;color:var(--sub);font-size:12.5px;border-top:1px solid var(--border);padding-top:14px}
@@ -396,8 +408,29 @@ function cardHTML(it){
   const stats = it.source === 'tweet'
     ? `<div class="sub-info"><span>赞 ${e.likes||0}</span><span>转 ${e.retweets||0}</span><span>浏览 ${e.views||0}</span></div>`
     : '';
-  const text = it.source === 'tweet'
-    ? `<p class="tweet-text">${esc(it.abstract||'')}</p>` : '';
+  let text = '', mediaHTML = '', linkCards = '';
+  if(it.source === 'tweet'){
+    const clean = esc((it.abstract||'').replace(/https?:\/\/t\.co\/\w+/g, ''))
+      .replace(/[ \t]+\n/g, '\n').trim();
+    text = clean ? `<p class="tweet-text">${clean}</p>` : '';
+    const medias = (e.media||[]).filter(m => m.url).slice(0,4);
+    if(medias.length){
+      mediaHTML = `<div class="tweet-media">${medias.map(m =>
+        `<img src="${esc(m.url)}" loading="lazy" alt="" onerror="this.style.display='none'">`).join('')}</div>`;
+    }
+    const links = (e.links||[]).filter(l => !l.skip && (l.url || l.title || l.domain)).slice(0,3);
+    if(links.length){
+      linkCards = `<div class="lcards">` + links.map(l => {
+        const host = l.domain || '链接';
+        const title = l.title || l.url || l.tco || '外部链接';
+        const href = l.url || l.tco || '#';
+        return `<a class="lcard" href="${esc(href)}" target="_blank" rel="noopener">` +
+          (l.image ? `<img class="lcard-img" src="${esc(l.image)}" loading="lazy" alt="" onerror="this.remove()">` : '') +
+          `<span class="lcard-body"><span class="lcard-host">${esc(host)}</span>` +
+          `<span class="lcard-title">${esc(title)}</span></span></a>`;
+      }).join('') + `</div>`;
+    }
+  }
   // 推文正文已经完整展示；论文标题有中文翻译时中文为主、原文为副
   const showTitle = !(it.source === 'tweet' && it.abstract);
   const zh = it.title_zh || '';
@@ -420,7 +453,7 @@ function cardHTML(it){
     <div class="card-top">${badges}${venueInfo}</div>
     ${titleHTML ? `<h2>${titleHTML}</h2>` : ''}
     ${titleEn}
-    ${authors}${text}${summary}${stats}${tags}
+    ${authors}${text}${mediaHTML}${linkCards}${summary}${stats}${tags}
   </article>`;
 }
 

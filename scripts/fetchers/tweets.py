@@ -77,6 +77,10 @@ def fetch_handle(handle: str, days: int, count: int = 100) -> list[dict]:
                 "retweets": t.get("retweetCount", 0),
                 "views": t.get("viewCount", 0),
                 "created_at": dt.isoformat(),
+                "media": [
+                    {"type": m.get("type", "image"), "url": m.get("url", "")}
+                    for m in (t.get("media") or [])[:4] if m.get("url")
+                ],
             },
             "relevant": True,
         })

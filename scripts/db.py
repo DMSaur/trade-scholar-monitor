@@ -32,6 +32,14 @@ CREATE TABLE IF NOT EXISTS runs (
     finished_at TEXT,
     stats TEXT
 );
+CREATE TABLE IF NOT EXISTS link_cache (
+    url TEXT PRIMARY KEY,
+    final_url TEXT,
+    title TEXT,
+    domain TEXT,
+    image TEXT,
+    resolved_at TEXT
+);
 """
 
 
