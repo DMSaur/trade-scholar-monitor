@@ -7,7 +7,7 @@ from datetime import datetime
 
 import db
 
-WINDOW_DAYS = 180
+WINDOW_DAYS = 365
 
 SOURCE_LABEL = {"top5": "Top-5 期刊", "nber": "NBER", "scholar": "学者论文", "tweet": "推文"}
 JOURNAL_SHORT = {"AER", "QJE", "JPE", "ECMA", "REStud"}
@@ -94,7 +94,7 @@ def collect(conn, scholar_list) -> dict:
         })
     items.sort(key=lambda x: (x["date"], x["uid"]), reverse=True)
     items = _dedupe_papers(items)
-    # 学者名单（启用中的），附带近半年动态数
+    # 学者名单（启用中的），附带近一年动态数
     cnt = Counter(it["extra"].get("scholar_name")
                   for it in items if it.get("extra"))
     scholars_out = []
@@ -301,6 +301,7 @@ th.roster-num-h{text-align:right}
     <button data-range="7" aria-pressed="false">近 7 天</button>
     <button data-range="30" aria-pressed="true">近 30 天</button>
     <button data-range="180" aria-pressed="false">半年</button>
+    <button data-range="365" aria-pressed="false">一年</button>
   </div>
   <input id="search" type="search" placeholder="搜索标题、作者、摘要…" aria-label="搜索">
   <select id="scholarFilter" aria-label="按学者筛选"><option value="">全部学者</option></select>
@@ -507,7 +508,7 @@ function esc(s){
 }
 
 function rangeLabel(r){
-  return r === 180 ? '近半年' : (r === 7 ? '近 7 天' : '近 30 天');
+  return r === 365 ? '近一年' : (r === 180 ? '近半年' : (r === 7 ? '近 7 天' : '近 30 天'));
 }
 
 function groupLabel(dateStr){
@@ -540,7 +541,7 @@ function rosterHTML(){
       <td><div class="roster-links">${links.join('')}</div></td>
     </tr>`;
   }).join('');
-  return `<p class="roster-note">共收录 ${DATA.scholars.length} 位学者，点上方领域标签可筛选。「动态」为近半年条目数。</p>
+  return `<p class="roster-note">共收录 ${DATA.scholars.length} 位学者，点上方领域标签可筛选。「动态」为近一年条目数。</p>
     <div class="roster-filter">${chips}</div>
     <div class="roster-table-wrap"><table class="roster-table">
       <thead><tr><th>学者</th><th>机构</th><th>领域</th><th class="roster-num-h">动态</th><th>链接</th></tr></thead>
@@ -637,7 +638,7 @@ function render(){
     document.getElementById('c-'+k).textContent = perSource[k];
   });
   document.getElementById('footMeta').textContent =
-    `当前筛选 ${rangeLabel(state.range)}，共 ${base.length} 条；数据共覆盖近半年。`;
+    `当前筛选 ${rangeLabel(state.range)}，共 ${base.length} 条；数据共覆盖近一年。`;
 
   const items = state.tab === 'all' ? base
     : base.filter(it => it.source === state.tab);
