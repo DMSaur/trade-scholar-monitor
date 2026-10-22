@@ -462,7 +462,7 @@ function rosterHTML(){
     <div class="roster-grid">${cards}</div>
     <div class="suggest">
       <h3>建议新增学者</h3>
-      <p class="sg-hint">填写后点「打开邮件」发维护者邮箱，或「复制内容」粘贴到任意渠道。</p>
+      <p class="sg-hint">填写后点「打开邮件」发到维护者邮箱，或点「复制内容」粘贴到任意渠道。</p>
       <div class="sform">
         <input id="sg-name" placeholder="学者姓名（必填）">
         <input id="sg-org" placeholder="所在机构">
