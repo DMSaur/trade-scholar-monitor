@@ -271,7 +271,7 @@ scholars:
   affiliation: UC Berkeley
   field: 量化与理论
   added: '2026-10-22'
-  openalex_id: A5134437271
+  openalex_id: A5059335280
   s2_id: '1403035998'
   twitter: ''
   homepage: ''
@@ -325,7 +325,7 @@ scholars:
   affiliation: Columbia
   field: 量化与理论
   added: '2026-10-22'
-  openalex_id: A5060729846
+  openalex_id: A5065547191
   s2_id: '49034331'
   twitter: ''
   homepage: ''
@@ -397,7 +397,7 @@ scholars:
   affiliation: MIT
   field: 实证贸易
   added: '2026-10-22'
-  openalex_id: A5062277191
+  openalex_id: A5037012399
   s2_id: '2030949'
   twitter: ''
   homepage: https://economics.mit.edu/people/faculty/david-atkin
@@ -523,7 +523,7 @@ scholars:
   affiliation: NYU
   field: 实证贸易
   added: '2026-10-22'
-  openalex_id: A5088116364
+  openalex_id: A5083502022
   s2_id: '2256551789'
   twitter: ''
   homepage: https://www.waugheconomics.com/
@@ -722,8 +722,8 @@ scholars:
   affiliation: HKU
   field: 中国贸易
   added: '2026-10-22'
-  openalex_id: A5120684718
-  s2_id: ''
+  openalex_id: A5002997803
+  s2_id: '49687731'
   twitter: ''
   homepage: ''
   enabled: true
@@ -752,7 +752,7 @@ scholars:
   affiliation: 复旦
   field: 中国贸易
   added: '2026-10-22'
-  openalex_id: A5100337954
+  openalex_id: A5100337939
   s2_id: '2253670010'
   twitter: ''
   homepage: ''
@@ -772,8 +772,8 @@ scholars:
   affiliation: 清华
   field: 中国贸易
   added: '2026-10-22'
-  openalex_id: A5006608457
-  s2_id: '41202343'
+  openalex_id: A5100661754
+  s2_id: '145426833'
   twitter: ''
   homepage: ''
   enabled: true
@@ -812,7 +812,7 @@ scholars:
   affiliation: SMU
   field: 中国贸易
   added: '2026-10-22'
-  openalex_id: A5100735866
+  openalex_id: A5040443438
   s2_id: '145451976'
   twitter: ''
   homepage: ''
@@ -822,7 +822,7 @@ scholars:
   affiliation: CUHK-Shenzhen
   field: 中国贸易
   added: '2026-10-22'
-  openalex_id: A5111752453
+  openalex_id: A5103668023
   s2_id: '49902229'
   twitter: ''
   homepage: ''
@@ -852,8 +852,8 @@ scholars:
   affiliation: HKU
   field: 中国贸易
   added: '2026-10-22'
-  openalex_id: ''
-  s2_id: ''
+  openalex_id: A5100772114
+  s2_id: '2503919413'
   twitter: ''
   homepage: ''
   enabled: true
@@ -872,8 +872,8 @@ scholars:
   affiliation: 中财
   field: 中国贸易
   added: '2026-10-22'
-  openalex_id: ''
-  s2_id: ''
+  openalex_id: A5031714596
+  s2_id: '47449369'
   twitter: ''
   homepage: ''
   enabled: true
