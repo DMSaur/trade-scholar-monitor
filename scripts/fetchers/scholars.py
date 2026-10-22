@@ -19,8 +19,8 @@ def _fetch_openalex(start_date: str, scholars: list[dict]) -> list[dict]:
                 "select": OA_SELECT,
                 "sort": "publication_date:desc",
             },
-            max_pages=3,
-            per_page=50,
+            max_pages=4,
+            per_page=100,
         )
         for w in results:
             if w.get("type") == "paratext":
