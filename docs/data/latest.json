@@ -1,7 +1,33 @@
 {
- "generated_at": "2026-10-22 09:31",
+ "generated_at": "2026-10-22 13:55",
  "window_days": 180,
  "items": [
+  {
+   "uid": "tweet:2113121597666017559",
+   "source": "tweet",
+   "title": "AI and inflation: how worried should central bankers be?  https://t.co/Iz4obWApln",
+   "authors": "@SoumayaKeynes",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/SoumayaKeynes/status/2113121597666017559",
+   "date": "2026-10-22",
+   "abstract": "AI and inflation: how worried should central bankers be?  https://t.co/Iz4obWApln",
+   "summary_zh": "探讨人工智能对通胀的影响，以及央行应如何评估相关风险。",
+   "title_zh": "",
+   "tags": [
+    "其他"
+   ],
+   "extra": {
+    "handle": "SoumayaKeynes",
+    "name": "Soumaya Keynes",
+    "is_retweet": false,
+    "is_reply": false,
+    "likes": 13,
+    "retweets": 3,
+    "views": 869,
+    "created_at": "2026-10-22T04:13:43+00:00",
+    "scholar_name": "Soumaya Keynes"
+   }
+  },
   {
    "uid": "tweet:2113053211162820936",
    "source": "tweet",
@@ -3316,9 +3342,11 @@
    "url": "https://www.nber.org/papers/w35245",
    "date": "2026-05-01",
    "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
+   "summary_zh": "利用美欧日天然气价差测算2007—2025年页岩气使美国消费者节省3.1—4.3万亿美元。",
+   "title_zh": "页岩气为美国消费者节省了多少？",
+   "tags": [
+    "其他"
+   ],
    "extra": {
     "nber_id": "W35245",
     "keyword_hit": "export"
@@ -3405,6 +3433,341 @@
     "nber_id": "W35164",
     "keyword_hit": "export"
    }
+  }
+ ],
+ "scholars": [
+  {
+   "name": "David Autor",
+   "affiliation": "MIT",
+   "twitter": "",
+   "homepage": "https://economics.mit.edu/people/faculty/david-h-autor",
+   "openalex": "A5029839974",
+   "s2": "6703140",
+   "items": 0
+  },
+  {
+   "name": "David Dorn",
+   "affiliation": "Geneva",
+   "twitter": "",
+   "homepage": "https://www.econ.uzh.ch/en/people/faculty/dorn.html",
+   "openalex": "A5060691488",
+   "s2": "2880987",
+   "items": 0
+  },
+  {
+   "name": "Daron Acemoglu",
+   "affiliation": "MIT",
+   "twitter": "",
+   "homepage": "https://economics.mit.edu/people/faculty/daron-acemoglu",
+   "openalex": "A5012301204",
+   "s2": "2660799",
+   "items": 0
+  },
+  {
+   "name": "Marc Melitz",
+   "affiliation": "Harvard",
+   "twitter": "",
+   "homepage": "https://scholar.harvard.edu/melitz",
+   "openalex": "A5126659015",
+   "s2": "114793883",
+   "items": 0
+  },
+  {
+   "name": "Robert Feenstra",
+   "affiliation": "UC Davis",
+   "twitter": "",
+   "homepage": "https://economics.ucdavis.edu/people/fzfeens",
+   "openalex": "A5008272936",
+   "s2": "30005916",
+   "items": 1
+  },
+  {
+   "name": "David Hummels",
+   "affiliation": "Purdue",
+   "twitter": "DavidHummels",
+   "homepage": "",
+   "openalex": "A5000460149",
+   "s2": "144307189",
+   "items": 0
+  },
+  {
+   "name": "Gordon Hanson",
+   "affiliation": "Harvard Kennedy School",
+   "twitter": "",
+   "homepage": "https://www.hks.harvard.edu/faculty/gordon-hanson",
+   "openalex": "A5031353967",
+   "s2": "39558634",
+   "items": 0
+  },
+  {
+   "name": "Pinelopi Goldberg",
+   "affiliation": "Yale",
+   "twitter": "",
+   "homepage": "https://economics.yale.edu/people/pinelopi-goldberg",
+   "openalex": "A5036094586",
+   "s2": "46223052",
+   "items": 3
+  },
+  {
+   "name": "Nina Pavcnik",
+   "affiliation": "Dartmouth",
+   "twitter": "",
+   "homepage": "https://economics.dartmouth.edu/people/nina-pavcnik",
+   "openalex": "A5001988454",
+   "s2": "117831889",
+   "items": 0
+  },
+  {
+   "name": "Peter Schott",
+   "affiliation": "Yale SOM",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5041390477",
+   "s2": "2412051900",
+   "items": 0
+  },
+  {
+   "name": "Amit Khandelwal",
+   "affiliation": "Yale SOM",
+   "twitter": "",
+   "homepage": "https://economics.yale.edu/people/amit-khandelwal",
+   "openalex": "A5110770393",
+   "s2": "36681513",
+   "items": 0
+  },
+  {
+   "name": "Kyle Handley",
+   "affiliation": "UCSD GPS",
+   "twitter": "",
+   "homepage": "https://gps.ucsd.edu/faculty-directory/kyle-handley.html",
+   "openalex": "A5066826624",
+   "s2": "118582669",
+   "items": 2
+  },
+  {
+   "name": "Mary Amiti",
+   "affiliation": "NY Fed",
+   "twitter": "",
+   "homepage": "https://www.newyorkfed.org/research/economists/amiti",
+   "openalex": "A5068818330",
+   "s2": "67167577",
+   "items": 3
+  },
+  {
+   "name": "Oleg Itskhoki",
+   "affiliation": "Harvard",
+   "twitter": "ItsKhoki",
+   "homepage": "https://economics.harvard.edu/people/oleg-itskhoki",
+   "openalex": "A5088518091",
+   "s2": "103048638",
+   "items": 4
+  },
+  {
+   "name": "Pablo Fajgelbaum",
+   "affiliation": "UCLA",
+   "twitter": "",
+   "homepage": "https://economics.ucla.edu/faculty/pablo-fajgelbaum",
+   "openalex": "A5079289076",
+   "s2": "93561997",
+   "items": 0
+  },
+  {
+   "name": "Lorenzo Caliendo",
+   "affiliation": "Yale SOM",
+   "twitter": "",
+   "homepage": "https://som.yale.edu/faculty/lorenzo-caliendo",
+   "openalex": "A5067197927",
+   "s2": "69021589",
+   "items": 0
+  },
+  {
+   "name": "Fernando Parro",
+   "affiliation": "Penn State",
+   "twitter": "",
+   "homepage": "https://economics.psu.edu/people/fernando-parro",
+   "openalex": "A5017248772",
+   "s2": "115086078",
+   "items": 0
+  },
+  {
+   "name": "Pol Antras",
+   "affiliation": "Harvard",
+   "twitter": "",
+   "homepage": "https://scholar.harvard.edu/antras",
+   "openalex": "A5081815445",
+   "s2": "104157794",
+   "items": 1
+  },
+  {
+   "name": "Arnaud Costinot",
+   "affiliation": "MIT",
+   "twitter": "",
+   "homepage": "https://economics.mit.edu/people/faculty/arnaud-costinot",
+   "openalex": "A5013535154",
+   "s2": "66125727",
+   "items": 2
+  },
+  {
+   "name": "Dave Donaldson",
+   "affiliation": "MIT",
+   "twitter": "",
+   "homepage": "https://economics.mit.edu/people/faculty/dave-donaldson",
+   "openalex": "A5018485700",
+   "s2": "144846219",
+   "items": 0
+  },
+  {
+   "name": "Jonathan Eaton",
+   "affiliation": "Penn State",
+   "twitter": "",
+   "homepage": "https://economics.psu.edu/people/jonathan-eaton",
+   "openalex": "A5109975005",
+   "s2": "2289918",
+   "items": 0
+  },
+  {
+   "name": "Samuel Kortum",
+   "affiliation": "Yale",
+   "twitter": "",
+   "homepage": "https://economics.yale.edu/people/samuel-kortum",
+   "openalex": "A5089629708",
+   "s2": "39855208",
+   "items": 0
+  },
+  {
+   "name": "Costas Arkolakis",
+   "affiliation": "Yale",
+   "twitter": "",
+   "homepage": "https://economics.yale.edu/people/costas-arkolakis",
+   "openalex": "A5074612370",
+   "s2": "71841281",
+   "items": 1
+  },
+  {
+   "name": "Treb Allen",
+   "affiliation": "Dartmouth",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5027993293",
+   "s2": "4150056",
+   "items": 1
+  },
+  {
+   "name": "Stephen Redding",
+   "affiliation": "Princeton",
+   "twitter": "",
+   "homepage": "https://economics.princeton.edu/people/stephen-j-redding",
+   "openalex": "A5014797088",
+   "s2": "39668154",
+   "items": 1
+  },
+  {
+   "name": "Gene Grossman",
+   "affiliation": "Princeton",
+   "twitter": "",
+   "homepage": "https://economics.princeton.edu/people/gene-m-grossman",
+   "openalex": "A5103503282",
+   "s2": "46240304",
+   "items": 0
+  },
+  {
+   "name": "Elhanan Helpman",
+   "affiliation": "Harvard",
+   "twitter": "",
+   "homepage": "https://economics.harvard.edu/people/elhanan-helpman",
+   "openalex": "A5113776429",
+   "s2": "98640692",
+   "items": 0
+  },
+  {
+   "name": "Dani Rodrik",
+   "affiliation": "Harvard Kennedy School",
+   "twitter": "rodrikdani",
+   "homepage": "https://drodrik.scholar.harvard.edu",
+   "openalex": "A5113832316",
+   "s2": "152414182",
+   "items": 0
+  },
+  {
+   "name": "Paul Krugman",
+   "affiliation": "CUNY",
+   "twitter": "paulkrugman",
+   "homepage": "",
+   "openalex": "A5032113724",
+   "s2": "33345159",
+   "items": 0
+  },
+  {
+   "name": "Chad Bown",
+   "affiliation": "Peterson Institute",
+   "twitter": "ChadBown",
+   "homepage": "",
+   "openalex": "A5013651639",
+   "s2": "46221253",
+   "items": 20
+  },
+  {
+   "name": "Douglas Irwin",
+   "affiliation": "Dartmouth",
+   "twitter": "DouglasIrwin",
+   "homepage": "https://economics.dartmouth.edu/people/douglas-irwin",
+   "openalex": "A5007430520",
+   "s2": "9016800",
+   "items": 1
+  },
+  {
+   "name": "David Weinstein",
+   "affiliation": "Columbia",
+   "twitter": "",
+   "homepage": "https://economics.columbia.edu/people/faculty/david-e-weinstein",
+   "openalex": "A5112773136",
+   "s2": "2597126",
+   "items": 0
+  },
+  {
+   "name": "Andrew Bernard",
+   "affiliation": "Dartmouth Tuck",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5034238250",
+   "s2": "2247847567",
+   "items": 1
+  },
+  {
+   "name": "Esteban Rossi-Hansberg",
+   "affiliation": "U Chicago",
+   "twitter": "",
+   "homepage": "https://economics.uchicago.edu/directory/esteban-rossi-hansberg",
+   "openalex": "A5088489492",
+   "s2": "1398698229",
+   "items": 2
+  },
+  {
+   "name": "Michael Pettis",
+   "affiliation": "Carnegie Endowment",
+   "twitter": "michaelxpettis",
+   "homepage": "https://carnegieendowment.org/experts/262",
+   "openalex": "",
+   "s2": "",
+   "items": 28
+  },
+  {
+   "name": "Soumaya Keynes",
+   "affiliation": "Financial Times",
+   "twitter": "SoumayaKeynes",
+   "homepage": "",
+   "openalex": "",
+   "s2": "",
+   "items": 18
+  },
+  {
+   "name": "Michael Clemens",
+   "affiliation": "Johns Hopkins / PIIE",
+   "twitter": "m_clem",
+   "homepage": "",
+   "openalex": "",
+   "s2": "",
+   "items": 10
   }
  ]
 }
