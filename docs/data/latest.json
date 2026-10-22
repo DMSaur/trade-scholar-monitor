@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22 22:15",
+ "generated_at": "2026-10-22 23:02",
  "window_days": 180,
  "items": [
   {
@@ -2584,18 +2584,18 @@
    "field": "量化与理论",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://jonathanvogel.com/",
    "openalex": "A5065547191",
    "s2": "49034331",
    "items": 0
   },
   {
    "name": "Simon Galle",
-   "affiliation": "Dartmouth",
+   "affiliation": "BI Norwegian",
    "field": "量化与理论",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://www.bi.no/om-bi/ansatte/institutt-for-samfunnsokonomi/simon-galle/",
    "openalex": "",
    "s2": "113467407",
    "items": 0
@@ -2617,7 +2617,7 @@
    "field": "量化与理论",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://www.felix-tintelnot.com/",
    "openalex": "A5069702396",
    "s2": "65839265",
    "items": 0
@@ -2628,7 +2628,7 @@
    "field": "量化与理论",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://economics.indiana.edu/about/faculty/lashkaripour-ahmad.html",
    "openalex": "A5074283348",
    "s2": "119096870",
    "items": 0
@@ -2639,7 +2639,7 @@
    "field": "量化与理论",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://www.inasimonovska.com/index.html",
    "openalex": "A5017055584",
    "s2": "1844152",
    "items": 0
@@ -2661,7 +2661,7 @@
    "field": "量化与理论",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://tchaney.github.io/",
    "openalex": "A5089888860",
    "s2": "21571110",
    "items": 0
@@ -2694,7 +2694,7 @@
    "field": "实证贸易",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://scholars.duke.edu/person/rafael.dix.carneiro",
    "openalex": "A5084550820",
    "s2": "1404100024",
    "items": 0
@@ -2705,7 +2705,7 @@
    "field": "实证贸易",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://www.heinz.cmu.edu/faculty-research/profiles/kovak-briank",
    "openalex": "A5019521451",
    "s2": "5227172",
    "items": 0
@@ -2800,11 +2800,11 @@
   },
   {
    "name": "Joaquin Blaum",
-   "affiliation": "Brown",
+   "affiliation": "BU",
    "field": "实证贸易",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://www.bu.edu/econ/profile/joaquin-blaum/",
    "openalex": "A5011303416",
    "s2": "119211280",
    "items": 0
@@ -2815,7 +2815,7 @@
    "field": "实证贸易",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://www.sganapati.com/",
    "openalex": "A5078825305",
    "s2": "2249378508",
    "items": 0
@@ -2859,7 +2859,7 @@
    "field": "贸易政策",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://www.wto.org/english/blogs_e/ce_robert_staiger_e/robert_staiger_e.htm",
    "openalex": "A5113689199",
    "s2": "2152987",
    "items": 0
@@ -2914,7 +2914,7 @@
    "field": "贸易政策",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://www.gov.uk/government/people/dennis-novy",
    "openalex": "A5007426507",
    "s2": "119209717",
    "items": 0
@@ -2925,7 +2925,7 @@
    "field": "贸易政策",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://www.janeway.econ.cam.ac.uk/person/meredith-crowley",
    "openalex": "A5054470044",
    "s2": "32251015",
    "items": 0
@@ -2936,7 +2936,7 @@
    "field": "贸易政策",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://www.janeway.econ.cam.ac.uk/person/alan-spearot",
    "openalex": "A5007148242",
    "s2": "119282358",
    "items": 0
@@ -2947,7 +2947,7 @@
    "field": "贸易政策",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://sites.google.com/site/emanuelornelaseo/",
    "openalex": "A5082150596",
    "s2": "145660819",
    "items": 0
@@ -2965,11 +2965,11 @@
   },
   {
    "name": "Caroline Freund",
-   "affiliation": "Tufts/PIIE",
+   "affiliation": "UCSD",
    "field": "贸易政策",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://gps.ucsd.edu/faculty-directory/caroline-freund.html",
    "openalex": "A5111934756",
    "s2": "2412629109",
    "items": 0
@@ -2980,7 +2980,7 @@
    "field": "贸易政策",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://www.econ.uzh.ch/en/people/faculty/ossa.html",
    "openalex": "A5090816742",
    "s2": "52114779",
    "items": 0
@@ -2991,7 +2991,7 @@
    "field": "贸易政策",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://blogs.worldbank.org/en/team/m/michele-ruta",
    "openalex": "A5054884314",
    "s2": "113918412",
    "items": 0
@@ -3002,7 +3002,7 @@
    "field": "贸易政策",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://www.economicstrategygroup.org/publication-author/mary-lovely/",
    "openalex": "A5086314249",
    "s2": "21581629",
    "items": 0
@@ -3013,7 +3013,7 @@
    "field": "环境与历史",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://econ.berkeley.edu/profile/joseph-shapiro",
    "openalex": "A5029531318",
    "s2": "2378279272",
    "items": 0
@@ -3024,7 +3024,7 @@
    "field": "环境与历史",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://www.economics.ca/m-scott-taylor",
    "openalex": "A5010610496",
    "s2": "2107227514",
    "items": 0
@@ -3068,7 +3068,7 @@
    "field": "中国贸易",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://www.hwtang.com/index.html",
    "openalex": "A5002997803",
    "s2": "49687731",
    "items": 0
@@ -3079,7 +3079,7 @@
    "field": "中国贸易",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://www.nber.org/people/mi_dai",
    "openalex": "A5033311687",
    "s2": "72983258",
    "items": 0
@@ -3090,7 +3090,7 @@
    "field": "中国贸易",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://ride.fudan.edu.cn/en/info/1006/1042.htm",
    "openalex": "A5063738306",
    "s2": "145250989",
    "items": 0
@@ -3101,7 +3101,7 @@
    "field": "中国贸易",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://www.nber.org/people/zhiyuan_li",
    "openalex": "A5100337939",
    "s2": "2253670010",
    "items": 0
@@ -3134,7 +3134,7 @@
    "field": "中国贸易",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://chaoqunzhan.weebly.com/",
    "openalex": "A5083740727",
    "s2": "121680824",
    "items": 0
@@ -3145,7 +3145,7 @@
    "field": "中国贸易",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://penglongzhang.weebly.com/",
    "openalex": "A5052901707",
    "s2": "50264456",
    "items": 0
@@ -3156,7 +3156,7 @@
    "field": "中国贸易",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://english.ckgsb.edu.cn/faculty/fan-jingting/",
    "openalex": "A5011226878",
    "s2": "144120557",
    "items": 0
@@ -3167,7 +3167,7 @@
    "field": "中国贸易",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://sites.google.com/site/meiyecon/",
    "openalex": "A5040443438",
    "s2": "145451976",
    "items": 0
@@ -3189,7 +3189,7 @@
    "field": "中国贸易",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://yaoli.people.ust.hk/",
    "openalex": "A5048997826",
    "s2": "7178220",
    "items": 0
@@ -3200,7 +3200,7 @@
    "field": "中国贸易",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://www.hkubs.hku.hk/people/bingjing-li/",
    "openalex": "A5028072468",
    "s2": "120828544",
    "items": 0
@@ -3222,7 +3222,7 @@
    "field": "中国贸易",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://research.cuhk.edu.hk/en/persons/liugang-sheng/",
    "openalex": "A5033830687",
    "s2": "47356607",
    "items": 0
@@ -3244,7 +3244,7 @@
    "field": "实证贸易",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://www.sciencespo.fr/recherche/en/directory/mayer-thierry/",
    "openalex": "A5032553214",
    "s2": "39700275",
    "items": 0
@@ -3255,7 +3255,7 @@
    "field": "实证贸易",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://www.sciencespo.fr/department-economics/directory/mejean-isabelle/",
    "openalex": "A5083167458",
    "s2": "70608201",
    "items": 0
@@ -3277,7 +3277,7 @@
    "field": "实证贸易",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://ucrisportal.univie.ac.at/en/persons/harald-fadinger/",
    "openalex": "A5062513709",
    "s2": "113699500",
    "items": 0
@@ -3288,7 +3288,7 @@
    "field": "实证贸易",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://economics.web.ox.ac.uk/people/beata-javorcik",
    "openalex": "A5076368323",
    "s2": "66785330",
    "items": 1
@@ -3299,7 +3299,7 @@
    "field": "实证贸易",
    "added": "2026-10-22",
    "twitter": "",
-   "homepage": "",
+   "homepage": "https://www.surrey.ac.uk/people/holger-breinlich",
    "openalex": "A5028825333",
    "s2": "70301715",
    "items": 0
