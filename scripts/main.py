@@ -8,6 +8,7 @@
   python3 scripts/main.py --no-tweets    # 跳过推文抓取
 """
 import argparse
+import re
 import sys
 import time
 from datetime import datetime, timedelta
@@ -124,8 +125,12 @@ def main():
                     db.mark_irrelevant(conn, row["uid"])
                     db.save_summary(conn, row["uid"], "（非贸易领域）", [])
                 else:
-                    db.save_summary(conn, row["uid"],
-                                    out.get("summary_zh", ""),
+                    summary = out.get("summary_zh", "")
+                    if row["source"] == "tweet":
+                        # 翻译里不应保留 t.co 短链，页面卡片另有链接
+                        summary = re.sub(r"https?://t\.co/\w+", "",
+                                         summary).strip()
+                    db.save_summary(conn, row["uid"], summary,
                                     out.get("tags", []),
                                     out.get("title_zh", ""))
                 processed.add(row["uid"])
