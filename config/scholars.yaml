@@ -328,16 +328,16 @@ scholars:
   openalex_id: A5065547191
   s2_id: '49034331'
   twitter: ''
-  homepage: ''
+  homepage: https://jonathanvogel.com/
   enabled: true
 - name: Simon Galle
-  affiliation: Dartmouth
+  affiliation: BI Norwegian
   field: 量化与理论
   added: '2026-10-22'
   openalex_id: ''
   s2_id: '113467407'
   twitter: ''
-  homepage: ''
+  homepage: https://www.bi.no/om-bi/ansatte/institutt-for-samfunnsokonomi/simon-galle/
   enabled: true
 - name: Natalia Ramondo
   affiliation: BU
@@ -355,7 +355,7 @@ scholars:
   openalex_id: A5069702396
   s2_id: '65839265'
   twitter: ''
-  homepage: ''
+  homepage: https://www.felix-tintelnot.com/
   enabled: true
 - name: Ahmad Lashkaripour
   affiliation: Indiana
@@ -364,7 +364,7 @@ scholars:
   openalex_id: A5074283348
   s2_id: '119096870'
   twitter: ''
-  homepage: ''
+  homepage: https://economics.indiana.edu/about/faculty/lashkaripour-ahmad.html
   enabled: true
 - name: Ina Simonovska
   affiliation: UC Davis
@@ -373,7 +373,7 @@ scholars:
   openalex_id: A5017055584
   s2_id: '1844152'
   twitter: ''
-  homepage: ''
+  homepage: https://www.inasimonovska.com/index.html
   enabled: true
 - name: Trevor Tombe
   affiliation: Calgary
@@ -391,7 +391,7 @@ scholars:
   openalex_id: A5089888860
   s2_id: '21571110'
   twitter: ''
-  homepage: ''
+  homepage: https://tchaney.github.io/
   enabled: true
 - name: David Atkin
   affiliation: MIT
@@ -418,7 +418,7 @@ scholars:
   openalex_id: A5084550820
   s2_id: '1404100024'
   twitter: ''
-  homepage: ''
+  homepage: https://scholars.duke.edu/person/rafael.dix.carneiro
   enabled: true
 - name: Brian Kovak
   affiliation: CMU
@@ -427,7 +427,7 @@ scholars:
   openalex_id: A5019521451
   s2_id: '5227172'
   twitter: ''
-  homepage: ''
+  homepage: https://www.heinz.cmu.edu/faculty-research/profiles/kovak-briank
   enabled: true
 - name: Rodrigo Adao
   affiliation: Chicago Booth
@@ -502,13 +502,13 @@ scholars:
   homepage: https://www.sebastianheise.com
   enabled: true
 - name: Joaquin Blaum
-  affiliation: Brown
+  affiliation: BU
   field: 实证贸易
   added: '2026-10-22'
   openalex_id: A5011303416
   s2_id: '119211280'
   twitter: ''
-  homepage: ''
+  homepage: https://www.bu.edu/econ/profile/joaquin-blaum/
   enabled: true
 - name: Sharat Ganapati
   affiliation: Georgetown
@@ -517,7 +517,7 @@ scholars:
   openalex_id: A5078825305
   s2_id: '2249378508'
   twitter: ''
-  homepage: ''
+  homepage: https://www.sganapati.com/
   enabled: true
 - name: Michael Waugh
   affiliation: NYU
@@ -553,7 +553,7 @@ scholars:
   openalex_id: A5113689199
   s2_id: '2152987'
   twitter: ''
-  homepage: ''
+  homepage: https://www.wto.org/english/blogs_e/ce_robert_staiger_e/robert_staiger_e.htm
   enabled: true
 - name: Giovanni Maggi
   affiliation: Yale
@@ -598,7 +598,7 @@ scholars:
   openalex_id: A5007426507
   s2_id: '119209717'
   twitter: ''
-  homepage: ''
+  homepage: https://www.gov.uk/government/people/dennis-novy
   enabled: true
 - name: Meredith Crowley
   affiliation: Cambridge
@@ -607,7 +607,7 @@ scholars:
   openalex_id: A5054470044
   s2_id: '32251015'
   twitter: ''
-  homepage: ''
+  homepage: https://www.janeway.econ.cam.ac.uk/person/meredith-crowley
   enabled: true
 - name: Alan Spearot
   affiliation: UCSC
@@ -616,7 +616,7 @@ scholars:
   openalex_id: A5007148242
   s2_id: '119282358'
   twitter: ''
-  homepage: ''
+  homepage: https://www.janeway.econ.cam.ac.uk/person/alan-spearot
   enabled: true
 - name: Emanuel Ornelas
   affiliation: FGV
@@ -625,7 +625,7 @@ scholars:
   openalex_id: A5082150596
   s2_id: '145660819'
   twitter: ''
-  homepage: ''
+  homepage: https://sites.google.com/site/emanuelornelaseo/
   enabled: true
 - name: Simon Evenett
   affiliation: IMD
@@ -637,13 +637,13 @@ scholars:
   homepage: https://www.simon-evenett.com/
   enabled: true
 - name: Caroline Freund
-  affiliation: Tufts/PIIE
+  affiliation: UCSD
   field: 贸易政策
   added: '2026-10-22'
   openalex_id: A5111934756
   s2_id: '2412629109'
   twitter: ''
-  homepage: ''
+  homepage: https://gps.ucsd.edu/faculty-directory/caroline-freund.html
   enabled: true
 - name: Ralph Ossa
   affiliation: WTO
@@ -652,7 +652,7 @@ scholars:
   openalex_id: A5090816742
   s2_id: '52114779'
   twitter: ''
-  homepage: ''
+  homepage: https://www.econ.uzh.ch/en/people/faculty/ossa.html
   enabled: true
 - name: Michele Ruta
   affiliation: IMF
@@ -661,7 +661,7 @@ scholars:
   openalex_id: A5054884314
   s2_id: '113918412'
   twitter: ''
-  homepage: ''
+  homepage: https://blogs.worldbank.org/en/team/m/michele-ruta
   enabled: true
 - name: Mary Lovely
   affiliation: Syracuse/PIIE
@@ -670,7 +670,7 @@ scholars:
   openalex_id: A5086314249
   s2_id: '21581629'
   twitter: ''
-  homepage: ''
+  homepage: https://www.economicstrategygroup.org/publication-author/mary-lovely/
   enabled: true
 - name: Joseph Shapiro
   affiliation: UC Berkeley
@@ -679,7 +679,7 @@ scholars:
   openalex_id: A5029531318
   s2_id: '2378279272'
   twitter: ''
-  homepage: ''
+  homepage: https://econ.berkeley.edu/profile/joseph-shapiro
   enabled: true
 - name: M. Scott Taylor
   affiliation: Calgary
@@ -688,7 +688,7 @@ scholars:
   openalex_id: A5010610496
   s2_id: '2107227514'
   twitter: ''
-  homepage: ''
+  homepage: https://www.economics.ca/m-scott-taylor
   enabled: true
 - name: Nathan Nunn
   affiliation: UBC
@@ -725,7 +725,7 @@ scholars:
   openalex_id: A5002997803
   s2_id: '49687731'
   twitter: ''
-  homepage: ''
+  homepage: https://www.hwtang.com/index.html
   enabled: true
   name_en: Heiwai Tang
 - name: 戴觅
@@ -735,7 +735,7 @@ scholars:
   openalex_id: A5033311687
   s2_id: '72983258'
   twitter: ''
-  homepage: ''
+  homepage: https://www.nber.org/people/mi_dai
   enabled: true
   name_en: Mi Dai
 - name: 樊海潮
@@ -745,7 +745,7 @@ scholars:
   openalex_id: A5063738306
   s2_id: '145250989'
   twitter: ''
-  homepage: ''
+  homepage: https://ride.fudan.edu.cn/en/info/1006/1042.htm
   enabled: true
   name_en: Haichao Fan
 - name: 李志远
@@ -755,7 +755,7 @@ scholars:
   openalex_id: A5100337939
   s2_id: '2253670010'
   twitter: ''
-  homepage: ''
+  homepage: https://www.nber.org/people/zhiyuan_li
   enabled: true
   name_en: Zhiyuan Li
 - name: 刘青
@@ -785,7 +785,7 @@ scholars:
   openalex_id: A5083740727
   s2_id: '121680824'
   twitter: ''
-  homepage: ''
+  homepage: https://chaoqunzhan.weebly.com/
   enabled: true
   name_en: Chaoqun Zhan
 - name: 张鹏龙
@@ -795,7 +795,7 @@ scholars:
   openalex_id: A5052901707
   s2_id: '50264456'
   twitter: ''
-  homepage: ''
+  homepage: https://penglongzhang.weebly.com/
   enabled: true
   name_en: Penglong Zhang
 - name: 樊静婷
@@ -805,7 +805,7 @@ scholars:
   openalex_id: A5011226878
   s2_id: '144120557'
   twitter: ''
-  homepage: ''
+  homepage: https://english.ckgsb.edu.cn/faculty/fan-jingting/
   enabled: true
   name_en: Jingting Fan
 - name: 梅源
@@ -815,7 +815,7 @@ scholars:
   openalex_id: A5040443438
   s2_id: '145451976'
   twitter: ''
-  homepage: ''
+  homepage: https://sites.google.com/site/meiyecon/
   enabled: true
   name_en: Yuan Mei
 - name: 田媛
@@ -835,7 +835,7 @@ scholars:
   openalex_id: A5048997826
   s2_id: '7178220'
   twitter: ''
-  homepage: ''
+  homepage: https://yaoli.people.ust.hk/
   enabled: true
   name_en: Yao Amber Li
 - name: 李冰晶
@@ -845,7 +845,7 @@ scholars:
   openalex_id: A5028072468
   s2_id: '120828544'
   twitter: ''
-  homepage: ''
+  homepage: https://www.hkubs.hku.hk/people/bingjing-li/
   enabled: true
   name_en: Bingjing Li
 - name: 林舒
@@ -865,7 +865,7 @@ scholars:
   openalex_id: A5033830687
   s2_id: '47356607'
   twitter: ''
-  homepage: ''
+  homepage: https://research.cuhk.edu.hk/en/persons/liugang-sheng/
   enabled: true
   name_en: Liugang Sheng
 - name: 崔晓敏
@@ -885,7 +885,7 @@ scholars:
   openalex_id: A5032553214
   s2_id: '39700275'
   twitter: ''
-  homepage: ''
+  homepage: https://www.sciencespo.fr/recherche/en/directory/mayer-thierry/
   enabled: true
 - name: Isabelle Mejean
   affiliation: École Polytechnique
@@ -894,7 +894,7 @@ scholars:
   openalex_id: A5083167458
   s2_id: '70608201'
   twitter: ''
-  homepage: ''
+  homepage: https://www.sciencespo.fr/department-economics/directory/mejean-isabelle/
   enabled: true
 - name: Lionel Fontagne
   affiliation: Paris 1
@@ -912,7 +912,7 @@ scholars:
   openalex_id: A5062513709
   s2_id: '113699500'
   twitter: ''
-  homepage: ''
+  homepage: https://ucrisportal.univie.ac.at/en/persons/harald-fadinger/
   enabled: true
 - name: Beata Javorcik
   affiliation: Oxford
@@ -921,7 +921,7 @@ scholars:
   openalex_id: A5076368323
   s2_id: '66785330'
   twitter: ''
-  homepage: ''
+  homepage: https://economics.web.ox.ac.uk/people/beata-javorcik
   enabled: true
 - name: Holger Breinlich
   affiliation: Surrey
@@ -930,7 +930,7 @@ scholars:
   openalex_id: A5028825333
   s2_id: '70301715'
   twitter: ''
-  homepage: ''
+  homepage: https://www.surrey.ac.uk/people/holger-breinlich
   enabled: true
 - name: Richard Baldwin
   affiliation: IMD
