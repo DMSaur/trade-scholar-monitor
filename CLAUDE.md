@@ -51,6 +51,8 @@ scripts/main.py --no-tweets     # 跳过推文（代理没开时用）
 - `config/scholars.yaml`：学者名单。每人 `name / affiliation / s2_id /
   twitter / homepage`。改完下次运行生效。s2_id 在
   https://semanticscholar.org 搜到本人主页后从 URL 的 authorId 复制。
+  批量补录新学者的完整流程（含同名陷阱与两个核验脚本）见
+  `scripts/新增学者指南.md`，先读它再动手。
 - `config/topics.yaml`：贸易关键词（初筛用）和中文标签词表（LLM 打标签用）。
 - `config/topics.yaml`：贸易关键词（初筛用）和中文标签词表（LLM 打标签用）。
 - `.env`（不入库）：`DASHSCOPE_API_KEY` 摘要用；`OPENALEX_API_KEY` 强烈建议配置。
