@@ -104,6 +104,8 @@ def collect(conn, scholar_list) -> dict:
         scholars_out.append({
             "name": s["name"],
             "affiliation": s.get("affiliation") or "",
+            "field": s.get("field") or "",
+            "added": s.get("added") or "",
             "twitter": (s.get("twitter") or "").lstrip("@"),
             "homepage": s.get("homepage") or "",
             "openalex": s.get("openalex_id") or "",
@@ -238,7 +240,7 @@ footer a{color:var(--sub)}
 #rosterBtn[aria-pressed="true"]{background:var(--accent);color:#fff;border-color:var(--accent)}
 .roster-note{font-size:13px;color:var(--sub);margin:14px 0 10px}
 .roster-table-wrap{overflow-x:auto;background:var(--card);border:1px solid var(--border);border-radius:10px}
-.roster-table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:560px}
+.roster-table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:640px}
 .roster-table th{
   text-align:left;font-size:12px;font-weight:600;color:var(--sub);
   padding:9px 12px;border-bottom:1px solid var(--border);white-space:nowrap;
@@ -254,6 +256,21 @@ th.roster-num-h{text-align:right}
 .slink{font-size:12px;color:var(--accent);text-decoration:none;border:1px solid var(--border);border-radius:5px;padding:1px 7px}
 .slink:hover{border-color:var(--accent)}
 .suggest{margin-top:26px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px 18px}
+.roster-filter{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 12px}
+.fchip{
+  border:1px solid var(--border);background:var(--card);color:var(--sub);
+  border-radius:20px;padding:2px 12px;font-size:12.5px;cursor:pointer;
+}
+.fchip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.field-chip{
+  display:inline-block;font-size:11.5px;color:var(--accent);
+  background:var(--accent-soft);border-radius:4px;padding:1px 8px;white-space:nowrap;
+}
+.newmark{
+  display:inline-block;font-size:10.5px;font-weight:700;color:#8a2b23;
+  border:1px solid #d8b1ad;border-radius:4px;padding:0 5px;margin-left:6px;
+  vertical-align:1px;
+}
 .suggest h3{font-size:15.5px;margin-bottom:4px}
 .sg-hint{font-size:12.5px;color:var(--sub);margin-bottom:10px}
 .sform{display:grid;gap:8px}
@@ -312,7 +329,7 @@ const SOURCES = [
   {key:'tweet',  label:'推文'},
 ];
 const RECIPIENT = '21300680261@m.fudan.edu.cn';
-const state = {tab:'all', range:30, q:'', scholar:''};
+const state = {tab:'all', range:30, q:'', scholar:'', rosterField:''};
 
 const WEEK = ['日','一','二','三','四','五','六'];
 function fmtDate(d){
@@ -509,22 +526,30 @@ function groupLabel(dateStr){
 }
 
 function rosterHTML(){
-  const rows = DATA.scholars.map(s => {
+  const fields = [...new Set(DATA.scholars.map(s => s.field).filter(Boolean))];
+  const chips = [''].concat(fields).map(f =>
+    `<button class="fchip" data-field="${esc(f)}" aria-pressed="${state.rosterField===f}">${f||'全部领域'}</button>`).join('');
+  const shown = DATA.scholars.filter(s => !state.rosterField || s.field === state.rosterField);
+  const rows = shown.map(s => {
     const links = [];
     if(s.homepage) links.push(`<a class="slink" href="${esc(s.homepage)}" target="_blank" rel="noopener">主页</a>`);
     if(s.twitter) links.push(`<a class="slink" href="https://x.com/${esc(s.twitter)}" target="_blank" rel="noopener">@${esc(s.twitter)}</a>`);
     if(s.openalex) links.push(`<a class="slink" href="https://openalex.org/${esc(s.openalex)}" target="_blank" rel="noopener">OpenAlex</a>`);
     if(s.s2) links.push(`<a class="slink" href="https://www.semanticscholar.org/author/${esc(s.s2)}" target="_blank" rel="noopener">S2</a>`);
+    const newmark = s.added ? `<span class="newmark" title="${esc(s.added)} 补录">新</span>` : '';
+    const fchip = s.field ? `<span class="field-chip">${esc(s.field)}</span>` : '';
     return `<tr>
-      <td class="roster-name">${esc(s.name)}</td>
+      <td class="roster-name">${esc(s.name)}${newmark}</td>
       <td class="roster-aff">${esc(s.affiliation)}</td>
+      <td>${fchip}</td>
       <td class="roster-num">${s.items}</td>
       <td><div class="roster-links">${links.join('')}</div></td>
     </tr>`;
   }).join('');
-  return `<p class="roster-note">共收录 ${DATA.scholars.length} 位学者，「动态」为近半年条目数。</p>
+  return `<p class="roster-note">共收录 ${DATA.scholars.length} 位学者（「新」为 2026-10 补录），点上方领域标签可筛选。「动态」为近半年条目数。</p>
+    <div class="roster-filter">${chips}</div>
     <div class="roster-table-wrap"><table class="roster-table">
-      <thead><tr><th>学者</th><th>机构</th><th class="roster-num-h">动态</th><th>链接</th></tr></thead>
+      <thead><tr><th>学者</th><th>机构</th><th>领域</th><th class="roster-num-h">动态</th><th>链接</th></tr></thead>
       <tbody>${rows}</tbody>
     </table></div>
     <div class="suggest">
@@ -555,6 +580,14 @@ function suggestText(){
 
 function bindRoster(root){
   root.addEventListener('click', e => {
+    const fchip = e.target.closest('.fchip');
+    if(fchip){
+      state.rosterField = fchip.dataset.field;
+      root.querySelectorAll('.fchip').forEach(b =>
+        b.setAttribute('aria-pressed', b===fchip ? 'true' : 'false'));
+      renderRoster();
+      return;
+    }
     if(e.target.id === 'sg-send'){
       const name = (document.getElementById('sg-name').value || '').trim();
       const subject = `建议新增贸易学者：${name || '（未填姓名）'}`;

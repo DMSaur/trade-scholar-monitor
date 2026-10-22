@@ -5,219 +5,966 @@ scholars:
   twitter: ''
   homepage: https://economics.mit.edu/people/faculty/david-h-autor
   openalex_id: A5029839974
+  field: 实证贸易
 - name: David Dorn
   affiliation: Geneva
   s2_id: '2880987'
   twitter: ''
   homepage: https://www.econ.uzh.ch/en/people/faculty/dorn.html
   openalex_id: A5060691488
+  field: 实证贸易
 - name: Marc Melitz
   affiliation: Harvard
   s2_id: '114793883'
   twitter: ''
   homepage: https://scholar.harvard.edu/melitz
   openalex_id: A5126659015
+  field: 量化与理论
 - name: Robert Feenstra
   affiliation: UC Davis
   s2_id: '30005916'
   twitter: ''
   homepage: https://economics.ucdavis.edu/people/fzfeens
   openalex_id: A5008272936
+  field: 实证贸易
 - name: David Hummels
   affiliation: Purdue
   s2_id: '144307189'
   twitter: DavidHummels
   homepage: ''
   openalex_id: A5000460149
+  field: 实证贸易
 - name: Gordon Hanson
   affiliation: Harvard Kennedy School
   s2_id: '39558634'
   twitter: ''
   homepage: https://www.hks.harvard.edu/faculty/gordon-hanson
   openalex_id: A5031353967
+  field: 实证贸易
 - name: Pinelopi Goldberg
   affiliation: Yale
   s2_id: '46223052'
   twitter: ''
   homepage: https://economics.yale.edu/people/pinelopi-goldberg
   openalex_id: A5036094586
+  field: 贸易政策
 - name: Nina Pavcnik
   affiliation: Dartmouth
   s2_id: '117831889'
   twitter: ''
   homepage: https://economics.dartmouth.edu/people/nina-pavcnik
   openalex_id: A5001988454
+  field: 实证贸易
 - name: Peter Schott
   affiliation: Yale SOM
   s2_id: '2412051900'
   twitter: ''
   homepage: ''
   openalex_id: A5041390477
+  field: 实证贸易
 - name: Amit Khandelwal
   affiliation: Yale SOM
   s2_id: '36681513'
   twitter: ''
   homepage: https://economics.yale.edu/people/amit-khandelwal
   openalex_id: A5110770393
+  field: 实证贸易
 - name: Kyle Handley
   affiliation: UCSD GPS
   s2_id: '118582669'
   twitter: ''
   homepage: https://gps.ucsd.edu/faculty-directory/kyle-handley.html
   openalex_id: A5066826624
+  field: 贸易政策
 - name: Mary Amiti
   affiliation: NY Fed
   s2_id: '67167577'
   twitter: ''
   homepage: https://www.newyorkfed.org/research/economists/amiti
   openalex_id: A5068818330
+  field: 贸易政策
 - name: Oleg Itskhoki
   affiliation: Harvard
   s2_id: '103048638'
   twitter: ItsKhoki
   homepage: https://economics.harvard.edu/people/oleg-itskhoki
   openalex_id: A5088518091
+  field: 量化与理论
 - name: Pablo Fajgelbaum
   affiliation: UCLA
   s2_id: '93561997'
   twitter: ''
   homepage: https://economics.ucla.edu/faculty/pablo-fajgelbaum
   openalex_id: A5079289076
+  field: 贸易政策
 - name: Lorenzo Caliendo
   affiliation: Yale SOM
   s2_id: '69021589'
   twitter: ''
   homepage: https://som.yale.edu/faculty/lorenzo-caliendo
   openalex_id: A5067197927
+  field: 量化与理论
 - name: Fernando Parro
   affiliation: Penn State
   s2_id: '115086078'
   twitter: ''
   homepage: https://economics.psu.edu/people/fernando-parro
   openalex_id: A5017248772
+  field: 量化与理论
 - name: Pol Antras
   affiliation: Harvard
   s2_id: '104157794'
   twitter: ''
   homepage: https://scholar.harvard.edu/antras
   openalex_id: A5081815445
+  field: 量化与理论
 - name: Arnaud Costinot
   affiliation: MIT
   s2_id: '66125727'
   twitter: ''
   homepage: https://economics.mit.edu/people/faculty/arnaud-costinot
   openalex_id: A5013535154
+  field: 量化与理论
 - name: Dave Donaldson
   affiliation: MIT
   s2_id: '144846219'
   twitter: ''
   homepage: https://economics.mit.edu/people/faculty/dave-donaldson
   openalex_id: A5018485700
+  field: 量化与理论
 - name: Jonathan Eaton
   affiliation: Penn State
   s2_id: '2289918'
   twitter: ''
   homepage: https://economics.psu.edu/people/jonathan-eaton
   openalex_id: A5109975005
+  field: 量化与理论
 - name: Samuel Kortum
   affiliation: Yale
   s2_id: '39855208'
   twitter: ''
   homepage: https://economics.yale.edu/people/samuel-kortum
   openalex_id: A5089629708
+  field: 量化与理论
 - name: Costas Arkolakis
   affiliation: Yale
   s2_id: '71841281'
   twitter: ''
   homepage: https://economics.yale.edu/people/costas-arkolakis
   openalex_id: A5074612370
+  field: 量化与理论
 - name: Treb Allen
   affiliation: Dartmouth
   s2_id: '4150056'
   twitter: ''
   homepage: ''
   openalex_id: A5027993293
+  field: 量化与理论
 - name: Stephen Redding
   affiliation: Princeton
   s2_id: '39668154'
   twitter: ''
   homepage: https://economics.princeton.edu/people/stephen-j-redding
   openalex_id: A5014797088
+  field: 量化与理论
 - name: Gene Grossman
   affiliation: Princeton
   s2_id: '46240304'
   twitter: ''
   homepage: https://economics.princeton.edu/people/gene-m-grossman
   openalex_id: A5103503282
+  field: 量化与理论
 - name: Elhanan Helpman
   affiliation: Harvard
   s2_id: '98640692'
   twitter: ''
   homepage: https://economics.harvard.edu/people/elhanan-helpman
   openalex_id: A5113776429
+  field: 量化与理论
 - name: Dani Rodrik
   affiliation: Harvard Kennedy School
   s2_id: '152414182'
   twitter: rodrikdani
   homepage: https://drodrik.scholar.harvard.edu
   openalex_id: A5113832316
+  field: 贸易政策
 - name: Paul Krugman
   affiliation: CUNY
   s2_id: '33345159'
   twitter: paulkrugman
   homepage: ''
   openalex_id: A5032113724
+  field: 量化与理论
 - name: Chad Bown
   affiliation: Peterson Institute
   s2_id: '46221253'
   twitter: ChadBown
   homepage: ''
   openalex_id: A5013651639
+  field: 贸易政策
 - name: Douglas Irwin
   affiliation: Dartmouth
   s2_id: '9016800'
   twitter: DouglasIrwin
   homepage: https://economics.dartmouth.edu/people/douglas-irwin
   openalex_id: A5007430520
+  field: 环境与历史
 - name: David Weinstein
   affiliation: Columbia
   s2_id: '2597126'
   twitter: ''
   homepage: https://economics.columbia.edu/people/faculty/david-e-weinstein
   openalex_id: A5112773136
+  field: 实证贸易
 - name: Andrew Bernard
   affiliation: Dartmouth Tuck
   s2_id: '2247847567'
   twitter: ''
   homepage: ''
   openalex_id: A5034238250
+  field: 实证贸易
 - name: Esteban Rossi-Hansberg
   affiliation: U Chicago
   s2_id: '1398698229'
   twitter: ''
   homepage: https://economics.uchicago.edu/directory/esteban-rossi-hansberg
   openalex_id: A5088489492
+  field: 量化与理论
 - name: 刘志阔
   affiliation: 上海财经大学
   s2_id: ''
   twitter: ''
   homepage: ''
   enabled: false
+  field: 中国贸易
 - name: 马弘
   affiliation: 清华大学
   s2_id: ''
   twitter: ''
   homepage: ''
   enabled: false
+  field: 中国贸易
 - name: 鞠建东
   affiliation: 清华大学
   s2_id: ''
   twitter: ''
   homepage: ''
   enabled: false
+  field: 中国贸易
 - name: 余淼杰
   affiliation: 辽宁大学
   s2_id: ''
   twitter: ''
   homepage: ''
   enabled: false
+  field: 中国贸易
+- name: Andrei Levchenko
+  affiliation: Michigan
+  field: 量化与理论
+  added: '2026-10-22'
+  openalex_id: A5011585023
+  s2_id: ''
+  twitter: ''
+  homepage: https://sites.google.com/site/alevchenko00/
+  enabled: true
+- name: Andres Rodriguez-Clare
+  affiliation: UC Berkeley
+  field: 量化与理论
+  added: '2026-10-22'
+  openalex_id: A5134437271
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Ariel Burstein
+  affiliation: UCLA
+  field: 量化与理论
+  added: '2026-10-22'
+  openalex_id: A5023417873
+  s2_id: ''
+  twitter: ''
+  homepage: https://economics.ucla.edu/faculty/ariel-burstein
+  enabled: true
+- name: Javier Cravino
+  affiliation: Michigan
+  field: 量化与理论
+  added: '2026-10-22'
+  openalex_id: A5014939732
+  s2_id: ''
+  twitter: ''
+  homepage: https://sites.google.com/site/javiercravino/
+  enabled: true
+- name: George Alessandria
+  affiliation: Rochester
+  field: 量化与理论
+  added: '2026-10-22'
+  openalex_id: A5023675699
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Kerem Cosar
+  affiliation: UVA
+  field: 量化与理论
+  added: '2026-10-22'
+  openalex_id: A5027089964
+  s2_id: ''
+  twitter: ''
+  homepage: https://sites.google.com/site/keremcosar/
+  enabled: true
+- name: Sebastian Sotelo
+  affiliation: Michigan
+  field: 量化与理论
+  added: '2026-10-22'
+  openalex_id: A5029689249
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Jonathan Vogel
+  affiliation: Columbia
+  field: 量化与理论
+  added: '2026-10-22'
+  openalex_id: A5060729846
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Simon Galle
+  affiliation: Dartmouth
+  field: 量化与理论
+  added: '2026-10-22'
+  openalex_id: A5081041443
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Natalia Ramondo
+  affiliation: BU
+  field: 量化与理论
+  added: '2026-10-22'
+  openalex_id: A5090626054
+  s2_id: ''
+  twitter: ''
+  homepage: https://sites.google.com/site/nataliaramondo/
+  enabled: true
+- name: Felix Tintelnot
+  affiliation: Chicago
+  field: 量化与理论
+  added: '2026-10-22'
+  openalex_id: A5069702396
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Ahmad Lashkaripour
+  affiliation: Indiana
+  field: 量化与理论
+  added: '2026-10-22'
+  openalex_id: A5074283348
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Ina Simonovska
+  affiliation: UC Davis
+  field: 量化与理论
+  added: '2026-10-22'
+  openalex_id: A5017055584
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Trevor Tombe
+  affiliation: Calgary
+  field: 量化与理论
+  added: '2026-10-22'
+  openalex_id: A5084256045
+  s2_id: ''
+  twitter: ''
+  homepage: https://www.trevortombe.com/
+  enabled: true
+- name: Thomas Chaney
+  affiliation: USC
+  field: 量化与理论
+  added: '2026-10-22'
+  openalex_id: A5089888860
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: David Atkin
+  affiliation: MIT
+  field: 实证贸易
+  added: '2026-10-22'
+  openalex_id: A5062277191
+  s2_id: ''
+  twitter: ''
+  homepage: https://economics.mit.edu/people/faculty/david-atkin
+  enabled: true
+- name: Kalina Manova
+  affiliation: UCL
+  field: 实证贸易
+  added: '2026-10-22'
+  openalex_id: A5113264418
+  s2_id: ''
+  twitter: ''
+  homepage: https://www.kalinamanova.com
+  enabled: true
+- name: Rafael Dix-Carneiro
+  affiliation: Duke
+  field: 实证贸易
+  added: '2026-10-22'
+  openalex_id: A5084550820
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Brian Kovak
+  affiliation: CMU
+  field: 实证贸易
+  added: '2026-10-22'
+  openalex_id: A5019521451
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Rodrigo Adao
+  affiliation: Chicago Booth
+  field: 实证贸易
+  added: '2026-10-22'
+  openalex_id: A5090349857
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Kirill Borusyak
+  affiliation: UC Berkeley
+  field: 实证贸易
+  added: '2026-10-22'
+  openalex_id: ''
+  s2_id: ''
+  twitter: ''
+  homepage: https://sites.google.com/site/kirillborusyak/
+  enabled: true
+- name: Teresa Fort
+  affiliation: Dartmouth
+  field: 实证贸易
+  added: '2026-10-22'
+  openalex_id: A5052385139
+  s2_id: ''
+  twitter: ''
+  homepage: https://sites.google.com/site/teresaafort/
+  enabled: true
+- name: Justin Pierce
+  affiliation: Fed Board
+  field: 实证贸易
+  added: '2026-10-22'
+  openalex_id: A5065748346
+  s2_id: ''
+  twitter: ''
+  homepage: https://www.federalreserve.gov/econresdata/justin-pierce.htm
+  enabled: true
+- name: Ryan Monarch
+  affiliation: Fed Board
+  field: 实证贸易
+  added: '2026-10-22'
+  openalex_id: A5004737110
+  s2_id: ''
+  twitter: ''
+  homepage: https://www.federalreserve.gov/econresdata/ryan-monarch.htm
+  enabled: true
+- name: Andrew McCallum
+  affiliation: Fed Board
+  field: 实证贸易
+  added: '2026-10-22'
+  openalex_id: A5107835063
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Aaron Flaaen
+  affiliation: Wharton
+  field: 实证贸易
+  added: '2026-10-22'
+  openalex_id: A5081886594
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Sebastian Heise
+  affiliation: NY Fed
+  field: 实证贸易
+  added: '2026-10-22'
+  openalex_id: A5052207549
+  s2_id: ''
+  twitter: ''
+  homepage: https://www.sebastianheise.com
+  enabled: true
+- name: Joaquin Blaum
+  affiliation: Brown
+  field: 实证贸易
+  added: '2026-10-22'
+  openalex_id: A5011303416
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Sharat Ganapati
+  affiliation: Georgetown
+  field: 实证贸易
+  added: '2026-10-22'
+  openalex_id: A5078825305
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Michael Waugh
+  affiliation: NYU
+  field: 实证贸易
+  added: '2026-10-22'
+  openalex_id: A5088116364
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Jan De Loecker
+  affiliation: KU Leuven
+  field: 实证贸易
+  added: '2026-10-22'
+  openalex_id: A5085160521
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Eric Verhoogen
+  affiliation: Columbia
+  field: 实证贸易
+  added: '2026-10-22'
+  openalex_id: A5034286129
+  s2_id: ''
+  twitter: ''
+  homepage: https://econ.columbia.edu/economists/eric-verhoogen/
+  enabled: true
+- name: Robert Staiger
+  affiliation: Stanford
+  field: 贸易政策
+  added: '2026-10-22'
+  openalex_id: A5113689199
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Giovanni Maggi
+  affiliation: Yale
+  field: 贸易政策
+  added: '2026-10-22'
+  openalex_id: A5102417950
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Nuno Limao
+  affiliation: Johns Hopkins
+  field: 贸易政策
+  added: '2026-10-22'
+  openalex_id: A5067187280
+  s2_id: ''
+  twitter: ''
+  homepage: https://sites.google.com/site/nunolimao/
+  enabled: true
+- name: Swati Dhingra
+  affiliation: LSE
+  field: 贸易政策
+  added: '2026-10-22'
+  openalex_id: A5101117408
+  s2_id: ''
+  twitter: ''
+  homepage: https://swatidhingra.com
+  enabled: true
+- name: Thomas Sampson
+  affiliation: LSE
+  field: 贸易政策
+  added: '2026-10-22'
+  openalex_id: A5066063370
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Dennis Novy
+  affiliation: Warwick
+  field: 贸易政策
+  added: '2026-10-22'
+  openalex_id: A5007426507
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Meredith Crowley
+  affiliation: Cambridge
+  field: 贸易政策
+  added: '2026-10-22'
+  openalex_id: A5054470044
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Alan Spearot
+  affiliation: UCSC
+  field: 贸易政策
+  added: '2026-10-22'
+  openalex_id: A5007148242
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Emanuel Ornelas
+  affiliation: FGV
+  field: 贸易政策
+  added: '2026-10-22'
+  openalex_id: A5082150596
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Simon Evenett
+  affiliation: IMD
+  field: 贸易政策
+  added: '2026-10-22'
+  openalex_id: A5050765674
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Caroline Freund
+  affiliation: Tufts/PIIE
+  field: 贸易政策
+  added: '2026-10-22'
+  openalex_id: A5111934756
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Ralph Ossa
+  affiliation: WTO
+  field: 贸易政策
+  added: '2026-10-22'
+  openalex_id: A5090816742
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Michele Ruta
+  affiliation: IMF
+  field: 贸易政策
+  added: '2026-10-22'
+  openalex_id: A5054884314
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Mary Lovely
+  affiliation: Syracuse/PIIE
+  field: 贸易政策
+  added: '2026-10-22'
+  openalex_id: A5086314249
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Joseph Shapiro
+  affiliation: UC Berkeley
+  field: 环境与历史
+  added: '2026-10-22'
+  openalex_id: A5029531318
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: M. Scott Taylor
+  affiliation: Calgary
+  field: 环境与历史
+  added: '2026-10-22'
+  openalex_id: A5010610496
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Nathan Nunn
+  affiliation: UBC
+  field: 环境与历史
+  added: '2026-10-22'
+  openalex_id: A5076620159
+  s2_id: ''
+  twitter: ''
+  homepage: https://nathannunn.arts.ubc.ca/
+  enabled: true
+- name: Kevin O'Rourke
+  affiliation: Sciences Po
+  field: 环境与历史
+  added: '2026-10-22'
+  openalex_id: A5061638954
+  s2_id: ''
+  twitter: ''
+  homepage: https://kevinhorourke.com
+  enabled: true
+- name: 魏尚进
+  affiliation: Columbia
+  field: 中国贸易
+  added: '2026-10-22'
+  openalex_id: A5109848490
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+  name_en: Shang-Jin Wei
+- name: 邓希炜
+  affiliation: HKU
+  field: 中国贸易
+  added: '2026-10-22'
+  openalex_id: A5120684718
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+  name_en: Heiwai Tang
+- name: 戴觅
+  affiliation: 北京师范大学
+  field: 中国贸易
+  added: '2026-10-22'
+  openalex_id: A5033311687
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+  name_en: Mi Dai
+- name: 樊海潮
+  affiliation: 复旦
+  field: 中国贸易
+  added: '2026-10-22'
+  openalex_id: A5063738306
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+  name_en: Haichao Fan
+- name: 李志远
+  affiliation: 复旦
+  field: 中国贸易
+  added: '2026-10-22'
+  openalex_id: A5100337954
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+  name_en: Zhiyuan Li
+- name: 刘青
+  affiliation: 对外经贸
+  field: 中国贸易
+  added: '2026-10-22'
+  openalex_id: A5100345153
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+  name_en: Qing Liu
+- name: 陆毅
+  affiliation: 清华
+  field: 中国贸易
+  added: '2026-10-22'
+  openalex_id: A5100661754
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+  name_en: Yi Lu
+- name: 詹超群
+  affiliation: HKBU
+  field: 中国贸易
+  added: '2026-10-22'
+  openalex_id: A5083740727
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+  name_en: Chaoqun Zhan
+- name: 张鹏龙
+  affiliation: 清华
+  field: 中国贸易
+  added: '2026-10-22'
+  openalex_id: A5052901707
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+  name_en: Penglong Zhang
+- name: 樊静婷
+  affiliation: 长江商学院
+  field: 中国贸易
+  added: '2026-10-22'
+  openalex_id: A5011226878
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+  name_en: Jingting Fan
+- name: 梅源
+  affiliation: SMU
+  field: 中国贸易
+  added: '2026-10-22'
+  openalex_id: A5100735866
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+  name_en: Yuan Mei
+- name: 田媛
+  affiliation: CUHK-Shenzhen
+  field: 中国贸易
+  added: '2026-10-22'
+  openalex_id: A5111752453
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+  name_en: Yuan Tian
+- name: 李瑶
+  affiliation: HKUST
+  field: 中国贸易
+  added: '2026-10-22'
+  openalex_id: A5048997826
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+  name_en: Yao Amber Li
+- name: 李冰晶
+  affiliation: HKU
+  field: 中国贸易
+  added: '2026-10-22'
+  openalex_id: A5028072468
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+  name_en: Bingjing Li
+- name: 林舒
+  affiliation: HKU
+  field: 中国贸易
+  added: '2026-10-22'
+  openalex_id: A5100772114
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+  name_en: Shu Lin
+- name: 盛柳刚
+  affiliation: CUHK
+  field: 中国贸易
+  added: '2026-10-22'
+  openalex_id: A5033830687
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+  name_en: Liugang Sheng
+- name: 崔晓敏
+  affiliation: 中财
+  field: 中国贸易
+  added: '2026-10-22'
+  openalex_id: A5031714596
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+  name_en: Xiaomin Cui
+- name: Thierry Mayer
+  affiliation: Sciences Po
+  field: 实证贸易
+  added: '2026-10-22'
+  openalex_id: A5032553214
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Isabelle Mejean
+  affiliation: École Polytechnique
+  field: 实证贸易
+  added: '2026-10-22'
+  openalex_id: A5083167458
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Lionel Fontagne
+  affiliation: Paris 1
+  field: 实证贸易
+  added: '2026-10-22'
+  openalex_id: A5062387197
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Harald Fadinger
+  affiliation: Mannheim
+  field: 实证贸易
+  added: '2026-10-22'
+  openalex_id: A5062513709
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Beata Javorcik
+  affiliation: Oxford
+  field: 实证贸易
+  added: '2026-10-22'
+  openalex_id: A5076368323
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Holger Breinlich
+  affiliation: Surrey
+  field: 实证贸易
+  added: '2026-10-22'
+  openalex_id: A5028825333
+  s2_id: ''
+  twitter: ''
+  homepage: ''
+  enabled: true
+- name: Richard Baldwin
+  affiliation: IMD
+  field: 政策评论
+  added: '2026-10-22'
+  openalex_id: A5074481124
+  s2_id: ''
+  twitter: ''
+  homepage: https://richardbaldwin.com
+  enabled: true
+- name: Brent Neiman
+  affiliation: Chicago Booth
+  field: 实证贸易
+  added: '2026-10-22'
+  openalex_id: A5060331377
+  s2_id: ''
+  twitter: ''
+  homepage: https://faculty.chicagobooth.edu/brent.neiman
+  enabled: true
+- name: Jeffrey Frankel
+  affiliation: Harvard
+  field: 政策评论
+  added: '2026-10-22'
+  openalex_id: A5112084481
+  s2_id: ''
+  twitter: ''
+  homepage: https://scholar.harvard.edu/frankel
+  enabled: true
+- name: Maurice Obstfeld
+  affiliation: UC Berkeley
+  field: 政策评论
+  added: '2026-10-22'
+  openalex_id: A5018047996
+  s2_id: ''
+  twitter: ''
+  homepage: https://eml.berkeley.edu/~obstfeld/
+  enabled: true
