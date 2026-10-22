@@ -308,7 +308,7 @@ scholars:
   field: 量化与理论
   added: '2026-10-22'
   openalex_id: A5027089964
-  s2_id: '115893877'
+  s2_id: '1707150'
   twitter: ''
   homepage: https://sites.google.com/site/keremcosar/
   enabled: true
@@ -478,8 +478,8 @@ scholars:
   affiliation: Fed Board
   field: 实证贸易
   added: '2026-10-22'
-  openalex_id: A5107835063
-  s2_id: '143753639'
+  openalex_id: ''
+  s2_id: ''
   twitter: ''
   homepage: ''
   enabled: true
@@ -772,8 +772,8 @@ scholars:
   affiliation: 清华
   field: 中国贸易
   added: '2026-10-22'
-  openalex_id: A5100661754
-  s2_id: '145426833'
+  openalex_id: A5006608457
+  s2_id: '41202343'
   twitter: ''
   homepage: ''
   enabled: true
@@ -852,8 +852,8 @@ scholars:
   affiliation: HKU
   field: 中国贸易
   added: '2026-10-22'
-  openalex_id: A5100772114
-  s2_id: '2503919413'
+  openalex_id: ''
+  s2_id: ''
   twitter: ''
   homepage: ''
   enabled: true
@@ -872,8 +872,8 @@ scholars:
   affiliation: 中财
   field: 中国贸易
   added: '2026-10-22'
-  openalex_id: A5031714596
-  s2_id: '47449369'
+  openalex_id: ''
+  s2_id: ''
   twitter: ''
   homepage: ''
   enabled: true
