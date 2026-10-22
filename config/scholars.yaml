@@ -490,7 +490,7 @@ scholars:
   openalex_id: A5081886594
   s2_id: '67130135'
   twitter: ''
-  homepage: ''
+  homepage: https://aaronflaaen.com/
   enabled: true
 - name: Sebastian Heise
   affiliation: NY Fed
@@ -526,7 +526,7 @@ scholars:
   openalex_id: A5088116364
   s2_id: '2256551789'
   twitter: ''
-  homepage: ''
+  homepage: https://www.waugheconomics.com/
   enabled: true
 - name: Jan De Loecker
   affiliation: KU Leuven
@@ -535,7 +535,7 @@ scholars:
   openalex_id: A5085160521
   s2_id: '1741062860'
   twitter: ''
-  homepage: ''
+  homepage: https://www.nber.org/people/jan_deloecker
   enabled: true
 - name: Eric Verhoogen
   affiliation: Columbia
@@ -562,7 +562,7 @@ scholars:
   openalex_id: A5102417950
   s2_id: '48099037'
   twitter: ''
-  homepage: ''
+  homepage: https://economics.yale.edu/people/giovanni-maggi
   enabled: true
 - name: Nuno Limao
   affiliation: Johns Hopkins
@@ -589,7 +589,7 @@ scholars:
   openalex_id: A5066063370
   s2_id: '120044130'
   twitter: ''
-  homepage: ''
+  homepage: https://personal.lse.ac.uk/sampsont/
   enabled: true
 - name: Dennis Novy
   affiliation: Warwick
@@ -634,7 +634,7 @@ scholars:
   openalex_id: A5050765674
   s2_id: '103118501'
   twitter: ''
-  homepage: ''
+  homepage: https://www.simon-evenett.com/
   enabled: true
 - name: Caroline Freund
   affiliation: Tufts/PIIE
@@ -715,7 +715,7 @@ scholars:
   openalex_id: A5109848490
   s2_id: '2443245584'
   twitter: ''
-  homepage: ''
+  homepage: https://business.columbia.edu/shang-jin-wei
   enabled: true
   name_en: Shang-Jin Wei
 - name: 邓希炜
