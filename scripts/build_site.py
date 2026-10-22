@@ -266,11 +266,6 @@ th.roster-num-h{text-align:right}
   display:inline-block;font-size:11.5px;color:var(--accent);
   background:var(--accent-soft);border-radius:4px;padding:1px 8px;white-space:nowrap;
 }
-.newmark{
-  display:inline-block;font-size:10.5px;font-weight:700;color:#8a2b23;
-  border:1px solid #d8b1ad;border-radius:4px;padding:0 5px;margin-left:6px;
-  vertical-align:1px;
-}
 .suggest h3{font-size:15.5px;margin-bottom:4px}
 .sg-hint{font-size:12.5px;color:var(--sub);margin-bottom:10px}
 .sform{display:grid;gap:8px}
@@ -536,17 +531,16 @@ function rosterHTML(){
     if(s.twitter) links.push(`<a class="slink" href="https://x.com/${esc(s.twitter)}" target="_blank" rel="noopener">@${esc(s.twitter)}</a>`);
     if(s.openalex) links.push(`<a class="slink" href="https://openalex.org/${esc(s.openalex)}" target="_blank" rel="noopener">OpenAlex</a>`);
     if(s.s2) links.push(`<a class="slink" href="https://www.semanticscholar.org/author/${esc(s.s2)}" target="_blank" rel="noopener">S2</a>`);
-    const newmark = s.added ? `<span class="newmark" title="${esc(s.added)} 补录">新</span>` : '';
     const fchip = s.field ? `<span class="field-chip">${esc(s.field)}</span>` : '';
     return `<tr>
-      <td class="roster-name">${esc(s.name)}${newmark}</td>
+      <td class="roster-name">${esc(s.name)}</td>
       <td class="roster-aff">${esc(s.affiliation)}</td>
       <td>${fchip}</td>
       <td class="roster-num">${s.items}</td>
       <td><div class="roster-links">${links.join('')}</div></td>
     </tr>`;
   }).join('');
-  return `<p class="roster-note">共收录 ${DATA.scholars.length} 位学者（「新」为 2026-10 补录），点上方领域标签可筛选。「动态」为近半年条目数。</p>
+  return `<p class="roster-note">共收录 ${DATA.scholars.length} 位学者，点上方领域标签可筛选。「动态」为近半年条目数。</p>
     <div class="roster-filter">${chips}</div>
     <div class="roster-table-wrap"><table class="roster-table">
       <thead><tr><th>学者</th><th>机构</th><th>领域</th><th class="roster-num-h">动态</th><th>链接</th></tr></thead>
