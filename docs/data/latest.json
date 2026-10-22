@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22 14:59",
+ "generated_at": "2026-10-22 16:26",
  "window_days": 180,
  "items": [
   {
@@ -44,6 +44,24 @@
      }
     ],
     "scholar_name": "Chad Bown"
+   }
+  },
+  {
+   "uid": "oa:W7222924039",
+   "source": "scholar",
+   "title": "Foreign Ownership and Occupational Safety: Evidence from France",
+   "authors": "Beata Smarzynska Javorcik, Alessia Lo Turco, Daniela Maggioni, Gianluca Santoni",
+   "venue": "CESifo",
+   "url": "https://doi.org/10.65864/9zizf1dh6a",
+   "date": "2026-10-19",
+   "abstract": "",
+   "summary_zh": "",
+   "title_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Beata Javorcik",
+    "work_type": "report",
+    "doi": "10.65864/9zizf1dh6a"
    }
   },
   {
@@ -2123,6 +2141,8 @@
   {
    "name": "David Autor",
    "affiliation": "MIT",
+   "field": "实证贸易",
+   "added": "",
    "twitter": "",
    "homepage": "https://economics.mit.edu/people/faculty/david-h-autor",
    "openalex": "A5029839974",
@@ -2132,6 +2152,8 @@
   {
    "name": "David Dorn",
    "affiliation": "Geneva",
+   "field": "实证贸易",
+   "added": "",
    "twitter": "",
    "homepage": "https://www.econ.uzh.ch/en/people/faculty/dorn.html",
    "openalex": "A5060691488",
@@ -2141,6 +2163,8 @@
   {
    "name": "Marc Melitz",
    "affiliation": "Harvard",
+   "field": "量化与理论",
+   "added": "",
    "twitter": "",
    "homepage": "https://scholar.harvard.edu/melitz",
    "openalex": "A5126659015",
@@ -2150,6 +2174,8 @@
   {
    "name": "Robert Feenstra",
    "affiliation": "UC Davis",
+   "field": "实证贸易",
+   "added": "",
    "twitter": "",
    "homepage": "https://economics.ucdavis.edu/people/fzfeens",
    "openalex": "A5008272936",
@@ -2159,6 +2185,8 @@
   {
    "name": "David Hummels",
    "affiliation": "Purdue",
+   "field": "实证贸易",
+   "added": "",
    "twitter": "DavidHummels",
    "homepage": "",
    "openalex": "A5000460149",
@@ -2168,6 +2196,8 @@
   {
    "name": "Gordon Hanson",
    "affiliation": "Harvard Kennedy School",
+   "field": "实证贸易",
+   "added": "",
    "twitter": "",
    "homepage": "https://www.hks.harvard.edu/faculty/gordon-hanson",
    "openalex": "A5031353967",
@@ -2177,6 +2207,8 @@
   {
    "name": "Pinelopi Goldberg",
    "affiliation": "Yale",
+   "field": "贸易政策",
+   "added": "",
    "twitter": "",
    "homepage": "https://economics.yale.edu/people/pinelopi-goldberg",
    "openalex": "A5036094586",
@@ -2186,6 +2218,8 @@
   {
    "name": "Nina Pavcnik",
    "affiliation": "Dartmouth",
+   "field": "实证贸易",
+   "added": "",
    "twitter": "",
    "homepage": "https://economics.dartmouth.edu/people/nina-pavcnik",
    "openalex": "A5001988454",
@@ -2195,6 +2229,8 @@
   {
    "name": "Peter Schott",
    "affiliation": "Yale SOM",
+   "field": "实证贸易",
+   "added": "",
    "twitter": "",
    "homepage": "",
    "openalex": "A5041390477",
@@ -2204,6 +2240,8 @@
   {
    "name": "Amit Khandelwal",
    "affiliation": "Yale SOM",
+   "field": "实证贸易",
+   "added": "",
    "twitter": "",
    "homepage": "https://economics.yale.edu/people/amit-khandelwal",
    "openalex": "A5110770393",
@@ -2213,6 +2251,8 @@
   {
    "name": "Kyle Handley",
    "affiliation": "UCSD GPS",
+   "field": "贸易政策",
+   "added": "",
    "twitter": "",
    "homepage": "https://gps.ucsd.edu/faculty-directory/kyle-handley.html",
    "openalex": "A5066826624",
@@ -2222,6 +2262,8 @@
   {
    "name": "Mary Amiti",
    "affiliation": "NY Fed",
+   "field": "贸易政策",
+   "added": "",
    "twitter": "",
    "homepage": "https://www.newyorkfed.org/research/economists/amiti",
    "openalex": "A5068818330",
@@ -2231,6 +2273,8 @@
   {
    "name": "Oleg Itskhoki",
    "affiliation": "Harvard",
+   "field": "量化与理论",
+   "added": "",
    "twitter": "ItsKhoki",
    "homepage": "https://economics.harvard.edu/people/oleg-itskhoki",
    "openalex": "A5088518091",
@@ -2240,6 +2284,8 @@
   {
    "name": "Pablo Fajgelbaum",
    "affiliation": "UCLA",
+   "field": "贸易政策",
+   "added": "",
    "twitter": "",
    "homepage": "https://economics.ucla.edu/faculty/pablo-fajgelbaum",
    "openalex": "A5079289076",
@@ -2249,6 +2295,8 @@
   {
    "name": "Lorenzo Caliendo",
    "affiliation": "Yale SOM",
+   "field": "量化与理论",
+   "added": "",
    "twitter": "",
    "homepage": "https://som.yale.edu/faculty/lorenzo-caliendo",
    "openalex": "A5067197927",
@@ -2258,6 +2306,8 @@
   {
    "name": "Fernando Parro",
    "affiliation": "Penn State",
+   "field": "量化与理论",
+   "added": "",
    "twitter": "",
    "homepage": "https://economics.psu.edu/people/fernando-parro",
    "openalex": "A5017248772",
@@ -2267,6 +2317,8 @@
   {
    "name": "Pol Antras",
    "affiliation": "Harvard",
+   "field": "量化与理论",
+   "added": "",
    "twitter": "",
    "homepage": "https://scholar.harvard.edu/antras",
    "openalex": "A5081815445",
@@ -2276,6 +2328,8 @@
   {
    "name": "Arnaud Costinot",
    "affiliation": "MIT",
+   "field": "量化与理论",
+   "added": "",
    "twitter": "",
    "homepage": "https://economics.mit.edu/people/faculty/arnaud-costinot",
    "openalex": "A5013535154",
@@ -2285,6 +2339,8 @@
   {
    "name": "Dave Donaldson",
    "affiliation": "MIT",
+   "field": "量化与理论",
+   "added": "",
    "twitter": "",
    "homepage": "https://economics.mit.edu/people/faculty/dave-donaldson",
    "openalex": "A5018485700",
@@ -2294,6 +2350,8 @@
   {
    "name": "Jonathan Eaton",
    "affiliation": "Penn State",
+   "field": "量化与理论",
+   "added": "",
    "twitter": "",
    "homepage": "https://economics.psu.edu/people/jonathan-eaton",
    "openalex": "A5109975005",
@@ -2303,6 +2361,8 @@
   {
    "name": "Samuel Kortum",
    "affiliation": "Yale",
+   "field": "量化与理论",
+   "added": "",
    "twitter": "",
    "homepage": "https://economics.yale.edu/people/samuel-kortum",
    "openalex": "A5089629708",
@@ -2312,6 +2372,8 @@
   {
    "name": "Costas Arkolakis",
    "affiliation": "Yale",
+   "field": "量化与理论",
+   "added": "",
    "twitter": "",
    "homepage": "https://economics.yale.edu/people/costas-arkolakis",
    "openalex": "A5074612370",
@@ -2321,6 +2383,8 @@
   {
    "name": "Treb Allen",
    "affiliation": "Dartmouth",
+   "field": "量化与理论",
+   "added": "",
    "twitter": "",
    "homepage": "",
    "openalex": "A5027993293",
@@ -2330,6 +2394,8 @@
   {
    "name": "Stephen Redding",
    "affiliation": "Princeton",
+   "field": "量化与理论",
+   "added": "",
    "twitter": "",
    "homepage": "https://economics.princeton.edu/people/stephen-j-redding",
    "openalex": "A5014797088",
@@ -2339,6 +2405,8 @@
   {
    "name": "Gene Grossman",
    "affiliation": "Princeton",
+   "field": "量化与理论",
+   "added": "",
    "twitter": "",
    "homepage": "https://economics.princeton.edu/people/gene-m-grossman",
    "openalex": "A5103503282",
@@ -2348,6 +2416,8 @@
   {
    "name": "Elhanan Helpman",
    "affiliation": "Harvard",
+   "field": "量化与理论",
+   "added": "",
    "twitter": "",
    "homepage": "https://economics.harvard.edu/people/elhanan-helpman",
    "openalex": "A5113776429",
@@ -2357,6 +2427,8 @@
   {
    "name": "Dani Rodrik",
    "affiliation": "Harvard Kennedy School",
+   "field": "贸易政策",
+   "added": "",
    "twitter": "rodrikdani",
    "homepage": "https://drodrik.scholar.harvard.edu",
    "openalex": "A5113832316",
@@ -2366,6 +2438,8 @@
   {
    "name": "Paul Krugman",
    "affiliation": "CUNY",
+   "field": "量化与理论",
+   "added": "",
    "twitter": "paulkrugman",
    "homepage": "",
    "openalex": "A5032113724",
@@ -2375,6 +2449,8 @@
   {
    "name": "Chad Bown",
    "affiliation": "Peterson Institute",
+   "field": "贸易政策",
+   "added": "",
    "twitter": "ChadBown",
    "homepage": "",
    "openalex": "A5013651639",
@@ -2384,6 +2460,8 @@
   {
    "name": "Douglas Irwin",
    "affiliation": "Dartmouth",
+   "field": "环境与历史",
+   "added": "",
    "twitter": "DouglasIrwin",
    "homepage": "https://economics.dartmouth.edu/people/douglas-irwin",
    "openalex": "A5007430520",
@@ -2393,6 +2471,8 @@
   {
    "name": "David Weinstein",
    "affiliation": "Columbia",
+   "field": "实证贸易",
+   "added": "",
    "twitter": "",
    "homepage": "https://economics.columbia.edu/people/faculty/david-e-weinstein",
    "openalex": "A5112773136",
@@ -2402,6 +2482,8 @@
   {
    "name": "Andrew Bernard",
    "affiliation": "Dartmouth Tuck",
+   "field": "实证贸易",
+   "added": "",
    "twitter": "",
    "homepage": "",
    "openalex": "A5034238250",
@@ -2411,11 +2493,860 @@
   {
    "name": "Esteban Rossi-Hansberg",
    "affiliation": "U Chicago",
+   "field": "量化与理论",
+   "added": "",
    "twitter": "",
    "homepage": "https://economics.uchicago.edu/directory/esteban-rossi-hansberg",
    "openalex": "A5088489492",
    "s2": "1398698229",
    "items": 2
+  },
+  {
+   "name": "Andrei Levchenko",
+   "affiliation": "Michigan",
+   "field": "量化与理论",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "https://sites.google.com/site/alevchenko00/",
+   "openalex": "A5011585023",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Andres Rodriguez-Clare",
+   "affiliation": "UC Berkeley",
+   "field": "量化与理论",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5134437271",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Ariel Burstein",
+   "affiliation": "UCLA",
+   "field": "量化与理论",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "https://economics.ucla.edu/faculty/ariel-burstein",
+   "openalex": "A5023417873",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Javier Cravino",
+   "affiliation": "Michigan",
+   "field": "量化与理论",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "https://sites.google.com/site/javiercravino/",
+   "openalex": "A5014939732",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "George Alessandria",
+   "affiliation": "Rochester",
+   "field": "量化与理论",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5023675699",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Kerem Cosar",
+   "affiliation": "UVA",
+   "field": "量化与理论",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "https://sites.google.com/site/keremcosar/",
+   "openalex": "A5027089964",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Sebastian Sotelo",
+   "affiliation": "Michigan",
+   "field": "量化与理论",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5029689249",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Jonathan Vogel",
+   "affiliation": "Columbia",
+   "field": "量化与理论",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5060729846",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Simon Galle",
+   "affiliation": "Dartmouth",
+   "field": "量化与理论",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5081041443",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Natalia Ramondo",
+   "affiliation": "BU",
+   "field": "量化与理论",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "https://sites.google.com/site/nataliaramondo/",
+   "openalex": "A5090626054",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Felix Tintelnot",
+   "affiliation": "Chicago",
+   "field": "量化与理论",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5069702396",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Ahmad Lashkaripour",
+   "affiliation": "Indiana",
+   "field": "量化与理论",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5074283348",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Ina Simonovska",
+   "affiliation": "UC Davis",
+   "field": "量化与理论",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5017055584",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Trevor Tombe",
+   "affiliation": "Calgary",
+   "field": "量化与理论",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "https://www.trevortombe.com/",
+   "openalex": "A5084256045",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Thomas Chaney",
+   "affiliation": "USC",
+   "field": "量化与理论",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5089888860",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "David Atkin",
+   "affiliation": "MIT",
+   "field": "实证贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "https://economics.mit.edu/people/faculty/david-atkin",
+   "openalex": "A5062277191",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Kalina Manova",
+   "affiliation": "UCL",
+   "field": "实证贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "https://www.kalinamanova.com",
+   "openalex": "A5113264418",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Rafael Dix-Carneiro",
+   "affiliation": "Duke",
+   "field": "实证贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5084550820",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Brian Kovak",
+   "affiliation": "CMU",
+   "field": "实证贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5019521451",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Rodrigo Adao",
+   "affiliation": "Chicago Booth",
+   "field": "实证贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5090349857",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Kirill Borusyak",
+   "affiliation": "UC Berkeley",
+   "field": "实证贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "https://sites.google.com/site/kirillborusyak/",
+   "openalex": "",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Teresa Fort",
+   "affiliation": "Dartmouth",
+   "field": "实证贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "https://sites.google.com/site/teresaafort/",
+   "openalex": "A5052385139",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Justin Pierce",
+   "affiliation": "Fed Board",
+   "field": "实证贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "https://www.federalreserve.gov/econresdata/justin-pierce.htm",
+   "openalex": "A5065748346",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Ryan Monarch",
+   "affiliation": "Fed Board",
+   "field": "实证贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "https://www.federalreserve.gov/econresdata/ryan-monarch.htm",
+   "openalex": "A5004737110",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Andrew McCallum",
+   "affiliation": "Fed Board",
+   "field": "实证贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5107835063",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Aaron Flaaen",
+   "affiliation": "Wharton",
+   "field": "实证贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5081886594",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Sebastian Heise",
+   "affiliation": "NY Fed",
+   "field": "实证贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "https://www.sebastianheise.com",
+   "openalex": "A5052207549",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Joaquin Blaum",
+   "affiliation": "Brown",
+   "field": "实证贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5011303416",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Sharat Ganapati",
+   "affiliation": "Georgetown",
+   "field": "实证贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5078825305",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Michael Waugh",
+   "affiliation": "NYU",
+   "field": "实证贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5088116364",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Jan De Loecker",
+   "affiliation": "KU Leuven",
+   "field": "实证贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5085160521",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Eric Verhoogen",
+   "affiliation": "Columbia",
+   "field": "实证贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "https://econ.columbia.edu/economists/eric-verhoogen/",
+   "openalex": "A5034286129",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Robert Staiger",
+   "affiliation": "Stanford",
+   "field": "贸易政策",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5113689199",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Giovanni Maggi",
+   "affiliation": "Yale",
+   "field": "贸易政策",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5102417950",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Nuno Limao",
+   "affiliation": "Johns Hopkins",
+   "field": "贸易政策",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "https://sites.google.com/site/nunolimao/",
+   "openalex": "A5067187280",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Swati Dhingra",
+   "affiliation": "LSE",
+   "field": "贸易政策",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "https://swatidhingra.com",
+   "openalex": "A5101117408",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Thomas Sampson",
+   "affiliation": "LSE",
+   "field": "贸易政策",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5066063370",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Dennis Novy",
+   "affiliation": "Warwick",
+   "field": "贸易政策",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5007426507",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Meredith Crowley",
+   "affiliation": "Cambridge",
+   "field": "贸易政策",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5054470044",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Alan Spearot",
+   "affiliation": "UCSC",
+   "field": "贸易政策",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5007148242",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Emanuel Ornelas",
+   "affiliation": "FGV",
+   "field": "贸易政策",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5082150596",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Simon Evenett",
+   "affiliation": "IMD",
+   "field": "贸易政策",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5050765674",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Caroline Freund",
+   "affiliation": "Tufts/PIIE",
+   "field": "贸易政策",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5111934756",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Ralph Ossa",
+   "affiliation": "WTO",
+   "field": "贸易政策",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5090816742",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Michele Ruta",
+   "affiliation": "IMF",
+   "field": "贸易政策",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5054884314",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Mary Lovely",
+   "affiliation": "Syracuse/PIIE",
+   "field": "贸易政策",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5086314249",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Joseph Shapiro",
+   "affiliation": "UC Berkeley",
+   "field": "环境与历史",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5029531318",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "M. Scott Taylor",
+   "affiliation": "Calgary",
+   "field": "环境与历史",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5010610496",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Nathan Nunn",
+   "affiliation": "UBC",
+   "field": "环境与历史",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "https://nathannunn.arts.ubc.ca/",
+   "openalex": "A5076620159",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Kevin O'Rourke",
+   "affiliation": "Sciences Po",
+   "field": "环境与历史",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "https://kevinhorourke.com",
+   "openalex": "A5061638954",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "魏尚进",
+   "affiliation": "Columbia",
+   "field": "中国贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5109848490",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "邓希炜",
+   "affiliation": "HKU",
+   "field": "中国贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5120684718",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "戴觅",
+   "affiliation": "北京师范大学",
+   "field": "中国贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5033311687",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "樊海潮",
+   "affiliation": "复旦",
+   "field": "中国贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5063738306",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "李志远",
+   "affiliation": "复旦",
+   "field": "中国贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5100337954",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "刘青",
+   "affiliation": "对外经贸",
+   "field": "中国贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5100345153",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "陆毅",
+   "affiliation": "清华",
+   "field": "中国贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5100661754",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "詹超群",
+   "affiliation": "HKBU",
+   "field": "中国贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5083740727",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "张鹏龙",
+   "affiliation": "清华",
+   "field": "中国贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5052901707",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "樊静婷",
+   "affiliation": "长江商学院",
+   "field": "中国贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5011226878",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "梅源",
+   "affiliation": "SMU",
+   "field": "中国贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5100735866",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "田媛",
+   "affiliation": "CUHK-Shenzhen",
+   "field": "中国贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5111752453",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "李瑶",
+   "affiliation": "HKUST",
+   "field": "中国贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5048997826",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "李冰晶",
+   "affiliation": "HKU",
+   "field": "中国贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5028072468",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "林舒",
+   "affiliation": "HKU",
+   "field": "中国贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5100772114",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "盛柳刚",
+   "affiliation": "CUHK",
+   "field": "中国贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5033830687",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "崔晓敏",
+   "affiliation": "中财",
+   "field": "中国贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5031714596",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Thierry Mayer",
+   "affiliation": "Sciences Po",
+   "field": "实证贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5032553214",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Isabelle Mejean",
+   "affiliation": "École Polytechnique",
+   "field": "实证贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5083167458",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Lionel Fontagne",
+   "affiliation": "Paris 1",
+   "field": "实证贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5062387197",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Harald Fadinger",
+   "affiliation": "Mannheim",
+   "field": "实证贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5062513709",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Beata Javorcik",
+   "affiliation": "Oxford",
+   "field": "实证贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5076368323",
+   "s2": "",
+   "items": 1
+  },
+  {
+   "name": "Holger Breinlich",
+   "affiliation": "Surrey",
+   "field": "实证贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "",
+   "openalex": "A5028825333",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Richard Baldwin",
+   "affiliation": "IMD",
+   "field": "政策评论",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "https://richardbaldwin.com",
+   "openalex": "A5074481124",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Brent Neiman",
+   "affiliation": "Chicago Booth",
+   "field": "实证贸易",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "https://faculty.chicagobooth.edu/brent.neiman",
+   "openalex": "A5060331377",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Jeffrey Frankel",
+   "affiliation": "Harvard",
+   "field": "政策评论",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "https://scholar.harvard.edu/frankel",
+   "openalex": "A5112084481",
+   "s2": "",
+   "items": 0
+  },
+  {
+   "name": "Maurice Obstfeld",
+   "affiliation": "UC Berkeley",
+   "field": "政策评论",
+   "added": "2026-10-22",
+   "twitter": "",
+   "homepage": "https://eml.berkeley.edu/~obstfeld/",
+   "openalex": "A5018047996",
+   "s2": "",
+   "items": 0
   }
  ]
 }
