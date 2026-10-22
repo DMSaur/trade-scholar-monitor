@@ -11,12 +11,6 @@ scholars:
   twitter: ''
   homepage: https://www.econ.uzh.ch/en/people/faculty/dorn.html
   openalex_id: A5060691488
-- name: Daron Acemoglu
-  affiliation: MIT
-  s2_id: '2660799'
-  twitter: ''
-  homepage: https://economics.mit.edu/people/faculty/daron-acemoglu
-  openalex_id: A5012301204
 - name: Marc Melitz
   affiliation: Harvard
   s2_id: '114793883'
@@ -227,21 +221,3 @@ scholars:
   twitter: ''
   homepage: ''
   enabled: false
-- name: Michael Pettis
-  affiliation: Carnegie Endowment
-  s2_id: ''
-  twitter: michaelxpettis
-  homepage: https://carnegieendowment.org/experts/262
-  enabled: true
-- name: Soumaya Keynes
-  affiliation: Financial Times
-  s2_id: ''
-  twitter: SoumayaKeynes
-  homepage: ''
-  enabled: true
-- name: Michael Clemens
-  affiliation: Johns Hopkins / PIIE
-  s2_id: ''
-  twitter: m_clem
-  homepage: ''
-  enabled: true
