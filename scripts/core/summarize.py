@@ -89,13 +89,15 @@ PAPER_PROMPT = """你是国际经济学研究助理。判断下面的经济学�
 
 标签表：{tags}"""
 
-TWEET_PROMPT = """你是国际经济学研究助理。为下面一位贸易学者的推文写摘要。
+TWEET_PROMPT = """你是国际经济学研究助理。把下面这条推文完整翻译成中文。
 
 作者：{authors}
 推文原文：{text}
 
+要求：忠实翻译全文，不概括、不省略、不添加解释；保留数字、人名与原文语气；专有名词首次出现时可括注英文。
+
 严格输出 JSON（不要 markdown 代码块）：
-{{"summary_zh": "一句话中文摘要，不超过60字，保留关键数据与观点", "tags": ["从下方标签表中选0-3个"]}}
+{{"translation_zh": "完整中文翻译", "tags": ["从下方标签表中选0-3个"]}}
 
 标签表：{tags}"""
 
@@ -111,10 +113,12 @@ def summarize_item(row, tag_vocab: list) -> dict | None:
         _disabled = True
         return None
     tags = "、".join(tag_vocab)
+    max_tokens = 2000
     if row["source"] == "tweet":
         prompt = TWEET_PROMPT.format(
-            authors=row["authors"], text=row["abstract"][:1500], tags=tags)
+            authors=row["authors"], text=row["abstract"][:2500], tags=tags)
     else:
+        max_tokens = 800
         prompt = PAPER_PROMPT.format(
             title=row["title"] or "（无标题）",
             authors=row["authors"] or "",
@@ -123,10 +127,12 @@ def summarize_item(row, tag_vocab: list) -> dict | None:
             tags=tags,
         )
     try:
-        out = _parse_json(_chat(prompt))
+        out = _parse_json(_chat(prompt, max_tokens=max_tokens))
         valid = set(tag_vocab) | {"其他"}
         out["tags"] = [t for t in out.get("tags", []) if t in valid][:3]
         out["title_zh"] = (out.get("title_zh") or "").strip()
+        out["summary_zh"] = (out.get("translation_zh")
+                             or out.get("summary_zh") or "").strip()
         _fail_streak = 0
         return out
     except Exception as e:

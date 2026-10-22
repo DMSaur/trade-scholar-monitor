@@ -230,6 +230,12 @@ h1{font-size:25px;font-weight:700;letter-spacing:.5px}
 .empty{color:var(--sub);text-align:center;padding:60px 0;font-size:14px}
 footer{margin-top:44px;color:var(--sub);font-size:12.5px;border-top:1px solid var(--border);padding-top:14px}
 footer a{color:var(--sub)}
+#rosterBtn{
+  cursor:pointer;border:1px solid var(--border);background:var(--card);
+  border-radius:20px;padding:3px 14px;font:inherit;font-size:12.5px;
+  color:var(--accent);
+}
+#rosterBtn[aria-pressed="true"]{background:var(--accent);color:#fff;border-color:var(--accent)}
 .roster-note{font-size:13px;color:var(--sub);margin:14px 0 10px}
 .roster-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(225px,1fr));gap:10px}
 .scard{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 14px}
@@ -296,7 +302,6 @@ const SOURCES = [
   {key:'nber',   label:'NBER'},
   {key:'scholar',label:'学者论文'},
   {key:'tweet',  label:'推文'},
-  {key:'roster', label:'学者名单'},
 ];
 const RECIPIENT = '21300680261@m.fudan.edu.cn';
 const state = {tab:'all', range:30, q:'', scholar:''};
@@ -321,7 +326,8 @@ function daysAgo(dateStr){
     <span class="chip"><span class="dot top5"></span>Top-5 <b id="c-top5">0</b></span>
     <span class="chip"><span class="dot nber"></span>NBER <b id="c-nber">0</b></span>
     <span class="chip"><span class="dot scholar"></span>学者论文 <b id="c-scholar">0</b></span>
-    <span class="chip"><span class="dot tweet"></span>推文 <b id="c-tweet">0</b></span>`;
+    <span class="chip"><span class="dot tweet"></span>推文 <b id="c-tweet">0</b></span>
+    <button id="rosterBtn" aria-pressed="false">学者名单</button>`;
 
   const names = new Map();
   DATA.items.forEach(it => {
@@ -336,6 +342,20 @@ function daysAgo(dateStr){
   });
 })();
 
+/* 学者名单独立视图（非分类）：页头按钮切换 */
+function setRoster(on){
+  state.tab = on ? 'roster' : 'all';
+  const btn = document.getElementById('rosterBtn');
+  btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+  document.querySelector('.toolbar').style.display = on ? 'none' : 'flex';
+  document.querySelectorAll('#tabs .tab').forEach(b =>
+    b.setAttribute('aria-pressed', (!on && b.dataset.tab==='all') ? 'true' : 'false'));
+  render();
+}
+document.getElementById('metaRow').addEventListener('click', e => {
+  if(e.target.id === 'rosterBtn') setRoster(state.tab !== 'roster');
+});
+
 /* 板块 tab（计数随筛选联动） */
 (function initTabs(){
   const tabs = document.getElementById('tabs');
@@ -346,6 +366,7 @@ function daysAgo(dateStr){
   tabs.addEventListener('click', e => {
     const btn = e.target.closest('.tab');
     if(!btn) return;
+    if(state.tab === 'roster') setRoster(false);
     state.tab = btn.dataset.tab;
     tabs.querySelectorAll('.tab').forEach(b =>
       b.setAttribute('aria-pressed', b===btn ? 'true' : 'false'));
@@ -571,8 +592,7 @@ function render(){
   base.forEach(it => perSource[it.source]++);
   document.querySelectorAll('#tabs .tab').forEach(btn => {
     const k = btn.dataset.tab;
-    const n = k === 'all' ? base.length
-      : (k === 'roster' ? DATA.scholars.length : perSource[k]);
+    const n = k === 'all' ? base.length : perSource[k];
     btn.querySelector('.n').textContent = n;
   });
   ['top5','nber','scholar','tweet'].forEach(k => {
