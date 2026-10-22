@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-22 23:02",
- "window_days": 180,
+ "generated_at": "2026-10-23 00:06",
+ "window_days": 365,
  "items": [
   {
    "uid": "tweet:2113053211162820936",
@@ -2135,6 +2135,44 @@
     "nber_id": "W35164",
     "keyword_hit": "export"
    }
+  },
+  {
+   "uid": "s2:287799657",
+   "source": "scholar",
+   "title": "US-China Cooperative Interdependence: Opportunities and Obstacles",
+   "authors": "Marcus Noland, C. Bown, Mary E. Lovely, Warwick J. McKibbin",
+   "venue": "Social Science Research Network",
+   "url": "https://doi.org/10.2139/ssrn.6637279",
+   "date": "2026-01-01",
+   "abstract": "",
+   "summary_zh": "探讨中美从合作转向冲突后如何以结构化谈判实现经济脱钩并保持气候等合作，指出不合作将损害两国与全球。",
+   "title_zh": "中美合作性相互依存：机遇与障碍",
+   "tags": [
+    "贸易政策",
+    "其他"
+   ],
+   "extra": {
+    "scholar_name": "Chad Bown"
+   }
+  },
+  {
+   "uid": "s2:284970157",
+   "source": "scholar",
+   "title": "Trade and Domestic Distortions: The Case of Informality",
+   "authors": "Rafael Dix-Carneiro, P. Goldberg, C. Meghir, Gabriel Ulyssea",
+   "venue": "Econometrica",
+   "url": "https://doi.org/10.3982/ecta19378",
+   "date": "2026-01-01",
+   "abstract": "",
+   "summary_zh": "构建定量模型研究非正规部门下的贸易收益，发现贸易收益被放大，非正规部门也放大衰退的负面收入效应。",
+   "title_zh": "贸易与国内扭曲：非正规性案例",
+   "tags": [
+    "企业异质性",
+    "劳动力市场"
+   ],
+   "extra": {
+    "scholar_name": "Pinelopi Goldberg"
+   }
   }
  ],
  "scholars": [
@@ -2213,7 +2251,7 @@
    "homepage": "https://economics.yale.edu/people/pinelopi-goldberg",
    "openalex": "A5036094586",
    "s2": "46223052",
-   "items": 3
+   "items": 4
   },
   {
    "name": "Nina Pavcnik",
@@ -2455,7 +2493,7 @@
    "homepage": "",
    "openalex": "A5013651639",
    "s2": "46221253",
-   "items": 20
+   "items": 21
   },
   {
    "name": "Douglas Irwin",
