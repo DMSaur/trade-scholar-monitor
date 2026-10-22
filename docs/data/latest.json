@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22 13:55",
+ "generated_at": "2026-10-22 14:00",
  "window_days": 180,
  "items": [
   {
@@ -2845,9 +2845,12 @@
    "url": "https://www.nber.org/papers/w35402",
    "date": "2026-07-01",
    "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
+   "summary_zh": "研究开放经济如何吸收外国需求冲击，发现消费倾向与金融摩擦对数量/价格调整作用相反，支出效应常占优。",
+   "title_zh": "输入总需求",
+   "tags": [
+    "汇率",
+    "其他"
+   ],
    "extra": {
     "nber_id": "W35402",
     "keyword_hit": "import"
