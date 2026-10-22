@@ -48,7 +48,9 @@ def _dedupe_papers(items: list) -> list:
         def rank(it):
             venue = (it.get("venue") or "").lower()
             is_wp = any(w in venue for w in _WP_VENUES)
-            return (is_wp, it.get("date") or "", len(it.get("abstract") or ""))
+            # 期刊版在前、日期新在前、摘要长在前（reverse 降序取第一）
+            return (not is_wp, it.get("date") or "",
+                    len(it.get("abstract") or ""))
         g.sort(key=rank, reverse=True)
         best = g[0]
         # 被并掉的版本信息并入备注，标注另有工作论文版

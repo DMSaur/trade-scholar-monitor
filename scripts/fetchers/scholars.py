@@ -23,7 +23,8 @@ def _fetch_openalex(start_date: str, scholars: list[dict]) -> list[dict]:
             per_page=100,
         )
         for w in results:
-            if w.get("type") == "paratext":
+            # paratext 是期刊封面目录类条目；dataset 是复现数据包，都不是论文
+            if w.get("type") in ("paratext", "dataset"):
                 continue
             abstract = inverted_abstract(w.get("abstract_inverted_index"))
             auths = [a["author"]["display_name"]
