@@ -237,12 +237,20 @@ footer a{color:var(--sub)}
 }
 #rosterBtn[aria-pressed="true"]{background:var(--accent);color:#fff;border-color:var(--accent)}
 .roster-note{font-size:13px;color:var(--sub);margin:14px 0 10px}
-.roster-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(225px,1fr));gap:10px}
-.scard{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 14px}
-.scard-name{font-weight:700;font-size:14.5px;line-height:1.4}
-.scard-aff{color:var(--sub);font-size:12.5px;margin:2px 0 4px}
-.scard-meta{font-size:11.5px;color:var(--sub);margin-bottom:7px}
-.scard-links{display:flex;flex-wrap:wrap;gap:6px}
+.roster-table-wrap{overflow-x:auto;background:var(--card);border:1px solid var(--border);border-radius:10px}
+.roster-table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:560px}
+.roster-table th{
+  text-align:left;font-size:12px;font-weight:600;color:var(--sub);
+  padding:9px 12px;border-bottom:1px solid var(--border);white-space:nowrap;
+}
+.roster-table td{padding:8px 12px;border-bottom:1px solid var(--border);vertical-align:middle}
+.roster-table tbody tr:last-child td{border-bottom:0}
+.roster-table tbody tr:hover td{background:var(--bg)}
+.roster-name{font-weight:700;white-space:nowrap}
+.roster-aff{color:var(--sub)}
+.roster-num{text-align:right;font-variant-numeric:tabular-nums}
+th.roster-num-h{text-align:right}
+.roster-links{display:flex;flex-wrap:wrap;gap:6px}
 .slink{font-size:12px;color:var(--accent);text-decoration:none;border:1px solid var(--border);border-radius:5px;padding:1px 7px}
 .slink:hover{border-color:var(--accent)}
 .suggest{margin-top:26px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px 18px}
@@ -501,21 +509,24 @@ function groupLabel(dateStr){
 }
 
 function rosterHTML(){
-  const cards = DATA.scholars.map(s => {
+  const rows = DATA.scholars.map(s => {
     const links = [];
     if(s.homepage) links.push(`<a class="slink" href="${esc(s.homepage)}" target="_blank" rel="noopener">主页</a>`);
     if(s.twitter) links.push(`<a class="slink" href="https://x.com/${esc(s.twitter)}" target="_blank" rel="noopener">@${esc(s.twitter)}</a>`);
     if(s.openalex) links.push(`<a class="slink" href="https://openalex.org/${esc(s.openalex)}" target="_blank" rel="noopener">OpenAlex</a>`);
     if(s.s2) links.push(`<a class="slink" href="https://www.semanticscholar.org/author/${esc(s.s2)}" target="_blank" rel="noopener">S2</a>`);
-    return `<div class="scard">
-      <div class="scard-name">${esc(s.name)}</div>
-      <div class="scard-aff">${esc(s.affiliation)}</div>
-      <div class="scard-meta">近半年 ${s.items} 条动态</div>
-      <div class="scard-links">${links.join('')}</div>
-    </div>`;
+    return `<tr>
+      <td class="roster-name">${esc(s.name)}</td>
+      <td class="roster-aff">${esc(s.affiliation)}</td>
+      <td class="roster-num">${s.items}</td>
+      <td><div class="roster-links">${links.join('')}</div></td>
+    </tr>`;
   }).join('');
   return `<p class="roster-note">共收录 ${DATA.scholars.length} 位学者，「动态」为近半年条目数。</p>
-    <div class="roster-grid">${cards}</div>
+    <div class="roster-table-wrap"><table class="roster-table">
+      <thead><tr><th>学者</th><th>机构</th><th class="roster-num-h">动态</th><th>链接</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table></div>
     <div class="suggest">
       <h3>建议新增学者</h3>
       <p class="sg-hint">填写后点「打开邮件」发到维护者邮箱，或点「复制内容」粘贴到任意渠道。</p>
