@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23 20:24",
+ "generated_at": "2026-10-23 22:43",
  "window_days": 365,
  "items": [
   {
@@ -191,9 +191,11 @@
    "url": "https://doi.org/10.1093/qje/qjag052",
    "date": "2026-10-20",
    "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
+   "summary_zh": "研究消费者进口新品经社会网络扩散与零售商学习进入本地市场，用海关与网络数据识别需求外部性。",
+   "title_zh": "新产品如何进入市场：社会网络、消费者进口与零售商学习",
+   "tags": [
+    "其他"
+   ],
    "extra": {
     "journal_short": "QJE",
     "keyword_hit": "import",
@@ -3002,24 +3004,6 @@
    }
   },
   {
-   "uid": "oa:W7160935157",
-   "source": "scholar",
-   "title": "Labor Market Policies to Confront Structural Change",
-   "authors": "Brian K. Kovak",
-   "venue": "The MIT Press eBooks",
-   "url": "https://doi.org/10.7551/mitpress/15822.003.0019",
-   "date": "2026-05-12",
-   "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
-   "extra": {
-    "scholar_name": "Brian Kovak",
-    "work_type": "book-chapter",
-    "doi": "10.7551/mitpress/15822.003.0019"
-   }
-  },
-  {
    "uid": "oa:W7160912863",
    "source": "scholar",
    "title": "Some Thoughts on the Future of Globalization",
@@ -3745,9 +3729,12 @@
    "url": "https://doi.org/10.52335/ekon/217695",
    "date": "2026-03-16",
    "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
+   "summary_zh": "在全球化碎片化背景下探讨共享繁荣的挑战与政策路径。",
+   "title_zh": "碎片化世界中的共享繁荣",
+   "tags": [
+    "贸易政策",
+    "产业政策"
+   ],
    "extra": {
     "scholar_name": "Dani Rodrik",
     "work_type": "article",
@@ -3799,24 +3786,6 @@
     "scholar_name": "张鹏龙",
     "work_type": "article",
     "doi": "10.1111/twec.70066"
-   }
-  },
-  {
-   "uid": "oa:W7134870057",
-   "source": "scholar",
-   "title": "A suposta nova riqueza do imperador",
-   "authors": "Paúl Krugman",
-   "venue": "DSpace (Federal University of Santa Catarina)",
-   "url": "https://openalex.org/W7134870057",
-   "date": "2026-03-02",
-   "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
-   "extra": {
-    "scholar_name": "Paul Krugman",
-    "work_type": "other",
-    "doi": ""
    }
   },
   {
@@ -4238,9 +4207,11 @@
    "url": "https://doi.org/10.1016/j.jpubeco.2025.105560",
    "date": "2026-01-10",
    "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
+   "summary_zh": "探讨空气污染是否构成比较劣势并影响贸易格局；无摘要，方法与发现未明。",
+   "title_zh": "空气污染作为比较劣势",
+   "tags": [
+    "其他"
+   ],
    "extra": {
     "scholar_name": "盛柳刚",
     "work_type": "article",
@@ -4460,24 +4431,6 @@
    }
   },
   {
-   "uid": "oa:W7204819908",
-   "source": "scholar",
-   "title": "From Grain to Silver: Tax Reform, Monetary Adoption, and Economic Growth in Ming China",
-   "authors": "Ting Chen, Jiachen Li, Chang Liu, Chaoqun Zhan",
-   "venue": "SSRN Electronic Journal",
-   "url": "https://doi.org/10.2139/ssrn.7372498",
-   "date": "2026-01-01",
-   "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
-   "extra": {
-    "scholar_name": "詹超群",
-    "work_type": "preprint",
-    "doi": "10.2139/ssrn.7372498"
-   }
-  },
-  {
    "uid": "oa:W7204488702",
    "source": "scholar",
    "title": "The Unintended Decarbonization Effect of Exchange Rate Appreciation: Firm-Level Evidence from China",
@@ -4652,42 +4605,6 @@
    }
   },
   {
-   "uid": "oa:W7141064443",
-   "source": "top5",
-   "title": "Optimally‐Transported Generalized Method of Moments",
-   "authors": "Susanne M. Schennach, Vincent Starck",
-   "venue": "Econometrica",
-   "url": "https://doi.org/10.3982/ecta22486",
-   "date": "2026-01-01",
-   "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
-   "extra": {
-    "journal_short": "ECMA",
-    "keyword_hit": "export",
-    "doi": "10.3982/ecta22486"
-   }
-  },
-  {
-   "uid": "oa:W7140197330",
-   "source": "scholar",
-   "title": "What Makes New Work Different from More Work?",
-   "authors": "David Autor, Caroline Chin, Anna Salomons, Bryan Seegmiller",
-   "venue": "SSRN Electronic Journal",
-   "url": "https://doi.org/10.2139/ssrn.6456972",
-   "date": "2026-01-01",
-   "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
-   "extra": {
-    "scholar_name": "David Autor",
-    "work_type": "preprint",
-    "doi": "10.2139/ssrn.6456972"
-   }
-  },
-  {
    "uid": "oa:W7134948106",
    "source": "scholar",
    "title": "Trade and Multinational Production Model",
@@ -4728,24 +4645,6 @@
     "scholar_name": "Jeffrey Frankel",
     "work_type": "preprint",
     "doi": "10.2139/ssrn.6259416"
-   }
-  },
-  {
-   "uid": "oa:W7128727664",
-   "source": "scholar",
-   "title": "Searching for Fish in Trees (緣木求魚)? Economic Development when Context Matters",
-   "authors": "Jacob Moscona, Nathan Nunn, James B. Robinson",
-   "venue": "SSRN Electronic Journal",
-   "url": "https://doi.org/10.2139/ssrn.6200403",
-   "date": "2026-01-01",
-   "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
-   "extra": {
-    "scholar_name": "Nathan Nunn",
-    "work_type": "preprint",
-    "doi": "10.2139/ssrn.6200403"
    }
   },
   {
@@ -5113,9 +5012,12 @@
    "url": "https://doi.org/10.26599/rge.2025.9720105",
    "date": "2025-12-01",
    "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
+   "summary_zh": "针对全球经济结构性压力与贸易体系僵局，论文提出生产主义框架，强调国家与市场共同建设生产能力，可促进国内升级并缓和国际紧张。",
+   "title_zh": "生产主义：新产业政策与全球经济治理新思维",
+   "tags": [
+    "产业政策",
+    "贸易政策"
+   ],
    "extra": {
     "scholar_name": "Dani Rodrik",
     "work_type": "article",
@@ -5218,9 +5120,13 @@
    "url": "https://doi.org/10.1057/s41308-026-00312-6",
    "date": "2025-12-01",
    "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
+   "summary_zh": "用恒定弹性贸易模型量化全球化与中日生产率增长对美国的影响，发现美国相对收入下降但总福利上升。",
+   "title_zh": "在全球经济中容纳新兴大国",
+   "tags": [
+    "贸易弹性",
+    "方法论",
+    "其他"
+   ],
    "extra": {
     "scholar_name": "Stephen Redding",
     "work_type": "article",
@@ -5279,9 +5185,12 @@
    "url": "https://doi.org/10.59576/lse.20251124",
    "date": "2025-11-24",
    "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
+   "summary_zh": "基于企业高管访谈分析其应对通胀与关税冲击的定价及成本转嫁，发现企业需权衡多重目标。",
+   "title_zh": "企业如何定价——以他们自己的话",
+   "tags": [
+    "关税",
+    "贸易政策"
+   ],
    "extra": {
     "scholar_name": "Sebastian Heise",
     "work_type": "report",
@@ -5297,9 +5206,11 @@
    "url": "https://doi.org/10.1093/acrefore/9780190625979.013.951",
    "date": "2025-11-18",
    "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
+   "summary_zh": "综述汇率与价格、消费、利率等脱节谜题，指出金融风险冲击与低汇率传递是关键机制，但金融冲击贡献仍无共识。",
+   "title_zh": "汇率脱节",
+   "tags": [
+    "汇率"
+   ],
    "extra": {
     "scholar_name": "Oleg Itskhoki",
     "work_type": "reference-entry",
@@ -5400,9 +5311,12 @@
    "url": "https://doi.org/10.1086/739325",
    "date": "2025-10-28",
    "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
+   "summary_zh": "构建农业供应链均衡模型，揭示环境政策效率与再分配权衡。",
+   "title_zh": "环境政策中的效率与再分配：农业供应链的均衡分析",
+   "tags": [
+    "供应链",
+    "其他"
+   ],
    "extra": {
     "journal_short": "JPE",
     "keyword_hit": "supply chain",
@@ -5420,7 +5334,7 @@
    "homepage": "https://economics.mit.edu/people/faculty/david-h-autor",
    "openalex": "A5029839974",
    "s2": "6703140",
-   "items": 1
+   "items": 0
   },
   {
    "name": "David Dorn",
@@ -5717,7 +5631,7 @@
    "homepage": "",
    "openalex": "A5032113724",
    "s2": "33345159",
-   "items": 2
+   "items": 1
   },
   {
    "name": "Chad Bown",
@@ -5981,7 +5895,7 @@
    "homepage": "https://www.heinz.cmu.edu/faculty-research/profiles/kovak-briank",
    "openalex": "A5019521451",
    "s2": "5227172",
-   "items": 1
+   "items": 0
   },
   {
    "name": "Rodrigo Adao",
@@ -6311,7 +6225,7 @@
    "homepage": "https://nathannunn.arts.ubc.ca/",
    "openalex": "A5076620159",
    "s2": "16044566",
-   "items": 1
+   "items": 0
   },
   {
    "name": "Kevin O'Rourke",
@@ -6410,7 +6324,7 @@
    "homepage": "https://chaoqunzhan.weebly.com/",
    "openalex": "A5083740727",
    "s2": "121680824",
-   "items": 3
+   "items": 2
   },
   {
    "name": "张鹏龙",
