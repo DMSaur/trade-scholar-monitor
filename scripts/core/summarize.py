@@ -163,12 +163,13 @@ def summarize_item(row, tag_vocab: list) -> dict | None:
         _disabled = True
         return None
     tags = "、".join(tag_vocab)
-    max_tokens = 2000
+    # 模型带 thinking 块，思考本身消耗输出额度，上限太低会截断正文甚至空响应
+    max_tokens = 3000
     if row["source"] == "tweet":
         prompt = TWEET_PROMPT.format(
             authors=row["authors"], text=row["abstract"][:2500], tags=tags)
     else:
-        max_tokens = 800
+        max_tokens = 2000
         prompt = PAPER_PROMPT.format(
             title=row["title"] or "（无标题）",
             authors=row["authors"] or "",
