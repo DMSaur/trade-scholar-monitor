@@ -7,6 +7,8 @@ top5 与 NBER 条目同时让模型确认是否属于贸易领域。
 """
 import json
 import os
+import re
+import time
 from pathlib import Path
 
 import requests
@@ -43,26 +45,67 @@ def available() -> bool:
     return bool(AUTH_TOKEN)
 
 
-def _chat(prompt: str, max_tokens: int = 800) -> str:
-    r = requests.post(
-        f"{BASE_URL}/v1/messages",
-        headers={
-            "Authorization": f"Bearer {AUTH_TOKEN}",
-            "anthropic-version": "2023-06-01",
-            "Content-Type": "application/json",
-        },
-        json={
-            "model": MODEL,
-            "max_tokens": max_tokens,
-            "temperature": 0.2,
-            "messages": [{"role": "user", "content": prompt}],
-        },
-        timeout=90,
-    )
-    r.raise_for_status()
-    parts = [b.get("text", "") for b in r.json().get("content", [])
-             if b.get("type") == "text"]
-    return "".join(parts)
+_RETRY_STATUS = (429, 500, 502, 503, 504)
+
+
+def _chat(prompt: str, max_tokens: int = 800, attempts: int = 3) -> str:
+    """带重试的对话请求：限流、网关错误、空响应都视为可重试。"""
+    last_err = "未知错误"
+    for attempt in range(attempts):
+        if attempt:
+            time.sleep(3 * attempt)
+        try:
+            r = requests.post(
+                f"{BASE_URL}/v1/messages",
+                headers={
+                    "Authorization": f"Bearer {AUTH_TOKEN}",
+                    "anthropic-version": "2023-06-01",
+                    "Content-Type": "application/json",
+                },
+                json={
+                    "model": MODEL,
+                    "max_tokens": max_tokens,
+                    "temperature": 0.2,
+                    "messages": [{"role": "user", "content": prompt}],
+                },
+                timeout=90,
+            )
+            if r.status_code in _RETRY_STATUS:
+                last_err = f"HTTP {r.status_code}"
+                continue
+            r.raise_for_status()
+            text = "".join(b.get("text", "") for b in r.json().get("content", [])
+                           if b.get("type") == "text").strip()
+            if text:
+                return text
+            last_err = "空响应"
+        except (requests.RequestException, ValueError) as e:
+            last_err = str(e)[:120]
+    raise RuntimeError(last_err)
+
+
+def _json_unescape(s: str) -> str:
+    try:
+        return json.loads(f'"{s}"')
+    except ValueError:
+        return s
+
+
+def _salvage_fields(text: str) -> dict:
+    """截断 JSON 的兜底解析：逐字段正则提取，容忍值被截断在半路。"""
+    out = {}
+    m = re.search(r'"relevant"\s*:\s*(true|false)', text, re.I)
+    if m:
+        out["relevant"] = m.group(1).lower() == "true"
+    for key in ("title_zh", "summary_zh", "translation_zh"):
+        m = re.search(rf'"{key}"\s*:\s*"((?:[^"\\]|\\.)*)', text)
+        if m and m.group(1).strip():
+            out[key] = _json_unescape(m.group(1)).strip()
+    m = re.search(r'"tags"\s*:\s*\[(.*?)\]', text, re.S)
+    if m:
+        out["tags"] = [_json_unescape(t) for t in
+                       re.findall(r'"((?:[^"\\]|\\.)*)"', m.group(1))]
+    return out
 
 
 def _parse_json(text: str) -> dict:
@@ -72,9 +115,16 @@ def _parse_json(text: str) -> dict:
         if text.startswith("json"):
             text = text[4:]
     start, end = text.find("{"), text.rfind("}")
-    if start < 0 or end < 0:
-        raise ValueError(f"无 JSON: {text[:100]}")
-    return json.loads(text[start:end + 1])
+    if start >= 0 and end > start:
+        try:
+            return json.loads(text[start:end + 1])
+        except json.JSONDecodeError:
+            pass  # 截断或格式破损，走字段级兜底
+    salvaged = _salvage_fields(text)
+    if (salvaged.get("relevant") is not None or salvaged.get("title_zh")
+            or salvaged.get("summary_zh") or salvaged.get("translation_zh")):
+        return salvaged
+    raise ValueError(f"无 JSON: {text[:100]}")
 
 
 PAPER_PROMPT = """你是国际经济学研究助理。判断下面的经济学论文是否属于国际贸易领域（广义：贸易、关税、全球价值链、供应链、贸易政策、贸易与劳动力、汇率与贸易、制裁与出口管制、经济地理等）。
