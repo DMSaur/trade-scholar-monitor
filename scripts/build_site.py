@@ -9,7 +9,7 @@ import db
 
 WINDOW_DAYS = 365
 
-SOURCE_LABEL = {"top5": "Top-5 期刊", "nber": "NBER", "scholar": "其他论文", "tweet": "推文"}
+SOURCE_LABEL = {"top5": "Top-5 期刊", "nber": "NBER", "scholar": "学者论文", "tweet": "推文"}
 JOURNAL_SHORT = {"AER", "QJE", "JPE", "ECMA", "REStud"}
 
 # 这些 venue 视为工作论文/预印本版本，同题去重时让位于期刊版
@@ -323,7 +323,7 @@ const SOURCES = [
   {key:'all',    label:'全部'},
   {key:'top5',   label:'Top-5 期刊'},
   {key:'nber',   label:'NBER'},
-  {key:'scholar',label:'其他论文'},
+  {key:'scholar',label:'学者论文'},
   {key:'tweet',  label:'推文'},
 ];
 const RECIPIENT = '21300680261@m.fudan.edu.cn';
@@ -348,7 +348,7 @@ function daysAgo(dateStr){
     <span class="chip">数据截至 <b>${DATA.generated_at}</b></span>
     <span class="chip"><span class="dot top5"></span>Top-5 <b id="c-top5">0</b></span>
     <span class="chip"><span class="dot nber"></span>NBER <b id="c-nber">0</b></span>
-    <span class="chip"><span class="dot scholar"></span>其他论文 <b id="c-scholar">0</b></span>
+    <span class="chip"><span class="dot scholar"></span>学者论文 <b id="c-scholar">0</b></span>
     <span class="chip"><span class="dot tweet"></span>推文 <b id="c-tweet">0</b></span>
     <button id="rosterBtn" aria-pressed="false">学者名单</button>`;
 
@@ -441,7 +441,7 @@ function cardHTML(it){
     venueInfo = `<span class="venue">NBER Working Paper ${e.nber_id||''}</span>`;
   }else if(it.source === 'scholar'){
     const who = e.scholar_name || '';
-    badges = `<span class="badge scholar">其他论文</span>` +
+    badges = `<span class="badge scholar">学者论文</span>` +
       (who ? `<span class="venue">${who}</span>` : '');
     venueInfo = `<span class="venue">${it.venue||e.work_type||''}</span>`;
   }else{
