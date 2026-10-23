@@ -1,7 +1,125 @@
 {
- "generated_at": "2026-10-23 00:57",
+ "generated_at": "2026-10-23 09:34",
  "window_days": 365,
  "items": [
+  {
+   "uid": "tweet:2113423996561535419",
+   "source": "tweet",
+   "title": "RT @EdicionesDeusto: La economía mundial depende de cadenas de suministro que conectan a empresas y países de varios continentes. Esa inter…",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2113423996561535419",
+   "date": "2026-10-23",
+   "abstract": "RT @EdicionesDeusto: La economía mundial depende de cadenas de suministro que conectan a empresas y países de varios continentes. Esa inter…",
+   "summary_zh": "RT @EdicionesDeusto：世界经济依赖于连接多个大洲的企业和国家的供应链。这种相互…",
+   "title_zh": "",
+   "tags": [
+    "全球价值链",
+    "供应链"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": true,
+    "is_reply": false,
+    "likes": 0,
+    "retweets": 1,
+    "views": 44,
+    "created_at": "2026-10-23T00:15:20+00:00",
+    "media": [],
+    "scholar_name": "Chad Bown"
+   }
+  },
+  {
+   "uid": "tweet:2113403199730106768",
+   "source": "tweet",
+   "title": "RT @D_A_Irwin: Attention all @DartmouthEcon @dartmouth students!",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2113403199730106768",
+   "date": "2026-10-22",
+   "abstract": "RT @D_A_Irwin: Attention all @DartmouthEcon @dartmouth students!",
+   "summary_zh": "转发 @D_A_Irwin：请所有 @DartmouthEcon @dartmouth 的学生注意！",
+   "title_zh": "",
+   "tags": [
+    "其他"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": true,
+    "is_reply": false,
+    "likes": 0,
+    "retweets": 2,
+    "views": 45,
+    "created_at": "2026-10-22T22:52:42+00:00",
+    "media": [],
+    "scholar_name": "Chad Bown"
+   }
+  },
+  {
+   "uid": "tweet:2113377700840603877",
+   "source": "tweet",
+   "title": "HOW TO WIN A TRADE WAR... hits the road again next week!!!  World University Tour | Fall 2026  If you are in these locations, REGISTER BELOW",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2113377700840603877",
+   "date": "2026-10-22",
+   "abstract": "HOW TO WIN A TRADE WAR... hits the road again next week!!!\n\nWorld University Tour | Fall 2026\n\nIf you are in these locations, REGISTER BELOW  - @SoumayaKeynes and I can't wait to see you!!!\n\n- Princeton University, Oct 26: https://t.co/1WDF6X2eW7\n\n- Columbia University, Oct 27\n\n- Yale University, Oct 28: https://t.co/yy0SD222yQ\n\n- Harvard University, Oct 29: https://t.co/6cSuTdO6LI\n\n- Dartmouth College, Oct 30: https://t.co/n73rjHVUdf",
+   "summary_zh": "如何赢得一场贸易战……下周又要启程了！！！\n\n世界大学巡讲 | 2026年秋季\n\n如果你在这些地点，请在下方注册——@SoumayaKeynes 和我迫不及待想见到你们！！！\n\n- 普林斯顿大学（Princeton University），10月26日：\n\n- 哥伦比亚大学（Columbia University），10月27日\n\n- 耶鲁大学（Yale University），10月28日：\n\n- 哈佛大学（Harvard University），10月29日：\n\n- 达特茅斯学院（Dartmouth College），10月30日：",
+   "title_zh": "",
+   "tags": [
+    "贸易战",
+    "贸易政策"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": false,
+    "is_reply": false,
+    "likes": 4,
+    "retweets": 0,
+    "views": 934,
+    "created_at": "2026-10-22T21:11:23+00:00",
+    "media": [
+     {
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HVQ5jH0WkAEkEps.jpg"
+     }
+    ],
+    "links": [
+     {
+      "tco": "https://t.co/1WDF6X2eW7",
+      "url": "https://www.princeton.edu/events/2026/how-win-trade-war-talk-chad-bown-and-soumaya-keynes",
+      "title": "",
+      "domain": "princeton.edu",
+      "image": ""
+     },
+     {
+      "tco": "https://t.co/yy0SD222yQ",
+      "url": "https://tobin.yale.edu/events/2026/book-talk-how-win-trade-war-soumaya-keynes-and-chad-bown",
+      "title": "Book Talk: How to Win a Trade War with Soumaya Keynes and Chad Bown",
+      "domain": "Tobin Center for Economic Policy",
+      "image": "https://tobin.yale.edu/sites/default/files/styles/social_media/public/2026-10/How%20to%20win%20a%20trade%20war.png?h=00f0d0b6&amp;itok=u_NUqxbg"
+     },
+     {
+      "tco": "https://t.co/6cSuTdO6LI",
+      "url": "https://www.hks.harvard.edu/events/how-win-trade-war",
+      "title": "How to Win A Trade War",
+      "domain": "hks.harvard.edu",
+      "image": "https://www.hks.harvard.edu/sites/default/files/styles/open_graph_image/public/images/event/068Pp00000k7X9kIAE.jpg?itok=dS3oNsM2"
+     },
+     {
+      "tco": "https://t.co/n73rjHVUdf",
+      "url": "https://pep.dartmouth.edu/events/event?event=82274",
+      "title": "Event Detail | Political Economy Project",
+      "domain": "pep.dartmouth.edu",
+      "image": ""
+     }
+    ],
+    "scholar_name": "Chad Bown"
+   }
+  },
   {
    "uid": "tweet:2113053211162820936",
    "source": "tweet",
@@ -1962,24 +2080,6 @@
     "scholar_name": "Andrew Bernard",
     "work_type": "report",
     "doi": "10.65864/unupiqcab1"
-   }
-  },
-  {
-   "uid": "oa:W7204221150",
-   "source": "scholar",
-   "title": "Industrial relocation policy and capital responses under coordinated regional development",
-   "authors": "Maozhen Wu, Tianhan LIU, Penglong Zhang, Yushan Hu",
-   "venue": "Zhongguo ruankexue",
-   "url": "https://doi.org/10.3724/1005-0566.20260709",
-   "date": "2026-07-01",
-   "abstract": "",
-   "summary_zh": "",
-   "title_zh": "",
-   "tags": [],
-   "extra": {
-    "scholar_name": "张鹏龙",
-    "work_type": "article",
-    "doi": "10.3724/1005-0566.20260709"
    }
   },
   {
@@ -5608,7 +5708,7 @@
    "homepage": "",
    "openalex": "A5013651639",
    "s2": "46221253",
-   "items": 22
+   "items": 25
   },
   {
    "name": "Douglas Irwin",
@@ -6301,7 +6401,7 @@
    "homepage": "https://penglongzhang.weebly.com/",
    "openalex": "A5052901707",
    "s2": "50264456",
-   "items": 3
+   "items": 2
   },
   {
    "name": "樊静婷",
