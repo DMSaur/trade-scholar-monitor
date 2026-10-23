@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23 09:34",
+ "generated_at": "2026-10-23 20:24",
  "window_days": 365,
  "items": [
   {
@@ -121,6 +121,24 @@
    }
   },
   {
+   "uid": "oa:W7223205767",
+   "source": "scholar",
+   "title": "Understanding migration responses to local shocks",
+   "authors": "Борусяк Кирилл Константинович, Rafael Dix-Carneiro, Brian K. Kovak",
+   "venue": "报告",
+   "url": "https://doi.org/10.1920/wp.ifs.2026.6326",
+   "date": "2026-10-22",
+   "abstract": "",
+   "summary_zh": "",
+   "title_zh": "",
+   "tags": [],
+   "extra": {
+    "scholar_name": "Rafael Dix-Carneiro",
+    "work_type": "report",
+    "doi": "10.1920/wp.ifs.2026.6326"
+   }
+  },
+  {
    "uid": "tweet:2113053211162820936",
    "source": "tweet",
    "title": "CÓMO GANAR UNA GUERRA COMERCIAL  Today is the launch of the Spanish translation of HOW TO WIN A TRADE WAR, my new book with @SoumayaKeynes. ",
@@ -162,6 +180,27 @@
      }
     ],
     "scholar_name": "Chad Bown"
+   }
+  },
+  {
+   "uid": "oa:W7223242374",
+   "source": "top5",
+   "title": "How New Products Enter Markets: Social Networks, Consumer Imports, and Retailer Learning",
+   "authors": "David Argente, Esteban Méndez, Diana Van Patten",
+   "venue": "The Quarterly Journal of Economics",
+   "url": "https://doi.org/10.1093/qje/qjag052",
+   "date": "2026-10-20",
+   "abstract": "",
+   "summary_zh": "",
+   "title_zh": "",
+   "tags": [],
+   "extra": {
+    "journal_short": "QJE",
+    "keyword_hit": "import",
+    "doi": "10.1093/qje/qjag052",
+    "versions": [
+     "nber"
+    ]
    }
   },
   {
@@ -3491,25 +3530,6 @@
    }
   },
   {
-   "uid": "nber:w35104",
-   "source": "nber",
-   "title": "How New Products Enter Markets: Social Networks, Consumer Imports, and Retailer Learning",
-   "authors": "David Argente, Esteban Méndez, Diana Van Patten",
-   "venue": "NBER Working Paper",
-   "url": "https://www.nber.org/papers/w35104",
-   "date": "2026-04-01",
-   "abstract": "",
-   "summary_zh": "研究新进口品种如何进入本地市场，利用海关与社交网络数据识别消费者社会扩散及零售商学习带来的需求外溢。",
-   "title_zh": "新产品如何进入市场：社会网络、消费者进口与零售商学习",
-   "tags": [
-    "其他"
-   ],
-   "extra": {
-    "nber_id": "W35104",
-    "keyword_hit": "import"
-   }
-  },
-  {
    "uid": "nber:w35078",
    "source": "nber",
    "title": "The “Peace Dividend” of International Trade: A New Empirical Approach",
@@ -5950,7 +5970,7 @@
    "homepage": "https://scholars.duke.edu/person/rafael.dix.carneiro",
    "openalex": "A5084550820",
    "s2": "1404100024",
-   "items": 1
+   "items": 2
   },
   {
    "name": "Brian Kovak",
