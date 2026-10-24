@@ -198,12 +198,13 @@ h1{font-size:25px;font-weight:700;letter-spacing:.5px}
 }
 .badge.top5{background:var(--top5)}.badge.nber{background:var(--nber)}
 .badge.scholar{background:var(--scholar)}.badge.tweet{background:var(--tweet)}
-.venue{font-size:12px;color:var(--sub)}
+.venue{font-size:12px;color:var(--accent);font-style:italic}
+.who{font-size:12px;color:var(--ink);font-weight:600}
 .card h2{font-size:15.5px;font-weight:600;line-height:1.5;margin:2px 0;
   overflow-wrap:anywhere}
 .card h2 a{color:var(--ink);text-decoration:none}
 .card h2 a:hover{color:var(--accent);text-decoration:underline}
-.authors{font-size:12.5px;color:var(--sub);margin-bottom:6px}
+.authors{font-size:13px;color:#3d3a31;margin-bottom:6px}
 .title-en{font-size:12.5px;color:var(--sub);margin:-2px 0 4px;line-height:1.45;
   overflow-wrap:anywhere}
 .title-en a{color:var(--sub);text-decoration:none}
@@ -463,12 +464,12 @@ function cardHTML(it){
   }else if(it.source === 'scholar'){
     const who = e.scholar_name || '';
     badges = `<span class="badge scholar">学者论文</span>` +
-      (who ? `<span class="venue">${who}</span>` : '');
+      (who ? `<span class="who">${who}</span>` : '');
     venueInfo = `<span class="venue">${it.venue||e.work_type||''}</span>`;
   }else{
     const rt = e.is_retweet ? ' <span class="rt-mark">转发</span>' : '';
     badges = `<span class="badge tweet">@${e.handle||''}</span>${rt}`;
-    venueInfo = `<span class="venue">${e.name||''}</span>`;
+    venueInfo = `<span class="who">${e.name||''}</span>`;
   }
   const stats = it.source === 'tweet'
     ? `<div class="sub-info"><span>赞 ${e.likes||0}</span><span>转 ${e.retweets||0}</span><span>浏览 ${e.views||0}</span></div>`
