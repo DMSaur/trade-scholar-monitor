@@ -414,7 +414,10 @@ def enrich(conn, tag_vocab: list, pdf_limit: int = 10, use_llm: bool = True):
                 if meta:
                     meta["tags_json"] = meta.pop("tags")
                     upd.update(meta)
-            elif row["pdf_url"] and n_pdf < pdf_limit:
+            # 有的作者把 conference_program_paper_url 填成网盘页（非 PDF 文件），
+            # 只对真正的 .pdf 地址做下载，其余留 bare 等库内匹配
+            elif (row["pdf_url"] and ".pdf" in row["pdf_url"].lower()
+                  and n_pdf < pdf_limit):
                 text = _pdf_text(row["pdf_url"])
                 if text:
                     meta = summarize.event_pdf_meta(
