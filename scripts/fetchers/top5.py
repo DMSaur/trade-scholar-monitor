@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Top-5 经济学期刊最新论文：OpenAlex 按期刊 ISSN 拉取，贸易关键词初筛。"""
+import re
 import time
 from datetime import datetime
 
@@ -19,9 +20,10 @@ SELECT = ("id,doi,title,authorships,publication_date,primary_location,"
 
 
 def _match(text: str, keywords: list) -> str | None:
+    """词边界匹配且容忍复数：safeguarding/important 不命中，tariffs 命中 tariff。"""
     low = text.lower()
     for kw in keywords:
-        if kw.lower() in low:
+        if re.search(rf"\b{re.escape(kw.lower())}s?\b", low):
             return kw
     return None
 

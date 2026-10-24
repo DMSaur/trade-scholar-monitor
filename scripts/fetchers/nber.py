@@ -16,9 +16,10 @@ NBER_ID = re.compile(r"nber\.org/papers/(w\d+[a-z]?)", re.I)
 
 
 def _match(text: str, keywords: list) -> str | None:
+    """词边界匹配且容忍复数：safeguarding/important 不命中，tariffs 命中 tariff。"""
     low = (text or "").lower()
     for kw in keywords:
-        if kw.lower() in low:
+        if re.search(rf"\b{re.escape(kw.lower())}s?\b", low):
             return kw
     return None
 
