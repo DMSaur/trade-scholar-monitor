@@ -135,7 +135,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>贸易学者动向 · 每日监控</title>
+<title>贸易学者最近在做什么？ · 每日更新</title>
 <style>
 :root{
   --bg:#f6f5f1; --card:#ffffff; --border:#e5e2d8; --ink:#1c1b17;
@@ -336,8 +336,8 @@ th.roster-num-h{text-align:right}
 <body>
 <div class="wrap">
 <header>
-  <h1>贸易学者动向</h1>
-  <p class="subtitle">Top-5 期刊贸易论文 · NBER 工作论文 · 贸易学者最新研究 · 学者推文，每日更新</p>
+  <h1>贸易学者最近在做什么？</h1>
+  <p class="subtitle">每天替你盯一遍：Top-5 期刊 · NBER 工作论文 · 学者新论文与推文</p>
   <div class="meta-row" id="metaRow"></div>
   <div class="themes" id="themes"></div>
 </header>
@@ -627,7 +627,7 @@ function suggestText(){
   const line = (label, val) => val ? `${label}：${val}\n` : '';
   return line('学者姓名', v('sg-name')) + line('所在机构', v('sg-org')) +
     line('X 账号', v('sg-tw')) + line('个人主页', v('sg-hp')) +
-    line('推荐理由', v('sg-why')) + '\n来自「贸易学者动向」页面的建议';
+    line('推荐理由', v('sg-why')) + '\n来自「贸易学者最近在做什么？」页面的建议';
 }
 
 function bindRoster(root){
