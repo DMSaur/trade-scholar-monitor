@@ -163,6 +163,10 @@ h1{font-size:25px;font-weight:700;letter-spacing:.5px}
 }
 .theme-chip b{color:var(--accent);font-weight:600;margin-left:4px}
 .theme-chip:hover{border-color:var(--accent);color:var(--accent)}
+.theme-chip[aria-pressed="true"]{
+  background:var(--accent);border-color:var(--accent);color:#fff;
+}
+.theme-chip[aria-pressed="true"] b{color:#fff}
 .chip{
   display:inline-flex;align-items:center;gap:6px;font-size:12.5px;
   background:var(--card);border:1px solid var(--border);border-radius:20px;
@@ -367,7 +371,7 @@ const SOURCES = [
   {key:'tweet',  label:'推文'},
 ];
 const RECIPIENT = '21300680261@m.fudan.edu.cn';
-const state = {tab:'all', range:30, q:'', scholar:'', rosterField:''};
+const state = {tab:'all', range:30, q:'', scholar:'', rosterField:'', theme:''};
 
 const WEEK = ['日','一','二','三','四','五','六'];
 function fmtDate(d){
@@ -453,9 +457,11 @@ document.getElementById('scholarFilter').addEventListener('change', e => {
 });
 
 function matchBase(it){
-  /* 时间范围 + 搜索 + 学者筛选（不含板块） */
+  /* 时间范围 + 主题 + 搜索 + 学者筛选（不含板块） */
   const d = daysAgo(it.date);
   if(isNaN(d) || d > state.range || d < 0) return false;
+  // 主题过滤与顶部计数同口径：只看论文，且必须带该标签
+  if(state.theme && (it.source === 'tweet' || !(it.tags||[]).includes(state.theme))) return false;
   if(state.scholar && (!it.extra || it.extra.scholar_name !== state.scholar)) return false;
   if(state.q){
     const e = it.extra || {};
@@ -718,23 +724,22 @@ document.getElementById('list').addEventListener('click', e => {
   render();
 });
 
-/* 顶部「近 30 日关注主题」：点击主题即按标签过滤 */
+/* 顶部「近 30 日关注主题」：点击按标签过滤论文（与计数同口径），再点一次取消 */
 (function renderThemes(){
   const box = document.getElementById('themes');
   const themes = DATA.themes || [];
   if(!themes.length){ box.style.display = 'none'; return; }
   box.innerHTML = '<span class="themes-label">近 30 日关注主题</span>' +
     themes.map(t =>
-      `<button class="theme-chip" data-tag="${esc(t.tag)}">${esc(t.tag)}<b>${t.n}</b></button>`
+      `<button class="theme-chip" data-tag="${esc(t.tag)}" aria-pressed="false">${esc(t.tag)}<b>${t.n}</b></button>`
     ).join('');
   box.addEventListener('click', e => {
     const chip = e.target.closest('.theme-chip');
     if(!chip) return;
-    const input = document.getElementById('search');
-    input.value = chip.dataset.tag;
-    state.q = chip.dataset.tag.toLowerCase();
+    state.theme = state.theme === chip.dataset.tag ? '' : chip.dataset.tag;
+    box.querySelectorAll('.theme-chip').forEach(c =>
+      c.setAttribute('aria-pressed', c.dataset.tag === state.theme ? 'true' : 'false'));
     render();
-    window.scrollTo({top: 0, behavior: 'smooth'});
   });
 })();
 
