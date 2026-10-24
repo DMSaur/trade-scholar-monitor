@@ -95,12 +95,26 @@ def collect(conn, scholar_list) -> dict:
         })
     items.sort(key=lambda x: (x["date"], x["uid"]), reverse=True)
     items = _dedupe_papers(items)
-    # 近 30 日关注主题：论文标签计数（推文是评论观点，不计入）
+    events = _collect_events(conn)
+    # 近 30 日关注主题：论文标签计数（推文是评论观点，不计入）。
+    # 会议论文也计入，但只算近 30 天内开过的会；同题论文已在条目流里
+    # 计过的不重复计（工作论文版与会议汇报是同一篇研究）。
     cutoff = (datetime.now() - timedelta(days=THEME_DAYS)).strftime("%Y-%m-%d")
-    tag_cnt = Counter(t for it in items
-                      if it["source"] != "tweet" and it["date"]
-                      and it["date"] >= cutoff
-                      for t in it["tags"])
+    today = datetime.now().strftime("%Y-%m-%d")
+    counted_keys: set = set()
+    tag_cnt: Counter = Counter()
+    for it in items:
+        if it["source"] == "tweet" or not it["date"] or it["date"] < cutoff:
+            continue
+        counted_keys.add(db.title_key(it["title"]))
+        tag_cnt.update(it["tags"])
+    for ev in events:
+        sd = ev["start_date"]
+        if not sd or sd < cutoff or sd > today:
+            continue
+        for p in ev["papers"]:
+            if p["tags"] and db.title_key(p["title"]) not in counted_keys:
+                tag_cnt.update(p["tags"])
     themes = [{"tag": t, "n": n} for t, n in tag_cnt.most_common(THEME_TOP)]
     # 学者名单（启用中的），附带近一年动态数
     cnt = Counter(it["extra"].get("scholar_name")
@@ -122,8 +136,7 @@ def collect(conn, scholar_list) -> dict:
         })
     return {"generated_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
             "window_days": WINDOW_DAYS, "items": items,
-            "themes": themes, "scholars": scholars_out,
-            "events": _collect_events(conn)}
+            "themes": themes, "scholars": scholars_out, "events": events}
 
 
 def _collect_events(conn) -> list:
@@ -580,9 +593,10 @@ function matchBase(it){
 
 function matchEvent(ev){
   /* 会议过滤：未来会议不受时间窗限制（就是要盯的），已开会的走常规窗口；
-     搜索覆盖会议信息与全部议程论文字段；主题/学者筛选不作用于会议。 */
+     搜索覆盖会议信息与全部议程论文字段；主题筛选要求会议带有该标签的论文。 */
   const d = daysAgo(ev.start_date || '');
   if(!isNaN(d) && d >= 0 && d > state.range) return false;
+  if(state.theme && !(ev.papers||[]).some(p => (p.tags||[]).includes(state.theme))) return false;
   if(state.q){
     const parts = [ev.title, ev.display_date, ev.location, ev.organizers,
                    ev.type_name];

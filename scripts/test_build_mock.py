@@ -138,6 +138,14 @@ EVENTS = [
          organizers="Treb Allen and Natalia Ramondo",
          url="https://www.nber.org/conferences/si-2026-international-trade-investment",
          agenda_status="done"),
+    dict(conf_id="n9999999", nid="9999999",
+         title="Trade Policy Workshop, Fall 2026",
+         type_name="Conference",
+         start_date=d_ago(10), end_date=d_ago(9),
+         display_date=f"October {16}, 2026",
+         location="Cambridge, MA", organizers="",
+         url="https://www.nber.org/conferences/trade-policy-workshop-fall-2026",
+         agenda_status="done"),
 ]
 for ev in EVENTS:
     conn.execute(
@@ -186,6 +194,17 @@ EPAPERS = [
          item_uid=None, journal=None, abstract=None, abstract_zh=None,
          intro_zh=None, title_zh=None, tags_json=None,
          enrich_state="bare"),
+    # 近 30 天开过的会：带标签的论文要计入主题计数（标题不在条目流里）
+    dict(conf_id="n9999999", pos=0,
+         title="Tariff Pass-through and Market Power",
+         norm_title=db.title_key("Tariff Pass-through and Market Power"),
+         authors_json='[{"name": "Pinelopi Goldberg", "aff": "Yale University"}]',
+         discussants_json="[]", schedule=f"{d_ago(10)} 10:00 am",
+         fnum="f241703", pdf_url=None,
+         item_uid=None, journal=None, abstract=None, abstract_zh=None,
+         intro_zh=None, title_zh=None,
+         tags_json='["关税", "贸易政策"]',
+         enrich_state="oa"),
 ]
 for p in EPAPERS:
     conn.execute(
@@ -241,14 +260,19 @@ checks = {
 # 顶部关注主题模块：论文标签各计 1 次，推文标签不计入
 themes = {t["tag"]: t["n"] for t in payload.get("themes", [])}
 checks["主题模块计数正确"] = (
-    themes.get("关税") == 1 and themes.get("全球价值链") == 1
+    themes.get("关税") == 2 and themes.get("全球价值链") == 1
     and themes.get("供应链") == 1 and themes.get("方法论") == 1
     and "贸易战" not in themes  # 贸易战只出现在推文标签里
+)
+# 会议论文计入主题：近 30 天开会的论文标签并入；同题论文不重复计
+checks["会议论文计入主题"] = (
+    themes.get("贸易政策") == 2  # W1 条目 1 次 + 会议论文 1 次
+    and themes.get("出口管制") == 1  # matched 会议论文与条目同题，不重复计
 )
 checks["主题模块已渲染"] = "近 30 日关注主题" in html and "theme-chip" in html
 # 会议板块：payload 结构、即将举行置顶、库内继承、板块入口
 events = payload.get("events", [])
-checks["会议数据进了 payload"] = len(events) == 2
+checks["会议数据进了 payload"] = len(events) == 3
 up = [e for e in events if e["start_date"] > datetime.now().strftime("%Y-%m-%d")]
 checks["未来会议在 payload 里"] = len(up) == 1 and up[0]["conf_id"] == "n1185515"
 fall = next(e for e in events if e["conf_id"] == "n1185515")
@@ -296,6 +320,11 @@ node_js = (js_src
   state.q = 'zzzzNoSuchWord';
   out.qMiss = events.filter(matchEvent).length;
   state.q = '';
+  state.theme = '关税';
+  out.themeHit = events.filter(matchEvent).length;
+  state.theme = '不存在的主题';
+  out.themeMiss = events.filter(matchEvent).length;
+  state.theme = '';
   const htmlOut = renderEvents(events);
   out.upFirst = htmlOut.indexOf('即将举行') > -1
     && htmlOut.indexOf('即将举行') < htmlOut.indexOf('Do Foreigners Pay');
@@ -312,8 +341,9 @@ node_out = subprocess.run(["node", "/tmp/mock_ev_test.js"],
 if node_out.returncode != 0:
     raise SystemExit(f"!! node 断言脚本失败:\n{node_out.stderr[:500]}")
 nr = _json.loads(node_out.stdout)
-checks["时间窗过滤:未来会议30天可见,100天前的看不见"] = nr["n30"] == 1 and nr["n365"] == 2
+checks["时间窗过滤:未来会议30天可见,100天前的看不见"] = nr["n30"] == 2 and nr["n365"] == 3
 checks["搜索命中点评人与未命中词"] = nr["qHit"] == 1 and nr["qMiss"] == 0
+checks["主题筛选过滤会议:命中带标签论文的会议"] = nr["themeHit"] == 1 and nr["themeMiss"] == 0
 checks["即将举行置顶且渲染论文清单"] = nr["upFirst"] and nr["hasPapers"] and nr["hasBare"]
 failed = [k for k, ok in checks.items() if not ok]
 if failed:
