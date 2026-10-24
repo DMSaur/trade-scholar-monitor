@@ -26,6 +26,13 @@
        3. 学者最新论文   OpenAlex 按作者 ID（每人一天一次请求，日期可靠）；
                          失败时自动降级 Semantic Scholar 批量接口
        4. 学者推文       xreach CLI 按学者 handle 抓时间线
+       4b. NBER 会议     官网列表接口发现国际板块会议（名称模式在
+                         topics.yaml event_programs）→ 议程 JSON 入库
+                         （events / event_papers 两表）→ 论文补全三级：
+                         库内条目按编号/标题继承（免费，每日重试）→
+                         OpenAlex 标题精确反查（每篇一次）→ 论文 PDF
+                         抽文本让 DeepSeek 出中文简介与标签（每日限额
+                         --pdf-limit）；无材料的等工作论文版出现自动回填
        5. DeepSeek 生成中文标题翻译、一句摘要和主题标签；Top-5/NBER 同时做
           贸易相关性二筛（关键词命中的候选由模型确认，非贸易的隐藏）
     → docs/index.html（内联数据；论文按归一标题去重，期刊版优先）
@@ -37,6 +44,13 @@
 - 去重与历史：`data/monitor.db`（SQLite，按 uid 去重，保留全部历史；网页数据覆盖近一年，页面默认显示近 30 天，可切 7 天/30 天/半年/一年视图）
 - 日志：`logs/YYYY-MM-DD.log`
 
+### NBER 会议板块的数据通路（2026-10 实测）
+
+- 列表：`GET www.nber.org/api/v1/conference_listing/contentType/conference/_/_/search?eventType=upcoming|past&perPage=100&page=N`（page 从 1 起，page=0 返回空）；标题匹配 `event_programs` 模式入选。
+- 议程：`GET www.nber.org/api/conference/{nid}/agenda`，论文条目自带标题/摘要/作者机构/点评人/工作论文编号/论文 PDF 地址；场次时间在条目包装层（wrapper.record.schedule_date + schedule_time_display）。闭门会议 `access_by_user=1`，无公开议程。
+- 详情页是静态 HTML，`page-header__citation-item` 里有 DATE/LOCATION/ORGANIZER。
+- 会议 conf_id 用 `n{nid}`（列表阶段就确定，不依赖议程是否已放出）。
+
 ## 手动运行
 
 ```bash
@@ -44,6 +58,9 @@
 scripts/main.py --days 60       # 只跑抓取+网页，不推送；首次灌数据用
 scripts/main.py --no-llm        # 跳过摘要（不花钱）
 scripts/main.py --no-tweets     # 跳过推文（代理没开时用）
+scripts/main.py --no-events     # 跳过 NBER 会议板块
+scripts/main.py --pdf-limit 20  # 会议论文 PDF 简介每轮配额（默认 10）
+scripts/test_build_mock.py      # mock 数据渲染回归（改动 build_site.py 后必跑）
 ```
 
 ## 配置
@@ -54,12 +71,13 @@ scripts/main.py --no-tweets     # 跳过推文（代理没开时用）
   批量补录新学者的完整流程（含同名陷阱与两个核验脚本）见
   `scripts/新增学者指南.md`，先读它再动手。
 - `config/topics.yaml`：贸易关键词（初筛用）和中文标签词表（LLM 打标签用）。
-- `config/topics.yaml`：贸易关键词（初筛用）和中文标签词表（LLM 打标签用）。
+  `event_programs` 是 NBER 会议追踪的名称匹配模式（小写子串，对会议标题），
+  想扩大或收窄会议范围就改这份名单。
 - `.env`（不入库）：`DASHSCOPE_API_KEY` 摘要用；`OPENALEX_API_KEY` 强烈建议配置。
 
 ## 依赖与前提
 
-- Python：`~/.pyenv/versions/3.11.0`（yaml / requests / feedparser / openai）
+- Python：`~/.pyenv/versions/3.11.0`（yaml / requests / feedparser / openai / pypdf）
 - xreach：npm 全局（抓推文用），需要本地代理 `127.0.0.1:7897` 开着；
   没开代理时推文板块为空，其余板块正常
 - launchd：`~/Library/LaunchAgents/com.dimo.trademonitor.plist`

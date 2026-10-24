@@ -181,6 +181,28 @@ TWEET_PROMPT = """你是国际经济学研究助理。把下面这条推文完�
 
 标签表：{tags}"""
 
+EVENT_PAPER_PROMPT = """你是国际经济学研究助理。下面是一场 NBER 会议汇报论文的信息。
+
+标题：{title}
+作者：{authors}
+摘要：{abstract}
+
+严格输出 JSON（不要 markdown 代码块）：
+{{"title_zh": "论文标题的中文翻译，简洁准确", "intro_zh": "两三句中文简介，概括研究问题、方法与核心发现，不超过100字", "tags": ["从下方标签表中选1-3个"]}}
+
+标签表：{tags}"""
+
+EVENT_PDF_PROMPT = """你是国际经济学研究助理。下面是从一篇 NBER 会议汇报论文 PDF 抽取的文本片段，可能乱序、缺页或含页眉页脚。
+
+标题：{title}
+作者：{authors}
+文本片段：{text}
+
+根据文本判断这篇论文研究什么。严格输出 JSON（不要 markdown 代码块）：
+{{"title_zh": "论文标题的中文翻译，简洁准确", "intro_zh": "两三句中文简介，概括研究问题、方法与核心发现，不超过100字；文本不足以判断时输出空字符串", "tags": ["从下方标签表中选1-3个"]}}
+
+标签表：{tags}"""
+
 
 _ABS_CHUNK = 1200  # 单块字符数上限：块小则单次输出小，远离截断风险
 
@@ -234,6 +256,54 @@ def translate_abstract(abstract: str) -> str:
             print("    ! LLM 连续失败达到阈值，本轮停用翻译")
         raise
     return "".join(parts)
+
+
+def _event_meta(prompt: str, tag_vocab: list) -> dict | None:
+    """会议论文元数据公共出口：解析 + 标签过滤 + 熔断计数。"""
+    global _disabled, _fail_streak
+    if _disabled:
+        return None
+    _load_env()
+    if not AUTH_TOKEN:
+        print("    ! 未配置 ANTHROPIC_AUTH_TOKEN，停用会议论文简介")
+        _disabled = True
+        return None
+    try:
+        out = _parse_json(_chat(prompt, max_tokens=2000))
+        valid = set(tag_vocab) | {"其他"}
+        out["tags"] = json.dumps(
+            [t for t in out.get("tags", []) if t in valid][:3],
+            ensure_ascii=False)
+        out["title_zh"] = (out.get("title_zh") or "").strip()
+        out["intro_zh"] = (out.get("intro_zh")
+                           or out.get("summary_zh") or "").strip()
+        _fail_streak = 0
+        return out
+    except Exception as e:
+        _fail_streak += 1
+        if _fail_streak >= FAIL_LIMIT:
+            _disabled = True
+            print(f"    ! LLM 连续失败 {_fail_streak} 次，本轮停用会议简介"
+                  f"（最后错误: {e}）")
+        else:
+            print(f"    ! 会议论文简介失败: {e}")
+        return None
+
+
+def event_paper_meta(title: str, authors: str, abstract: str,
+                     tag_vocab: list) -> dict | None:
+    """有摘要的会议汇报论文：中文标题/简介/标签（键与 event_papers 列对齐）。"""
+    return _event_meta(EVENT_PAPER_PROMPT.format(
+        title=title, authors=authors, abstract=abstract[:3000],
+        tags="、".join(tag_vocab)), tag_vocab)
+
+
+def event_pdf_meta(title: str, authors: str, text: str,
+                   tag_vocab: list) -> dict | None:
+    """无摘要的会议汇报论文：用 PDF 抽出的文本概括。"""
+    return _event_meta(EVENT_PDF_PROMPT.format(
+        title=title, authors=authors, text=text, tags="、".join(tag_vocab)),
+        tag_vocab)
 
 
 def summarize_item(row, tag_vocab: list) -> dict | None:

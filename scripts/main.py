@@ -41,6 +41,10 @@ def main():
     ap.add_argument("--no-tweets", action="store_true", help="跳过推文抓取")
     ap.add_argument("--link-limit", type=int, default=30,
                     help="本轮最多新解析多少条推文外链")
+    ap.add_argument("--no-events", action="store_true",
+                    help="跳过 NBER 会议板块")
+    ap.add_argument("--pdf-limit", type=int, default=10,
+                    help="本轮最多下载多少篇会议论文 PDF 生成简介")
     args = ap.parse_args()
 
     start_date = (datetime.now() - timedelta(days=args.days)).strftime("%Y-%m-%d")
@@ -106,6 +110,15 @@ def main():
         n = run_step("外链解析", links.enrich, conn, args.link_limit) or 0
         stats["links"] = n
         print(f"    新解析 {n} 条")
+
+    # 4b. NBER 会议与研讨会（国际板块）
+    if not args.no_events:
+        print("[会议] NBER 会议追踪（列表接口 + 议程 JSON）")
+        from fetchers import nber_events
+        res = run_step("NBER会议", nber_events.run, conn, topics_cfg,
+                       args.pdf_limit, not args.no_llm) or (0, 0)
+        stats["new"]["event"], stats["new"]["event_paper"] = res
+        print(f"    新增会议 {res[0]} 场、议程论文 {res[1]} 篇")
 
     # 5. LLM 摘要 + 相关性（分批处理，失败的条目本轮跳过避免卡死）
     if not args.no_llm:

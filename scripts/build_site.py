@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """生成可视化网页：docs/index.html（内联数据）+ docs/data/latest.json。"""
 import json
-import re
 from collections import Counter
 from datetime import datetime, timedelta
 
@@ -11,18 +10,14 @@ WINDOW_DAYS = 365
 THEME_DAYS = 30  # 顶部关注主题模块的统计窗口
 THEME_TOP = 12
 
-SOURCE_LABEL = {"top5": "Top-5 期刊", "nber": "NBER", "scholar": "学者论文", "tweet": "推文"}
+SOURCE_LABEL = {"top5": "Top-5 期刊", "nber": "NBER", "scholar": "学者论文",
+                "tweet": "推文", "event": "NBER 会议"}
 JOURNAL_SHORT = {"AER", "QJE", "JPE", "ECMA", "REStud"}
 
 # 这些 venue 视为工作论文/预印本版本，同题去重时让位于期刊版
-_WP_VENUES = ("nber", "ssrn", "cesifo", "arxiv", "preprint", "working paper",
-              "institute", "university", "报告", "预印本", " reprint")
-
-
-def _title_key(title: str) -> str:
-    """标题归一化：去符号空格、小写、取前 40 字符，用于跨版本去重。"""
-    t = re.sub(r"[^a-z0-9\u4e00-\u9fff]", "", (title or "").lower())
-    return t[:40]
+_WP_VENUES = ("nber", "bureau", "ssrn", "cesifo", "arxiv", "preprint",
+              "working paper", "institute", "university", "报告", "预印本",
+              " reprint")
 
 
 def _dedupe_papers(items: list) -> list:
@@ -33,7 +28,7 @@ def _dedupe_papers(items: list) -> list:
         if it["source"] == "tweet" or not it["title"]:
             order.append(("solo", it))
             continue
-        k = _title_key(it["title"])
+        k = db.title_key(it["title"])
         if not k:
             order.append(("solo", it))
             continue
@@ -127,7 +122,84 @@ def collect(conn, scholar_list) -> dict:
         })
     return {"generated_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
             "window_days": WINDOW_DAYS, "items": items,
-            "themes": themes, "scholars": scholars_out}
+            "themes": themes, "scholars": scholars_out,
+            "events": _collect_events(conn)}
+
+
+def _collect_events(conn) -> list:
+    """NBER 会议板块：窗口内会议 + 议程论文（matched 的继承库内条目字段）。"""
+    ev_rows = db.events_recent(conn, WINDOW_DAYS)
+    conf_ids = [r["conf_id"] for r in ev_rows]
+    papers = db.papers_by_confs(conn, conf_ids)
+    item_rows = {}
+    for p in papers:
+        uid = p["item_uid"]
+        if uid and uid not in item_rows:
+            r = conn.execute("SELECT * FROM items WHERE uid = ?",
+                             (uid,)).fetchone()
+            if r:
+                item_rows[uid] = r
+    events = []
+    for ev in ev_rows:
+        eps = []
+        for p in papers:
+            if p["conf_id"] != ev["conf_id"]:
+                continue
+            ep = {
+                "title": p["title"] or "",
+                "title_zh": "",
+                "authors": json.loads(p["authors_json"] or "[]"),
+                "discussants": json.loads(p["discussants_json"] or "[]"),
+                "schedule": p["schedule"] or "",
+                "tags": json.loads(p["tags_json"] or "[]"),
+                "abstract": p["abstract"] or "",
+                "abstract_zh": p["abstract_zh"] or "",
+                "intro_zh": p["intro_zh"] or "",
+                "journal": p["journal"] or "",
+                "pdf_url": p["pdf_url"] or "",
+                "slides_url": p["slides_url"] or "",
+                "wp_num": p["pnum"] or "",
+                "pub_url": p["pub_url"] or "",
+                "state": p["enrich_state"] or "",
+            }
+            it = item_rows.get(p["item_uid"]) if p["item_uid"] else None
+            if it is not None:
+                keys = it.keys()
+                extra = json.loads(it["extra"] or "{}")
+                ep["title_zh"] = (ep["title_zh"]
+                                  or (it["title_zh"] if "title_zh" in keys
+                                      else "") or "")
+                ep["abstract"] = ep["abstract"] or it["abstract"] or ""
+                ep["abstract_zh"] = (ep["abstract_zh"]
+                                     or (it["abstract_zh"]
+                                         if "abstract_zh" in keys else "") or "")
+                ep["intro_zh"] = ep["intro_zh"] or it["summary_zh"] or ""
+                ep["tags"] = ep["tags"] or json.loads(it["tags"] or "[]")
+                ep["journal"] = (ep["journal"] or extra.get("journal_short")
+                                 or "")
+                ep["pub_url"] = ep["pub_url"] or it["url"] or ""
+                if not ep["wp_num"] and it["source"] == "nber":
+                    ep["wp_num"] = (extra.get("nber_id") or "").lower()
+            # 库内 venue 是期刊名时补为已发表来源（top5 卡片的 venue）
+            if it is not None and not ep["journal"]:
+                venue = (it["venue"] or "").lower()
+                if venue and not any(w in venue for w in _WP_VENUES):
+                    ep["journal"] = it["venue"]
+            eps.append(ep)
+        events.append({
+            "conf_id": ev["conf_id"],
+            "title": ev["title"] or "",
+            "type_name": ev["type_name"] or "",
+            "start_date": ev["start_date"] or "",
+            "end_date": ev["end_date"] or "",
+            "display_date": ev["display_date"] or "",
+            "location": ev["location"] or "",
+            "organizers": ev["organizers"] or "",
+            "url": ev["url"] or "",
+            "agenda": ev["agenda_status"] or "",
+            "papers": eps,
+        })
+    return events
 
 
 TEMPLATE = r"""<!DOCTYPE html>
@@ -141,6 +213,7 @@ TEMPLATE = r"""<!DOCTYPE html>
   --bg:#f6f5f1; --card:#ffffff; --border:#e5e2d8; --ink:#1c1b17;
   --sub:#6b675c; --accent:#0e5f5b; --accent-soft:#e3efee;
   --top5:#8a2b23; --nber:#1e3a5f; --scholar:#0e5f5b; --tweet:#4a4a48;
+  --event:#6b4d8f; --event-soft:#efe9f5;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%}
@@ -176,6 +249,7 @@ h1{font-size:25px;font-weight:700;letter-spacing:.5px}
 .dot{width:8px;height:8px;border-radius:50%;display:inline-block}
 .dot.top5{background:var(--top5)}.dot.nber{background:var(--nber)}
 .dot.scholar{background:var(--scholar)}.dot.tweet{background:var(--tweet)}
+.dot.event{background:var(--event)}
 .toolbar{
   position:sticky;top:0;z-index:10;background:var(--bg);
   padding:14px 0 10px;border-bottom:1px solid var(--border);
@@ -220,6 +294,11 @@ h1{font-size:25px;font-weight:700;letter-spacing:.5px}
 }
 .badge.top5{background:var(--top5)}.badge.nber{background:var(--nber)}
 .badge.scholar{background:var(--scholar)}.badge.tweet{background:var(--tweet)}
+.badge.event{background:var(--event)}
+.estatus{
+  font-size:11px;font-weight:700;border-radius:5px;padding:1.5px 7px;
+  letter-spacing:.3px;background:var(--event-soft);color:var(--event);
+}
 .venue{font-size:12px;color:var(--accent);font-style:italic}
 .who{font-size:12px;color:var(--ink);font-weight:600}
 .card h2{font-size:15.5px;font-weight:600;line-height:1.5;margin:2px 0;
@@ -274,6 +353,27 @@ details.abs>summary:hover{text-decoration:underline}
 .lcard-title{font-size:13px;color:var(--ink);line-height:1.45;display:-webkit-box;
   -webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .rt-mark{font-size:11.5px;color:var(--sub);border:1px solid var(--border);border-radius:4px;padding:0 6px}
+/* NBER 会议板块：会议卡片内嵌议程论文清单 */
+details.papers{margin-top:10px}
+details.papers>summary{
+  cursor:pointer;color:var(--event);font-size:12.5px;font-weight:600;
+  user-select:none;list-style:none;
+}
+details.papers>summary::before{content:"▸ ";font-size:10px}
+details.papers[open]>summary::before{content:"▾ "}
+details.papers>summary:hover{text-decoration:underline}
+.plist{margin-top:10px;border-top:1px solid var(--border)}
+.epaper{padding:12px 2px;border-bottom:1px solid var(--border)}
+.eptitle{font-size:14px;font-weight:600;line-height:1.5;overflow-wrap:anywhere}
+.eptitle a{color:var(--ink);text-decoration:none}
+.eptitle a:hover{color:var(--accent);text-decoration:underline}
+.eaff{font-style:normal;color:var(--sub);font-size:12px}
+.epub{font-size:11.5px;font-weight:600;border-radius:4px;padding:0 7px}
+.epub.wp{background:var(--nber);color:#fff}
+.epub.journal{background:var(--accent-soft);color:var(--accent)}
+.epub.none{color:var(--sub);border:1px solid var(--border);font-weight:400}
+.elink{font-size:12px;color:var(--accent);text-decoration:none}
+.elink:hover{text-decoration:underline}
 .empty{color:var(--sub);text-align:center;padding:60px 0;font-size:14px}
 footer{margin-top:44px;color:var(--sub);font-size:12.5px;border-top:1px solid var(--border);padding-top:14px}
 footer a{color:var(--sub)}
@@ -357,6 +457,7 @@ th.roster-num-h{text-align:right}
   <p id="footMeta"></p>
   <p>数据来源：<a href="https://openalex.org" target="_blank" rel="noopener">OpenAlex</a> ·
      <a href="https://www.nber.org" target="_blank" rel="noopener">NBER</a> ·
+     <a href="https://www.nber.org/conferences" target="_blank" rel="noopener">NBER Conferences</a> ·
      <a href="https://x.com" target="_blank" rel="noopener">X（Twitter）</a></p>
 </footer>
 </div>
@@ -369,6 +470,7 @@ const SOURCES = [
   {key:'nber',   label:'NBER'},
   {key:'scholar',label:'学者论文'},
   {key:'tweet',  label:'推文'},
+  {key:'event',  label:'NBER 会议'},
 ];
 const RECIPIENT = '21300680261@m.fudan.edu.cn';
 const state = {tab:'all', range:30, q:'', scholar:'', rosterField:'', theme:''};
@@ -394,6 +496,7 @@ function daysAgo(dateStr){
     <span class="chip"><span class="dot nber"></span>NBER <b id="c-nber">0</b></span>
     <span class="chip"><span class="dot scholar"></span>学者论文 <b id="c-scholar">0</b></span>
     <span class="chip"><span class="dot tweet"></span>推文 <b id="c-tweet">0</b></span>
+    <span class="chip"><span class="dot event"></span>NBER 会议 <b id="c-event">0</b></span>
     <button id="rosterBtn" aria-pressed="false">学者名单</button>`;
 
   const names = new Map();
@@ -473,6 +576,108 @@ function matchBase(it){
     if(!hay.includes(state.q)) return false;
   }
   return true;
+}
+
+function matchEvent(ev){
+  /* 会议过滤：未来会议不受时间窗限制（就是要盯的），已开会的走常规窗口；
+     搜索覆盖会议信息与全部议程论文字段；主题/学者筛选不作用于会议。 */
+  const d = daysAgo(ev.start_date || '');
+  if(!isNaN(d) && d >= 0 && d > state.range) return false;
+  if(state.q){
+    const parts = [ev.title, ev.display_date, ev.location, ev.organizers,
+                   ev.type_name];
+    (ev.papers||[]).forEach(p => {
+      parts.push(p.title, p.title_zh || '', p.intro_zh || '',
+                 p.abstract || '', p.abstract_zh || '', p.journal || '',
+                 p.wp_num || '',
+                 (p.tags||[]).join(' '),
+                 (p.authors||[]).map(a => (a.name||'') + ' ' + (a.aff||'')).join(' '),
+                 (p.discussants||[]).map(a => a.name||'').join(' '));
+    });
+    if(!parts.join(' ').toLowerCase().includes(state.q)) return false;
+  }
+  return true;
+}
+
+function paperRowHTML(p){
+  const zh = p.title_zh || '';
+  const title = zh || p.title || '(无标题)';
+  const wpLink = p.wp_num ? `https://www.nber.org/papers/${p.wp_num}` : '';
+  const link = p.pub_url || wpLink || p.pdf_url || '';
+  const authors = (p.authors||[]).map(a =>
+    a.aff ? `${esc(a.name)}<i class="eaff">（${esc(a.aff)}）</i>` : esc(a.name)
+  ).join('，');
+  const disc = (p.discussants||[]).map(a => esc(a.name)).join('，');
+  const pub = p.journal
+    ? `<span class="epub journal">已发表 · ${esc(p.journal)}</span>`
+    : (p.wp_num ? `<span class="epub wp">NBER ${esc(p.wp_num)}</span>`
+                : (p.pdf_url ? `<span class="epub none">会议版</span>`
+                             : `<span class="epub none">暂无全文</span>`));
+  const links =
+    (p.pdf_url ? ` <a class="elink" href="${esc(p.pdf_url)}" target="_blank" rel="noopener">论文 PDF</a>` : '') +
+    (p.slides_url ? ` <a class="elink" href="${esc(p.slides_url)}" target="_blank" rel="noopener">幻灯片</a>` : '');
+  const absZh = String(p.abstract_zh||'').trim();
+  const absEn = String(p.abstract||'').trim();
+  const absBlock = (absZh || absEn)
+    ? `<details class="abs"><summary>摘要</summary><div class="abs-body">` +
+      (absZh ? `<span class="abs-lang">中文翻译</span><p class="abs-zh">${esc(absZh)}</p>` : '') +
+      (absEn ? `<span class="abs-lang">英文原文</span><p class="abs-en">${esc(absEn)}</p>` : '') +
+      `</div></details>` : '';
+  const tags = (p.tags||[]).length
+    ? `<div class="tags">${p.tags.map(t =>
+        `<span class="tag" data-tag="${esc(t)}">${esc(t)}</span>`).join('')}</div>` : '';
+  return `<div class="epaper">
+    <p class="eptitle">${link ? `<a href="${esc(link)}" target="_blank" rel="noopener">${esc(title)}</a>` : esc(title)}</p>
+    ${zh && p.title && zh !== p.title ? `<p class="title-en">${esc(p.title)}</p>` : ''}
+    ${authors ? `<p class="authors">${authors}</p>` : ''}
+    ${disc ? `<p class="sub-info"><span>点评：${disc}</span></p>` : ''}
+    ${p.intro_zh ? `<p class="summary-zh">${esc(p.intro_zh)}</p>` : ''}
+    ${absBlock}${tags}
+    <p class="sub-info"><span>${pub}</span>${p.schedule ? `<span>${esc(p.schedule)}</span>` : ''}${links ? `<span>${links}</span>` : ''}</p>
+  </div>`;
+}
+
+function eventCardHTML(ev){
+  const d = daysAgo(ev.start_date || '');
+  const upcoming = isNaN(d) || d < 0;
+  const papers = ev.papers || [];
+  const badges = `<span class="badge event">NBER 会议</span>` +
+    (upcoming ? `<span class="estatus">即将举行</span>` : '') +
+    (ev.type_name ? `<span class="venue">${esc(ev.type_name)}</span>` : '');
+  const meta = `<p class="sub-info">` +
+    (ev.display_date ? `<span>${esc(ev.display_date)}</span>` : '') +
+    (ev.location ? `<span>📍 ${esc(ev.location)}</span>` : '') +
+    (ev.organizers ? `<span>组织：${esc(ev.organizers)}</span>` : '') +
+    `</p>`;
+  const body = papers.length
+    ? `<details class="papers"><summary>汇报论文 ${papers.length} 篇</summary>` +
+      `<div class="plist">${papers.map(paperRowHTML).join('')}</div></details>`
+    : `<p class="sub-info"><span>议程未公开（闭门会或尚未放出）</span>` +
+      (ev.url ? `<span><a class="elink" href="${esc(ev.url)}" target="_blank" rel="noopener">NBER 页面</a></span>` : '') + `</p>`;
+  return `<article class="card">
+    <div class="card-top">${badges}</div>
+    <h2>${ev.url ? `<a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(ev.title)}</a>` : esc(ev.title)}</h2>
+    ${meta}${body}
+  </article>`;
+}
+
+function renderEvents(evs){
+  /* 即将举行的排最前（按开始日期升序），已开会的按开始日期倒序走日/月分组 */
+  const today = new Date(); today.setHours(0,0,0,0);
+  const isUp = ev => !ev.start_date || new Date(ev.start_date + 'T00:00:00') >= today;
+  const up = evs.filter(isUp).sort((a,b) => (a.start_date||'').localeCompare(b.start_date||''));
+  const past = evs.filter(e => !isUp(e)).sort((a,b) => (b.start_date||'').localeCompare(a.start_date||''));
+  let html = '';
+  if(up.length){
+    html += `<div class="datehead">即将举行</div>` + up.map(eventCardHTML).join('');
+  }
+  let lastGroup = '';
+  past.forEach(ev => {
+    const g = groupLabel(ev.start_date);
+    if(g !== lastGroup){ lastGroup = g; html += `<div class="datehead">${g}</div>`; }
+    html += eventCardHTML(ev);
+  });
+  return html || '<p class="empty">该筛选条件下暂无会议。</p>';
 }
 
 function cardHTML(it){
@@ -682,21 +887,27 @@ function render(){
     return;
   }
   const base = DATA.items.filter(matchBase);
+  const evs = (DATA.events || []).filter(matchEvent);
 
   /* 板块 tab 计数与顶部统计随筛选联动 */
   const perSource = {top5:0, nber:0, scholar:0, tweet:0};
   base.forEach(it => perSource[it.source]++);
   document.querySelectorAll('#tabs .tab').forEach(btn => {
     const k = btn.dataset.tab;
-    const n = k === 'all' ? base.length : perSource[k];
+    const n = k === 'all' ? base.length : (k === 'event' ? evs.length : perSource[k]);
     btn.querySelector('.n').textContent = n;
   });
   ['top5','nber','scholar','tweet'].forEach(k => {
     document.getElementById('c-'+k).textContent = perSource[k];
   });
+  document.getElementById('c-event').textContent = evs.length;
   document.getElementById('footMeta').textContent =
-    `当前筛选 ${rangeLabel(state.range)}，共 ${base.length} 条；数据共覆盖近一年。`;
+    `当前筛选 ${rangeLabel(state.range)}，共 ${base.length} 条、会议 ${evs.length} 场；数据共覆盖近一年。`;
 
+  if(state.tab === 'event'){
+    list.innerHTML = renderEvents(evs);
+    return;
+  }
   const items = state.tab === 'all' ? base
     : base.filter(it => it.source === state.tab);
   if(!items.length){

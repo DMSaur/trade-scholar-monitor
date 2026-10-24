@@ -1,6 +1,8 @@
 # 贸易领域关键词表
 # trade_keywords: 相关性初筛用，标题或摘要命中（不区分大小写）即进入候选池
 # tag_vocab: 中文主题标签词表，LLM 打标签时从中选取（最多 3 个）
+# event_programs: NBER 会议追踪的名称匹配模式（小写子串，对会议标题匹配）
+#   国际板块一圈：贸易与投资 / 贸易与宏观 / 国际金融与宏观 / 国际经济与地缘政治 / 跨境宏观
 
 trade_keywords:
   - international trade
@@ -76,3 +78,16 @@ tag_vocab:
   - 贸易史
   - 方法论
   - 其他
+
+event_programs:
+  - international trade
+  - trade & investment
+  - trade and investment
+  - trade & macro
+  - trade and macro
+  - trade policy
+  - tariff
+  - international finance
+  - international economics
+  - geopolitics
+  - across borders

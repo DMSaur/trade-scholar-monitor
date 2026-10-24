@@ -104,8 +104,8 @@ MOCK = [
 
 for m in MOCK:
     conn.execute(
-        "INSERT INTO items (uid, source, scholar_id, title, authors, venue, url,"
-        " date, abstract, extra, relevant, summary_zh, tags, first_seen,"
+        "INSERT INTO items (uid, source, scholar_id, title, authors, venue,"
+        " url, date, abstract, extra, relevant, summary_zh, tags, first_seen,"
         " title_zh, abstract_zh)"
         " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
         (m["uid"], m["source"], m["scholar_id"], m["title"], m["authors"],
@@ -113,6 +113,91 @@ for m in MOCK:
          json.dumps(m["extra"], ensure_ascii=False), m["relevant"],
          m["summary_zh"], m["tags"], FIRST_SEEN,
          m.get("title_zh", ""), m.get("abstract_zh", "")))
+conn.commit()
+
+# ---- 会议板块 mock：一场未来（含置顶断言）、一场过去（含库内继承断言） ----
+def d_ahead(n: int) -> str:
+    return (datetime.now() + timedelta(days=n)).strftime("%Y-%m-%d")
+
+EVENTS = [
+    dict(conf_id="n1185515", nid="1185515",
+         title="International Trade and Investment Program Meeting, Fall 2026",
+         type_name="Program Meeting",
+         start_date=d_ahead(3), end_date=d_ahead(4),
+         display_date="November 20-21, 2026",
+         location="SIEPR, Stanford University",
+         organizers="Stephen J. Redding",
+         url="https://www.nber.org/conferences/international-trade-and-investment-program-meeting-fall-2026",
+         agenda_status="done"),
+    dict(conf_id="n1231442", nid="1231442",
+         title="SI 2026 International Trade & Investment",
+         type_name="Summer Institute Workshop",
+         start_date=d_ago(100), end_date=d_ago(98),
+         display_date="July 13-15, 2026",
+         location="Hotel Marlowe, Cambridge, MA",
+         organizers="Treb Allen and Natalia Ramondo",
+         url="https://www.nber.org/conferences/si-2026-international-trade-investment",
+         agenda_status="done"),
+]
+for ev in EVENTS:
+    conn.execute(
+        "INSERT INTO events (conf_id, nid, title, type_name, start_date,"
+        " end_date, display_date, location, organizers, url, agenda_status,"
+        " first_seen) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        (ev["conf_id"], ev["nid"], ev["title"], ev["type_name"],
+         ev["start_date"], ev["end_date"], ev["display_date"],
+         ev["location"], ev["organizers"], ev["url"], ev["agenda_status"],
+         FIRST_SEEN))
+
+# 未来会议：一篇库内已命中（继承），一篇 bare（无全文）
+# 过去会议：一篇 bare
+EPAPERS = [
+    dict(conf_id="n1185515", pos=0,
+         title="A Dynamic Theory of Optimal Tariffs",
+         norm_title=db.title_key("A Dynamic Theory of Optimal Tariffs"),
+         authors_json='[{"name": "Eduardo Dávila", "aff": "Yale University"},'
+                      '{"name": "Andrés Rodríguez-Clare", "aff": "UC Berkeley"}]',
+         discussants_json='[{"name": "Mary Amiti", "aff": "FRB New York"}]',
+         schedule=f"{d_ahead(3)} 9:15 am", fnum="f241700",
+         pdf_url="https://conference.nber.org/conf_papers/f241700/f241700.pdf",
+         item_uid=None, journal=None, abstract=None, abstract_zh=None,
+         intro_zh=None, title_zh=None, tags_json=None,
+         enrich_state="bare"),
+    dict(conf_id="n1185515", pos=1,
+         title="Export Controls and Semiconductor Supply Chains: Evidence from Recent Restrictions",
+         norm_title=db.title_key("Export Controls and Semiconductor Supply Chains: Evidence from Recent Restrictions"),
+         authors_json='[{"name": "Treb Allen", "aff": "Yale University"}]',
+         discussants_json="[]", schedule=None, fnum="f241701",
+         pdf_url="https://conference.nber.org/conf_papers/f241701/f241701.pdf",
+         item_uid="nber:w34123",
+         journal="",
+         abstract="We quantify the effect of export controls.",
+         abstract_zh="我们量化了出口管制的效应。",
+         intro_zh="量化近期半导体出口管制对供应链的冲击。",
+         title_zh="出口管制与半导体供应链：来自近期限制的证据",
+         tags_json='["出口管制", "供应链"]',
+         enrich_state="matched"),
+    dict(conf_id="n1231442", pos=0,
+         title="Do Foreigners Pay for Tariffs?",
+         norm_title=db.title_key("Do Foreigners Pay for Tariffs?"),
+         authors_json='[{"name": "Rodrigo Adão", "aff": "University of Chicago"}]',
+         discussants_json="[]", schedule=f"{d_ago(100)} 9:15 am",
+         fnum="f241702", pdf_url=None,
+         item_uid=None, journal=None, abstract=None, abstract_zh=None,
+         intro_zh=None, title_zh=None, tags_json=None,
+         enrich_state="bare"),
+]
+for p in EPAPERS:
+    conn.execute(
+        "INSERT INTO event_papers (conf_id, pos, title, norm_title,"
+        " authors_json, discussants_json, schedule, fnum, pdf_url, item_uid,"
+        " journal, abstract, abstract_zh, intro_zh, title_zh, tags_json,"
+        " enrich_state) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        (p["conf_id"], p["pos"], p["title"], p["norm_title"],
+         p["authors_json"], p["discussants_json"], p["schedule"], p["fnum"],
+         p["pdf_url"], p["item_uid"], p["journal"], p["abstract"],
+         p["abstract_zh"], p["intro_zh"], p["title_zh"], p["tags_json"],
+         p["enrich_state"]))
 conn.commit()
 
 from build_site import build  # noqa: E402
@@ -161,6 +246,75 @@ checks["主题模块计数正确"] = (
     and "贸易战" not in themes  # 贸易战只出现在推文标签里
 )
 checks["主题模块已渲染"] = "近 30 日关注主题" in html and "theme-chip" in html
+# 会议板块：payload 结构、即将举行置顶、库内继承、板块入口
+events = payload.get("events", [])
+checks["会议数据进了 payload"] = len(events) == 2
+up = [e for e in events if e["start_date"] > datetime.now().strftime("%Y-%m-%d")]
+checks["未来会议在 payload 里"] = len(up) == 1 and up[0]["conf_id"] == "n1185515"
+fall = next(e for e in events if e["conf_id"] == "n1185515")
+matched = next(p for p in fall["papers"] if p["state"] == "matched")
+checks["matched 论文继承标签与简介"] = (
+    matched["tags"] == ["出口管制", "供应链"]
+    and "出口管制" in matched["intro_zh"]
+    and matched["title_zh"].startswith("出口管制"))
+checks["matched 论文带工作论文编号"] = matched["wp_num"] == "w34123"
+bare = next(p for p in fall["papers"] if p["state"] == "bare")
+checks["bare 论文标注暂无全文"] = (
+    bare["journal"] == "" and bare["wp_num"] == ""
+    and "暂无全文" in html)
+si = next(e for e in events if e["conf_id"] == "n1231442")
+checks["过去会议论文作者与机构在 payload"] = (
+    si["papers"][0]["authors"][0]["aff"] == "University of Chicago")
+checks["会议 tab 与计数徽标已渲染"] = (
+    "key:'event'" in html and 'id="c-event"' in html)
+
+# 运行时逻辑（tab、分组标签由 JS 生成）：抽取纯函数喂 node 跑真实断言
+JS = _re.search(r"<script>\n(.*)</script>", html, _re.S).group(1)
+
+def _grab(name: str) -> str:
+    m = (_re.search(rf"function {name}\([\s\S]*?\n\}}", JS)
+         or _re.search(rf"const {name} = [^\n]*;", JS))
+    if not m:
+        raise SystemExit(f"!! 无法从模板抽取 {name}")
+    return m.group(0)
+
+js_src = "\n".join(_grab(n) for n in
+                   ("WEEK", "state", "fmtDate", "daysAgo", "esc",
+                    "rangeLabel", "groupLabel", "matchEvent",
+                    "paperRowHTML", "eventCardHTML", "renderEvents"))
+node_js = (js_src
+           + "\nconst events = "
+           + _json.dumps(events, ensure_ascii=False)
+           + ";\n"
+           + """function tryFilters(){
+  const out = {};
+  out.n30 = events.filter(matchEvent).length;
+  state.range = 365;
+  out.n365 = events.filter(matchEvent).length;
+  state.q = 'amiti';
+  out.qHit = events.filter(matchEvent).length;
+  state.q = 'zzzzNoSuchWord';
+  out.qMiss = events.filter(matchEvent).length;
+  state.q = '';
+  const htmlOut = renderEvents(events);
+  out.upFirst = htmlOut.indexOf('即将举行') > -1
+    && htmlOut.indexOf('即将举行') < htmlOut.indexOf('Do Foreigners Pay');
+  out.hasPapers = htmlOut.includes('汇报论文 2 篇');
+  out.hasBare = htmlOut.includes('暂无全文');
+  return out;
+}
+console.log(JSON.stringify(tryFilters()));
+""")
+Path("/tmp/mock_ev_test.js").write_text(node_js, encoding="utf-8")
+import subprocess
+node_out = subprocess.run(["node", "/tmp/mock_ev_test.js"],
+                          capture_output=True, text=True, timeout=30)
+if node_out.returncode != 0:
+    raise SystemExit(f"!! node 断言脚本失败:\n{node_out.stderr[:500]}")
+nr = _json.loads(node_out.stdout)
+checks["时间窗过滤:未来会议30天可见,100天前的看不见"] = nr["n30"] == 1 and nr["n365"] == 2
+checks["搜索命中点评人与未命中词"] = nr["qHit"] == 1 and nr["qMiss"] == 0
+checks["即将举行置顶且渲染论文清单"] = nr["upFirst"] and nr["hasPapers"] and nr["hasBare"]
 failed = [k for k, ok in checks.items() if not ok]
 if failed:
     print("!! 断言未通过:", failed)
