@@ -4,12 +4,21 @@ import sqlite3
 import json
 import sys
 import tempfile
+from datetime import datetime, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 
 import db  # noqa: E402
+
+# mock 日期相对今天生成，保证任何日期跑都落在 30 日主题窗口内
+def d_ago(n: int) -> str:
+    return (datetime.now() - timedelta(days=n)).strftime("%Y-%m-%d")
+
+D1, D2, D3, D4 = d_ago(2), d_ago(5), d_ago(3), d_ago(4)
+T1, T2 = d_ago(1), d_ago(2)
+FIRST_SEEN = datetime.now().isoformat(timespec="seconds")
 
 # 指到临时库
 tmp = Path(tempfile.mkdtemp()) / "test.db"
@@ -37,7 +46,7 @@ MOCK = [
          title="Tariffs and the Distribution of Welfare: Evidence from the 2018 Trade War",
          authors="David Autor, David Dorn, Gordon Hanson",
          venue="American Economic Review", url="https://doi.org/10.1257/aer.20240001",
-         date="2026-10-15", abstract=LONG_ABS,
+         date=D1, abstract=LONG_ABS,
          extra={"journal_short": "AER", "keyword_hit": "tariff"},
          relevant=1, summary_zh="用2018年贸易战数据测算关税的福利分配效应，发现进口竞争地区受损最重。",
          title_zh="关税与福利分配：来自2018年贸易战的证据",
@@ -47,7 +56,7 @@ MOCK = [
          title="Global Value Chains and the Rise of Services Trade",
          authors="Marc Melitz, Stephen Redding",
          venue="Quarterly Journal of Economics", url="https://doi.org/10.1093/qje/qjae002",
-         date="2026-10-12", abstract="Services trade has grown faster than goods.",
+         date=D2, abstract="Services trade has grown faster than goods.",
          extra={"journal_short": "QJE", "keyword_hit": "value chain"},
          relevant=1, summary_zh="研究服务贸易增速超过货物贸易的原因，全球价值链重构是主要驱动力。",
          title_zh="全球价值链与服务贸易的兴起",
@@ -57,7 +66,7 @@ MOCK = [
          title="Export Controls and Semiconductor Supply Chains: Evidence from Recent Restrictions",
          authors="Treb Allen, Costas Arkolakis",
          venue="NBER Working Paper", url="https://www.nber.org/papers/w34123",
-         date="2026-10-16", abstract="We quantify the effect of export controls.",
+         date=T2, abstract="We quantify the effect of export controls.",
          extra={"nber_id": "W34123", "keyword_hit": "export controls"},
          relevant=1, summary_zh="量化近期半导体出口管制对供应链的冲击，发现管制成本主要由出口国承担。",
          title_zh="出口管制与半导体供应链：来自近期限制的证据",
@@ -67,7 +76,7 @@ MOCK = [
          title="Railroads and Trade Costs: New Estimates",
          authors="Dave Donaldson",
          venue="工作论文", url="https://www.semanticscholar.org/paper/111",
-         date="2026-10-14", abstract="",  # 无摘要论文：不应渲染折叠块
+         date=D4, abstract="",  # 无摘要论文：不应渲染折叠块
          extra={"scholar_name": "Dave Donaldson"},
          relevant=1, summary_zh="更新铁路对贸易成本的估计，结果与既往研究一致但幅度更小。",
          title_zh="铁路与贸易成本：新估计",
@@ -76,7 +85,7 @@ MOCK = [
     dict(uid="tweet:1111", source="tweet", scholar_id="x:ChadBown",
          title="New paper day!", authors="@ChadBown", venue="X (Twitter)",
          url="https://x.com/ChadBown/status/1111",
-         date="2026-10-17", abstract="HOW TO WIN A TRADE WAR is officially published in the US today!!!",
+         date=T1, abstract="HOW TO WIN A TRADE WAR is officially published in the US today!!!",
          extra={"handle": "ChadBown", "name": "Chad P. Bown", "is_retweet": False,
                 "likes": 39, "retweets": 9, "views": 11735},
          relevant=1, summary_zh="Bown 宣布新书《如何打赢贸易战》美国正式出版。",
@@ -85,7 +94,7 @@ MOCK = [
     dict(uid="tweet:2222", source="tweet", scholar_id="x:rodrikdani",
          title="RT on industrial policy", authors="@rodrikdani", venue="X (Twitter)",
          url="https://x.com/rodrikdani/status/2222",
-         date="2026-10-16", abstract="RT @someone: Industrial policy is back, and this time it is global.",
+         date=T2, abstract="RT @someone: Industrial policy is back, and this time it is global.",
          extra={"handle": "rodrikdani", "name": "Dani Rodrik", "is_retweet": True,
                 "likes": 0, "retweets": 86, "views": 12000},
          relevant=1, summary_zh="Rodrik 转发观点：产业政策全面回归且已成全球现象。",
@@ -102,7 +111,7 @@ for m in MOCK:
         (m["uid"], m["source"], m["scholar_id"], m["title"], m["authors"],
          m["venue"], m["url"], m["date"], m["abstract"],
          json.dumps(m["extra"], ensure_ascii=False), m["relevant"],
-         m["summary_zh"], m["tags"], "2026-10-18T00:00:00",
+         m["summary_zh"], m["tags"], FIRST_SEEN,
          m.get("title_zh", ""), m.get("abstract_zh", "")))
 conn.commit()
 
@@ -144,6 +153,14 @@ checks = {
                   and "upstream industries" in html,
     "翻译缺失时只显示英文": "Services trade has grown faster than goods." in html,
 }
+# 顶部关注主题模块：论文标签各计 1 次，推文标签不计入
+themes = {t["tag"]: t["n"] for t in payload.get("themes", [])}
+checks["主题模块计数正确"] = (
+    themes.get("关税") == 1 and themes.get("全球价值链") == 1
+    and themes.get("供应链") == 1 and themes.get("方法论") == 1
+    and "贸易战" not in themes  # 贸易战只出现在推文标签里
+)
+checks["主题模块已渲染"] = "近 30 日关注主题" in html and "theme-chip" in html
 failed = [k for k, ok in checks.items() if not ok]
 if failed:
     print("!! 断言未通过:", failed)

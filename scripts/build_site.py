@@ -3,11 +3,13 @@
 import json
 import re
 from collections import Counter
-from datetime import datetime
+from datetime import datetime, timedelta
 
 import db
 
 WINDOW_DAYS = 365
+THEME_DAYS = 30  # 顶部关注主题模块的统计窗口
+THEME_TOP = 12
 
 SOURCE_LABEL = {"top5": "Top-5 期刊", "nber": "NBER", "scholar": "学者论文", "tweet": "推文"}
 JOURNAL_SHORT = {"AER", "QJE", "JPE", "ECMA", "REStud"}
@@ -98,6 +100,13 @@ def collect(conn, scholar_list) -> dict:
         })
     items.sort(key=lambda x: (x["date"], x["uid"]), reverse=True)
     items = _dedupe_papers(items)
+    # 近 30 日关注主题：论文标签计数（推文是评论观点，不计入）
+    cutoff = (datetime.now() - timedelta(days=THEME_DAYS)).strftime("%Y-%m-%d")
+    tag_cnt = Counter(t for it in items
+                      if it["source"] != "tweet" and it["date"]
+                      and it["date"] >= cutoff
+                      for t in it["tags"])
+    themes = [{"tag": t, "n": n} for t, n in tag_cnt.most_common(THEME_TOP)]
     # 学者名单（启用中的），附带近一年动态数
     cnt = Counter(it["extra"].get("scholar_name")
                   for it in items if it.get("extra"))
@@ -118,7 +127,7 @@ def collect(conn, scholar_list) -> dict:
         })
     return {"generated_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
             "window_days": WINDOW_DAYS, "items": items,
-            "scholars": scholars_out}
+            "themes": themes, "scholars": scholars_out}
 
 
 TEMPLATE = r"""<!DOCTYPE html>
@@ -145,6 +154,15 @@ header{padding:34px 0 8px}
 h1{font-size:25px;font-weight:700;letter-spacing:.5px}
 .subtitle{color:var(--sub);font-size:13.5px;margin-top:4px}
 .meta-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.themes{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;align-items:center}
+.themes-label{font-size:12px;color:var(--sub);margin-right:4px}
+.theme-chip{
+  font-size:12.5px;color:var(--ink);background:var(--card);
+  border:1px solid var(--border);border-radius:20px;padding:3px 12px;
+  cursor:pointer;font-family:inherit;line-height:1.5;
+}
+.theme-chip b{color:var(--accent);font-weight:600;margin-left:4px}
+.theme-chip:hover{border-color:var(--accent);color:var(--accent)}
 .chip{
   display:inline-flex;align-items:center;gap:6px;font-size:12.5px;
   background:var(--card);border:1px solid var(--border);border-radius:20px;
@@ -317,6 +335,7 @@ th.roster-num-h{text-align:right}
   <h1>贸易学者动向</h1>
   <p class="subtitle">Top-5 期刊贸易论文 · NBER 工作论文 · 贸易学者最新研究 · 学者推文，每日更新</p>
   <div class="meta-row" id="metaRow"></div>
+  <div class="themes" id="themes"></div>
 </header>
 <div class="toolbar">
   <div class="tabs" id="tabs" role="tablist" aria-label="板块筛选"></div>
@@ -698,6 +717,26 @@ document.getElementById('list').addEventListener('click', e => {
   state.q = tag.dataset.tag.toLowerCase();
   render();
 });
+
+/* 顶部「近 30 日关注主题」：点击主题即按标签过滤 */
+(function renderThemes(){
+  const box = document.getElementById('themes');
+  const themes = DATA.themes || [];
+  if(!themes.length){ box.style.display = 'none'; return; }
+  box.innerHTML = '<span class="themes-label">近 30 日关注主题</span>' +
+    themes.map(t =>
+      `<button class="theme-chip" data-tag="${esc(t.tag)}">${esc(t.tag)}<b>${t.n}</b></button>`
+    ).join('');
+  box.addEventListener('click', e => {
+    const chip = e.target.closest('.theme-chip');
+    if(!chip) return;
+    const input = document.getElementById('search');
+    input.value = chip.dataset.tag;
+    state.q = chip.dataset.tag.toLowerCase();
+    render();
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  });
+})();
 
 render();
 </script>
