@@ -87,10 +87,12 @@ def collect(conn, scholar_list) -> dict:
             "venue": r["venue"] or "",
             "url": r["url"] or "",
             "date": r["date"] or "",
-            # 论文只带中文摘要控制体积；推文带全文
-            "abstract": (r["abstract"] or "") if r["source"] == "tweet" else "",
+            # 论文带双摘要供展开显示；推文带全文
+            "abstract": (r["abstract"] or "")[:3200],
             "summary_zh": r["summary_zh"] or "",
             "title_zh": (r["title_zh"] if "title_zh" in r.keys() else "") or "",
+            "abstract_zh": (r["abstract_zh"]
+                            if "abstract_zh" in r.keys() else "") or "",
             "tags": json.loads(r["tags"] or "[]"),
             "extra": extra,
         })
@@ -209,6 +211,24 @@ h1{font-size:25px;font-weight:700;letter-spacing:.5px}
 .summary-zh{
   font-size:13.8px;color:#333;border-left:3px solid var(--accent-soft);
   padding-left:10px;margin:6px 0;overflow-wrap:anywhere;
+}
+details.abs{margin:6px 0 2px;font-size:12.8px}
+details.abs>summary{
+  cursor:pointer;color:var(--accent);font-size:12px;user-select:none;
+  list-style:none;
+}
+details.abs>summary::before{content:"▸ ";font-size:10px}
+details.abs[open]>summary::before{content:"▾ "}
+details.abs>summary:hover{text-decoration:underline}
+.abs-body{
+  margin-top:6px;padding:8px 10px;background:#faf9f5;
+  border:1px solid var(--border);border-radius:6px;color:#444;
+}
+.abs-zh{overflow-wrap:anywhere}
+.abs-en{margin-top:8px;color:var(--sub);overflow-wrap:anywhere}
+.abs-lang{
+  display:block;font-size:10.5px;color:var(--sub);letter-spacing:1px;
+  margin-bottom:2px;
 }
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
 .tag{
@@ -419,8 +439,9 @@ function matchBase(it){
   if(state.scholar && (!it.extra || it.extra.scholar_name !== state.scholar)) return false;
   if(state.q){
     const e = it.extra || {};
-    const hay = [it.title, it.authors, it.venue, it.summary_zh,
-                 it.abstract || '', (it.tags||[]).join(' '),
+    const hay = [it.title, it.title_zh || '', it.authors, it.venue,
+                 it.summary_zh, it.abstract || '', it.abstract_zh || '',
+                 (it.tags||[]).join(' '),
                  e.scholar_name || '', e.handle || '', e.nber_id || '',
                  e.journal_short || ''].join(' ').toLowerCase();
     if(!hay.includes(state.q)) return false;
@@ -490,6 +511,14 @@ function cardHTML(it){
         : esc(it.title)}</p>` : '';
   const summary = it.summary_zh && it.summary_zh !== '（非贸易领域）'
     ? `<p class="summary-zh">${esc(it.summary_zh)}</p>` : '';
+  // 中英摘要折叠块：论文有任一版本摘要才渲染，推文正文本来就完整展示
+  const absZh = String(it.abstract_zh||'').trim();
+  const absEn = String(it.abstract||'').trim();
+  const absBlock = (it.source !== 'tweet' && (absZh || absEn))
+    ? `<details class="abs"><summary>中英摘要</summary><div class="abs-body">` +
+      (absZh ? `<span class="abs-lang">中文翻译</span><p class="abs-zh">${esc(absZh)}</p>` : '') +
+      (absEn ? `<span class="abs-lang">英文原文</span><p class="abs-en">${esc(absEn)}</p>` : '') +
+      `</div></details>` : '';
   const authors = it.authors && it.source !== 'tweet'
     ? `<p class="authors">${esc(it.authors)}</p>` : '';
   const tags = (it.tags||[]).length
@@ -499,7 +528,7 @@ function cardHTML(it){
     <div class="card-top">${badges}${venueInfo}</div>
     ${titleHTML ? `<h2>${titleHTML}</h2>` : ''}
     ${titleEn}
-    ${authors}${text}${mediaHTML}${linkCards}${summary}${stats}${tags}
+    ${authors}${text}${mediaHTML}${linkCards}${summary}${absBlock}${stats}${tags}
   </article>`;
 }
 

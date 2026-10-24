@@ -132,12 +132,36 @@ def main():
                                          summary).strip()
                     db.save_summary(conn, row["uid"], summary,
                                     out.get("tags", []),
-                                    out.get("title_zh", ""))
+                                    out.get("title_zh", ""),
+                                    out.get("abstract_zh", ""))
                 processed.add(row["uid"])
                 stats["llm"] += 1
                 time.sleep(0.3)
             conn.commit()
         print(f"    处理 {stats['llm']} 条")
+
+    # 5b. 存量论文补译摘要全文（分块调用防截断；失败留 NULL 下轮重试）
+    if summarize.available():
+        print("[补译] 论文摘要全文中文翻译")
+        done: set[str] = set()
+        while True:
+            pending = [r for r in db.pending_abstract(conn)
+                       if r["uid"] not in done]
+            if not pending:
+                break
+            for row in pending:
+                done.add(row["uid"])
+                try:
+                    abstract = (row["abstract"] or "").strip()
+                    zh = (summarize.translate_abstract(abstract)
+                          if abstract else "")
+                    db.save_abstract_zh(conn, row["uid"], zh)
+                    stats["abs_zh"] = stats.get("abs_zh", 0) + 1
+                except Exception as e:
+                    print(f"    ! 补译失败 {row['uid']}: {e}")
+                time.sleep(0.3)
+            conn.commit()
+        print(f"    补译 {stats.get('abs_zh', 0)} 条")
 
     # 6. 生成网页
     print("[网页] 生成 docs/index.html")
@@ -149,7 +173,8 @@ def main():
     conn.close()
     total = sum(stats["new"].values())
     err = f"，失败板块: {','.join(stats['errors'])}" if stats["errors"] else ""
-    print(f"== 完成：新增 {total} 条，摘要 {stats['llm']} 条{err} ==")
+    abs_zh = f"，补译 {stats.get('abs_zh', 0)} 条" if stats.get("abs_zh") else ""
+    print(f"== 完成：新增 {total} 条，摘要 {stats['llm']} 条{abs_zh}{err} ==")
 
 
 if __name__ == "__main__":

@@ -53,6 +53,10 @@ def connect() -> sqlite3.Connection:
         conn.execute("ALTER TABLE items ADD COLUMN title_zh TEXT")
     except sqlite3.OperationalError:
         pass
+    try:
+        conn.execute("ALTER TABLE items ADD COLUMN abstract_zh TEXT")
+    except sqlite3.OperationalError:
+        pass
     return conn
 
 
@@ -90,11 +94,36 @@ def pending_summary(conn: sqlite3.Connection, limit: int = 40) -> list[sqlite3.R
 
 
 def save_summary(conn: sqlite3.Connection, uid: str, summary_zh: str,
-                 tags: list, title_zh: str = ""):
-    conn.execute(
-        "UPDATE items SET summary_zh = ?, tags = ?, title_zh = ? WHERE uid = ?",
-        (summary_zh, json.dumps(tags, ensure_ascii=False), title_zh, uid),
-    )
+                 tags: list, title_zh: str = "", abstract_zh: str | None = None):
+    """abstract_zh 传 None 表示本调用不改动该列（补译循环单独写）。"""
+    if abstract_zh is None:
+        conn.execute(
+            "UPDATE items SET summary_zh = ?, tags = ?, title_zh = ? WHERE uid = ?",
+            (summary_zh, json.dumps(tags, ensure_ascii=False), title_zh, uid),
+        )
+    else:
+        conn.execute(
+            "UPDATE items SET summary_zh = ?, tags = ?, title_zh = ?, abstract_zh = ?"
+            " WHERE uid = ?",
+            (summary_zh, json.dumps(tags, ensure_ascii=False), title_zh,
+             abstract_zh, uid),
+        )
+
+
+def save_abstract_zh(conn: sqlite3.Connection, uid: str, abstract_zh: str):
+    conn.execute("UPDATE items SET abstract_zh = ? WHERE uid = ?",
+                 (abstract_zh, uid))
+
+
+def pending_abstract(conn: sqlite3.Connection,
+                     limit: int = 40) -> list[sqlite3.Row]:
+    """取需要补译摘要的存量条目：已过摘要流程、无译文的相关论文。"""
+    return conn.execute(
+        "SELECT * FROM items WHERE relevant = 1 AND source != 'tweet'"
+        " AND abstract_zh IS NULL AND summary_zh IS NOT NULL"
+        " ORDER BY date DESC LIMIT ?",
+        (limit,),
+    ).fetchall()
 
 
 def mark_irrelevant(conn: sqlite3.Connection, uid: str):
