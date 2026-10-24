@@ -1,7 +1,153 @@
 {
- "generated_at": "2026-10-23 22:50",
+ "generated_at": "2026-10-24 09:34",
  "window_days": 365,
  "items": [
+  {
+   "uid": "tweet:2113730000184606792",
+   "source": "tweet",
+   "title": "Trump to cut tariffs on imports from Canada of certain agriculture and forestry products, following an S.O.S. campaign by Republicans facing",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2113730000184606792",
+   "date": "2026-10-23",
+   "abstract": "Trump to cut tariffs on imports from Canada of certain agriculture and forestry products, following an S.O.S. campaign by Republicans facing tough midterm election battles, like Susan Collins in Maine.\n\nby @Aime_Williams  &amp; @IlyaGridneff \n\nhttps://t.co/9o5UM0N2ku https://t.co/YfU96afQpz",
+   "summary_zh": "特朗普（Trump）将削减对从加拿大（Canada）进口的某些农业和林业产品的关税，此前共和党人（Republicans）发起了一场S.O.S.运动；这些共和党人正面临艰难的中期选举选战，比如缅因州（Maine）的苏珊·柯林斯（Susan Collins）。\n\n由 @Aime_Williams 与 @IlyaGridneff 撰写",
+   "title_zh": "",
+   "tags": [
+    "关税",
+    "贸易政策"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": false,
+    "is_reply": false,
+    "likes": 1,
+    "retweets": 2,
+    "views": 532,
+    "created_at": "2026-10-23T20:31:17+00:00",
+    "media": [
+     {
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HVV5eRhXoAI76rq.png"
+     }
+    ],
+    "links": [
+     {
+      "tco": "https://t.co/9o5UM0N2ku",
+      "url": "https://www.ft.com/content/d3d12f54-fcf0-400c-96f1-484aea980be5?syn-25a6b1a6=1",
+      "title": "",
+      "domain": "ft.com",
+      "image": ""
+     },
+     {
+      "tco": "https://t.co/YfU96afQpz",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
+    "scholar_name": "Chad Bown"
+   }
+  },
+  {
+   "uid": "tweet:2113683609530118170",
+   "source": "tweet",
+   "title": "RT @jasonfurman: I'm thrilled to be launching Econvitals today. It's been the main way in which I have been tracking and understanding the…",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2113683609530118170",
+   "date": "2026-10-23",
+   "abstract": "RT @jasonfurman: I'm thrilled to be launching Econvitals today. It's been the main way in which I have been tracking and understanding the…",
+   "summary_zh": "RT @jasonfurman：我今天非常激动地推出 Econvitals。这一直是我追踪和理解……的主要方式。",
+   "title_zh": "",
+   "tags": [
+    "其他"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": true,
+    "is_reply": false,
+    "likes": 0,
+    "retweets": 106,
+    "views": 61,
+    "created_at": "2026-10-23T17:26:57+00:00",
+    "media": [],
+    "scholar_name": "Chad Bown"
+   }
+  },
+  {
+   "uid": "tweet:2113649857584054430",
+   "source": "tweet",
+   "title": "RT @HooverInst: Four years after Western governments imposed sanctions on Russian oil in response to Russia's invasion of Ukraine, Moscow c…",
+   "authors": "@itskhoki",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/itskhoki/status/2113649857584054430",
+   "date": "2026-10-23",
+   "abstract": "RT @HooverInst: Four years after Western governments imposed sanctions on Russian oil in response to Russia's invasion of Ukraine, Moscow c…",
+   "summary_zh": "转发 @HooverInst：在西方政府为回应俄罗斯入侵乌克兰而对俄罗斯石油实施制裁四年后，莫斯科……",
+   "title_zh": "",
+   "tags": [
+    "制裁"
+   ],
+   "extra": {
+    "handle": "ItsKhoki",
+    "name": "Oleg Itskhoki",
+    "is_retweet": true,
+    "is_reply": false,
+    "likes": 0,
+    "retweets": 11,
+    "views": 29,
+    "created_at": "2026-10-23T15:12:50+00:00",
+    "media": [],
+    "scholar_name": "Oleg Itskhoki"
+   }
+  },
+  {
+   "uid": "tweet:2113649605414125613",
+   "source": "tweet",
+   "title": "took the Green Line to today’s book talk https://t.co/otu7dDwJFN",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2113649605414125613",
+   "date": "2026-10-23",
+   "abstract": "took the Green Line to today’s book talk https://t.co/otu7dDwJFN",
+   "summary_zh": "乘坐绿线（Green Line）去参加今天的图书讲座",
+   "title_zh": "",
+   "tags": [
+    "其他"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": false,
+    "is_reply": false,
+    "likes": 6,
+    "retweets": 0,
+    "views": 652,
+    "created_at": "2026-10-23T15:11:50+00:00",
+    "media": [
+     {
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HVUxHJBW4AAxpZD.jpg"
+     }
+    ],
+    "links": [
+     {
+      "tco": "https://t.co/otu7dDwJFN",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
+    "scholar_name": "Chad Bown"
+   }
+  },
   {
    "uid": "tweet:2113423996561535419",
    "source": "tweet",
@@ -5432,7 +5578,7 @@
    "homepage": "https://economics.harvard.edu/people/oleg-itskhoki",
    "openalex": "A5088518091",
    "s2": "103048638",
-   "items": 6
+   "items": 7
   },
   {
    "name": "Pablo Fajgelbaum",
@@ -5608,7 +5754,7 @@
    "homepage": "",
    "openalex": "A5013651639",
    "s2": "46221253",
-   "items": 25
+   "items": 28
   },
   {
    "name": "Douglas Irwin",
