@@ -1,7 +1,54 @@
 {
- "generated_at": "2026-10-24 15:23",
+ "generated_at": "2026-10-25 09:40",
  "window_days": 365,
  "items": [
+  {
+   "uid": "tweet:2114074446055301414",
+   "source": "tweet",
+   "title": "Scenes from Harvard Square https://t.co/5z5XSuvl5P",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2114074446055301414",
+   "date": "2026-10-24",
+   "abstract": "Scenes from Harvard Square https://t.co/5z5XSuvl5P",
+   "summary_zh": "哈佛广场（Harvard Square）的场景",
+   "title_zh": "",
+   "abstract_zh": "",
+   "tags": [
+    "其他"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": false,
+    "is_reply": false,
+    "likes": 3,
+    "retweets": 0,
+    "views": 491,
+    "created_at": "2026-10-24T19:20:00+00:00",
+    "media": [
+     {
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HVazfx6XAAA3Ifp.jpg"
+     },
+     {
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HVazfx1WIAA6x3R.jpg"
+     }
+    ],
+    "links": [
+     {
+      "tco": "https://t.co/5z5XSuvl5P",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
+    "scholar_name": "Chad Bown"
+   }
+  },
   {
    "uid": "tweet:2113730000184606792",
    "source": "tweet",
@@ -6017,7 +6064,7 @@
    "homepage": "",
    "openalex": "A5013651639",
    "s2": "46221253",
-   "items": 28
+   "items": 29
   },
   {
    "name": "Douglas Irwin",
@@ -7092,7 +7139,7 @@
      "slides_url": "",
      "wp_num": "",
      "pub_url": "",
-     "state": "pdf"
+     "state": "bare"
     },
     {
      "title": "The Distributional Impacts of Decarbonization Policies",
@@ -7162,7 +7209,7 @@
      "slides_url": "",
      "wp_num": "",
      "pub_url": "",
-     "state": "pdf"
+     "state": "bare"
     },
     {
      "title": "The Great Game: A Model of Geoeconomic Competition",
@@ -7353,7 +7400,7 @@
      "slides_url": "",
      "wp_num": "",
      "pub_url": "",
-     "state": "pdf"
+     "state": "bare"
     },
     {
      "title": "Tariffs, Investment, and the Missing Trade Collapse",
@@ -7464,7 +7511,7 @@
      "slides_url": "",
      "wp_num": "",
      "pub_url": "",
-     "state": "pdf"
+     "state": "bare"
     },
     {
      "title": "Foreign Exchange Risk Management Spillovers Across the Production Network",
@@ -7494,7 +7541,7 @@
      "slides_url": "",
      "wp_num": "",
      "pub_url": "https://doi.org/10.2139/ssrn.7590643",
-     "state": "pdf"
+     "state": "bare"
     }
    ]
   },
@@ -7622,7 +7669,7 @@
      "slides_url": "https://conference.nber.org/conf_papers/f247283/f247283.slides.pdf",
      "wp_num": "",
      "pub_url": "",
-     "state": "pdf"
+     "state": "bare"
     },
     {
      "title": "Tariff Wars and Net Foreign Assets",
@@ -7946,7 +7993,7 @@
      "slides_url": "https://conference.nber.org/conf_papers/f244844/f244844.slides.pdf",
      "wp_num": "",
      "pub_url": "",
-     "state": "pdf"
+     "state": "bare"
     },
     {
      "title": "Critical Minerals, Geopolitics, and the Green Transition",
@@ -8594,7 +8641,7 @@
      "slides_url": "",
      "wp_num": "",
      "pub_url": "",
-     "state": "pdf"
+     "state": "bare"
     },
     {
      "title": "Geopolitical Barriers to Globalization",
@@ -8710,7 +8757,7 @@
       "贸易政策"
      ],
      "abstract": "Trade policy can affect consumers not only through border prices but also by shifting the market power of domestic retailers in segmented local markets. We study this channel using Costa Rica’s elimination of its de minimis exemption, which raised the delivered price of direct-to-consumer imports while leaving domestic retailers’ cost structure unchanged. We link shipment-level customs records for individual parcels to the universe of retail electronic invoices and to customers’ locations and earnings. These data allow us to construct retailer-specific catchment areas and observe domestic and foreign expenditure shares in the relevant markets---the collection of neighborhoods each retailer actually serves. We find that more exposed retailer-product cells raise prices and sales, while import and purchase prices, wages, and employment do not respond, consistent with higher markups rather than cost pass-through. We then develop a catchment-area model with variable markups and strategic complementarities, in which market shares are defined over retailer-specific catchment areas, and discipline its key elasticities using \\textit{observed} share changes instrumented by the tariff shock. Guided by the model, we show that price responses are sharply nonlinear in market shares, steepening in the upper tail. Crucially, de minimis exposure is highest in richer neighborhoods (where direct importing was common), but retail concentration is systematically higher in poorer neighborhoods where households have the fewest local alternatives. Therefore, a reform that appears progressive when judged by exposure can be regressive in equilibrium. Welfare losses are elusive on average but large in low-competition, lower-income areas. The results show how the de minimis reform---and tariffs more broadly---can amplify local market power and shift incidence toward consumers in low-competition local markets.",
-     "abstract_zh": "",
+     "abstract_zh": "贸易政策不仅可以通过边境价格影响消费者，还可以通过改变国内零售商在分割的地方市场中的市场势力来影响消费者。我们利用哥斯达黎加取消其最低限额免税（de minimis）豁免这一政策来研究这一渠道，该政策提高了直接面向消费者的进口产品的到货价格，同时使国内零售商的成本结构保持不变。我们将单个包裹的装运级海关记录与零售电子发票全库以及客户所在地和收入数据相连接。这些数据使我们能够构建特定零售商的辐射区，并观察相关市场——即每个零售商实际服务的社区集合——中的国内和国外支出份额。我们发现，暴露程度更高的零售商-产品单元提高了价格和销售量，而进口价格和采购价格、工资和就业没有反应，这与更高加成率而非成本传导相一致。随后，我们建立了一个具有可变加成和策略互补性的辐射区模型，其中市场份额在特定零售商的辐射区上定义，并用由关税冲击作为工具变量的观测到的份额变化来约束其关键弹性。在模型的引导下，我们表明，价格反应对市场份额呈显著非线性，并在上尾端变得更陡。关键的是，受最低免税额影响的程度在较富裕社区最高（这些社区直接进口很普遍），但零售集中度在较贫困社区系统性更高，而这些社区的家庭拥有的本地替代选择最少。因此，一项以受最低免税额影响程度判断显得具有累进性的改革，在均衡中却可能具有累退性。福利损失平均而言难以察觉，但在竞争程度较低、收入较低的地区却很大。结果表明，最低免税额改革——以及更广泛意义上的关税——如何能够放大本地市场势力，并将负担归宿转向低竞争本地市场中的消费者。",
      "intro_zh": "研究哥斯达黎加取消小额进口免税门槛如何经由本地零售市场势力影响消费者。利用包裹海关、电子发票与消费者位置收入数据，发现高暴露商品组提价增销、利润率上升；福利损失集中于低竞争低收入地区，改革在均衡中可能累退。",
      "journal": "",
      "pdf_url": "https://conference.nber.org/conf_papers/f243881/f243881.pdf",
@@ -8743,16 +8790,20 @@
       }
      ],
      "schedule": "2026-07-13 11:15 am",
-     "tags": [],
+     "tags": [
+      "贸易政策",
+      "出口管制",
+      "供应链"
+     ],
      "abstract": "",
      "abstract_zh": "",
-     "intro_zh": "",
+     "intro_zh": "构建一般均衡贸易模型，将企业与其供应商技术的横向接近度纳入投入效率，并用专利文本相似度检验。量化美国对华电子和半导体禁运，发现其引发技术脱钩与全球重组，使全球福利损失翻倍。",
      "journal": "",
      "pdf_url": "https://conference.nber.org/conf_papers/f242721/f242721.pdf",
      "slides_url": "",
      "wp_num": "",
      "pub_url": "https://doi.org/10.2139/ssrn.4647210",
-     "state": "bare"
+     "state": "pdf"
     },
     {
      "title": "Do Foreigners Pay for Tariffs?",
@@ -8788,7 +8839,7 @@
       "贸易弹性"
      ],
      "abstract": "In this paper, we provide empirical evidence that foreigners pay for tariffs to a substantial extent. Motivated by a large theoretical literature, our hypothesis is that a country's overall exposure to tariffs drives movements in the average price of its entire export basket, a macro effect, whereas its direct exposure on one of its products moves only this product's price, a micro effect. Using data on the near universe of worldwide export prices and tariff changes between 1995 and 2023, we estimate a small and statistically insignificant micro effect, in line with recent empirical studies, but a large and significant macro effect. Quantitatively, the macro effect that we estimate implies annual tariff-induced transfers across countries over the sample period that range from -1.4% of GDP at the 10th percentile of the distribution to 3.1% of GDP at the 90th percentile. The same exercise using our estimates of micro effects implies transfers of -0.2% and 0.1%, respectively.",
-     "abstract_zh": "",
+     "abstract_zh": "在本文中，我们提供了经验证据，表明外国人在很大程度上承担了关税。受大量理论文献启发，我们的假说是，一国对关税的总体暴露会驱动其整个出口篮子平均价格的变动，这是一种宏观效应；而其对某一产品的直接暴露只会推动该产品的价格变动，这是一种微观效应。使用1995年至2023年间全球出口价格和关税变化的近乎全集数据，我们估计出一个较小且在统计上不显著的微观效应，这与近期实证研究一致，但估计出一个较大且显著的宏观效应。在数量上，我们估计的宏观效应意味着，在样本期内各国之间每年由关税引致的转移从分布第10百分位的GDP的-1.4%到第90百分位的GDP的3.1%不等。使用我们对微观效应的估计进行同样的测算，则意味着转移分别为GDP的-0.2%和0.1%。",
      "intro_zh": "本文利用1995—2023年全球出口价格与关税变化，区分关税的整体宏观暴露与产品微观暴露，估计外国承担关税的程度。发现微观效应小且不显著，宏观效应大且显著，并量化其引发的跨国收入转移。",
      "journal": "",
      "pdf_url": "https://www.dropbox.com/scl/fi/dqb6584di4lm1wj8ezmrd/DFPT_071026.pdf?rlkey=qqnmcpgks3w5gcpr9991nrfei&dl=0",
@@ -8827,7 +8878,7 @@
       "方法论"
      ],
      "abstract": "To what extent do import tariffs pass-through into retail prices? Existing estimates for the U.S.-China trade war present a puzzle: pass-through into U.S. border prices was complete, with seemingly no effect on retail prices. We combine barcode country-of-origin data with retail scanner data to address this apparent discrepancy in the context of consumer goods. Within barcodes, the tariff elasticity of retail prices is 0.14, yet the tariff elasticity of aggregated prices per unit weight, a measure similar to the unit values recovered from customs data, is 0.29. This discrepancy is attributable to product replacement bias: pass-through occurs predominantly via product turn-over towards barcodes with higher price per unit weight, half of which is achieved via smaller package size. We estimate a foreign cost share of U.S. retail imports consistent with high, if not complete, pass-through into retail prices. U.S. consumers therefore bore almost the entire incidence of tariffs levied on consumer goods.",
-     "abstract_zh": "",
+     "abstract_zh": "进口关税在多大程度上传导至零售价格？现有关于中美贸易战的估计呈现出一个谜题：传导至美国边境价格是完全的，但似乎对零售价格没有影响。我们将条码原产国数据与零售扫描数据相结合，在消费品背景下解释这一表面上的差异。在条码内，零售价格的关税弹性为0.14，但按单位重量计的总价格的关税弹性——这一指标类似于从海关数据中还原出的单位价值——为0.29。这一差异可归因于产品替换偏差：传导主要通过产品更替转向单位重量价格更高的条码来实现，其中一半是通过更小的包装规格实现的。我们估计了美国零售进口的外国成本份额，该份额与向零售价格的高传导相一致，甚至可能是完全传导。因此，美国消费者几乎承担了对消费品征收的关税的全部税负。",
      "intro_zh": "本文结合条码原产地与零售扫描数据，研究美中贸易战关税向零售价格的传导。同产品内弹性仅0.14，按单位重量加总为0.29，差异源于产品替换和缩小包装。校正后传导率高，美国消费者几乎承担全部关税。",
      "journal": "",
      "pdf_url": "https://conference.nber.org/conf_papers/f243685/f243685.pdf",
@@ -8897,7 +8948,7 @@
       "产业政策"
      ],
      "abstract": "A few large firms dominate many local labor markets. How does that granularity affect the geography of economic activity and optimal place-based policy? To answer this question, we propose a new economic geography model featuring granular firms subject to idiosyncratic shocks. We show that average wages increase with the size of the local labor market due to that granularity, and we derive the optimal place-based policy. Using Japanese administrative data on manufacturing, we estimate our model and provide evidence consistent with our mechanism. Our mechanism implies that the smallest commuting zones have an elasticity of wages to population of 0.005. In large markets like Tokyo, the elasticity is around 0.001. Enacting optimal place-based industrial and wage policy would increase the number of people in the smallest cities, but the effect on the number of firms depends on firm conduct.",
-     "abstract_zh": "",
+     "abstract_zh": "少数大企业主导着许多地方劳动力市场。这种颗粒度如何影响经济活动的空间分布和最优的地方导向政策？为回答这一问题，我们提出一个新的经济地理模型，其特征是受特质性冲击影响的颗粒型企业。我们表明，由于这种颗粒度，平均工资随地方劳动力市场规模扩大而上升，并推导出最优的地方导向政策。利用日本制造业行政数据，我们估计了模型，并提供了与我们的机制相一致的证据。我们的机制意味着，最小通勤区的工资对人口的弹性为0.005。在东京等大市场，该弹性约为0.001。实施最优的地方导向产业和工资政策会增加最小城市的人口数量，但对企数量的影响取决于企业行为。",
      "intro_zh": "论文构建含颗粒企业的经济地理模型，考察大企业主导本地劳动力市场如何影响工资、集聚与最优地方政策，并用日本制造业行政数据估计。工资对人口弹性在最小通勤区约0.005、东京约0.001；最优产业与工资政策会改变城市人口和企业数。",
      "journal": "",
      "pdf_url": "http://oconnordanny.github.io/files/KIKUCHI-OCONNOR-granular-spatial.pdf",
@@ -8926,7 +8977,7 @@
       "其他"
      ],
      "abstract": "Cities increasingly grow through redevelopment—demolishing old buildings to make way for new ones. This paper studies this process and how it is influenced by zoning, which regulates the size and uses of new buildings, using New York City as a case study. I build the first parcel-level panel of a city’s buildings, zoning, and floorspace prices. This data allows me to estimate a new dynamic spatial equilibrium model of floorspace supply and demand. I validate the model using quasi-experimental variation from recent zoning reforms and apply it to evaluate the effects of relaxing regulation on construction and affordability. While zoning strongly constrains city growth, the effects of relaxing regulation take decades to materialize and are limited in inexpensive or densely built areas. This is due to the large fixed costs of redevelopment, which rise sharply with the size of existing buildings. These costs generate considerable persistence in city structure and substantially lower the expected gains from relaxing zoning. Furthermore, due to migration, the affordability benefits of zoning reform largely accrue to households outside the rezoned neighborhoods.",
-     "abstract_zh": "",
+     "abstract_zh": "城市日益通过再开发来实现增长——拆除旧建筑为新建建筑腾出空间。本文研究这一过程以及它如何受到区划的影响，区划规制新建筑的规模和用途，并以纽约市为案例研究。我构建了首个包含城市建筑、区划和楼面空间价格的地块层面面板数据。该数据使我能够估计一个全新的楼面空间供给与需求的动态空间均衡模型。我利用近期区划改革带来的准实验变异来验证该模型，并将其应用于评估放松管制对建设和可负担性的影响。虽然区划强烈约束城市增长，但放松管制的效果需要数十年才能显现，并且在低价或建筑密集地区较为有限。这是由于再开发存在巨大的固定成本，而这些成本随现有建筑规模急剧上升。这些成本使城市结构具有相当大的持久性，并大幅降低放松区划的预期收益。此外，由于迁移，区划改革的可负担性收益在很大程度上归于被重新区划社区之外的家庭。",
      "intro_zh": "本文以纽约市为例，构建地块面板并估计动态空间均衡模型，评估放松区划对建设与住房可负担性的影响。发现区划约束城市增长，但再开发固定成本使放松管制需数十年见效，且可负担性收益多流向区划外家庭。",
      "journal": "",
      "pdf_url": "https://conference.nber.org/conf_papers/f237559/f237559.pdf",
@@ -8964,7 +9015,7 @@
       "贸易政策"
      ],
      "abstract": "We study countries' dependence on foreign-built and foreign-operated containerships, the vulnerability this dependence creates to shipping and geopolitical disruptions, and the potential for policy to mitigate these risks. We document that global shipbuilding is highly concentrated in China and South Korea, with South Korea specializing in larger vessels and China accounting for a growing share of newer capacity. In contrast, vessel operation is substantially more dispersed: most Chinese-built ships are operated by non-Chinese carriers, highlighting the deep integration of Chinese-built capacity into global shipping networks. Using ship-level registry data matched to the universe of U.S. import shipments, we show that the United States mirrors this global structure: U.S. trade relies overwhelmingly on vessels from East Asia while the operators serving U.S. routes are considerably more diversified. To quantify how such dependence shapes trade costs and vulnerability, we develop a quantitative shipping model with endogenous fleet investment, rental markets, route assembly by operators, and spatial general equilibrium trade. The framework provides a tractable mapping from fleet-specific shocks, whether arising from geopolitical disruptions or policy interventions, to shipping prices, routing patterns, bilateral trade costs, and aggregate welfare. By combining observed exposure to different fleets with shipping cost shares and trade patterns, the model allows us to evaluate how disruptions propagate and how policies that target particular fleets reshape trade outcomes in equilibrium. Applied to recent Section 301-style surcharges, the model implies welfare losses concentrated on highly exposed routes, with additional spillovers operating through fleet substitution and routing adjustment.",
-     "abstract_zh": "",
+     "abstract_zh": "我们研究各国对外国建造和外国运营的集装箱船的依赖、这种依赖对航运中断和地缘政治中断所形成的脆弱性，以及政策缓解这些风险的潜力。我们记录到，全球造船业高度集中于中国和韩国，其中韩国专业化于较大型船舶，而中国在较新运力中所占份额不断上升。相比之下，船舶运营则分散得多：大多数中国建造的船舶由非中国承运人运营，凸显出中国建造的运力已深度融入全球航运网络。使用与美国进口货运全集相匹配的船舶层面登记数据，我们表明美国反映了这一全球结构：美国贸易绝大多数依赖来自东亚的船舶，而服务美国航线的运营商则更加多元化。为了量化这种依赖如何塑造贸易成本和脆弱性，我们构建了一个定量航运模型，包含内生船队投资、租赁市场、由运营商进行的航线组装以及空间一般均衡贸易。该框架提供了一种可处理的映射，将特定船队冲击——无论其源于地缘政治中断还是政策干预——映射到航运价格、航线模式、双边贸易成本和总福利。通过将观测到的对不同船队的暴露度与航运成本份额和贸易模式相结合，该模型使我们能够评估中断如何传播，以及针对特定船队的政策如何在均衡中重塑贸易结果。将该模型应用于近期的301条款式附加费，模型意味着福利损失集中于高暴露航线，并存在通过船队替代和航线调整发挥作用的额外溢出效应。",
      "intro_zh": "研究各国对外国建造和运营集装箱船的依赖及其地缘政治脆弱性。结合船舶登记与美国进口数据及量化航运模型，发现301式附加费使福利损失集中于高暴露航线，并经船队替代与路由调整产生溢出。",
      "journal": "",
      "pdf_url": "https://conference.nber.org/conf_papers/f246040/f246040.pdf",
@@ -9007,7 +9058,7 @@
       "方法论"
      ],
      "abstract": "Since 2000, through its Belt and Road Initiative (BRI), China has invested $320.1 billion in transportation infrastructure across 143 countries. Are these investments economically justified for China? What are trade and welfare impacts for host and third countries? How should major economies respond? First, we examine the economic and geopolitical drivers of Chinese overseas infrastructure investments and estimate their impacts on trade. Second, we derive theoretical predictions for strategic trade infrastructure investments among competing countries. Surprisingly, we find that a foreign country has stronger incentives to invest in a transportation hub than private investors and the host country and that private investors, which in may be fully crowded out. The equilibrium trade infrastructure may be efficient for the world; when it is not, a host country would like to restrict foreign investment. Third, we embed these forces in a multi-country framework with a transport network over land, sea, and air featuring congestion in transport hubs. We back out political weights that rationalize the observed BRI investments and compute the optimal economic investments that China would have implemented absent those weights. Computationally, we tackle high-dimensionality and complex non-linearities using piecewise linear approximations that allow us to apply standard optimal-transport methods. Our preliminary results suggest positive net economic returns for China and gains for most of the world including the U.S., even though China’s political weights appear biased against the U.S.",
-     "abstract_zh": "",
+     "abstract_zh": "自2000年以来，中国通过其“一带一路”倡议（BRI），在143个国家投资了3201亿美元于交通基础设施。这些投资对中国而言在经济上是否合理？对东道国和第三国的贸易与福利影响是什么？主要经济体应如何应对？首先，我们考察中国海外基础设施投资的经济与地缘政治驱动因素，并估计其对贸易的影响。其次，我们推导竞争国家间战略性贸易基础设施投资的理论预测。令人惊讶的是，我们发现，与私人投资者和东道国相比，外国更有动机投资于交通枢纽，而且私人投资者可能被完全挤出。均衡贸易基础设施可能对世界是有效的；当其并非有效时，东道国将希望限制外国投资。第三，我们将这些力量嵌入一个多国框架，该框架具有涵盖陆路、海运和空运的交通网络，并以交通枢纽拥堵为特征。我们反推出能够使所观察到的“一带一路”投资合理化的政治权重，并计算在不存在这些权重时中国本应实施的最优经济投资。在计算上，我们使用分段线性近似来处理高维性和复杂非线性，这使我们能够应用标准最优传输方法。我们的初步结果表明，中国获得正的经济净回报，包括美国在内的世界大多数地区也从中获益，尽管中国的政治权重似乎对美国存在不利偏倚。",
      "intro_zh": "研究中国“一带一路”交通基础设施投资的经济合理性、贸易福利效应及他国应对。构建多国运输网络与战略投资模型，估计投资驱动并反推政治权重；发现中国净经济回报为正、多数国家含美国获益，但政治权重偏向反美。",
      "journal": "",
      "pdf_url": "https://conference.nber.org/conf_papers/f245761/f245761.pdf",
@@ -9068,7 +9119,7 @@
       "其他"
      ],
      "abstract": "Human capital is a critical determinant of productivity in modern economies, and we have long understood credit market frictions to be a critical barrier for its accumulation. In this paper, I study location decisions as a particular form of human capital investment, where individuals trade long-term benefits for high upfront costs, most notably in the form of housing. I show that when locations differ in the learning opportunities they offer and agents are heterogeneous in their learning ability, credit frictions not only weaken positive sorting of learning ability across space but, under empirically relevant conditions, they will induce negative sorting among individuals that are credit constrained. That is, marginally better learners will optimally choose to reside in locations offering worse learning opportunities. I document the key mechanisms of the theory relying on a novel source of administrative data from Spain. I then build a dynamic heterogeneous agent spatial model to quantify the losses associated with the effect of credit frictions on the spatial distribution of labor. Importantly, these losses arise from distortions in the composition of skill in each city: the dominant source of inefficiency is the spatial misallocation of individuals with high learning-ability. In the presence of negative sorting, standard place-based policies strictly aimed to expand the size of productive cities may have limited effects, making it important to design policy that can better target the composition of heterogeneous workers across space.",
-     "abstract_zh": "",
+     "abstract_zh": "人力资本是现代经济中生产率的关键决定因素，而我们长期以来一直认为信贷市场摩擦是其积累的关键障碍。在本文中，我将区位决策作为人力资本投资的一种特定形式进行研究，其中个体以高额前期成本换取长期收益，最显著的是以住房形式体现的成本。我表明，当不同区位所提供的学习机会存在差异，且主体的学习能力存在异质性时，信贷摩擦不仅会削弱学习能力在空间上的正向排序，而且在实证相关条件下，还会在受信贷约束的个体中引发负向排序。也就是说，学习能力略强的人将最优地选择居住在学习机会更差的区位。我利用来自西班牙的一种新颖行政数据来源，记录了该理论的关键机制。然后，我构建一个动态异质性主体空间模型，以量化信贷摩擦对劳动力空间分布的影响所导致的损失。重要的是，这些损失源于每个城市技能构成的扭曲：无效率的主要来源是高学习能力个体的空间错配。在存在负向排序的情况下，严格旨在扩大生产性城市规模的标准区位导向型政策可能效果有限，因此设计能够更好地针对异质性工人在空间上的构成的政策十分重要。",
      "intro_zh": "研究信贷摩擦如何通过住房成本与地区学习机会影响人力资本的空间配置。结合西班牙行政数据与动态异质主体空间模型，发现信贷约束会削弱甚至逆转高学习能力者的空间排序，造成以高学习能力者错配为主的效率损失。",
      "journal": "",
      "pdf_url": "https://www.elena-aguilar.net/files/papers/aguilar_jmp.pdf",
@@ -9097,16 +9148,20 @@
       }
      ],
      "schedule": "2026-07-15 2:45 pm",
-     "tags": [],
+     "tags": [
+      "企业异质性",
+      "供应链",
+      "全球价值链"
+     ],
      "abstract": "",
      "abstract_zh": "",
-     "intro_zh": "",
+     "intro_zh": "研究企业从供应商和买方生产率中学习及其总量与福利含义。用比利时企业间交易数据构建内生网络与议价的一般均衡模型。发现学习价值约占消费19%，忽略学习会低估贸易参与成本下降的福利收益。",
      "journal": "",
      "pdf_url": "https://xlkong96.github.io/website/working_papers/DK_Learning/jmp_kong_live.pdf",
      "slides_url": "",
      "wp_num": "",
      "pub_url": "",
-     "state": "bare"
+     "state": "pdf"
     }
    ]
   },
@@ -9141,16 +9196,20 @@
      ],
      "discussants": [],
      "schedule": "2026-04-10 9:30 am",
-     "tags": [],
+     "tags": [
+      "贸易政策",
+      "贸易弹性",
+      "方法论"
+     ],
      "abstract": "",
      "abstract_zh": "",
-     "intro_zh": "",
+     "intro_zh": "研究贸易成本下降在寡头竞争一般均衡模型中的福利效应，基于嵌套CES框架推导不同竞争模式的福利公式，发现贸易成本下降通常提高福利，但当部门内替代弹性较高且企业数较少时可能降低福利。",
      "journal": "",
      "pdf_url": "https://conference.nber.org/conf_papers/f233022/f233022.pdf",
      "slides_url": "",
      "wp_num": "",
      "pub_url": "",
-     "state": "bare"
+     "state": "pdf"
     },
     {
      "title": "Optimal Dynamic Spatial Policy",
@@ -9171,16 +9230,19 @@
      ],
      "discussants": [],
      "schedule": "2026-04-10 10:45 am",
-     "tags": [],
+     "tags": [
+      "劳动力市场",
+      "其他"
+     ],
      "abstract": "",
      "abstract_zh": "",
-     "intro_zh": "",
+     "intro_zh": "研究动态空间一般均衡中人口与消费的最优配置，在迁移偏好冲击为私人信息下刻画约束有效配置；校准美国经济发现，对低生产率地区应减少人口但提高平均消费，并通过动态激励兼顾效率与空间再分配。",
      "journal": "",
      "pdf_url": "https://masaofukui.github.io/DFM_ODSP_paper.pdf",
      "slides_url": "",
      "wp_num": "w34290",
      "pub_url": "",
-     "state": "bare"
+     "state": "pdf"
     },
     {
      "title": "Tariff Wars and Net Foreign Assets",
@@ -9207,7 +9269,7 @@
       "汇率"
      ],
      "abstract": "This paper examines whether and how international financial claims accumulated during a period of relatively free trade can be settled once a trade war erupts. We identify the conditions under which net claims can be honored even under balanced trade – or, in the extreme, autarky. The analysis also reveals a potential equilibrium multiplicity in which a trade war impoverishes one country while enriching its trading partner, with the identity of the winner and loser determined by a sunspot. The key adjustment mechanism is the tariff-induced shift in the terms of trade (and the corresponding real exchange rate), which revalues the relative gross asset positions to ensure that any residual trade is consistent with the inherited financial claims. Institutional subscribers to the NBER working paper series, and residents of developing countries may download this paper without additional charge at www.nber.org.",
-     "abstract_zh": "",
+     "abstract_zh": "本文考察在相对自由贸易时期积累的国际金融索取权一旦贸易战爆发是否以及如何能够清偿。我们识别了即使在平衡贸易——或在极端情况下，自给自足——下净索取权仍能得到履行的条件。分析还揭示了一种潜在的多重均衡：贸易战使一个国家贫困化，同时使其贸易伙伴富裕化，而赢家和输家的身份由太阳黑子决定。关键调整机制是关税引致的贸易条件（以及相应的实际汇率）变动，它重新估值相对总资产头寸，以确保任何残余贸易与继承的金融索取权相一致。NBER working paper series的机构订阅者以及发展中国家居民可在www.nber.org免费下载本文，无需额外付费。",
      "intro_zh": "研究自由贸易时期积累的国际金融债权在贸易战后能否及如何清偿。论文给出在平衡贸易甚至自给自足下净债权仍可履约的条件，并揭示由太阳黑子决定赢家的多重均衡；关键机制是关税通过贸易条件与真实汇率重估资产头寸。",
      "journal": "",
      "pdf_url": "https://doireannfitzgerald.wordpress.com/wp-content/uploads/2026/04/tariff_wars_net_foreign_assets.pdf",
@@ -9233,7 +9295,7 @@
       "全球价值链"
      ],
      "abstract": "Using administrative longitudinal firm- and plant-level data from Mexico that links manufacturing firms to their customs records and covers the period 2014--2023, I examine whether US tariffs targeting China have contributed to a manufacturing revival in the southern part of North America. Leveraging the abrupt shift in US trade policy as a natural experiment, and constructing firm-level trade policy exposure measures based on firms’ pre-shock trade portfolios at the product level, I show that higher US tariffs on China significantly increased manufacturing output and employment. Adjustment occurs along both intensive and extensive margins, through expansion of existing plants and the establishment of new manufacturing plants by incumbent firms. Foreign multinationals and their domestic affiliates operating under Mexico’s export platform, IMMEX, drive these gains in manufacturing output and jobs, with U.S.-headquartered firms making a particularly notable contribution. The employment response is concentrated among production workers and technicians, particularly in technology-intensive industries embedded in North American supply-chains. These findings provide firm-level evidence that heightened import protection in the United States has stimulated manufacturing activity elsewhere in North America--- namely, in Mexico.",
-     "abstract_zh": "",
+     "abstract_zh": "使用来自墨西哥的行政纵向企业层面和工厂层面数据，这些数据将制造业企业与其海关记录相连接，并覆盖2014—2023年期间，我考察美国针对中国的关税是否推动了北美南部地区的制造业复兴。利用美国贸易政策的突然转变作为自然实验，并基于企业在产品层面的冲击前贸易组合构建企业层面的贸易政策暴露度指标，我表明美国对中国加征更高关税显著提高了制造业产出和就业。调整沿集约边际和广延边际发生，途径包括现有工厂的扩张以及在位企业新建制造工厂。在墨西哥出口平台IMMEX下运营的外国跨国企业及其国内附属机构推动了制造业产出和就业岗位的这些增长，其中总部位于美国的企业贡献尤为突出。就业反应集中在生产工人和技术人员中，尤其是在嵌入北美供应链的技术密集型行业。这些发现提供了企业层面的证据，表明美国加强进口保护刺激了北美其他地区——即墨西哥——的制造业活动。",
      "intro_zh": "利用墨西哥2014—2023年企业—工厂数据匹配海关记录，以美国对华关税为自然实验，构建企业级政策暴露，发现对华高关税显著提升墨西哥制造业产出与就业，主要来自IMMEX外资及美资企业的工厂扩张与新厂进入。",
      "journal": "",
      "pdf_url": "https://conference.nber.org/conf_papers/f232738/f232738.pdf",
@@ -9253,16 +9315,19 @@
      ],
      "discussants": [],
      "schedule": "2026-04-10 3:15 pm",
-     "tags": [],
+     "tags": [
+      "劳动力市场",
+      "方法论"
+     ],
      "abstract": "",
      "abstract_zh": "",
-     "intro_zh": "",
+     "intro_zh": "利用法国行政数据研究城市规模工资不平等，发现高薪岗位向大城市集聚而低薪岗位遍布各地，工作流动推动大城市工资增长；构建并估计模型，量化住房调整失业救济的空间差异与福利效应。",
      "journal": "",
      "pdf_url": "https://conference.nber.org/conf_papers/f231557/f231557.pdf",
      "slides_url": "",
      "wp_num": "",
      "pub_url": "https://doi.org/10.2139/ssrn.5285666",
-     "state": "bare"
+     "state": "pdf"
     },
     {
      "title": "Trade and Industrial Policy in Supply Chains: Directed Technological Change in Rare Earths",
@@ -9293,7 +9358,7 @@
       "供应链"
      ],
      "abstract": "Trade and industrial policies restricting critical inputs can inadvertently promote foreign downstream industries via a directed technological response. We provide evidence for this mechanism by examining rare earth elements (REEs) – critical manufacturing inputs with highly concentrated production and low substitutability. We show that China’s REE export restrictions in 2010 induced a surge in global innovation increasing REE input-efficiency and exports in REE-intensive industries. A quantitative trade model with Heckscher-Ohlin-based comparative advantage, directed technological change and input-output linkages rationalizes how input-supply restrictions induce REE-enhancing innovation and expand REE-intensive industries abroad. This directed technological response substantially mitigates foreign welfare losses.",
-     "abstract_zh": "",
+     "abstract_zh": "限制关键投入品的贸易与产业政策可能通过定向技术反应无意中促进国外下游产业。我们通过考察稀土元素（REEs）——生产高度集中且可替代性低的关键制造业投入品——为这一机制提供证据。我们表明，中国2010年的稀土出口限制引发了全球创新激增，提高了稀土密集型产业的稀土投入效率和出口。一个具有基于赫克歇尔—俄林比较优势、定向技术变迁和投入产出关联的定量贸易模型，合理化了投入供给限制如何引致稀土增强型创新并在国外扩张稀土密集型产业。这种定向技术反应大幅缓解了外国福利损失。",
      "intro_zh": "本文研究关键投入出口限制如何经由有向技术变迁影响外国下游产业。基于2010年中国稀土出口限制，发现其促进全球稀土效率创新和稀土密集型出口，并用含H-O比较优势、有向技术变迁与投入产出联系的量化模型解释，该响应显著缓解外国福利损失。",
      "journal": "",
      "pdf_url": "https://conference.nber.org/conf_papers/f231196/f231196.pdf",
@@ -9360,7 +9425,7 @@
       "方法论"
      ],
      "abstract": "We show that, since the mid-1990s, the trade-promoting effects of tariff liberalization have been increasingly offset by deteriorating geopolitical relations, stalling trade globalization after 2007. To quantify this barrier, we compile a database of 833,485 geopolitical events across 193 countries from 1950 to 2024 using large language models and construct a bilateral geopolitical alignment index. Local projections estimate that a one-standard-deviation permanent improvement in alignment raises bilateral trade by 20 percent in the long run. From 1995 to 2021, tariff reductions added 9.5 percentage points to trade growth, while geopolitical deterioration subtracted 6.8 percentage points and produced more uneven welfare effects.",
-     "abstract_zh": "",
+     "abstract_zh": "我们表明，自20世纪90年代中期以来，关税自由化的贸易促进作用日益被地缘政治关系恶化所抵消，贸易全球化在2007年后陷入停滞。为量化这一障碍，我们使用大语言模型编制了1950年至2024年间覆盖193个国家的833,485个地缘政治事件数据库，并构建了双边地缘政治对齐指数。局部投影估计显示，对齐程度一个标准差的永久性改善会在长期使双边贸易增加20%。从1995年到2021年，关税削减为贸易增长增加了9.5个百分点，而地缘政治恶化则减去了6.8个百分点，并产生了更不均衡的福利效应。",
      "intro_zh": "本文用大语言模型构建193国双边地缘政治对齐指数，考察地缘政治恶化如何抵消关税自由化的促贸效应。局部投影显示，对齐改善一个标准差使长期双边贸易增20%；1995—2021年关税下降贡献9.5个百分点，地缘政治恶化拖累6.8个百分点。",
      "journal": "",
      "pdf_url": "https://conference.nber.org/conf_papers/f232516/f232516.pdf",
@@ -9394,7 +9459,7 @@
       "企业异质性"
      ],
      "abstract": "We study how uneven gains from globalization can endogenously generate protectionism as a political equilibrium. Using U.S. data, we document that regions more exposed to import competition display stronger opposition to globalization, especially among households with little financial wealth, and that firms in trade-exposed sectors sharply increase lobbying expenditures. To interpret these patterns, we develop and quantify a general equilibrium Ricardian model with heterogeneous households, input-output linkages, and endogenous trade policy shaped by voting and lobbying. Distributional shocks reallocate political support among voters, while lobbying propagates through production networks, generating strategic complementarities that sustain protectionism. Calibrated to U.S.-China sectoral data from 1991--2019, the model accounts for rising inequality, declining support for globalization, and key aggregate trends in consumption and trade. Institutional subscribers to the NBER working paper series, and residents of developing countries may download this paper without additional charge at www.nber.org.",
-     "abstract_zh": "",
+     "abstract_zh": "我们研究全球化收益不均如何能够内生地产生作为一种政治均衡的保护主义。使用美国数据，我们记录到，受进口竞争影响更大的地区表现出更强烈的反全球化倾向，尤其是在金融财富很少的家庭中；同时，受贸易影响行业的企业大幅增加游说支出。为解释这些模式，我们构建并量化了一个包含异质性家庭、投入产出联系以及由投票和游说塑造的内生贸易政策的一般均衡李嘉图模型。分配冲击在选民之间重新配置政治支持，而游说通过生产网络传播，产生维持保护主义的策略互补性。以1991—2019年美中部门数据校准，该模型解释了不平等加剧、对全球化的支持下降以及消费和贸易的关键总量趋势。NBER工作论文系列的机构订户和发展中国家居民可在www.nber.org免费下载本文。",
      "intro_zh": "研究全球化收益不均如何内生催生保护主义。用美国数据发现进口竞争暴露地区及低财富家庭更反全球化、贸易暴露企业加大游说；构建量化李嘉图模型，纳入异质家庭、投入产出与投票游说，解释不平等上升和全球化支持下降。",
      "journal": "",
      "pdf_url": "https://conference.nber.org/conf_papers/f231997/f231997.pdf",
@@ -9438,7 +9503,7 @@
       "其他"
      ],
      "abstract": "I develop a theory of the optimal currency choice for invoicing goods for international trade in the presence of imperfect financial hedging of currency risk. I demonstrate that the classic irrelevance result--that the cost of financial hedging does not impact the choice of currency invoicing--rests on the assumption that sellers set prices ex-ante and fulfill any order size ex-post. I show that when quantities are also sticky, in the sense that the order quantity is in part pre-specified, then financial hedging affects the optimal currency of invoicing choice. My theory incorporates the cost of FX financial hedging into the classic theory of optimal currency choice, which relies on real hedging. I show that the optimal currency choice takes into account the relative ability of buyers and sellers to bear exchange rate risk. This financial hedging channel generates feedback between macroprudential policies, such as capital controls, and the optimal currency of invoicing. I highlight a \"dollarization dilemma\": capital control policies that aim to reduce dollar borrowing are partially offset by an endogenous substitution into dollar-invoiced trade, which amplifies the local economy's exposure to the dollar's movements.",
-     "abstract_zh": "",
+     "abstract_zh": "我构建了一个理论，用于分析在货币风险的金融对冲不完美的情况下，国际贸易中商品计价的最优货币选择。我证明，经典无关性结果——即金融对冲成本不影响计价货币选择——依赖于卖方事前设定价格并在事后满足任意订单规模的假设。我表明，当数量也具有粘性，即订单数量部分被预先指定时，金融对冲会影响最优计价货币选择。我的理论将外汇金融对冲成本纳入依赖实际对冲的经典最优货币选择理论。我表明，最优货币选择考虑了买卖双方承担汇率风险的相对能力。这一金融对冲渠道在宏观审慎政策（如资本管制）与最优计价货币之间产生了反馈。我强调一个“美元化困境”：旨在减少美元借贷的资本管制政策，会被向美元计价贸易的内生性替代部分抵消，而这会放大本地经济对美元变动的风险敞口。",
      "intro_zh": "研究不完全金融对冲下国际贸易的最优计价货币选择，构建理论模型，发现当订单数量部分预先指定时，金融对冲成本会影响计价货币，并形成资本管制与美元计价的反馈及“美元化困境”。",
      "journal": "",
      "pdf_url": "https://conference.nber.org/conf_papers/f232252/f232252.pdf",
@@ -9479,7 +9544,7 @@
       "其他"
      ],
      "abstract": "We compute the cross-country transfers that result from unconventional monetary policy in the Eurozone. The ECB funds the expansion of its aggregate balance sheet mostly by issuing bank reserves and cash in core countries. The national central banks (NCBs) in periphery countries then borrow from the core NCBs at below-market rates to fund the asset purchases and bank lending. In addition, NCBs in the periphery lend more to their own banks at belowmarket rates. To compute the cross-country transfers, we compare the resulting cross-country distribution of NCB income to a counterfactual scenario without the ECB and without nonmarketable intra-Eurozone debt. We document significant and persistent transfers from the core to the periphery.",
-     "abstract_zh": "",
+     "abstract_zh": "我们计算欧元区非常规货币政策所产生的跨国转移。欧洲央行主要通过向核心国家发行银行准备金和现金，为其总资产负债表的扩张提供资金。外围国家的各国中央银行（NCBs）随后以低于市场的利率向核心国家央行借款，为资产购买和银行放贷提供资金。此外，外围国家的各国央行以低于市场的利率向本国银行发放更多贷款。为计算跨国转移，我们将由此形成的各国央行收入的跨国分布与一个没有欧洲央行且没有欧元区内部不可交易债务的反事实情景进行比较。我们记录到从核心国家到外围国家的显著且持续的转移。",
      "intro_zh": "本文研究欧元区非常规货币政策引发的跨国转移。作者比较各国央行收入分布与无欧洲央行、无非市场化欧元区债务的反事实情景，发现从核心国向边缘国的显著且持久转移。",
      "journal": "",
      "pdf_url": "https://conference.nber.org/conf_papers/f232234/f232234.pdf",
@@ -9516,16 +9581,18 @@
       }
      ],
      "schedule": "2026-03-27 10:55 am",
-     "tags": [],
+     "tags": [
+      "其他"
+     ],
      "abstract": "",
      "abstract_zh": "",
-     "intro_zh": "",
+     "intro_zh": "本文基于1910—2020年双边官方贷款数据，研究地缘政治风险如何影响金融碎片化与国际风险分担，并在有限承诺模型中引入地缘政治外部性。核心发现是地缘政治紧张会促使官方贷款流向盟友并削弱风险分担。",
      "journal": "",
      "pdf_url": "https://conference.nber.org/conf_papers/f232465/f232465.pdf",
      "slides_url": "https://conference.nber.org/conf_papers/f232465/f232465.slides.pdf",
      "wp_num": "",
      "pub_url": "",
-     "state": "bare"
+     "state": "pdf"
     },
     {
      "title": "Misallocation due to Incomplete Markets",
@@ -9592,7 +9659,7 @@
       "其他"
      ],
      "abstract": "We provide a framework that connects industrial policies to global imbalances and technological hegemony, and describe some empirical facts consistent with our model. We study the international spillovers triggered by industrial policies promoting high-tech sectors. Since high-tech goods and services are typically traded internationally, these policies boost the supply of tradable goods. Moreover, industrial policies lead to trade surpluses if the government pursues an \\textit{unbalanced policy mix}, such that domestic demand does not rise as much as supply. These surpluses are absorbed by the rest of the world, which in response runs trade deficits. Absent policy interventions, trade deficits reduce the competitiveness of the domestic tradable sector, stifling innovation and productivity growth. Innovation policies can help the rest of the world to mitigate these negative spillovers.",
-     "abstract_zh": "",
+     "abstract_zh": "我们提供了一个将产业政策与全球失衡和技术霸权联系起来的框架，并描述了一些与我们的模型相一致的经验事实。我们研究促进高科技部门的产业政策所引发的国际溢出效应。由于高科技产品和服务通常在国际上交易，这些政策会提高可贸易品的供给。此外，如果政府推行不平衡的政策组合，使得国内需求的上升幅度不如供给那么大，产业政策就会导致贸易顺差。这些顺差被世界其他地区吸收，而世界其他地区则相应出现贸易逆差。在没有政策干预的情况下，贸易逆差会降低国内可贸易部门的竞争力，抑制创新和生产率增长。创新政策可以帮助世界其他地区缓解这些负面溢出效应。",
      "intro_zh": "本文构建框架连接产业政策、全球失衡与技术霸权，并给出与模型一致的实证事实。研究高科技产业政策的国际溢出：不平衡政策组合造成顺差与他国逆差，削弱可贸易部门竞争力并抑制创新；创新政策可缓解负面溢出。",
      "journal": "",
      "pdf_url": "https://conference.nber.org/conf_papers/f234057/f234057.pdf",
@@ -9634,7 +9701,7 @@
       "贸易政策"
      ],
      "abstract": "We examine the role of geopolitical competition in officially supported export credits, one of the most widely used tools of industrial policy. We construct several new datasets and provide the following evidence that geopolitical factors in export credit markets play an important role for understanding global financial and trade flows: (i) export credits account for over 60% of developing countries' external debt and often over half of their imports; (ii) geopolitical alignment is a strong predictor of export credit allocation, both unconditionally and in response to country risk shocks; (iii) quasi-random rotation into the UN Security Council, which temporarily increases countries' geopolitical importance, leads to an inflow of export credits from permanent members; (iv) in recent years, China has provided more export credits than all OECD countries combined; and (v) the importance of geopolitical factors in export credits among OECD economies has increased over time and is now comparable to that of geopolitical competitors, particularly China. Taken together, our findings highlight how countries actively pursue their industrial policy in line with geopolitical goals.",
-     "abstract_zh": "",
+     "abstract_zh": "我们考察地缘政治竞争在官方支持的出口信贷中的作用，出口信贷是产业政策最广泛使用的工具之一。我们构建了若干新数据集，并提供以下证据表明出口信贷市场中的地缘政治因素对于理解全球金融与贸易流动具有重要作用：（i）出口信贷占发展中国家外债的60%以上，且常常占其进口的一半以上；（ii）地缘政治对齐是出口信贷配置的强预测因素，无论是在无条件情况下，还是在应对国家风险冲击时；（iii）准随机轮值进入联合国安理会会暂时提升国家的地缘政治重要性，并导致来自常任理事国的出口信贷流入；（iv）近年来，中国提供的出口信贷超过所有OECD国家之和；（v）在OECD经济体中，出口信贷中地缘政治因素的重要性随时间上升，如今已与地缘政治竞争对手（尤其是中国）的重要性相当。综上，我们的发现凸显了各国如何积极按照地缘政治目标推行其产业政策。",
      "intro_zh": "本文研究地缘政治竞争如何影响官方出口信贷。作者构建新数据集，发现出口信贷占发展中国家外债超60%，地缘政治对齐显著预测信贷配置；安理会轮值带来常任理事国信贷流入，中国规模已超OECD合计。",
      "journal": "",
      "pdf_url": "https://conference.nber.org/conf_papers/f232422/f232422.pdf",
@@ -9676,7 +9743,7 @@
       "贸易政策"
      ],
      "abstract": "We evaluate the aggregate effects of a change in tariffs on the US and world economies when tariff revenue is used to enact fiscal reform.Our model combines a standard international model of fiscal policy with taxes and a dynamic model of trade participation and tariffs that allows for uncertainty and transitions.We consider effects of permanent and temporary tariffs-with and without retaliation-when tariff revenue is used to reduce taxes on capital or labor or to subsidize investment.Compared to a lump sum redistribution, using tariff revenue for these reforms always boosts economic activity.Key to our analysis is the effect of trade dynamics on import substitution, such that tariff revenue after an increase in tariffs is higher in the short run than in the long run.When increasing the tariff by 20 percentage points, the revenue raised is largest when tariffs are temporary, unilateral, and used to subsidize investment, increasing by about 2 percent of GDP.This case also yields a large temporary increase in the trade balance.We find the welfaremaximizing unilateral tariff is close to 18 percent when tariff revenue is used to subsidize investment compared to 0 percent under a lump sum redistribution.We also find cutting capital taxes does not generate as much growth as introducing an investment subsidy since tariffs raise the price of investment substantially.",
-     "abstract_zh": "",
+     "abstract_zh": "当关税收入被用于实施财政改革时，我们评估关税变化对美国及世界经济的总体效应。我们的模型将一个含税收的标准国际财政政策模型与一个允许不确定性和转移动态的贸易参与及关税动态模型相结合。我们考察永久性和临时性关税——包括有报复和无报复——的影响，此时关税收入用于降低资本税或劳动税，或用于补贴投资。与一次性总额再分配相比，将关税收入用于这些改革总是会提振经济活动。我们分析的关键在于贸易动态对进口替代的影响，即提高关税后的关税收入在短期高于在长期。当关税提高20个百分点时，筹集的收入在关税为临时性、单边且用于补贴投资时最大，增加约GDP的2%。该情形还导致贸易余额大幅暂时增加。我们发现，当关税收入用于补贴投资时，福利最大化的单边关税接近18%，相比之下，在一次性总……下为0%……再分配。我们还发现，削减资本税所带来的增长不如引入投资补贴，因为关税大幅提高了投资价格。",
      "intro_zh": "论文研究将关税收入用于减税或投资补贴对美世界经济的影响。作者结合财政政策与动态贸易参与模型，考察永久/临时关税及报复情形，发现临时单边关税用于投资补贴增收最大，并能提升经济活动和福利。",
      "journal": "",
      "pdf_url": "https://drive.google.com/file/d/1TxWEXleQ9hWGgHPnVFeRmfFKg98ZFQRD/view",
@@ -9728,7 +9795,7 @@
       "方法论"
      ],
      "abstract": "Geoeconomic pressure-the use of existing economic relationships by governments to achieve geopolitical or economic goals-is a prominent feature of global power dynamics.This paper introduces a methodology using large language models (LLMs) to systematically identify the application of and response to geoeconomic pressure from large textual corpora.We classify which governments apply pressure to which foreign targets, using which instruments, firms, and products.We demonstrate that firms affected by tariffs respond primarily with price changes whereas firms affected by export controls respond disproportionately by investing in research and development.We document significant heterogeneity in how firms respond to pressure based on whether their home government is applying the pressure, whether their home country is the recipient of the pressure, or whether they are based in an affected third party country.Finally, we quantify the degree of measurement uncertainty generated by the LLM-based analysis by comparing the classifications across multiple open-weight models as well as considering a wide range of variations of our prompts.",
-     "abstract_zh": "",
+     "abstract_zh": "地缘经济压力——政府利用现有经济关系实现地缘政治或经济目标——是全球权力动态的一个突出特征。本文提出一种使用大语言模型（LLMs）的方法，以从大型文本语料库中系统识别地缘经济压力的施加与回应。我们归类哪些政府对哪些外国目标施加压力，使用哪些工具、企业和产品。我们证明，受关税影响的企业主要通过价格变化作出回应，而受出口管制影响的企业则不成比例地通过投资于研究与开发作出回应。我们记录了企业应对压力的显著异质性，依据是其母国政府是否为压力施加方、其母国是否为压力接受方，还是其位于受影响的第三方国家。最后，我们通过比较多个开放权重模型的分类结果，以及考虑我们的提示词的广泛变化，量化基于LLM的分析所产生的测量不确定性程度。",
      "intro_zh": "研究政府利用既有经济关系施压的地缘经济压力，用大语言模型从文本中识别施压与应对。发现关税主要引发价格调整，出口管制更多促研发，并量化测量不确定性。",
      "journal": "",
      "pdf_url": "https://globalcapitalallocation.s3.us-east-2.amazonaws.com/CCMS_AI_Draft.pdf",
@@ -9760,16 +9827,20 @@
      ],
      "discussants": [],
      "schedule": "2025-11-21 10:45 am",
-     "tags": [],
+     "tags": [
+      "关税",
+      "贸易政策",
+      "贸易弹性"
+     ],
      "abstract": "",
      "abstract_zh": "",
-     "intro_zh": "",
+     "intro_zh": "本文用美国企业交易数据研究2018—2019对华关税下跨国生产对贸易流和最优关税的影响，发现关联方与独立贸易调整存在差异，价格效应随加总层次变化，并在模型中分析贸易弹性与最优关税。",
      "journal": "",
      "pdf_url": "https://conference.nber.org/conf_papers/f229959/f229959.pdf",
      "slides_url": "https://conference.nber.org/conf_papers/f229959/f229959.slides.pdf",
      "wp_num": "",
      "pub_url": "",
-     "state": "bare"
+     "state": "pdf"
     },
     {
      "title": "Trade Within Multinational Boundaries",
@@ -9800,7 +9871,7 @@
       "企业异质性"
      ],
      "abstract": "Traditional theories of firm boundaries predict trade between vertically related units of the same firm. Using novel data that combine a comprehensive mapping of U.S. multinationals’ production networks with their customs filings, we uncover a strong positive relationship between input-output linkages and trade between parents and their affiliates. We also find that intrafirm trade is prevalent, particularly between geographically proximate units: three-quarters of affiliates in North America trade with their U.S. parent. These results overturn prior findings based on survey data on intrafirm trade. Administrative intrafirm records enable correcting measurement errors in survey data, reconciling traditional theories with empirical evidence. Institutional subscribers to the NBER working paper series, and residents of developing countries may download this paper without additional charge at www.nber.org.",
-     "abstract_zh": "",
+     "abstract_zh": "企业边界的传统理论预测同一企业纵向关联单位之间的贸易。使用将美国跨国公司生产网络的全面映射与其海关申报相结合的新数据，我们发现投入产出联系与母公司及其关联公司之间的贸易之间存在强正相关关系。我们还发现企业内部贸易很普遍，尤其是在地理上邻近的单位之间：北美四分之三的关联公司与它们的美国母公司进行贸易。这些结果推翻了此前基于企业内部贸易调查数据的发现。行政性的企业内部记录能够纠正调查数据中的测量误差，使传统理论与经验证据相协调。NBER工作论文系列的机构订阅者以及发展中国家居民可在www.nber.org免费下载本文。",
      "intro_zh": "本文结合美国跨国公司生产网络与海关申报数据，研究企业边界内贸易。发现投入产出联系显著促进母子公司贸易，内部贸易普遍且集中于地理邻近单位；行政记录可纠正调查误差，调和传统理论。",
      "journal": "CESifo",
      "pdf_url": "https://conconi.ulb.be/ACKK.pdf",
@@ -9838,7 +9909,7 @@
       "贸易政策"
      ],
      "abstract": "Evasion is a key obstacle to raising customs revenue.We study how improved administrative capacity enables governments to combat evasion by redesigning tariff codes.Using newly compiled historical records from the Early American Republic, we show that as Customs administration matured, the tariff code became more complex and more reliant on specific (quantity-based) tariffs in preference to ad valorem (value-based) ones.We develop an equilibrium model of tariff administration with costly verification of declared values that explains these twin trends: Administrative capacity allows Customs officials to disaggregate goods and assess tailored specific tariffs, obviating misvaluation while minimizing price distortions.The model successfully predicts several additional empirical patterns: Specific tariffs tend to be assessed on goods that are homogeneous, cheap, or lightly taxed.",
-     "abstract_zh": "",
+     "abstract_zh": "逃漏税是提高关税收入的一个关键障碍。我们研究改进行政能力如何使政府能够通过重新设计关税税则来打击逃漏税。利用新汇编的美国早期共和国历史记录，我们表明，随着海关管理日趋成熟，关税税则变得更加复杂，并更加依赖从量（按数量计征）关税而非从价（按价值计征）关税。我们构建了一个关税行政均衡模型，其中对申报价值进行核验是有成本的，该模型解释了上述两个趋势：行政能力使海关官员能够对商品进行细分并征收量身定制的从量关税，从而消除错误估值，同时使价格扭曲最小化。该模型成功预测了若干额外的经验模式：从量关税往往对同质、廉价或轻税商品征收。",
      "intro_zh": "研究早期美国海关行政能力如何通过重构关税编码打击逃税；发现行政成熟使税则更复杂并更依赖从量税，模型解释该趋势并预测从量税适用于同质、低价或轻税商品。",
      "journal": "",
      "pdf_url": "https://conference.nber.org/conf_papers/f228387/f228387.pdf",
@@ -9871,7 +9942,7 @@
       "其他"
      ],
      "abstract": "We study how the spatial distribution of income and commuting patterns within cities vary across the development spectrum, drawing on new granular data from 50,000 neighborhoods in 121 cities across developed and developing countries. We document that in developing countries, poorer urban households are significantly more likely to live far from city centers, in hilly terrain, and near rivers. These patterns are absent or reversed in developed cities. Commuting shares decline more sharply with distance in less developed countries, indicating higher commuting costs that exacerbate spatial inequality in job access. Job-access measures are considerably worse for the urban poor than for the urban rich in developing countries, while the opposite is true in developed countries. We interpret these findings in a quantitative urban model and show that a parsimonious set of factors—nonhomothetic preferences over amenities, commuting costs, and the spatial concentration of jobs—helps explain most of the cross-country patterns we document. Institutional subscribers to the NBER working paper series, and residents of developing countries may download this paper without additional charge at www.nber.org.",
-     "abstract_zh": "",
+     "abstract_zh": "我们研究城市内部收入的空间分布和通勤模式如何随发展水平而变化，所用数据来自发达国家和发展中国家121个城市中50,000个社区的新细粒度数据。我们记录到，在发展中国家，较贫困的城市家庭显著更可能居住在远离市中心、山地地形以及河流附近。这些模式在发达城市中不存在或出现相反情况。在欠发达国家，通勤份额随距离下降得更急剧，表明更高的通勤成本加剧了就业可达性的空间不平等。在发展中国家，城市穷人的就业可达性指标明显差于城市富人，而在发达国家则相反。我们在一个量化城市模型中解释这些发现，并表明一组简约的因素——对便利设施的非位似偏好、通勤成本以及就业的空间集中——有助于解释我们记录的大多数跨国模式。NBER工作论文系列的机构订阅者以及发展中国家居民可在www.nber.org免费下载本文。",
      "intro_zh": "利用121个城市5万个社区的新细粒度数据，比较发达国家与发展中国家城市内收入空间分布和通勤模式。发现发展中国家穷人更远离市中心且通勤成本更高，就业可达性更差，并用定量城市模型解释这些跨国规律。",
      "journal": "",
      "pdf_url": "https://conference.nber.org/conf_papers/f229003/f229003.pdf",
@@ -9912,7 +9983,7 @@
       "产业政策"
      ],
      "abstract": "This paper examines the market consequences of weak fiscal capacity through the lens of China's salt administration system---a state-enforced monopoly that endured for over a thousand years. To facilitate tax collection, the state established rigid production and distribution districts that prohibited cross-district trade. We show that this administrative simplification, while easing taxation, resulted in persistent spatial misallocation and welfare losses. Drawing on novel county-level data on salt production from 960 to 1920 and exploiting temporal variation in salt district boundaries across five dynasties, we find that administrative market access shaped the locations of salt production. We then estimate a structural model of a state monopoly choosing production sites under administrative constraints. Counterfactual simulations indicate that removing district restrictions would lower salt prices, boost consumption, and raise fiscal revenue. Production would shift from inland to coastal areas, improving overall efficiency. More broadly, our analysis provides a framework for quantifying the costs of state simplification, a common response to limited fiscal capacity in both historical and contemporary developing economies.",
-     "abstract_zh": "",
+     "abstract_zh": "本文以中国盐政制度——一种国家强制实施并延续一千多年的垄断——为视角，考察财政能力薄弱的市场后果。为便利税收征缴，国家设立了严格固定的生产和运销区域，禁止跨区贸易。我们表明，这种行政简化虽然便利了征税，却导致了持续的空间错配和福利损失。基于960年至1920年关于食盐生产的新县级数据，并利用五个朝代盐区边界的时间变化，我们发现行政性市场准入塑造了食盐生产区位。随后，我们估计了一个在行政约束下选择生产地点的国家垄断结构模型。反事实模拟表明，取消盐区限制将降低盐价、促进消费并增加财政收入。生产将从内陆地区转向沿海地区，从而提高整体效率。更广泛地说，我们的分析提供了一个框架，用于量化国家简化的成本，而国家简化是历史上和当代发展中经济体对有限财政能力的常见应对。",
      "intro_zh": "论文利用960—1920年县级盐业数据及五个王朝盐区边界变动，研究弱财政能力下行政垄断造成的市场扭曲。结构模型与反事实表明，取消盐区限制会降低盐价、增加消费和财政收入，并使生产由内陆转向沿海、提升效率。",
      "journal": "",
      "pdf_url": "https://conference.nber.org/conf_papers/f229940/f229940.pdf",
@@ -9936,16 +10007,19 @@
      ],
      "discussants": [],
      "schedule": "2025-11-22 9:00 am",
-     "tags": [],
+     "tags": [
+      "方法论",
+      "其他"
+     ],
      "abstract": "",
      "abstract_zh": "",
-     "intro_zh": "",
+     "intro_zh": "研究异质性家庭下的总效率，将成本收益分析与总TFP拓展到一般均衡，并考虑再分配限制。提出在保持每个主体不低于现状时资源可节省比例，将其转化为效用最大化问题，用支出和价格弹性等可观测量刻画效率变化。",
      "journal": "",
      "pdf_url": "https://conference.nber.org/conf_papers/f229875/f229875.pdf",
      "slides_url": "",
      "wp_num": "w34176",
      "pub_url": "https://doi.org/10.2139/ssrn.5404075",
-     "state": "bare"
+     "state": "pdf"
     },
     {
      "title": "Global Networks, Monetary Policy and Trade",
@@ -9972,7 +10046,7 @@
       "汇率"
      ],
      "abstract": "We develop a novel framework to study the interaction between monetary policy and trade.Our New Keynesian open economy model incorporates international production networks, sectoral heterogeneity in price rigidities, and trade distortions.We decompose the general equilibrium response to trade shocks into distinct channels that account for demand shifts, policy effects, exchange rate adjustments, expectations, price stickiness, and input-output linkages.Tariffs act simultaneously as demand and supply shocks, leading to endogenous fragmentation through changes in trade and production network linkages.We show that the net impact of tariffs on domestic inflation, output, employment, and the dollar depends on the endogenous monetary policy response in both the tariff-imposing and tariff-exposed countries, within a global general equilibrium framework.Our quantitative exercise replicates the observed effects of the 2018 tariffs on the U.S. economy and predicts a 1.6 pp decline in U.S. output, a 0.8 pp rise in inflation, and a 4.8% appreciation of the dollar in response to a retaliatory trade war linked to tariffs announced on \"Liberation Day.\" Tariff threats, even in the absence of actual implementation, are self-defeatingleading to a 4.1% appreciation of the dollar, 0.6% deflation, and a 0.7 pp decline in output, as agents re-optimize in anticipation of future distortions.Dollar appreciates less or even can depreciate under retaliation, tariff threats, and increased global uncertainty.",
-     "abstract_zh": "",
+     "abstract_zh": "我们构建了一个新颖框架来研究货币政策与贸易之间的相互作用。我们的新凯恩斯主义开放经济模型纳入了国际生产网络、价格刚性的部门异质性以及贸易扭曲。我们将对贸易冲击的一般均衡响应分解为不同渠道，这些渠道分别涵盖需求变动、政策效应、汇率调整、预期、价格黏性和投入产出联系。关税同时充当需求冲击和供给冲击，并通过贸易与生产网络联系的变化导致内生碎片化。我们表明，在一个全球一般均衡框架内，关税对国内通胀、产出、就业和美元的净影响取决于征收关税国和受关税影响国的内生货币政策反应。我们的定量分析复现了2018年关税对美国经济观察到的效应，并预测美国出现1.6个百分点的下降。产出、通胀上升0.8个百分点，以及美元升值4.8%，作为对与“解放日”宣布的关税相关的报复性贸易战的反应。关税威胁，即使没有实际实施，也是自败的，导致美元升值4.1%、0.6%的通缩和产出下降0.7个百分点，因为经济主体在预期未来扭曲的情况下重新优化。在报复、关税威胁和全球不确定性上升的情况下，美元升值幅度较小，甚至可能贬值。",
      "intro_zh": "本文构建含国际生产网络、部门价格刚性与贸易扭曲的新凯恩斯开放经济模型，研究货币政策与贸易互动并分解贸易冲击渠道。量化显示关税兼具需求与供给冲击，其产出、通胀、就业和美元效应取决于各国货币政策反应。",
      "journal": "",
      "pdf_url": "https://conference.nber.org/conf_papers/f229897/f229897.pdf",
@@ -10001,248 +10075,13 @@
       "方法论"
      ],
      "abstract": "We use a dynamic spatial general equilibrium model of international investment and production to investigate the real implications of the last five decades of financial globalization. We introduce a wedge accounting framework to estimate country- and time-varying measures of outward and inward Revealed Financial Openness (RFO). These wedges are meant to capture all impediments to cross-border investment, rather than explicit policy measures alone. We show how to identify these wedges for a large panel of countries using limited publicly available data on national accounts and external asset and liability positions since the 1970s. Our analysis reveals striking cross-country differences in the pace and direction of financial opening: wealthier countries have become relatively more open to foreign capital inflows, while poorer countries have become relatively more open to capital outflows, a phenomenon we call “Unbalanced Financial Globalization.” Counterfactual simulations show that this unbalanced financial globalization has worsened capital allocation, resulting in a 5.9% decrease in world GDP, a 3.4% rise in cross-country income inequality, lower wages in poorer countries, and a decline in rates of return on capital in richer countries. In contrast, if financial integration had been uniform, the improved allocation of capital would have reduced income inequality, and increased global GDP. These findings underscore the crucial role of spatial heterogeneity in shaping the real impact of international capital markets integration.",
-     "abstract_zh": "",
+     "abstract_zh": "我们使用一个国际投资与生产的动态空间一般均衡模型，考察过去五十年金融全球化的实际影响。我们引入一个楔子核算框架，以估计随国家和时间变化的对外和对内显示性金融开放度（Revealed Financial Openness，RFO）指标。这些楔子旨在捕捉跨境投资的所有障碍，而不仅仅是显性政策措施。我们展示了如何在自20世纪70年代以来关于国民账户以及对外资产和负债头寸的有限公开可得数据基础上，为一大组国家识别这些楔子。我们的分析揭示了各国在金融开放的速度和方向上存在显著差异：较富裕的国家对外国资本流入已变得相对更加开放，而较贫穷的国家对资本流出已变得相对更加开放，我们将这一现象称为“不平衡的金融全球化”。反事实模拟表明，这种不平衡的金融全球化恶化了资本配置，导致世界GDP下降5.9%、跨国收入不平等上升3.4%、较贫穷国家的工资下降，以及较富裕国家的资本回报率下降。相反，如果金融一体化是均等的，资本配置的改善本会降低收入不平等，并提高全球GDP。这些发现凸显了空间异质性在塑造国际资本市场一体化实际影响中的关键作用。",
      "intro_zh": "本文构建国际投资与生产的动态空间一般均衡模型，估算各国金融开放楔子，发现富国更开放资本流入、穷国更开放资本流出，这种不平衡金融全球化恶化资本配置并使全球GDP下降5.9%。",
      "journal": "CESifo",
      "pdf_url": "https://conference.nber.org/conf_papers/f228184/f228184.pdf",
      "slides_url": "",
      "wp_num": "w34121",
      "pub_url": "https://doi.org/10.65864/0rgfwmrlao",
-     "state": "oa"
-    }
-   ]
-  },
-  {
-   "conf_id": "n1026591",
-   "title": "International Finance and Macroeconomics Program Meeting, Fall 2025",
-   "type_name": "Program Meeting",
-   "start_date": "2025-10-24",
-   "end_date": "2025-10-24",
-   "display_date": "October 24, 2025",
-   "location": "Royal Sonesta Hotel, Riverfront Room, 40 Edwin H. Land Blvd., Cambridge, MA",
-   "organizers": "",
-   "url": "https://www.nber.org/conferences/international-finance-and-macroeconomics-program-meeting-fall-2025",
-   "agenda": "done",
-   "papers": [
-    {
-     "title": "Transitory and Permanent Import Tariff Shocks in the United States: An Empirical Investigation",
-     "title_zh": "",
-     "authors": [
-      {
-       "name": "Stephanie Schmitt-Grohé",
-       "aff": "Columbia University and NBER"
-      },
-      {
-       "name": "Martín Uribe",
-       "aff": "Columbia University and NBER"
-      }
-     ],
-     "discussants": [
-      {
-       "name": "Louphou Coulibaly",
-       "aff": "Federal Reserve Bank of New York and NBER"
-      }
-     ],
-     "schedule": "2025-10-24 8:30 am",
-     "tags": [
-      "关税",
-      "贸易政策",
-      "贸易史"
-     ],
-     "abstract": "We estimate transitory and permanent import tariff shocks in the United States over the postwar period. We find that transitory tariff increases are neither inflationary nor contractionary, and are not associated with monetary tightening. In contrast, permanent tariff increases trigger a temporary rise in inflation (a one-off increase in the price level) and a brief tightening of monetary policy. Consistent with the intertemporal approach to the balance of payments, transitory tariff increases reduce imports and improve the trade balance, whereas permanent increases leave both largely unchanged. Transitory shocks account for approximately 80 percent of tariff movements. Overall, tariff shocks are estimated to be a minor driver of U.S. business cycle fluctuations on average and even during episodes of substantial tariff hikes, such as Nixon 1971, Ford 1975, and Trump 2018. Institutional subscribers to the NBER working paper series, and residents of developing countries may download this paper without additional charge at www.nber.org.",
-     "abstract_zh": "",
-     "intro_zh": "本文估计美国战后暂时性与永久性进口关税冲击，考察其对通胀、货币政策与贸易余额的影响。发现暂时性冲击不引发通胀或紧缩，永久性冲击导致一次性物价上升和短暂货币收紧；关税冲击总体对经济周期影响有限。",
-     "journal": "",
-     "pdf_url": "https://www.columbia.edu/~mu2166/import_tariff/index.htm",
-     "slides_url": "https://conference.nber.org/conf_papers/f228225/f228225.slides.pdf",
-     "wp_num": "w33997",
-     "pub_url": "https://doi.org/10.3386/w33997",
-     "state": "oa"
-    },
-    {
-     "title": "A Theory of International Official Lending",
-     "title_zh": "",
-     "authors": [
-      {
-       "name": "Qing Liu",
-       "aff": "Tsinghua University"
-      },
-      {
-       "name": "Zanhui Liu",
-       "aff": "Tsinghua University"
-      },
-      {
-       "name": "Vivian Yue",
-       "aff": "Emory University and NBER"
-      }
-     ],
-     "discussants": [
-      {
-       "name": "César Sosa-Padilla",
-       "aff": "University of Notre Dame and NBER"
-      }
-     ],
-     "schedule": "2025-10-24 9:45 am",
-     "tags": [
-      "其他"
-     ],
-     "abstract": "Official lending is large, senior, and countercyclical, continuing after sovereigns fall into arrears on private debt.We ask why sovereign finance exhibits this division of labor across creditors.In a production economy where a risk-averse sovereign privately allocates imported inputs, commitment is limited on both sides, and monitoring generates a noisy signal, the constrainedoptimal allocation is decentralized by defaultable private debt, senior non-defaultable multilateral debt, and concessional bilateral debt whose relief is tied to the signal.Production remains distorted, but the sovereign is never excluded: official lending is monitored liquidity provision.A calibration reproduces procyclical private and countercyclical official debt.",
-     "abstract_zh": "",
-     "intro_zh": "本文研究官方贷款为何规模大、优先级高、逆周期且在私人债务违约后延续。作者构建含有限承诺与噪声监督的主权生产模型，将约束最优配置分散化为私人、多边和双边官方债务。校准复现私人债务顺周期、官方债务逆周期。",
-     "journal": "",
-     "pdf_url": "https://conference.nber.org/conf_papers/f229341/f229341.pdf",
-     "slides_url": "",
-     "wp_num": "",
-     "pub_url": "https://doi.org/10.3386/w35667",
-     "state": "oa"
-    },
-    {
-     "title": "A Theory of Payments-Chain Crises",
-     "title_zh": "",
-     "authors": [
-      {
-       "name": "Saki Bigio",
-       "aff": "University of California, Los Angeles and NBER"
-      },
-      {
-       "name": "Esteban Méndez",
-       "aff": "Central Bank of Costa Rica"
-      },
-      {
-       "name": "Diana Van Patten",
-       "aff": "Yale University and NBER"
-      }
-     ],
-     "discussants": [
-      {
-       "name": "Romain Rancière",
-       "aff": "University of Southern California and NBER"
-      }
-     ],
-     "schedule": "2025-10-24 11:00 am",
-     "tags": [
-      "供应链",
-      "其他"
-     ],
-     "abstract": "A Theory of Payment-Chain Crisis",
-     "abstract_zh": "",
-     "intro_zh": "本文构建理论模型研究支付链危机，聚焦企业间支付链条中的流动性摩擦与违约传染，分析危机的形成与扩散机制，并为理解危机传播与政策干预提供框架。",
-     "journal": "",
-     "pdf_url": "https://conference.nber.org/conf_papers/f229216/f229216.pdf",
-     "slides_url": "",
-     "wp_num": "",
-     "pub_url": "https://doi.org/10.3386/w30859",
-     "state": "oa"
-    },
-    {
-     "title": "Heaven or Earth? The Evolving Role of Global Shocks for Domestic Monetary Policy",
-     "title_zh": "",
-     "authors": [
-      {
-       "name": "Kristin Forbes",
-       "aff": "Massachusetts Institute of Technology and NBER"
-      },
-      {
-       "name": "Jongrim Ha",
-       "aff": "ASEAN+3 Macroeconomic Research Office"
-      },
-      {
-       "name": "M. Ayhan Kose",
-       "aff": "The World Bank"
-      }
-     ],
-     "discussants": [
-      {
-       "name": "Annie Soyean Lee",
-       "aff": "Johns Hopkins University"
-      }
-     ],
-     "schedule": "2025-10-24 1:00 pm",
-     "tags": [
-      "方法论",
-      "其他"
-     ],
-     "abstract": "Business cycles are increasingly driven by global shocks, rather than the domestic demand shocks prominent in earlier decades, posing challenges for central banks seeking to meet domestic mandates and communicate their policy decisions. This paper analyzes the evolving influence and characteristics of global and domestic shocks in advanced economies from 1970-2024 using a new FAVAR model that decomposes movements in interest rates, inflation, and output growth into four global shocks (demand, supply, oil, and monetary policy) and three domestic shocks (demand, supply, and monetary policy). We find that the role of global shocks has increased—roughly tripling from 1970–84 to 2020–24—to now account for about half the variation in interest rates. Compared to domestic shocks, global shocks have a larger supply component, exert greater influence on interest rates (reflecting a higher variance and stronger country-sensitivity), and are more asymmetric (contributing more to tightening than easing phases for monetary policy). As global supply shocks have become more prominent, central banks have also been less willing to “look through” their effects on inflation than for comparable domestic shocks. The distinct characteristics and rising influence of global shocks—particularly global supply shocks—have significant implications for modeling monetary policy and designing central bank frameworks.",
-     "abstract_zh": "",
-     "intro_zh": "本文用新FAVAR模型分解1970—2024年发达经济体的利率、通胀和产出波动，发现全球冲击影响约增至三倍、已解释利率波动约一半，且供给属性更强、更不对称，对货币政策建模与央行框架有重要含义。",
-     "journal": "Journal of Political Economy Macroeconomics",
-     "pdf_url": "https://conference.nber.org/conf_papers/f229280/f229280.pdf",
-     "slides_url": "https://conference.nber.org/conf_papers/f229280/f229280.slides.pptx",
-     "wp_num": "w34806",
-     "pub_url": "https://doi.org/10.3386/w34806",
-     "state": "oa"
-    },
-    {
-     "title": "How Globalization Unravels: A Ricardian Model of Endogenous Trade Policy",
-     "title_zh": "",
-     "authors": [
-      {
-       "name": "Jesús Fernández-Villaverde",
-       "aff": "University of Pennsylvania and NBER"
-      },
-      {
-       "name": "Tomohide Mineyama",
-       "aff": "International Monetary Fund"
-      },
-      {
-       "name": "Dongho Song",
-       "aff": "Johns Hopkins University"
-      }
-     ],
-     "discussants": [
-      {
-       "name": "Jaedo Choi",
-       "aff": "University of Texas at Austin"
-      }
-     ],
-     "schedule": "2025-10-24 2:15 pm",
-     "tags": [
-      "贸易政策",
-      "全球价值链"
-     ],
-     "abstract": "We study how uneven gains from globalization can endogenously generate protectionism as a political equilibrium. Using U.S. data, we document that regions more exposed to import competition display stronger opposition to globalization, especially among households with little financial wealth, and that firms in trade-exposed sectors sharply increase lobbying expenditures. To interpret these patterns, we develop and quantify a general equilibrium Ricardian model with heterogeneous households, input-output linkages, and endogenous trade policy shaped by voting and lobbying. Distributional shocks reallocate political support among voters, while lobbying propagates through production networks, generating strategic complementarities that sustain protectionism. Calibrated to U.S.-China sectoral data from 1991--2019, the model accounts for rising inequality, declining support for globalization, and key aggregate trends in consumption and trade. Institutional subscribers to the NBER working paper series, and residents of developing countries may download this paper without additional charge at www.nber.org.",
-     "abstract_zh": "",
-     "intro_zh": "研究全球化收益不均如何内生引发保护主义。用美国数据记录进口竞争地区更反对全球化、企业增加游说；构建含异质家庭、投入产出与内生贸易政策的李嘉图模型，发现分配冲击和游说网络互补性可维持保护主义。",
-     "journal": "",
-     "pdf_url": "https://conference.nber.org/conf_papers/f228441/f228441.pdf",
-     "slides_url": "",
-     "wp_num": "w34672",
-     "pub_url": "https://doi.org/10.3386/w34672",
-     "state": "oa"
-    },
-    {
-     "title": "The Optimal Macro Tariff",
-     "title_zh": "",
-     "authors": [
-      {
-       "name": "Oleg Itskhoki",
-       "aff": "Harvard University and NBER"
-      },
-      {
-       "name": "Dmitry Mukhin",
-       "aff": "London School of Economics and Political Science (LSE)"
-      }
-     ],
-     "discussants": [
-      {
-       "name": "Martín Uribe",
-       "aff": "Columbia University and NBER"
-      }
-     ],
-     "schedule": "2025-10-24 3:30 pm",
-     "tags": [
-      "关税",
-      "贸易政策",
-      "汇率"
-     ],
-     "abstract": "What is the optimal macroeconomic tariff when trade is imbalanced and the policy objectives go beyond social welfare and also include fiscal revenues, increasing the number of manufacturing jobs, and closing a trade deficit? We study these questions in an environment which allows for long-run bilateral and aggregate trade deficits that reflect the country's net foreign asset position and differential returns on foreign assets and liabilities (the \"exorbitant privilege\"). Only in special cases does the optimal tariff emerge as an increasing function of a trade deficit and for reasons unrelated to trade competitiveness. Instead, the planner trades off the conventional benefits of improved terms of trade with the costs from negative valuation effects on the country’s gross financial position. In our model calibrated to the United States, its large external dollar liabilities reduce the optimal tariff three-fold, from 34% to 9%, and act as an effective hedge for its trade partners against a trade war. In contrast to the expenditure switching logic and Lerner symmetry, closing the trade imbalance calls for an appreciation of the dollar to a level that depends solely on the US external financial position, and not on trade shares or trade elasticities, and can be achieved by means of an import tariff or an export subsidy. Alternatively, financial and trade rebalancing may happen if a tariff war results in the loss of privilege and the associated dollar depreciation.",
-     "abstract_zh": "",
-     "intro_zh": "研究贸易失衡下兼顾财政收入、制造业就业与逆差的最优宏观关税。含净外国资产与回报差的模型校准美国显示，外部美元负债将最优关税从34%降至9%，再平衡需美元升值而非依赖贸易弹性。",
-     "journal": "",
-     "pdf_url": "https://conference.nber.org/conf_papers/f229348/f229348.pdf",
-     "slides_url": "",
-     "wp_num": "w33839",
-     "pub_url": "https://doi.org/10.3386/w33839",
      "state": "oa"
     }
    ]
