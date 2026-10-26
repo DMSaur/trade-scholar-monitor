@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25 09:40",
+ "generated_at": "2026-10-26 09:33",
  "window_days": 365,
  "items": [
   {
@@ -5706,10 +5706,6 @@
    "n": 5
   },
   {
-   "tag": "关税",
-   "n": 5
-  },
-  {
    "tag": "供应链",
    "n": 5
   },
@@ -5718,15 +5714,15 @@
    "n": 5
   },
   {
+   "tag": "关税",
+   "n": 4
+  },
+  {
    "tag": "贸易协定",
    "n": 4
   },
   {
    "tag": "劳动力市场",
-   "n": 3
-  },
-  {
-   "tag": "企业异质性",
    "n": 3
   },
   {
@@ -5738,11 +5734,15 @@
    "n": 3
   },
   {
-   "tag": "贸易战",
+   "tag": "企业异质性",
    "n": 2
   },
   {
    "tag": "贸易弹性",
+   "n": 1
+  },
+  {
+   "tag": "出口管制",
    "n": 1
   }
  ],
@@ -8803,7 +8803,7 @@
      "slides_url": "",
      "wp_num": "",
      "pub_url": "https://doi.org/10.2139/ssrn.4647210",
-     "state": "pdf"
+     "state": "bare"
     },
     {
      "title": "Do Foreigners Pay for Tariffs?",
@@ -9161,7 +9161,7 @@
      "slides_url": "",
      "wp_num": "",
      "pub_url": "",
-     "state": "pdf"
+     "state": "bare"
     }
    ]
   },
@@ -9209,7 +9209,7 @@
      "slides_url": "",
      "wp_num": "",
      "pub_url": "",
-     "state": "pdf"
+     "state": "bare"
     },
     {
      "title": "Optimal Dynamic Spatial Policy",
@@ -9242,7 +9242,7 @@
      "slides_url": "",
      "wp_num": "w34290",
      "pub_url": "",
-     "state": "pdf"
+     "state": "bare"
     },
     {
      "title": "Tariff Wars and Net Foreign Assets",
@@ -9327,7 +9327,7 @@
      "slides_url": "",
      "wp_num": "",
      "pub_url": "https://doi.org/10.2139/ssrn.5285666",
-     "state": "pdf"
+     "state": "bare"
     },
     {
      "title": "Trade and Industrial Policy in Supply Chains: Directed Technological Change in Rare Earths",
@@ -9592,7 +9592,7 @@
      "slides_url": "https://conference.nber.org/conf_papers/f232465/f232465.slides.pdf",
      "wp_num": "",
      "pub_url": "",
-     "state": "pdf"
+     "state": "bare"
     },
     {
      "title": "Misallocation due to Incomplete Markets",
@@ -9840,7 +9840,7 @@
      "slides_url": "https://conference.nber.org/conf_papers/f229959/f229959.slides.pdf",
      "wp_num": "",
      "pub_url": "",
-     "state": "pdf"
+     "state": "bare"
     },
     {
      "title": "Trade Within Multinational Boundaries",
@@ -10019,7 +10019,7 @@
      "slides_url": "",
      "wp_num": "w34176",
      "pub_url": "https://doi.org/10.2139/ssrn.5404075",
-     "state": "pdf"
+     "state": "bare"
     },
     {
      "title": "Global Networks, Monetary Policy and Trade",
