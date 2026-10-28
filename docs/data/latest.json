@@ -1,7 +1,51 @@
 {
- "generated_at": "2026-10-27 15:25",
+ "generated_at": "2026-10-28 09:40",
  "window_days": 365,
  "items": [
+  {
+   "uid": "tweet:2115241570832207889",
+   "source": "tweet",
+   "title": "HOW TO WIN A TRADE WAR… at Columbia University!!!  @SoumayaKeynes and I had a super fun conversation with a lively audience due to the deft ",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2115241570832207889",
+   "date": "2026-10-28",
+   "abstract": "HOW TO WIN A TRADE WAR… at Columbia University!!!\n\n@SoumayaKeynes and I had a super fun conversation with a lively audience due to the deft moderation by the very great @JSchreger.\n\nThanks, New York!!! https://t.co/r1xiqC8mnS",
+   "summary_zh": "如何在贸易战中获胜……在哥伦比亚大学！！！\n\n@SoumayaKeynes 和我与一群活跃的观众进行了一场超级有趣的对话，这要归功于非常出色的 @JSchreger 的娴熟主持。\n\n谢谢，纽约！！！",
+   "title_zh": "",
+   "abstract_zh": "",
+   "tags": [
+    "贸易战",
+    "贸易政策"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": false,
+    "is_reply": false,
+    "likes": 8,
+    "retweets": 1,
+    "views": 422,
+    "created_at": "2026-10-28T00:37:44+00:00",
+    "media": [
+     {
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HVrY-zvWQAAu9zV.jpg"
+     }
+    ],
+    "links": [
+     {
+      "tco": "https://t.co/r1xiqC8mnS",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
+    "scholar_name": "Chad Bown"
+   }
+  },
   {
    "uid": "tweet:2114748816519827922",
    "source": "tweet",
@@ -11,10 +55,12 @@
    "url": "https://x.com/ChadBown/status/2114748816519827922",
    "date": "2026-10-26",
    "abstract": "RT @YaleEconomics: THIS Wednesday (10/28) at @YaleTobinCenter, join us for a book talk with Soumaya Keynes and Chad P. Bown, co-authors of…",
-   "summary_zh": "",
+   "summary_zh": "转发 @YaleEconomics：就在本周三（10/28），在 @YaleTobinCenter，请参加我们与 Soumaya Keynes 和 Chad P. Bown 的图书座谈，他们是……的合著者",
    "title_zh": "",
    "abstract_zh": "",
-   "tags": [],
+   "tags": [
+    "贸易政策"
+   ],
    "extra": {
     "handle": "ChadBown",
     "name": "Chad P. Bown",
@@ -6090,7 +6136,7 @@
    "homepage": "",
    "openalex": "A5013651639",
    "s2": "46221253",
-   "items": 30
+   "items": 31
   },
   {
    "name": "Douglas Irwin",
