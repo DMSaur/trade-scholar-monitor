@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28 09:40",
+ "generated_at": "2026-10-29 09:34",
  "window_days": 365,
  "items": [
   {
@@ -5743,28 +5743,6 @@
     "scholar_name": "魏尚进",
     "work_type": "book-chapter",
     "doi": "10.1017/9781009649339.008"
-   }
-  },
-  {
-   "uid": "oa:W4415623274",
-   "source": "top5",
-   "title": "Efficiency and Redistribution in Environmental Policy: An Equilibrium Analysis of Agricultural Supply Chains",
-   "authors": "Tomás Domínguez-Iino",
-   "venue": "Journal of Political Economy",
-   "url": "https://doi.org/10.1086/739325",
-   "date": "2025-10-28",
-   "abstract": "",
-   "summary_zh": "构建农业供应链均衡模型，揭示环境政策效率与再分配权衡。",
-   "title_zh": "环境政策中的效率与再分配：农业供应链的均衡分析",
-   "abstract_zh": "",
-   "tags": [
-    "供应链",
-    "其他"
-   ],
-   "extra": {
-    "journal_short": "JPE",
-    "keyword_hit": "supply chain",
-    "doi": "10.1086/739325"
    }
   }
  ],
