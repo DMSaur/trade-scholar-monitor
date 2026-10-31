@@ -1,7 +1,179 @@
 {
- "generated_at": "2026-10-30 09:49",
+ "generated_at": "2026-10-31 09:34",
  "window_days": 365,
  "items": [
+  {
+   "uid": "tweet:2116145618670252237",
+   "source": "tweet",
+   "title": "Two trade nerds, their book, standing room only, at... Harvard University???  Wow!!! Thanks to Gordon Hanson, Robert Lawrence and the entire",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2116145618670252237",
+   "date": "2026-10-30",
+   "abstract": "Two trade nerds, their book, standing room only, at... Harvard University???\n\nWow!!! Thanks to Gordon Hanson, Robert Lawrence and the entire @Kennedy_School team for the invitation to present HOW TO WIN A TRADE WAR. \n\nWe made new friends and saw lots of old friends -- @SoumayaKeynes and I are just super, super grateful.",
+   "summary_zh": "两个贸易书呆子，他们的书，现场站席都满了，地点竟然在……哈佛大学（Harvard University）？？？\n\n哇！！！感谢戈登·汉森（Gordon Hanson）、罗伯特·劳伦斯（Robert Lawrence）以及整个 @Kennedy_School 团队邀请我们介绍《如何赢得一场贸易战》（HOW TO WIN A TRADE WAR）。\n\n我们结识了新朋友，也见到了许多老朋友——@SoumayaKeynes 和我真是超级、超级感激。",
+   "title_zh": "",
+   "abstract_zh": "",
+   "tags": [
+    "贸易战"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": false,
+    "is_reply": false,
+    "likes": 18,
+    "retweets": 1,
+    "views": 1428,
+    "created_at": "2026-10-30T12:30:06+00:00",
+    "media": [
+     {
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HV4OzNqWMAAZNO9.jpg"
+     },
+     {
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HV4OzNmXEAAUClO.jpg"
+     }
+    ],
+    "scholar_name": "Chad Bown"
+   }
+  },
+  {
+   "uid": "tweet:2116137013036331517",
+   "source": "tweet",
+   "title": "The Trump administration has held off on taking action as the midterm elections draw near. Across the campaign trail, public anxiety over af",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2116137013036331517",
+   "date": "2026-10-30",
+   "abstract": "The Trump administration has held off on taking action as the midterm elections draw near. Across the campaign trail, public anxiety over affordability has emerged as a central issue, making any decision that risks pushing up consumer prices politically sensitive.\n\nby @yifanxie \n\nhttps://t.co/c5dIvyzOcB",
+   "summary_zh": "作者：@ChadBown\n推文原文：随着中期选举临近，特朗普（Trump）政府暂缓采取行动。在整个竞选活动中，公众对负担能力的焦虑已成为一个核心议题，这使得任何可能推高消费价格的决定都具有政治敏感性。\n\n由 @yifanxie 撰写",
+   "title_zh": "",
+   "abstract_zh": "",
+   "tags": [
+    "贸易政策"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": false,
+    "is_reply": false,
+    "likes": 4,
+    "retweets": 0,
+    "views": 818,
+    "created_at": "2026-10-30T11:55:54+00:00",
+    "media": [],
+    "links": [
+     {
+      "tco": "https://t.co/c5dIvyzOcB",
+      "url": "https://asia.nikkei.com/politics/u.s.-midterm-elections/trump-holds-off-overcapacity-tariffs-as-us-midterms-near",
+      "title": "Trump holds off overcapacity tariffs as US midterms near",
+      "domain": "Nikkei Asia",
+      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fcms-image-bucket-productionv3-ap-northeast-1-a7d2.s3.ap-northeast-1.amazonaws.com%2Fimages%2F6%2F3%2F4%2F0%2F13350436-2-eng-GB%2F3685ab8a4c34-2026-02-20T192507Z_1277539889_RC2UPJAWRZL3_RTRMADP_3_USA-TRUMP.JPG?fit=cover&amp;gravity=faces&amp;dpr=2&amp;quality=medium&amp;source=nar-cms&amp;format=jpg&amp;width=1260&amp;height=630"
+     }
+    ],
+    "scholar_name": "Chad Bown"
+   }
+  },
+  {
+   "uid": "tweet:2115902031999508577",
+   "source": "tweet",
+   "title": "RT @klimova_j: Jeden z nejzajímavejšich rozhovorů letošního roku, aspoň pro mě. Se špičkový ekonomem @itskhoki o ruské ekonomice a sankcích…",
+   "authors": "@itskhoki",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/itskhoki/status/2115902031999508577",
+   "date": "2026-10-29",
+   "abstract": "RT @klimova_j: Jeden z nejzajímavejšich rozhovorů letošního roku, aspoň pro mě. Se špičkový ekonomem @itskhoki o ruské ekonomice a sankcích…",
+   "summary_zh": "RT @klimova_j：今年最有趣的访谈之一，至少对我来说是这样。与顶尖经济学家 @itskhoki 谈俄罗斯经济和制裁……",
+   "title_zh": "",
+   "abstract_zh": "",
+   "tags": [
+    "制裁"
+   ],
+   "extra": {
+    "handle": "ItsKhoki",
+    "name": "Oleg Itskhoki",
+    "is_retweet": true,
+    "is_reply": false,
+    "likes": 0,
+    "retweets": 8,
+    "views": 46,
+    "created_at": "2026-10-29T20:22:10+00:00",
+    "media": [],
+    "scholar_name": "Oleg Itskhoki"
+   }
+  },
+  {
+   "uid": "tweet:2115625301405212862",
+   "source": "tweet",
+   "title": "HOW TO WIN A TRADE WAR… at Yale University!!!  HUGE thanks from @SoumayaKeynes and me to @AKhandelwal8 for shepherding a fascinating convers",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2115625301405212862",
+   "date": "2026-10-29",
+   "abstract": "HOW TO WIN A TRADE WAR… at Yale University!!!\n\nHUGE thanks from @SoumayaKeynes and me to @AKhandelwal8 for shepherding a fascinating conversation with a really great audience. https://t.co/YYeDLiX1ad",
+   "summary_zh": "作者：@ChadBown\n推文原文：如何在贸易战中获胜……在耶鲁大学（Yale University）！！！\n\n@SoumayaKeynes和我向@AKhandelwal8致以万分感谢，感谢他引导了一场与非常出色的听众进行的精彩对话。",
+   "title_zh": "",
+   "abstract_zh": "",
+   "tags": [
+    "贸易战"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": false,
+    "is_reply": false,
+    "likes": 12,
+    "retweets": 4,
+    "views": 1165,
+    "created_at": "2026-10-29T02:02:32+00:00",
+    "media": [
+     {
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HVw1_XhWcAI3eI6.jpg"
+     },
+     {
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HVw1_XnX0AALK3U.jpg"
+     }
+    ],
+    "links": [
+     {
+      "tco": "https://t.co/YYeDLiX1ad",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
+    "scholar_name": "Chad Bown"
+   }
+  },
+  {
+   "uid": "oa:W7224229080",
+   "source": "scholar",
+   "title": "Trade Protection along Supply Chains",
+   "authors": "Chad P. Bown, Paola Conconi, Aksel Erbahar, Lorenzo Trimarchi",
+   "venue": "American Economic Journal Economic Policy",
+   "url": "https://doi.org/10.1257/pol.20240893",
+   "date": "2026-10-29",
+   "abstract": "We study the effects of trade protection along supply chains. We focus on temporary trade barriers against China, which has been the main target of US trade protection during the last decades. To deal with endogeneity concerns, we use an instrumental variable strategy, exploiting changes in the identity of swing states across presidential terms and heterogeneous exposure to these political shocks across industries. We find that politically motivated trade protection generates winners and losers: It fosters employment growth in protected industries but hampers employment growth in downstream industries. Our estimates imply a negative overall impact on US jobs. (JEL D72, F13, F14, L14, O19, P33)",
+   "summary_zh": "研究美国对华临时贸易壁垒沿供应链的就业效应，用工具变量识别政治动机保护，发现受保护行业就业增加、下游就业减少且总就业为负。",
+   "title_zh": "沿供应链的贸易保护",
+   "abstract_zh": "我们研究贸易保护沿供应链的影响。我们聚焦针对中国的临时贸易壁垒，中国在过去数十年一直是美国贸易保护的主要目标。为处理内生性问题，我们采用工具变量策略，利用总统任期更替时摇摆州身份的变化以及各行业对这些政治冲击的异质性暴露。我们发现，出于政治动机的贸易保护会产生赢家和输家：它促进受保护行业的就业增长，但阻碍下游行业的就业增长。我们的估计表明，其对美国就业的总体影响为负。（JEL D72, F13, F14, L14, O19, P33）",
+   "tags": [
+    "贸易政策",
+    "供应链",
+    "关税"
+   ],
+   "extra": {
+    "scholar_name": "Chad Bown",
+    "work_type": "article",
+    "doi": "10.1257/pol.20240893"
+   }
+  },
   {
    "uid": "tweet:2115241570832207889",
    "source": "tweet",
@@ -5699,76 +5871,31 @@
     "work_type": "article",
     "doi": "10.1016/j.jue.2025.103813"
    }
-  },
-  {
-   "uid": "oa:W4415700285",
-   "source": "top5",
-   "title": "International Trade Responses to Labor Market Regulations",
-   "authors": "Mathilde Muñoz",
-   "venue": "American Economic Review",
-   "url": "https://doi.org/10.1257/aer.20231531",
-   "date": "2025-10-30",
-   "abstract": "This paper demonstrates that labor market regulations, such as minimum wages or payroll taxes, shape trade competition in labor-intensive activities. I exploit data from a large European trade program where firms from different countries supply labor services at the same location but face different payroll taxes and minimum wage rules. Country case studies and model-consistent gravity estimates show large trade responses to tax and regulatory reforms, with an elasticity of trade in services to labor costs larger than one. The results imply that absent regulatory and fiscal harmonization, export competitiveness depends, in part, on domestic labor market policies. (JEL F14, F16, F42, H25, J22, J23, K31)",
-   "summary_zh": "利用欧洲跨境服务贸易数据与引力估计，发现最低工资和工资税显著影响服务贸易，劳动力成本贸易弹性大于1。",
-   "title_zh": "国际贸易对劳动力市场规制的反应",
-   "abstract_zh": "本文表明，最低工资或工资税等劳动力市场规制会塑造劳动密集型活动中的贸易竞争。我利用一个大型欧洲贸易项目的数据，在该项目中，来自不同国家的企业在同一地点提供劳动服务，但面临不同的工资税和最低工资规则。国别案例研究和与模型一致的引力估计表明，贸易对税收和监管改革有显著反应，其中服务贸易对劳动力成本的弹性大于1。结果表明，若无监管与财政协调，出口竞争力部分取决于国内劳动力市场政策。（JEL F14, F16, F42, H25, J22, J23, K31）",
-   "tags": [
-    "劳动力市场",
-    "贸易弹性",
-    "贸易政策"
-   ],
-   "extra": {
-    "journal_short": "AER",
-    "keyword_hit": "international trade",
-    "doi": "10.1257/aer.20231531"
-   }
-  },
-  {
-   "uid": "oa:W4415679543",
-   "source": "scholar",
-   "title": "China’s Journey in Embracing Economic Openness",
-   "authors": "Shang‐Jin Wei, Xinding Yu",
-   "venue": "Cambridge University Press eBooks",
-   "url": "https://doi.org/10.1017/9781009649339.008",
-   "date": "2025-10-30",
-   "abstract": "This chapter examines China’s transformation from economic isolation to deep global integration. The authors identify three distinct phases in China’s trade openness: a corrective phase (1980–1992) that raised openness from below-norm levels; an expansion phase (1992–2006) where trade openness and a growing trade surplus exceeded international norms; and a normalization phase (2006–2021) with a gradual reduction toward a typical openness level. The analysis extends beyond traditional measures by evaluating export sophistication – revealing a significant post-2006 surge in the technological complexity of China’s export bundle – and by proposing a broader openness index that integrates FDI-related value-added activities. The chapter also discusses structural factors behind persistent trade imbalances, including financial system imperfections and competitive savings motives, and contextualizes these trends within the framework of China’s “dual circulation” strategy. Overall, the study provides insights into the evolving quality and quantity of China’s economic openness and its implications for future global integration amid rising geopolitical tensions and domestic policy shifts.",
-   "summary_zh": "本文梳理中国从封闭到深度融入全球经济的三个阶段，评估出口复杂度并构建含FDI增加值的开放指数，揭示开放质量与贸易失衡成因。",
-   "title_zh": "中国拥抱经济开放的历程",
-   "abstract_zh": "本章考察中国从经济孤立向深度全球一体化的转变。作者识别出中国贸易开放度的三个不同阶段：纠正阶段（1980—1992年），该阶段将开放度从低于常态的水平提升；扩张阶段（1992—2006年），其间贸易开放度和不断扩大的贸易顺差超过国际常态水平；以及正常化阶段（2006—2021年），开放度逐步下降至典型开放水平。该分析超越传统衡量方法，通过评估出口复杂度——揭示2006年后中国出口商品篮子的技术复杂度显著上升——并提出一个纳入与FDI相关增加值活动的更广泛开放度指数。本章还讨论了持续贸易失衡背后的结构性因素，包括金融体系不完善和竞争性储蓄动机，并将这些趋势置于中国“双循环”战略框架中加以分析。总体而言，该研究提供了关于中国经济开放不断演变的质量和数量及其在日益加剧的地缘政治紧张和国内政策转变背景下对未来全球一体化影响的洞见。",
-   "tags": [
-    "贸易政策",
-    "全球价值链"
-   ],
-   "extra": {
-    "scholar_name": "魏尚进",
-    "work_type": "book-chapter",
-    "doi": "10.1017/9781009649339.008"
-   }
   }
  ],
  "themes": [
   {
    "tag": "贸易政策",
-   "n": 7
+   "n": 8
+  },
+  {
+   "tag": "供应链",
+   "n": 6
+  },
+  {
+   "tag": "关税",
+   "n": 5
   },
   {
    "tag": "其他",
    "n": 5
   },
   {
-   "tag": "供应链",
-   "n": 5
-  },
-  {
-   "tag": "方法论",
-   "n": 5
-  },
-  {
-   "tag": "关税",
+   "tag": "贸易协定",
    "n": 4
   },
   {
-   "tag": "贸易协定",
+   "tag": "方法论",
    "n": 4
   },
   {
@@ -5780,11 +5907,11 @@
    "n": 3
   },
   {
-   "tag": "汇率",
-   "n": 3
+   "tag": "企业异质性",
+   "n": 2
   },
   {
-   "tag": "企业异质性",
+   "tag": "汇率",
    "n": 2
   },
   {
@@ -5938,7 +6065,7 @@
    "homepage": "https://economics.harvard.edu/people/oleg-itskhoki",
    "openalex": "A5088518091",
    "s2": "103048638",
-   "items": 7
+   "items": 8
   },
   {
    "name": "Pablo Fajgelbaum",
@@ -6114,7 +6241,7 @@
    "homepage": "",
    "openalex": "A5013651639",
    "s2": "46221253",
-   "items": 31
+   "items": 35
   },
   {
    "name": "Douglas Irwin",
@@ -6719,7 +6846,7 @@
    "homepage": "https://business.columbia.edu/shang-jin-wei",
    "openalex": "A5109848490",
    "s2": "2443245584",
-   "items": 2
+   "items": 1
   },
   {
    "name": "邓希炜",
