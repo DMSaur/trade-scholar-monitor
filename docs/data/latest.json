@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-31 09:34",
+ "generated_at": "2026-11-01 09:33",
  "window_days": 365,
  "items": [
   {
@@ -74,6 +74,29 @@
      }
     ],
     "scholar_name": "Chad Bown"
+   }
+  },
+  {
+   "uid": "oa:W7224757465",
+   "source": "top5",
+   "title": "The Causal Effects of Global Supply Chain Disruptions on Macroeconomic Outcomes: Evidence and Theory",
+   "authors": "Xiwen Bai, Jesús Fernández‐Villaverde, Yiliang Li, Francesco Zanetti",
+   "venue": "American Economic Review",
+   "url": "https://doi.org/10.1257/aer.20250081",
+   "date": "2026-10-30",
+   "abstract": "We study the causal effects of global supply chain disruptions by constructing a new index of real-time port congestion using Automatic Identification System data from container ships and a spatial clustering algorithm. We develop a model with search frictions between producers and retailers that links upstream production slack to downstream supply shortages and captures output and price responses to supply chain shocks. The co-movements of output, prices, spare capacity, and market tightness provide novel identification restrictions. We find that demand and supply shocks drove US disinflation in 2020, while the inflation surge in 2021 was driven mainly by supply chain shocks. (JEL C43, E31, F14, F23, L14, L92)",
+   "summary_zh": "利用AIS数据构建港口拥堵指数并建立搜寻摩擦模型，发现2021年美国通胀飙升主要由供应链冲击驱动。",
+   "title_zh": "全球供应链中断对宏观经济结果的因果效应：证据与理论",
+   "abstract_zh": "我们通过使用来自集装箱船的自动识别系统数据和空间聚类算法构建一个新的实时港口拥堵指数，研究全球供应链中断的因果效应。我们构建了一个包含生产商与零售商之间搜寻摩擦的模型，该模型将上游生产松弛与下游供应短缺联系起来，并刻画产出和价格对供应链冲击的响应。产出、价格、闲置产能和市场紧俏程度的共同变动提供了新的识别约束。我们发现，需求冲击和供给冲击推动了2020年美国通胀放缓，而2021年通胀飙升主要由供应链冲击驱动。（JEL C43, E31, F14, F23, L14, L92）",
+   "tags": [
+    "供应链",
+    "全球价值链",
+    "方法论"
+   ],
+   "extra": {
+    "journal_short": "AER",
+    "keyword_hit": "global supply chain",
+    "doi": "10.1257/aer.20250081"
    }
   },
   {
@@ -5875,28 +5898,24 @@
  ],
  "themes": [
   {
-   "tag": "贸易政策",
-   "n": 8
-  },
-  {
    "tag": "供应链",
-   "n": 6
+   "n": 5
   },
   {
    "tag": "关税",
-   "n": 5
+   "n": 4
   },
   {
    "tag": "其他",
-   "n": 5
-  },
-  {
-   "tag": "贸易协定",
    "n": 4
   },
   {
    "tag": "方法论",
-   "n": 4
+   "n": 3
+  },
+  {
+   "tag": "贸易政策",
+   "n": 3
   },
   {
    "tag": "劳动力市场",
@@ -5904,7 +5923,7 @@
   },
   {
    "tag": "全球价值链",
-   "n": 3
+   "n": 2
   },
   {
    "tag": "企业异质性",
@@ -5913,14 +5932,6 @@
   {
    "tag": "汇率",
    "n": 2
-  },
-  {
-   "tag": "贸易弹性",
-   "n": 1
-  },
-  {
-   "tag": "出口管制",
-   "n": 1
   }
  ],
  "scholars": [
