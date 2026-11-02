@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-01 09:33",
+ "generated_at": "2026-11-02 09:33",
  "window_days": 365,
  "items": [
   {
@@ -4012,10 +4012,7 @@
    "extra": {
     "scholar_name": "Aaron Flaaen",
     "work_type": "article",
-    "doi": "10.1016/j.jinteco.2026.104257",
-    "versions": [
-     "scholar"
-    ]
+    "doi": "10.1016/j.jinteco.2026.104257"
    }
   },
   {
@@ -5872,28 +5869,6 @@
     "keyword_hit": "import",
     "doi": "10.1093/restud/rdaf097"
    }
-  },
-  {
-   "uid": "oa:W4415848145",
-   "source": "scholar",
-   "title": "Follow thy neighbor: The role of first exporters",
-   "authors": "Hao Fe, Yang Liang, Mary E. Lovely",
-   "venue": "Journal of Urban Economics",
-   "url": "https://doi.org/10.1016/j.jue.2025.103813",
-   "date": "2025-11-01",
-   "abstract": "Exporting to foreign markets offers new opportunities for growth and expansion, but also comes with inherent challenges and risks. To mitigate these uncertainties, firms often learn from neighboring firms that are geographically close (Koenig et al. 2010; Silvente and Giménez 2007). Accounting for endogenous sorting of firms across space within cities, we present novel evidence of export spillovers at finely detailed spatial scales. Our findings suggest that firms located in the immediate vicinity of a local first exporter – a firm initiating a new seller-market – are 38% more likely to enter the same market the following year, compared to firms that lack a nearby first exporter. This effect is twice as large as export spillovers from later exporters in the same area. Our mechanism analysis suggests that the spillover effect is likely driven by the flow of information, facilitated by close proximity.",
-   "summary_zh": "利用企业空间排序考察本地首家出口企业的出口溢出，发现邻近企业次年进入同一市场概率高38%。",
-   "title_zh": "追随你的邻居：首家出口企业的作用",
-   "abstract_zh": "向外国市场出口为企业带来增长与扩张的新机会，但也伴随固有挑战与风险。为缓解这些不确定性，企业常常向地理上邻近的邻近企业学习（Koenig et al. 2010; Silvente and Giménez 2007）。在考虑企业在城市内跨空间的内生排序后，我们提供了关于在高度精细空间尺度上出口溢出的新证据。我们的研究结果表明，位于本地首家出口商——即开创一个新卖方—市场的企业——紧邻地区的企业，与附近没有首家出口商的企业相比，次年进入同一市场的可能性高出38%。这一效应是同一地区后来出口商所产生的出口溢出的两倍大。我们的机制分析表明，这种溢出效应可能由信息流动驱动，而近距离促进了信息流动。",
-   "tags": [
-    "企业异质性",
-    "其他"
-   ],
-   "extra": {
-    "scholar_name": "Mary Lovely",
-    "work_type": "article",
-    "doi": "10.1016/j.jue.2025.103813"
-   }
   }
  ],
  "themes": [
@@ -6802,7 +6777,7 @@
    "homepage": "https://www.economicstrategygroup.org/publication-author/mary-lovely/",
    "openalex": "A5086314249",
    "s2": "21581629",
-   "items": 2
+   "items": 1
   },
   {
    "name": "Joseph Shapiro",
