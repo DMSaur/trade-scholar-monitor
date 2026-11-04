@@ -1,7 +1,61 @@
 {
- "generated_at": "2026-11-03 09:34",
+ "generated_at": "2026-11-04 09:34",
  "window_days": 365,
  "items": [
+  {
+   "uid": "tweet:2117680535669710909",
+   "source": "tweet",
+   "title": "HTWATW...at Dartmouth.  This was so much fun!!!",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2117680535669710909",
+   "date": "2026-11-03",
+   "abstract": "HTWATW...at Dartmouth.\n\nThis was so much fun!!!",
+   "summary_zh": "HTWATW……在达特茅斯（Dartmouth）。这真是太有趣了！！！",
+   "title_zh": "",
+   "abstract_zh": "",
+   "tags": [
+    "其他"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": false,
+    "is_reply": false,
+    "likes": 9,
+    "retweets": 0,
+    "views": 779,
+    "created_at": "2026-11-03T18:09:18+00:00",
+    "media": [],
+    "scholar_name": "Chad Bown"
+   }
+  },
+  {
+   "uid": "oa:W7225094808",
+   "source": "scholar",
+   "title": "Quantifying non-tariff barriers: Brexit, input sourcing and firm performance",
+   "authors": "Gustaf Dillner, Rebecca Freeman, Kalina B. Manova, Thomas Sampson",
+   "venue": "London School of Economics and Political Science Research Online (London School of Economics and Political Science)",
+   "url": "https://doi.org/10.21953/researchonline.lse.ac.uk.00141795",
+   "date": "2026-11-02",
+   "abstract": "How successful is European integration in removing non-tariff trade barriers? We study how Brexit affected UK firms' input sourcing and sales. The post-Brexit Trade and Cooperation Agreement (TCA) reduced sales and input expenditure at firms with higher pre-Brexit EU trade exposure. It also caused firms to switch towards domestic and non-EU inputs. Through the lens of a trade model, the switch in input sourcing implies the TCA increased trade costs on EU imports by 21% and raised unit production costs by 3:1% for the average UK importer. Our results indicate EU membership secures large reductions in trade costs.",
+   "summary_zh": "基于贸易模型研究脱欧对企业投入品采购与销售的影响，发现TCA推高欧盟进口贸易成本21%、单位成本3.1%。",
+   "title_zh": "量化非关税壁垒：脱欧、投入品采购与企业绩效",
+   "abstract_zh": "欧洲一体化在消除非关税贸易壁垒方面有多成功？我们研究脱欧如何影响英国企业的投入品采购和销售。脱欧后的《贸易与合作协定》（TCA）降低了脱欧前欧盟贸易暴露度较高企业的销售额和投入品支出。它还促使企业转向国内和非欧盟投入品。通过一个贸易模型的视角，投入品采购的转换意味着，TCA使欧盟进口贸易成本上升了21%，并使英国平均进口商的单位生产成本上升了3.1%。我们的结果表明，欧盟成员国身份确保了贸易成本的大幅降低。",
+   "tags": [
+    "贸易政策",
+    "贸易协定",
+    "供应链"
+   ],
+   "extra": {
+    "scholar_name": "Kalina Manova",
+    "work_type": "article",
+    "doi": "10.21953/researchonline.lse.ac.uk.00141795",
+    "versions": [
+     "scholar"
+    ]
+   }
+  },
   {
    "uid": "tweet:2116145618670252237",
    "source": "tweet",
@@ -239,6 +293,29 @@
      }
     ],
     "scholar_name": "Chad Bown"
+   }
+  },
+  {
+   "uid": "oa:W4410032443",
+   "source": "scholar",
+   "title": "Input sourcing, trade liberalization, and diversifying mergers",
+   "authors": "Qing Liu, Larry Dongxiao Qiu, Stephen Teng Sun, Chaoqun Zhan",
+   "venue": "Journal of International Economics",
+   "url": "https://doi.org/10.1016/j.jinteco.2026.104347",
+   "date": "2026-10-28",
+   "abstract": "Extensive research has documented how trade liberalization enhances firms’ input-sourcing capabilities and boosts firm performances. Drawing on the resource-based view of firms, this study investigates whether trade liberalization enables firms to expand into industries that use similar inputs. We uncover a novel driver of diversifying mergers: firms strategically leverage their input capabilities. Using China’s WTO entry a natural experiment, which exogenously affects firms’ input sourcing and enhances their input capabilities, we show that firms are more likely to acquire targets from other industries experiencing higher tariff reductions in their common inputs. This effect is more pronounced when the affected inputs are differentiated or innovation-intensive. The main result holds in a global sample covering 73 countries. Our findings extend the core competence theory by highlighting how input-related capabilities shape firm boundaries across industries.",
+   "summary_zh": "以中国入世为准自然实验，研究发现贸易自由化通过增强企业投入品能力，促使其跨行业开展多元化并购。",
+   "title_zh": "投入品采购、贸易自由化与多元化并购",
+   "abstract_zh": "大量研究记录了贸易自由化如何增强企业的投入品采购能力并提升企业绩效。基于企业资源观，本研究考察贸易自由化是否使企业能够扩展到使用相似投入品的行业。我们发现了一个新的多元化并购驱动因素：企业战略性地利用其投入品能力。以中国加入WTO作为自然实验——该事件外生地影响企业的投入品采购并增强其投入品能力——我们表明，企业更可能从其他行业中收购目标公司，而这些行业在其共同投入品上经历了更大的关税削减。当受影响的投入品是差异化或创新密集型时，这一效应更为显著。主要结果在覆盖73个国家的全球样本中依然成立。我们的发现通过强调投入相关能力如何塑造跨行业的企业边界，拓展了核心能力理论。",
+   "tags": [
+    "关税",
+    "贸易政策",
+    "供应链"
+   ],
+   "extra": {
+    "scholar_name": "詹超群",
+    "work_type": "article",
+    "doi": "10.1016/j.jinteco.2026.104347"
    }
   },
   {
@@ -1577,29 +1654,6 @@
     "scholar_name": "Lionel Fontagne",
     "work_type": "preprint",
     "doi": ""
-   }
-  },
-  {
-   "uid": "oa:W7214065994",
-   "source": "scholar",
-   "title": "Quantifying Non-Tariff Barriers: Brexit, Input Sourcing and Firm Performance",
-   "authors": "Gustaf Dillner, Rebecca Freeman, Kalina B. Manova, Thomas Sampson",
-   "venue": "CESifo",
-   "url": "https://doi.org/10.65864/wn6xsu2byg",
-   "date": "2026-09-21",
-   "abstract": "How successful is European integration in removing non-tariff trade barriers? We study how Brexit affected UK firms' input sourcing and sales. The post-Brexit Trade and Cooperation Agreement (TCA) reduced sales and input expenditure at firms with higher pre-Brexit EU trade exposure. It also caused firms to switch towards domestic and non-EU inputs. Through the lens of a trade model, the switch in input sourcing implies the TCA increased trade costs on EU imports by 21% and raised unit production costs by 3.1% for the average UK importer. Our results indicate EU membership secures large reductions in trade costs.",
-   "summary_zh": "研究脱欧后TCA对英国企业投入采购与销售的影响，贸易模型估算对欧进口贸易成本升21%、单位成本升3.1%。",
-   "title_zh": "量化非关税壁垒：英国脱欧、投入品采购与企业绩效",
-   "abstract_zh": "欧洲一体化在消除非关税贸易壁垒方面有多成功？我们研究英国脱欧如何影响英国企业的投入品采购和销售。脱欧后的《贸易与合作协议》（TCA）降低了脱欧前欧盟贸易暴露度较高企业的销售额和投入品支出。它还促使企业转向国内和非欧盟投入品。通过贸易模型的视角，投入品采购的转变意味着，TCA使欧盟进口的贸易成本提高了21%，并使平均英国进口商的单位生产成本提高了3.1%。我们的结果表明，欧盟成员国身份确保了贸易成本的大幅下降。",
-   "tags": [
-    "贸易政策",
-    "供应链",
-    "企业异质性"
-   ],
-   "extra": {
-    "scholar_name": "Kalina Manova",
-    "work_type": "report",
-    "doi": "10.65864/wn6xsu2byg"
    }
   },
   {
@@ -5874,11 +5928,15 @@
  "themes": [
   {
    "tag": "供应链",
+   "n": 7
+  },
+  {
+   "tag": "贸易政策",
    "n": 5
   },
   {
    "tag": "关税",
-   "n": 4
+   "n": 5
   },
   {
    "tag": "其他",
@@ -5886,10 +5944,6 @@
   },
   {
    "tag": "方法论",
-   "n": 3
-  },
-  {
-   "tag": "贸易政策",
    "n": 3
   },
   {
@@ -5907,6 +5961,10 @@
   {
    "tag": "汇率",
    "n": 2
+  },
+  {
+   "tag": "贸易协定",
+   "n": 1
   }
  ],
  "scholars": [
@@ -6227,7 +6285,7 @@
    "homepage": "",
    "openalex": "A5013651639",
    "s2": "46221253",
-   "items": 35
+   "items": 36
   },
   {
    "name": "Douglas Irwin",
@@ -6909,7 +6967,7 @@
    "homepage": "https://chaoqunzhan.weebly.com/",
    "openalex": "A5083740727",
    "s2": "121680824",
-   "items": 2
+   "items": 3
   },
   {
    "name": "张鹏龙",
@@ -7997,19 +8055,16 @@
       }
      ],
      "schedule": "2026-07-16 9:00 am",
-     "tags": [
-      "方法论",
-      "其他"
-     ],
-     "abstract": "We develop a tractable framework for analyzing geopolitics as a network of coordination and strategic influence. Countries choose geopolitical actions that trade off domestic interests against incentives to align with connected countries. Prior to policy choice, they can make costly bilateral investments to influence one another, with effects that propagate directly and indirectly through the geopolitical network. We show that the equilibrium mapping from domestic interests to geopolitical actions admits a spectral representation, allowing international disagreements to be decomposed into latent geopolitical cleavages. We further establish that the covariance matrices of domestic interests and geopolitical actions identify the underlying geopolitical network through its eigencomponents. We implement the framework using data on countries’ domestic interests and geopolitical actions. The inferred network is low-dimensional, aligns with external measures of geopolitical ties, and recovers well-known historical cleavages, from the Cold War division between the Western and Soviet blocs to the contemporary U.S.–China divide. Counterfactual exercises show that geopolitical actions are determined not only by domestic interests and national capabilities, but also by countries’ positions in the geopolitical network and by the direct and indirect propagation of strategic influence.",
-     "abstract_zh": "我们构建了一个易于处理的框架，用于将地缘政治作为协调与战略影响的网络加以分析。国家选择地缘政治行动，在国内利益与同相联系国家结盟的激励之间进行权衡。在政策选择之前，它们可以进行成本高昂的双边投资以相互施加影响，其效应通过地缘政治网络直接和间接传播。我们表明，从国内利益到地缘政治行动的均衡映射具有谱表示，从而可以将国际分歧分解为潜在的地缘政治分野。我们进一步确立，国内利益与地缘政治行动的协方差矩阵通过其特征分量识别潜在的地缘政治网络。我们利用关于各国国内利益和地缘政治行动的数据实施该框架。推断出的网络是低维的，与地缘政治联系的外部度量相一致，并复原了众所周知的历史分野，从冷战时期西方集团与苏联集团之间的分裂到当代美中分歧。反事实练习表明，地缘政治行动不仅由国内利益和国家能力决定，还由各国在地缘政治网络中的位置以及战略影响的直接和间接传播决定。",
-     "intro_zh": "构建地缘政治网络框架，刻画国家在国内利益与结盟激励间的权衡及双边战略投资的网络传播。均衡具谱表示，协方差可识别底层网络；实证恢复冷战分裂与中美分歧，反事实揭示网络位置与影响传播的作用。",
-     "journal": "",
+     "tags": [],
+     "abstract": "We develop a tractable framework for analyzing geopolitics as a network of coordination and strategic influence. Countries choose geopolitical actions that trade off domestic interests against incentives to align with connected countries. They can exert costly bilateral influence to affect one another's actions. We characterize equilibrium actions and bilateral influence in closed form. Crosscountry differences in domestic interests decompose into latent geopolitical cleavages, each of which the network transmits into geopolitical actions independently of the others. The crosscountry covariance matrices of domestic interests and of geopolitical actions identify the cleavages and their importance, from which we recover the network. We implement the framework using data on United Nations voting and democratic orientation. The inferred network is well approximated by a few dimensions, aligns with external measures of geopolitical ties, and recovers well-known historical cleavages. We undertake counterfactuals for domestic interests and network connections and quantify three notions of geopolitical power.",
+     "abstract_zh": "",
+     "intro_zh": "（非贸易领域）",
+     "journal": "London School of Economics and Political Science Research Online (London School of Economics and Political Science)",
      "pdf_url": "https://conference.nber.org/conf_papers/f242639/f242639.pdf",
      "slides_url": "",
      "wp_num": "",
-     "pub_url": "",
-     "state": "oa"
+     "pub_url": "https://doi.org/10.21953/researchonline.lse.ac.uk.00141793",
+     "state": "matched"
     },
     {
      "title": "Hegemonic Competition with Carrots and Sticks",
