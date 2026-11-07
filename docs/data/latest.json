@@ -1,7 +1,89 @@
 {
- "generated_at": "2026-11-06 09:35",
+ "generated_at": "2026-11-07 09:34",
  "window_days": 365,
  "items": [
+  {
+   "uid": "tweet:2118843204250587262",
+   "source": "tweet",
+   "title": "US warns China it must ‘immediately’ meet terms of Busan trade deal. Washington says Beijing is not fulfilling commitments to increase suppl",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2118843204250587262",
+   "date": "2026-11-06",
+   "abstract": "US warns China it must ‘immediately’ meet terms of Busan trade deal. Washington says Beijing is not fulfilling commitments to increase supply of rare earths and other critical products.\n\nby @AsiaLens \nhttps://t.co/2Kxyw7RDMH https://t.co/rpkCh7fwXA",
+   "summary_zh": "美国警告中国必须“立即”满足釜山（Busan）贸易协议的条款。华盛顿表示，北京未履行增加稀土及其他关键产品供应的承诺。\n\n由 @AsiaLens 发布",
+   "title_zh": "",
+   "abstract_zh": "",
+   "tags": [
+    "贸易政策",
+    "贸易协定",
+    "供应链"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": false,
+    "is_reply": false,
+    "likes": 1,
+    "retweets": 2,
+    "views": 818,
+    "created_at": "2026-11-06T23:09:20+00:00",
+    "media": [
+     {
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HWekVANWoAAJUVo.png"
+     }
+    ],
+    "links": [
+     {
+      "tco": "https://t.co/2Kxyw7RDMH",
+      "url": "https://www.ft.com/content/391bb785-0247-4c39-b53b-35007187d603?syn-25a6b1a6=1",
+      "title": "",
+      "domain": "ft.com",
+      "image": ""
+     },
+     {
+      "tco": "https://t.co/rpkCh7fwXA",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
+    "scholar_name": "Chad Bown"
+   }
+  },
+  {
+   "uid": "tweet:2118682986124059052",
+   "source": "tweet",
+   "title": "Gary Hufbauer was a legend. I first became aware of his and the Institute's work on trade policy in the mid-1990s as a graduate student.  I ",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2118682986124059052",
+   "date": "2026-11-06",
+   "abstract": "Gary Hufbauer was a legend. I first became aware of his and the Institute's work on trade policy in the mid-1990s as a graduate student.\n\nI think of Gary as the original TRACKER. He researched and wrote about seemingly every area of trade and economic policy in an empirically grounded way that was accessible to someone like me. That required looking at data. (The 1980s-90s were an era when there were virtually zero public data sets in international trade let alone policy.)\n\nGary created HUGE public goods and was all about transparency. If you disagreed with him on policy - fine, here was the data set that he and the Institute had meticulously generated and published to allow you to do your own analysis.\n\nI only really got to know Gary personally when I joined PIIE in 2016.   But by then, his work and approach had already shaped how I wanted to be as a researcher and economist for 20 years. \n\nWe allow follow in Gary's shoes and live in his shadow.",
+   "summary_zh": "作者：@ChadBown\n\n加里·哈夫鲍尔（Gary Hufbauer）是一个传奇。我第一次意识到他以及研究所（Institute）在贸易政策方面的工作，是在20世纪90年代中期我还是一名研究生的时候。\n\n我把加里视为最初的“追踪者”（TRACKER）。他似乎对贸易和经济政策的每一个领域都进行了研究和写作，并且采用一种以实证为基础、像我这样的人也能理解的方式。那需要查看数据。（20世纪80年代至90年代是一个在国际贸易领域——更不用说政策领域——公共数据集几乎为零的时代。）\n\n加里创造了巨大的公共品，并且一切都围绕透明。如果你在政策上不同意他——没关系，这里就是他和研究所精心生成并发布的数据集，让你可以自己做分析。\n\n我真正私下认识加里，是在2016年我加入PIIE（彼得森国际经济研究所）的时候。但到那时，他的工作和方法已经塑造了我20年来希望成为怎样的研究者和经济学家。\n\n我们追随加里的脚步，生活在他的影子里。",
+   "title_zh": "",
+   "abstract_zh": "",
+   "tags": [
+    "贸易政策",
+    "方法论",
+    "贸易史"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": false,
+    "is_reply": false,
+    "likes": 34,
+    "retweets": 4,
+    "views": 1568,
+    "created_at": "2026-11-06T12:32:41+00:00",
+    "media": [],
+    "scholar_name": "Chad Bown"
+   }
+  },
   {
    "uid": "tweet:2118509720579321937",
    "source": "tweet",
@@ -6366,7 +6448,7 @@
    "homepage": "",
    "openalex": "A5013651639",
    "s2": "46221253",
-   "items": 39
+   "items": 41
   },
   {
    "name": "Douglas Irwin",
