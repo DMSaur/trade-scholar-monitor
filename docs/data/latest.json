@@ -1,7 +1,35 @@
 {
- "generated_at": "2026-11-08 09:33",
+ "generated_at": "2026-11-09 09:33",
  "window_days": 365,
  "items": [
+  {
+   "uid": "tweet:2119388379255280036",
+   "source": "tweet",
+   "title": "Vielen herzlichen Dank, @alexwulfers and @FAZnet!!!",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2119388379255280036",
+   "date": "2026-11-08",
+   "abstract": "Vielen herzlichen Dank, @alexwulfers and @FAZnet!!!",
+   "summary_zh": "非常感谢，@alexwulfers 和 @FAZnet！！！",
+   "title_zh": "",
+   "abstract_zh": "",
+   "tags": [
+    "其他"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": false,
+    "is_reply": false,
+    "likes": 1,
+    "retweets": 0,
+    "views": 746,
+    "created_at": "2026-11-08T11:15:40+00:00",
+    "media": [],
+    "scholar_name": "Chad Bown"
+   }
+  },
   {
    "uid": "tweet:2118843204250587262",
    "source": "tweet",
@@ -6064,28 +6092,6 @@
     "work_type": "reference-entry",
     "doi": "10.1093/acrefore/9780190625979.013.951"
    }
-  },
-  {
-   "uid": "oa:W4416383267",
-   "source": "top5",
-   "title": "Diversification, Market Entry, and the Global Internet Backbone",
-   "authors": "El Hadi Caoui, Andrew Steck",
-   "venue": "The Review of Economic Studies",
-   "url": "https://doi.org/10.1093/restud/rdaf097",
-   "date": "2025-11-08",
-   "abstract": "Abstract In many industries, buyers diversify their supplier base to manage supplier disruption risk. We investigate the importance of such diversification as a determinant of demand and supplier entry in the context of the internet backbone, the worldwide network of undersea fibre-optic cables that underpins the internet. We specify a model of international bandwidth demand and cable operators’ dynamic entry and supply choices. The model is estimated using novel data on cross-border data flows, prices, cable characteristics, and disruptions. Counterfactual analysis reveals that supplier diversification accounts for a large share of entry and surplus created between 2005 and 2021. Relative to the socially optimal level of entry, distortions due to suppliers’ inability to capture fully the social benefits of diversity are as large as distortions due to business stealing.",
-   "summary_zh": "构建国际带宽需求与光缆运营商动态进入模型，发现供应商多元化显著促进市场进入与剩余。",
-   "title_zh": "多元化、市场进入与全球互联网骨干",
-   "abstract_zh": "摘要：在许多行业中，买方通过多元化其供应商基础来管理供应商中断风险。我们考察这种多元化作为需求和供应商进入的决定因素在互联网骨干网——支撑互联网的全球海底光纤电缆网络——背景下的重要性。我们设定了一个国际带宽需求以及电缆运营商动态进入与供给选择的模型。该模型使用关于跨境数据流、价格、电缆特征和中断的新颖数据进行估计。反事实分析表明，供应商多元化在2005年至2021年间创造的进入和剩余中占很大份额。相对于社会最优的进入水平，由于供应商无法充分获取多样性所带来的社会收益而造成的扭曲，与由于商业窃取而造成的扭曲一样大。",
-   "tags": [
-    "供应链",
-    "其他"
-   ],
-   "extra": {
-    "journal_short": "REStud",
-    "keyword_hit": "import",
-    "doi": "10.1093/restud/rdaf097"
-   }
   }
  ],
  "themes": [
@@ -6448,7 +6454,7 @@
    "homepage": "",
    "openalex": "A5013651639",
    "s2": "46221253",
-   "items": 41
+   "items": 42
   },
   {
    "name": "Douglas Irwin",
