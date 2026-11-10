@@ -1,7 +1,58 @@
 {
- "generated_at": "2026-11-09 09:33",
+ "generated_at": "2026-11-10 09:34",
  "window_days": 365,
  "items": [
+  {
+   "uid": "tweet:2119794003520696711",
+   "source": "tweet",
+   "title": "China's Ministry of ‌Commerce ⁠said in a short statement on Monday that the current pause on its export controls for rare earths would be ex",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2119794003520696711",
+   "date": "2026-11-09",
+   "abstract": "China's Ministry of ‌Commerce ⁠said in a short statement on Monday that the current pause on its export controls for rare earths would be extended for two months until January 10. It gave ​no other ​details.\n\nhttps://t.co/gvMLAnrn7i https://t.co/ccHnGwC03F",
+   "summary_zh": "中国商务部周一在一份简短声明中表示，目前对稀土出口管制的暂停措施将延长两个月，至1月10日。声明未提供其他细节。",
+   "title_zh": "",
+   "abstract_zh": "",
+   "tags": [
+    "出口管制",
+    "贸易政策"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": false,
+    "is_reply": false,
+    "likes": 7,
+    "retweets": 4,
+    "views": 1192,
+    "created_at": "2026-11-09T14:07:28+00:00",
+    "media": [
+     {
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HWsFMkXWkAASEhZ.png"
+     }
+    ],
+    "links": [
+     {
+      "tco": "https://t.co/gvMLAnrn7i",
+      "url": "https://www.reuters.com/world/china/china-extends-suspension-new-rare-earth-controls-until-january-2026-11-09/",
+      "title": "reuters.com",
+      "domain": "reuters.com",
+      "image": ""
+     },
+     {
+      "tco": "https://t.co/ccHnGwC03F",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
+    "scholar_name": "Chad Bown"
+   }
+  },
   {
    "uid": "tweet:2119388379255280036",
    "source": "tweet",
@@ -6454,7 +6505,7 @@
    "homepage": "",
    "openalex": "A5013651639",
    "s2": "46221253",
-   "items": 42
+   "items": 43
   },
   {
    "name": "Douglas Irwin",
