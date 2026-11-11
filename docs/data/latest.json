@@ -1,7 +1,54 @@
 {
- "generated_at": "2026-11-10 09:34",
+ "generated_at": "2026-11-11 09:42",
  "window_days": 365,
  "items": [
+  {
+   "uid": "tweet:2120252505187897668",
+   "source": "tweet",
+   "title": "HTWATW in… Spain!!!  Thanks to Toni Estevadeordal, Jaume Ventura, Fernando Broner, and an AMAZING audience at the Barcelona School of Econom",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2120252505187897668",
+   "date": "2026-11-10",
+   "abstract": "HTWATW in… Spain!!!\n\nThanks to Toni Estevadeordal, Jaume Ventura, Fernando Broner, and an AMAZING audience at the Barcelona School of Economics/UPF. https://t.co/gmateDvmdV",
+   "summary_zh": "HTWATW 在……西班牙！！！\n\n感谢 Toni Estevadeordal、Jaume Ventura、Fernando Broner，以及巴塞罗那经济学院（Barcelona School of Economics）/UPF 的极其出色的听众。",
+   "title_zh": "",
+   "abstract_zh": "",
+   "tags": [
+    "其他"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": false,
+    "is_reply": false,
+    "likes": 2,
+    "retweets": 0,
+    "views": 511,
+    "created_at": "2026-11-10T20:29:24+00:00",
+    "media": [
+     {
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HWymZz1XMAApJ57.jpg"
+     },
+     {
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HWymZzwWoAEGP7a.jpg"
+     }
+    ],
+    "links": [
+     {
+      "tco": "https://t.co/gmateDvmdV",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
+    "scholar_name": "Chad Bown"
+   }
+  },
   {
    "uid": "tweet:2119794003520696711",
    "source": "tweet",
@@ -6505,7 +6552,7 @@
    "homepage": "",
    "openalex": "A5013651639",
    "s2": "46221253",
-   "items": 43
+   "items": 44
   },
   {
    "name": "Douglas Irwin",
