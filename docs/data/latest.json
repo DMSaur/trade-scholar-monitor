@@ -1,7 +1,75 @@
 {
- "generated_at": "2026-11-11 09:42",
+ "generated_at": "2026-11-12 09:34",
  "window_days": 365,
  "items": [
+  {
+   "uid": "tweet:2120544114923950224",
+   "source": "tweet",
+   "title": "RT @bse_barcelona: 🌍 How do you win a trade war?  @ChadBown (@PIIE) joined BSE to discuss tariffs, global trade tensions, and the future of…",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2120544114923950224",
+   "date": "2026-11-11",
+   "abstract": "RT @bse_barcelona: 🌍 How do you win a trade war?\n\n@ChadBown (@PIIE) joined BSE to discuss tariffs, global trade tensions, and the future of…",
+   "summary_zh": "RT @bse_barcelona：🌍 你如何赢得一场贸易战？\n\n@ChadBown（@PIIE）加入 BSE，讨论关税、全球贸易紧张局势以及……的未来",
+   "title_zh": "",
+   "abstract_zh": "",
+   "tags": [
+    "关税",
+    "贸易战",
+    "贸易政策"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": true,
+    "is_reply": false,
+    "likes": 0,
+    "retweets": 2,
+    "views": 70,
+    "created_at": "2026-11-11T15:48:09+00:00",
+    "media": [],
+    "scholar_name": "Chad Bown"
+   }
+  },
+  {
+   "uid": "tweet:2120454700034412739",
+   "source": "tweet",
+   "title": "Most goods needed to build data centers for AI are exempt from Trump’s tariffs.  by @tradereporter  https://t.co/diPpZRCirP",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2120454700034412739",
+   "date": "2026-11-11",
+   "abstract": "Most goods needed to build data centers for AI are exempt from Trump’s tariffs.\n\nby @tradereporter \nhttps://t.co/diPpZRCirP",
+   "summary_zh": "建设用于人工智能（AI）的数据中心所需的大多数商品免征特朗普（Trump）的关税。\n\n作者：@tradereporter",
+   "title_zh": "",
+   "abstract_zh": "",
+   "tags": [
+    "关税",
+    "贸易政策"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": false,
+    "is_reply": false,
+    "likes": 5,
+    "retweets": 1,
+    "views": 835,
+    "created_at": "2026-11-11T09:52:51+00:00",
+    "media": [],
+    "links": [
+     {
+      "tco": "https://t.co/diPpZRCirP",
+      "url": "https://wpintelligence.washingtonpost.com/topics/global-security/2026/11/09/trumps-ai-push-is-boosting-trade-deficit/",
+      "title": "",
+      "domain": "wpintelligence.washingtonpost.com",
+      "image": ""
+     }
+    ],
+    "scholar_name": "Chad Bown"
+   }
+  },
   {
    "uid": "tweet:2120252505187897668",
    "source": "tweet",
@@ -6552,7 +6620,7 @@
    "homepage": "",
    "openalex": "A5013651639",
    "s2": "46221253",
-   "items": 44
+   "items": 46
   },
   {
    "name": "Douglas Irwin",
