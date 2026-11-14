@@ -1,7 +1,50 @@
 {
- "generated_at": "2026-11-13 09:33",
+ "generated_at": "2026-11-14 09:33",
  "window_days": 365,
  "items": [
+  {
+   "uid": "tweet:2121319651946721304",
+   "source": "tweet",
+   "title": "RT @hagertynw: @ChadBown found you in Bangalore https://t.co/1AwAJqx6cc",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2121319651946721304",
+   "date": "2026-11-13",
+   "abstract": "RT @hagertynw: @ChadBown found you in Bangalore https://t.co/1AwAJqx6cc",
+   "summary_zh": "转发 @hagertynw：@ChadBown 在班加罗尔（Bangalore）找到你了",
+   "title_zh": "",
+   "abstract_zh": "",
+   "tags": [
+    "其他"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": true,
+    "is_reply": false,
+    "likes": 0,
+    "retweets": 1,
+    "views": 78,
+    "created_at": "2026-11-13T19:09:51+00:00",
+    "media": [
+     {
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HXBmCfDaYAAZOQ6.jpg"
+     }
+    ],
+    "links": [
+     {
+      "tco": "https://t.co/1AwAJqx6cc",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
+    "scholar_name": "Chad Bown"
+   }
+  },
   {
    "uid": "tweet:2120544114923950224",
    "source": "tweet",
@@ -6620,7 +6663,7 @@
    "homepage": "",
    "openalex": "A5013651639",
    "s2": "46221253",
-   "items": 46
+   "items": 47
   },
   {
    "name": "Douglas Irwin",
