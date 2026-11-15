@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14 09:33",
+ "generated_at": "2026-11-15 09:33",
  "window_days": 365,
  "items": [
   {
@@ -43,6 +43,28 @@
      }
     ],
     "scholar_name": "Chad Bown"
+   }
+  },
+  {
+   "uid": "oa:W7226016432",
+   "source": "top5",
+   "title": "Noisy Global Value Chains",
+   "authors": "Ha Bui, Zhen Huo, Andrei A. Levchenko, Nitya Pandalai-Nayar",
+   "venue": "Journal of Political Economy",
+   "url": "https://doi.org/10.1086/744936",
+   "date": "2026-11-13",
+   "abstract": "",
+   "summary_zh": "研究全球价值链中的噪声问题，分析其对价值链运行与经济波动的影响。",
+   "title_zh": "噪声全球价值链",
+   "abstract_zh": "",
+   "tags": [
+    "全球价值链",
+    "供应链"
+   ],
+   "extra": {
+    "journal_short": "JPE",
+    "keyword_hit": "global value chain",
+    "doi": "10.1086/744936"
    }
   },
   {
@@ -6306,7 +6328,7 @@
  "themes": [
   {
    "tag": "供应链",
-   "n": 6
+   "n": 7
   },
   {
    "tag": "贸易政策",
@@ -6317,16 +6339,16 @@
    "n": 4
   },
   {
+   "tag": "全球价值链",
+   "n": 3
+  },
+  {
    "tag": "方法论",
    "n": 3
   },
   {
    "tag": "其他",
    "n": 3
-  },
-  {
-   "tag": "全球价值链",
-   "n": 2
   },
   {
    "tag": "劳动力市场",
