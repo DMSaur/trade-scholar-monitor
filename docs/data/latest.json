@@ -1,7 +1,57 @@
 {
- "generated_at": "2026-11-15 09:33",
+ "generated_at": "2026-11-16 08:16",
  "window_days": 365,
  "items": [
+  {
+   "uid": "tweet:2121945579865485491",
+   "source": "tweet",
+   "title": "Great profile of Banff’s ‘The Boss’  by @ianrausten   https://t.co/Jm1ce84Z04 https://t.co/2SrOwbdsjV",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2121945579865485491",
+   "date": "2026-11-15",
+   "abstract": "Great profile of Banff’s ‘The Boss’\n\nby @ianrausten \n\nhttps://t.co/Jm1ce84Z04 https://t.co/2SrOwbdsjV",
+   "summary_zh": "班夫（Banff）的‘The Boss’的精彩人物特写\n\n作者：@ianrausten",
+   "title_zh": "",
+   "abstract_zh": "",
+   "tags": [
+    "其他"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": false,
+    "is_reply": false,
+    "likes": 1,
+    "retweets": 0,
+    "views": 643,
+    "created_at": "2026-11-15T12:37:04+00:00",
+    "media": [
+     {
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HXKqQfyWMAAgX7X.jpg"
+     }
+    ],
+    "links": [
+     {
+      "tco": "https://t.co/Jm1ce84Z04",
+      "url": "https://www.nytimes.com/2026/11/15/world/canada/grizzly-bear-boss-banff-national-park-alberta.html",
+      "title": "In Banff, a Grizzly Bear Known as ‘the Boss’ Rules the National Park",
+      "domain": "nytimes.com",
+      "image": "https://static01.nyt.com/images/2026/10/30/world/00int-canada-bear/00int-canada-bear-facebookJumbo.jpg"
+     },
+     {
+      "tco": "https://t.co/2SrOwbdsjV",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
+    "scholar_name": "Chad Bown"
+   }
+  },
   {
    "uid": "tweet:2121319651946721304",
    "source": "tweet",
@@ -6685,7 +6735,7 @@
    "homepage": "",
    "openalex": "A5013651639",
    "s2": "46221253",
-   "items": 47
+   "items": 48
   },
   {
    "name": "Douglas Irwin",
