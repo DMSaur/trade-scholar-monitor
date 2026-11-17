@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17 09:33",
+ "generated_at": "2026-11-17 23:07",
  "window_days": 365,
  "items": [
   {
@@ -152,6 +152,28 @@
     "journal_short": "JPE",
     "keyword_hit": "global value chain",
     "doi": "10.1086/744936"
+   }
+  },
+  {
+   "uid": "oa:W4378635555",
+   "source": "scholar",
+   "title": "Deep trade agreements and heterogeneous firms’ exports",
+   "authors": "Matteo Neri-Lainé, Gianluca Orefice, Michèle Ruta",
+   "venue": "European Economic Review",
+   "url": "https://doi.org/10.1016/j.euroecorev.2026.105518",
+   "date": "2026-11-12",
+   "abstract": "",
+   "summary_zh": "研究深度贸易协定对异质性企业出口的影响，基于企业层面数据评估协定深度的差异化贸易效应。",
+   "title_zh": "深度贸易协定与异质性企业出口",
+   "abstract_zh": "",
+   "tags": [
+    "贸易协定",
+    "企业异质性"
+   ],
+   "extra": {
+    "scholar_name": "Michele Ruta",
+    "work_type": "article",
+    "doi": "10.1016/j.euroecorev.2026.105518"
    }
   },
   {
@@ -6430,6 +6452,10 @@
    "n": 3
   },
   {
+   "tag": "企业异质性",
+   "n": 3
+  },
+  {
    "tag": "方法论",
    "n": 3
   },
@@ -6438,20 +6464,16 @@
    "n": 3
   },
   {
-   "tag": "劳动力市场",
+   "tag": "贸易协定",
    "n": 2
   },
   {
-   "tag": "企业异质性",
+   "tag": "劳动力市场",
    "n": 2
   },
   {
    "tag": "汇率",
    "n": 2
-  },
-  {
-   "tag": "贸易协定",
-   "n": 1
   }
  ],
  "scholars": [
@@ -7311,7 +7333,7 @@
    "homepage": "https://blogs.worldbank.org/en/team/m/michele-ruta",
    "openalex": "A5054884314",
    "s2": "113918412",
-   "items": 7
+   "items": 8
   },
   {
    "name": "Mary Lovely",
