@@ -1,7 +1,44 @@
 {
- "generated_at": "2026-11-16 09:44",
+ "generated_at": "2026-11-17 09:33",
  "window_days": 365,
  "items": [
+  {
+   "uid": "tweet:2122340146863595827",
+   "source": "tweet",
+   "title": "The United States needs to establish new trade policy guardrails and repair alliances.   Here is where to start.  by @InuManak     https://t",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2122340146863595827",
+   "date": "2026-11-16",
+   "abstract": "The United States needs to establish new trade policy guardrails and repair alliances. \n\nHere is where to start.\n\nby @InuManak  \n\n https://t.co/mC0EIzCti9",
+   "summary_zh": "作者：@ChadBown\n美国需要建立新的贸易政策护栏，并修复联盟关系。\n\n以下是从何处开始。\n\n作者：@InuManak",
+   "title_zh": "",
+   "abstract_zh": "",
+   "tags": [
+    "贸易政策"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": false,
+    "is_reply": false,
+    "likes": 1,
+    "retweets": 1,
+    "views": 861,
+    "created_at": "2026-11-16T14:44:56+00:00",
+    "media": [],
+    "links": [
+     {
+      "tco": "https://t.co/mC0EIzCti9",
+      "url": "https://www.piie.com/blogs/realtime-economics/2026/how-congress-might-take-back-its-trade-powers-and-limit-trumps",
+      "title": "How Congress might take back its trade powers and limit Trump&#039;s tariffs",
+      "domain": "PIIE",
+      "image": "https://www.piie.com/sites/default/files/2026-11/mt1sipa000z0u5dp.jpg"
+     }
+    ],
+    "scholar_name": "Chad Bown"
+   }
+  },
   {
    "uid": "tweet:2121945579865485491",
    "source": "tweet",
@@ -6735,7 +6772,7 @@
    "homepage": "",
    "openalex": "A5013651639",
    "s2": "46221253",
-   "items": 48
+   "items": 49
   },
   {
    "name": "Douglas Irwin",
