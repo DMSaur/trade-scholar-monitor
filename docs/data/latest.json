@@ -1,7 +1,101 @@
 {
- "generated_at": "2026-11-18 09:34",
+ "generated_at": "2026-11-19 09:34",
  "window_days": 365,
  "items": [
+  {
+   "uid": "tweet:2122992568199975182",
+   "source": "tweet",
+   "title": "RT @tresAudrey: @ChadBown @a_coletta @rotmanschool Fabulous meeting you in person in Toronto! https://t.co/JbYdWFafsW",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2122992568199975182",
+   "date": "2026-11-18",
+   "abstract": "RT @tresAudrey: @ChadBown @a_coletta @rotmanschool Fabulous meeting you in person in Toronto! https://t.co/JbYdWFafsW",
+   "summary_zh": "转推 @tresAudrey：@ChadBown @a_coletta @rotmanschool 在多伦多与你当面相见真是太棒了！",
+   "title_zh": "",
+   "abstract_zh": "",
+   "tags": [
+    "其他"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": true,
+    "is_reply": false,
+    "likes": 0,
+    "retweets": 1,
+    "views": 87,
+    "created_at": "2026-11-18T09:57:26+00:00",
+    "media": [
+     {
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HXX8r7HXoAE_ApG.jpg"
+     }
+    ],
+    "links": [
+     {
+      "tco": "https://t.co/JbYdWFafsW",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
+    "scholar_name": "Chad Bown"
+   }
+  },
+  {
+   "uid": "tweet:2122869573376770150",
+   "source": "tweet",
+   "title": "HTWATW in…Toronto!!!  Huge thanks to @a_coletta and an amazing audience at the @rotmanschool — and so much fun to see so many old friends! h",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2122869573376770150",
+   "date": "2026-11-18",
+   "abstract": "HTWATW in…Toronto!!!\n\nHuge thanks to @a_coletta and an amazing audience at the @rotmanschool — and so much fun to see so many old friends! https://t.co/v4Ue75WuNE",
+   "summary_zh": "HTWATW 在……多伦多！！！\n\n非常感谢 @a_coletta 和 @rotmanschool 的出色听众——见到这么多老朋友真是太开心了！",
+   "title_zh": "",
+   "abstract_zh": "",
+   "tags": [
+    "贸易战"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": false,
+    "is_reply": false,
+    "likes": 5,
+    "retweets": 1,
+    "views": 785,
+    "created_at": "2026-11-18T01:48:41+00:00",
+    "media": [
+     {
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HXXyn5JXUAAo3hk.jpg"
+     },
+     {
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HXXyn5BXIAEjite.jpg"
+     },
+     {
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HXXyn5NWMAA-Xuj.jpg"
+     }
+    ],
+    "links": [
+     {
+      "tco": "https://t.co/v4Ue75WuNE",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
+    "scholar_name": "Chad Bown"
+   }
+  },
   {
    "uid": "tweet:2122340146863595827",
    "source": "tweet",
@@ -6411,27 +6505,6 @@
     "work_type": "report",
     "doi": "10.59576/lse.20251124"
    }
-  },
-  {
-   "uid": "oa:W2589095345",
-   "source": "scholar",
-   "title": "Exchange Rate Disconnect",
-   "authors": "Oleg Itskhoki, Dmitry Mukhin",
-   "venue": "Oxford Research Encyclopedia of Economics and Finance",
-   "url": "https://doi.org/10.1093/acrefore/9780190625979.013.951",
-   "date": "2025-11-18",
-   "abstract": "Abstract Exchange rates are at the heart of international economics, yet their disconnect from other macroeconomic variables—including prices (the purchasing power parity and Mussa puzzles), consumption (the Backus–Smith puzzle), interest rates and asset prices (the uncovered interest parity puzzle), and a random-walk-like dynamics (the Meese–Rogoff puzzle)—is one of the key stumbling blocks for the open-economy macro literature. The recent empirical literature complements these classical puzzles with new stylized facts about the long-run properties of exchange rates, their comovement with disaggregated prices and quantities, and differences across periods and countries with different monetary regimes. Current frontier theories of exchange rates emphasize two crucial ingredients for resolving these puzzles: financial risk-sharing shocks and muted exchange rate transmission into prices and quantities. The latter can result from trade costs, home bias in preferences, firms pricing to market, nominal rigidities, and gradual export adjustment. Much progress has been made recently in measuring these complementary mechanisms in the data and quantifying them in calibrated models. In contrast, despite empirical support for different theories of financial shocks, there is little consensus on their relative contributions. These include models with news shocks and long-run expectations, discount factor shocks and convenience yields, segmented markets, and noise traders. At the same time, specific microfoundations of financial shocks are a central input for normative analysis, as some theories suggest significant deviations from market efficiency, particularly where the classical Trilemma does not apply, and a floating exchange rate with an inward-focused monetary policy is no longer optimal. Consequently, partial, crawling and full pegs sustained by active monetary and FX interventions, or credible promises of such, may emerge as desirable policy choices.",
-   "summary_zh": "综述汇率与价格、消费、利率等脱节谜题，指出金融风险冲击与低汇率传递是关键机制，但金融冲击贡献仍无共识。",
-   "title_zh": "汇率脱节",
-   "abstract_zh": "汇率是国际经济学研究的核心，然而汇率与其他宏观经济变量之间的脱节——包括价格（购买力平价之谜和穆萨之谜）、消费（巴克斯—史密斯之谜）、利率与资产价格（未抛补利率平价之谜）以及类似随机游走的动态（米斯—罗戈夫之谜）——是开放经济宏观文献的主要障碍之一。近期实证文献以关于汇率长期属性、汇率与分项价格和数量的共同变动，以及不同时期和具有不同货币制度国家之间差异的新典型事实，补充了这些经典之谜。当前汇率前沿理论强调解决这些之谜的两个关键要素：金融风险分担冲击以及汇率向价格和数量传导的减弱。后者可能源于贸易成本、偏好中的本国偏向、企业按市场定价、名义刚性和出口的逐步调整。近来，在数据中衡量这些互补机制并在校准模型中对其进行量化方面已取得很大进展。相反，尽管不同金融冲击理论得到了经验支持，但关于它们的相对贡献却鲜有共识。这些理论包括含有新闻冲击和长期预期的模型、含有贴现因子冲击和便利收益的模型、分割市场以及噪声交易者。与此同时，金融冲击的具体微观基础是规范分析的核心投入，因为一些理论表明存在对市场效率的显著偏离，尤其是在经典三难困境不适用，且采用内向型货币政策的浮动汇率不再是最优的情况下。因此，由积极的货币与外汇干预或对此类干预的可信承诺所维持的部分钉住、爬行钉住和完全钉住，可能成为合意的政策选择。",
-   "tags": [
-    "汇率"
-   ],
-   "extra": {
-    "scholar_name": "Oleg Itskhoki",
-    "work_type": "reference-entry",
-    "doi": "10.1093/acrefore/9780190625979.013.951"
-   }
   }
  ],
  "themes": [
@@ -6452,10 +6525,6 @@
    "n": 3
   },
   {
-   "tag": "企业异质性",
-   "n": 3
-  },
-  {
    "tag": "方法论",
    "n": 3
   },
@@ -6468,12 +6537,16 @@
    "n": 2
   },
   {
-   "tag": "劳动力市场",
+   "tag": "企业异质性",
    "n": 2
   },
   {
    "tag": "汇率",
    "n": 2
+  },
+  {
+   "tag": "劳动力市场",
+   "n": 1
   }
  ],
  "scholars": [
@@ -6618,7 +6691,7 @@
    "homepage": "https://economics.harvard.edu/people/oleg-itskhoki",
    "openalex": "A5088518091",
    "s2": "103048638",
-   "items": 8
+   "items": 7
   },
   {
    "name": "Pablo Fajgelbaum",
@@ -6794,7 +6867,7 @@
    "homepage": "",
    "openalex": "A5013651639",
    "s2": "46221253",
-   "items": 49
+   "items": 51
   },
   {
    "name": "Douglas Irwin",
