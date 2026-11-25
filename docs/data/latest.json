@@ -1,7 +1,139 @@
 {
- "generated_at": "2026-11-24 09:34",
+ "generated_at": "2026-11-25 09:35",
  "window_days": 365,
  "items": [
+  {
+   "uid": "tweet:2125317172952273086",
+   "source": "tweet",
+   "title": "Rumor has it Trump will soon announce new tariffs stemming from the Section 301 investigation into overcapacity.  One key thing to watch: Ho",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2125317172952273086",
+   "date": "2026-11-24",
+   "abstract": "Rumor has it Trump will soon announce new tariffs stemming from the Section 301 investigation into overcapacity.\n\nOne key thing to watch: How much higher the new US tariffs on China are compared to those on other countries.\n\nHere's why (from August):\nhttps://t.co/VyXZ1k6Uvw",
+   "summary_zh": "有传言称，特朗普（Trump）将很快宣布由针对产能过剩的第301条调查（Section 301 investigation）引发的新关税。\n\n需要关注的一个关键点：美国对中国的新关税相较于对其他国家的关税高出多少。\n\n原因如下（来自8月）：",
+   "title_zh": "",
+   "abstract_zh": "",
+   "tags": [
+    "关税",
+    "贸易政策"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": false,
+    "is_reply": false,
+    "likes": 1,
+    "retweets": 0,
+    "views": 418,
+    "created_at": "2026-11-24T19:54:35+00:00",
+    "media": [],
+    "links": [
+     {
+      "tco": "https://t.co/VyXZ1k6Uvw",
+      "url": "https://www.piie.com/blogs/realtime-economics/2026/how-trumps-next-tariffs-could-drive-companies-back-china",
+      "title": "How Trump&#039;s next tariffs could drive companies back to China",
+      "domain": "PIIE",
+      "image": "https://www.piie.com/sites/default/files/2026-08/GF20000037438.JPG"
+     }
+    ],
+    "scholar_name": "Chad Bown"
+   }
+  },
+  {
+   "uid": "tweet:2125270445221875720",
+   "source": "tweet",
+   "title": "\"Next steps for the USMCA and US trade laws: A post-election review\"  Already on the way to Grandma's house for Thanksgiving?  *TUNE IN* at ",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2125270445221875720",
+   "date": "2026-11-24",
+   "abstract": "\"Next steps for the USMCA and US trade laws: A post-election review\"\n\nAlready on the way to Grandma's house for Thanksgiving?\n\n*TUNE IN* at 12pm ET and join my amazing @PIIE colleagues\n\n- Monica de Bolle\n- Inu Manak\n- Alejandro Werner\n- and me\n\n📺 WATCH 📺: https://t.co/ZZYWL7Nvu2\n\nme 👇",
+   "summary_zh": "《美墨加协定（USMCA）与美国贸易法的下一步：选后回顾》\n\n已经在去奶奶家过感恩节的路上？\n\n*敬请收看* 美东时间中午12点，加入我出色的@PIIE同事\n\n- Monica de Bolle\n- Inu Manak\n- Alejandro Werner\n- 和我\n\n📺 观看 📺：\n\n我 👇",
+   "title_zh": "",
+   "abstract_zh": "",
+   "tags": [
+    "贸易政策",
+    "贸易协定"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": false,
+    "is_reply": false,
+    "likes": 0,
+    "retweets": 0,
+    "views": 381,
+    "created_at": "2026-11-24T16:48:54+00:00",
+    "media": [
+     {
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HX55-uPXMAAPXlG.jpg"
+     }
+    ],
+    "links": [
+     {
+      "tco": "https://t.co/ZZYWL7Nvu2",
+      "url": "https://www.piie.com/events/2026/next-steps-usmca-and-us-trade-laws-post-election-review",
+      "title": "Next steps for the USMCA and US trade laws: A post-election review",
+      "domain": "PIIE",
+      "image": "https://www.piie.com/sites/default/files/2026-11/2026-11-24-usmca-webpage.jpeg"
+     }
+    ],
+    "scholar_name": "Chad Bown"
+   }
+  },
+  {
+   "uid": "tweet:2125230140116377723",
+   "source": "tweet",
+   "title": "On Tuesday, MOFCOM announced it would extend for 2 months (until Jan 27, 2027) its existing suspension of export restrictions on gallium, ge",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2125230140116377723",
+   "date": "2026-11-24",
+   "abstract": "On Tuesday, MOFCOM announced it would extend for 2 months (until Jan 27, 2027) its existing suspension of export restrictions on gallium, germanium, and antimony and ease its reviews covering exports of graphite.\n\n@WSJ:  https://t.co/tXWsxakl8U https://t.co/avdGTDpl7i",
+   "summary_zh": "作者：@ChadBown\n推文原文：周二，中国商务部（MOFCOM）宣布，将把现有对镓（gallium）、锗（germanium）和锑（antimony）出口限制的暂停延长两个月（至2027年1月27日），并放宽其对石墨（graphite）出口的审查。\n\n@WSJ：",
+   "title_zh": "",
+   "abstract_zh": "",
+   "tags": [
+    "出口管制",
+    "贸易政策"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": false,
+    "is_reply": false,
+    "likes": 2,
+    "retweets": 1,
+    "views": 1198,
+    "created_at": "2026-11-24T14:08:44+00:00",
+    "media": [
+     {
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HX5VdwBWcAAlY-W.png"
+     }
+    ],
+    "links": [
+     {
+      "tco": "https://t.co/tXWsxakl8U",
+      "url": "https://www.wsj.com/economy/trade/china-to-suspend-some-critical-material-export-curbs-to-u-s-until-january-35bc8dca",
+      "title": "wsj.com",
+      "domain": "wsj.com",
+      "image": ""
+     },
+     {
+      "tco": "https://t.co/avdGTDpl7i",
+      "skip": 1,
+      "url": "",
+      "title": "",
+      "domain": "",
+      "image": ""
+     }
+    ],
+    "scholar_name": "Chad Bown"
+   }
+  },
   {
    "uid": "tweet:2122992568199975182",
    "source": "tweet",
@@ -6483,28 +6615,6 @@
     "work_type": "preprint",
     "doi": "10.21203/rs.3.rs-8051642/v1"
    }
-  },
-  {
-   "uid": "oa:W4416586736",
-   "source": "scholar",
-   "title": "How Businesses Set Prices—In Their Own Words",
-   "authors": "Wändi Bruine de Bruin, Keshav Dogra, Sebastian Heise, Edward S. Knotek, Brent Meyer, Robert W. Rich",
-   "venue": "报告",
-   "url": "https://doi.org/10.59576/lse.20251124",
-   "date": "2025-11-24",
-   "abstract": "There has been a lot of interest in firms’ pricing decisions in the past few years—both during the inflation surge of 2021-23 and in the more recent rounds of tariff increases. In this post, we let firms speak for themselves about what factors they consider when adjusting prices in response to various shocks. The analysis is based on an ongoing research project, joint with the Atlanta and Cleveland Federal Reserve Banks, on how businesses set prices and the extent of passthrough of cost increases. In particular, we leverage the qualitative portion of the study based on open-ended interviews with senior decision-makers on how they approach pricing decisions in their firms. Rather than a uniform approach, a very nuanced picture emerges of businesses trying to balance competing objectives while keeping an eye on demand conditions for their products as well as on their direct competitors’ behavior in the market.",
-   "summary_zh": "基于企业高管访谈分析其应对通胀与关税冲击的定价及成本转嫁，发现企业需权衡多重目标。",
-   "title_zh": "企业如何定价——以他们自己的话",
-   "abstract_zh": "过去几年，人们对企业的定价决策产生了很大兴趣——无论是在2021—23年通胀飙升期间，还是在最近几轮关税上调期间。在这篇文章中，我们让企业自己发声，说明它们在应对各种冲击调整价格时考虑了哪些因素。该分析基于一个正在进行的研究项目，该项目与亚特兰大联邦储备银行和克利夫兰联邦储备银行合作，研究企业如何定价以及成本上升的转嫁程度。特别是，我们利用了该研究中的定性部分，该部分基于与高级决策者的开放式访谈，内容涉及他们如何在本企业处理定价决策。出现的并非一种统一的方法，而是一幅非常细致的图景：企业试图平衡相互竞争的目标，同时关注其产品的需求状况以及直接竞争对手在市场中的行为。",
-   "tags": [
-    "关税",
-    "贸易政策"
-   ],
-   "extra": {
-    "scholar_name": "Sebastian Heise",
-    "work_type": "report",
-    "doi": "10.59576/lse.20251124"
-   }
   }
  ],
  "themes": [
@@ -6875,7 +6985,7 @@
    "homepage": "",
    "openalex": "A5013651639",
    "s2": "46221253",
-   "items": 51
+   "items": 54
   },
   {
    "name": "Douglas Irwin",
@@ -7216,7 +7326,7 @@
    "homepage": "https://www.sebastianheise.com",
    "openalex": "A5052207549",
    "s2": "10497477",
-   "items": 1
+   "items": 0
   },
   {
    "name": "Joaquin Blaum",
