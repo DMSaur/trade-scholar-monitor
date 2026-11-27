@@ -1,7 +1,74 @@
 {
- "generated_at": "2026-11-26 09:36",
+ "generated_at": "2026-11-27 09:34",
  "window_days": 365,
  "items": [
+  {
+   "uid": "tweet:2126055776833646722",
+   "source": "tweet",
+   "title": "Oleg Itskhoki on Trade, Tariffs and the Limits of Sanctions https://t.co/UZaOHGDQ4W",
+   "authors": "@itskhoki",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/itskhoki/status/2126055776833646722",
+   "date": "2026-11-26",
+   "abstract": "Oleg Itskhoki on Trade, Tariffs and the Limits of Sanctions https://t.co/UZaOHGDQ4W",
+   "summary_zh": "奥列格·伊茨霍基（Oleg Itskhoki）谈贸易、关税与制裁的限度",
+   "title_zh": "",
+   "abstract_zh": "",
+   "tags": [
+    "关税",
+    "贸易政策",
+    "制裁"
+   ],
+   "extra": {
+    "handle": "ItsKhoki",
+    "name": "Oleg Itskhoki",
+    "is_retweet": false,
+    "is_reply": false,
+    "likes": 26,
+    "retweets": 3,
+    "views": 1253,
+    "created_at": "2026-11-26T20:49:32+00:00",
+    "media": [],
+    "links": [
+     {
+      "tco": "https://t.co/UZaOHGDQ4W",
+      "url": "https://blog.cerge-ei.cz/?p=5291",
+      "title": "Can Tariffs Make a Country Stronger? Oleg Itskhoki Explains",
+      "domain": "CERGE-EI Blog | Stay in touch with economists shaping the future",
+      "image": ""
+     }
+    ],
+    "scholar_name": "Oleg Itskhoki"
+   }
+  },
+  {
+   "uid": "tweet:2125934105237803272",
+   "source": "tweet",
+   "title": "RT @fbermingham: Sino Dutch joint statement from foreign minister Berendsen visit - 6 points cover chips, AI, trade, the UN - including hum…",
+   "authors": "@ChadBown",
+   "venue": "X (Twitter)",
+   "url": "https://x.com/ChadBown/status/2125934105237803272",
+   "date": "2026-11-26",
+   "abstract": "RT @fbermingham: Sino Dutch joint statement from foreign minister Berendsen visit - 6 points cover chips, AI, trade, the UN - including hum…",
+   "summary_zh": "RT @fbermingham：外交部长贝伦森（Berendsen）访问期间的中荷联合声明——6点内容涵盖芯片、人工智能、贸易、联合国——包括人…",
+   "title_zh": "",
+   "abstract_zh": "",
+   "tags": [
+    "贸易政策"
+   ],
+   "extra": {
+    "handle": "ChadBown",
+    "name": "Chad P. Bown",
+    "is_retweet": true,
+    "is_reply": false,
+    "likes": 0,
+    "retweets": 7,
+    "views": 80,
+    "created_at": "2026-11-26T12:46:03+00:00",
+    "media": [],
+    "scholar_name": "Chad Bown"
+   }
+  },
   {
    "uid": "tweet:2125598307997102203",
    "source": "tweet",
@@ -64,6 +131,29 @@
     "created_at": "2026-11-25T14:06:36+00:00",
     "media": [],
     "scholar_name": "Chad Bown"
+   }
+  },
+  {
+   "uid": "oa:W7239723631",
+   "source": "top5",
+   "title": "International Power",
+   "authors": "Ernest Liu, David Y Yang",
+   "venue": "The Quarterly Journal of Economics",
+   "url": "https://doi.org/10.1093/qje/qjag061",
+   "date": "2026-11-25",
+   "abstract": "An interconnected world increases economic efficiency while giving certain countries leverage over others. We aim to describe and understand international power stemming from trade. Using an illustrative model of trade with possibilities of bilateral disputes and ex-post hold-ups, we highlight that bilateral asymmetry in import dependence can be a source of power towards one another. We construct the model-implied measure of international power — asymmetric bilateral import dependence, weighted inversely by sectoral trade elasticities — across country pairs over the past 20 years. Combining this measure with comprehensive data on bilateral engagement events and a high-frequency measure of bilateral geopolitical relationships, we examine the consequences and strategic causes of international power. We present two main empirical results. First, increases in international power between countries — which raise the credibility of threats of trade disruptions — induce more bilateral engagement and negotiations. Second, evidence suggests that worsened geopolitical relationships — in anticipation of future disputes — prompt countries to build up greater international power through adjusting trade activities.",
+   "summary_zh": "基于双边进口依赖与贸易弹性构建国际权力指标，发现权力上升会促进双边接触谈判，地缘关系恶化则促使国家调整贸易以积累权力。",
+   "title_zh": "国际权力",
+   "abstract_zh": "相互联动的世界提高了经济效率，同时使某些国家拥有对他国的杠杆。我们旨在描述和理解源于贸易的国际权力。借助一个包含双边争端可能性和事后要挟的说明性贸易模型，我们强调进口依赖的双边不对称性可以成为彼此施加权力的来源。我们构建了模型隐含的国际权力度量——按部门贸易弹性反向加权的双边进口依赖不对称性——覆盖过去20年的国家对。将这一度量与双边交往事件的综合数据以及双边地缘政治关系的高频度量相结合，我们考察国际权力的后果和战略成因。我们展示两个主要实证结果。第一，国家间国际权力的上升——提高了贸易中断威胁的可信度——会引发更多双边交往和谈判。第二，证据表明，地缘政治关系恶化——出于对未来争端的预期——会促使国家通过调整贸易活动来积累更大的国际权力。",
+   "tags": [
+    "贸易弹性",
+    "贸易政策",
+    "供应链"
+   ],
+   "extra": {
+    "journal_short": "QJE",
+    "keyword_hit": "import",
+    "doi": "10.1093/qje/qjag061"
    }
   },
   {
@@ -6634,39 +6724,16 @@
     "work_type": "article",
     "doi": "10.1057/s41308-026-00312-6"
    }
-  },
-  {
-   "uid": "oa:W4416694456",
-   "source": "top5",
-   "title": "Firm Responses and Wage Effects of Foreign Demand Shocks with Fixed Labor Costs and Monopsony",
-   "authors": "Emmanuël Dhyne, Ayumu Ken Kikkawa, Toshiaki Komatsu, Magne Mogstad, Felix Tintelnot",
-   "venue": "American Economic Review",
-   "url": "https://doi.org/10.1257/aer.20220948",
-   "date": "2025-11-26",
-   "abstract": "We quantify the firm responses and real wage effects of foreign demand shocks. We use Belgian microdata to construct firm-specific measures of demand shocks, which capture that firms pass on foreign demand shocks to domestic suppliers. Our estimates of firm responses to these shocks suggest that firms face upward-sloping labor supply curves and have sizable fixed labor costs. We specify a general equilibrium model with these features to quantify the aggregate effects of simulated tariff shocks on wages. We find that ignoring fixed labor costs substantially underestimates aggregate effects on wages, whereas incorporating upward-sloping labor supply appears less consequential. (JEL D22, F13, F16, J22, J31, J42, L25)",
-   "summary_zh": "用比利时微观数据构建需求冲击，结合一般均衡模型量化关税冲击的工资效应，发现忽视固定劳动成本会低估工资总效应。",
-   "title_zh": "固定劳动成本与买方垄断下外国需求冲击的企业反应及工资效应",
-   "abstract_zh": "我们量化外国需求冲击的企业反应和实际工资效应。我们使用比利时微观数据构建企业特定的需求冲击度量，该度量捕捉了企业将外国需求冲击传递给国内供应商的情况。我们对企业对这类冲击反应的估计表明，企业面临向上倾斜的劳动供给曲线，并具有可观的固定劳动成本。我们构建了一个包含这些特征的一般均衡模型，以量化模拟关税冲击对工资的总体效应。我们发现，忽略固定劳动成本会显著低估对工资的总体效应，而纳入向上倾斜的劳动供给似乎影响较小。（JEL D22, F13, F16, J22, J31, J42, L25）",
-   "tags": [
-    "关税",
-    "劳动力市场",
-    "企业异质性"
-   ],
-   "extra": {
-    "journal_short": "AER",
-    "keyword_hit": "tariff",
-    "doi": "10.1257/aer.20220948"
-   }
   }
  ],
  "themes": [
   {
    "tag": "贸易政策",
-   "n": 8
+   "n": 9
   },
   {
    "tag": "供应链",
-   "n": 7
+   "n": 8
   },
   {
    "tag": "全球价值链",
@@ -6675,6 +6742,10 @@
   {
    "tag": "关税",
    "n": 4
+  },
+  {
+   "tag": "贸易弹性",
+   "n": 3
   },
   {
    "tag": "方法论",
@@ -6686,10 +6757,6 @@
   },
   {
    "tag": "企业异质性",
-   "n": 2
-  },
-  {
-   "tag": "贸易弹性",
    "n": 2
   },
   {
@@ -6851,7 +6918,7 @@
    "homepage": "https://economics.harvard.edu/people/oleg-itskhoki",
    "openalex": "A5088518091",
    "s2": "103048638",
-   "items": 7
+   "items": 8
   },
   {
    "name": "Pablo Fajgelbaum",
@@ -7027,7 +7094,7 @@
    "homepage": "",
    "openalex": "A5013651639",
    "s2": "46221253",
-   "items": 56
+   "items": 57
   },
   {
    "name": "Douglas Irwin",
